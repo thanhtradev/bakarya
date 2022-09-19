@@ -1,6 +1,5 @@
 import * as React from "react";
 import AppBar from "@mui/material/AppBar";
-import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
 import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
@@ -14,6 +13,9 @@ import HeaderTabs from "./HeaderTabs/HeaderTabs";
 import HeaderAvatar from "./HeaderAvatar";
 import Cart from "./Cart/Cart";
 import Notification from "./Notification/Notific";
+import Grid from "@mui/material/Unstable_Grid2/Grid2";
+import Stack from "@mui/material/Stack";
+
 const Header = () => {
   const pages = ["Recipe", "Shops", "Blog"];
 
@@ -28,14 +30,21 @@ const Header = () => {
   };
 
   return (
-    <Box position='relative' sx={{ height: "66px" }}>
+    <Grid container direction='row' position='relative' sx={{ height: "66px" }}>
       <AppBar position='fixed' sx={{ bgcolor: "white" }}>
         <Container maxWidth='xl'>
           <Toolbar>
-            <Logo />
+            <Grid md={3}>
+              <Logo />
+            </Grid>
+
             {/* {Appear in XS screen } */}
 
-            <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
+            <Grid
+              direction='row'
+              xs={4}
+              sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}
+            >
               <IconButton
                 size='large'
                 aria-label='account of current user'
@@ -71,7 +80,7 @@ const Header = () => {
                   </MenuItem>
                 ))}
               </Menu>
-            </Box>
+            </Grid>
             <AdbIcon sx={{ display: { xs: "flex", md: "none" }, mr: 1 }} />
             <Typography
               variant='h5'
@@ -92,36 +101,47 @@ const Header = () => {
               LOGO
             </Typography>
             {/* {Appear in MD screen } */}
-            <Box
+            <Grid
+              direction='row'
+              justifyContent='space-around'
+              alignItems='center'
+              md={6}
               sx={{
                 flexGrow: 1,
                 display: { xs: "none", md: "flex" },
-                justifyContent: "space-around",
-                alignItems: "center",
                 minWidth: "0.7",
+                padding: 0,
               }}
             >
               <HeaderTabs />
-            </Box>
+            </Grid>
 
-            <Box
-              component='div'
+            <Grid
+              direction='row'
+              alignItems='center'
+              md={3}
+              justifyContent='flex-end'
               sx={{
+                display: "flex",
                 flexGrow: 0,
                 width: "11rem",
-                display: "flex",
-                justifyContent: "space-between",
-                alignItems: "center",
               }}
             >
-              <Cart />
-              <Notification />
-              <HeaderAvatar />
-            </Box>
+              <Stack
+                direction='row'
+                justifyContent='space-between'
+                alignItems='center'
+                sx={{ width: "80%", backgroundColor: "azure" }}
+              >
+                <Cart />
+                <Notification />
+                <HeaderAvatar />
+              </Stack>
+            </Grid>
           </Toolbar>
         </Container>
       </AppBar>
-    </Box>
+    </Grid>
   );
 };
 

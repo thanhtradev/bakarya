@@ -26,8 +26,6 @@ const SideBarLeft = () => {
       onClick={(event) => handleListItemClick(event, index)}
       sx={{
         fontSize: "2rem",
-        borderTopRightRadius: "15px",
-        borderBottomLeftRadius: "15px",
       }}
     >
       <ListItemText

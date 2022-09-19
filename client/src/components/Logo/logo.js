@@ -1,6 +1,7 @@
 import classes from "./logo.module.css";
 import React from "react";
-import LogoImg from "../../Assets/logo-Final.png";
+import LogoImg from "../../Assets/Asset 2.png";
+
 const Logo = () => {
   return (
     <div className={classes["logo-container"]}>
