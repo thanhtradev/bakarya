@@ -12,6 +12,7 @@ const SideBar = (props) => {
         display: { xs: "none", md: "flex" },
         justifyContent: "flex-start",
         bgcolor: "#f3F1F1",
+        height: "60vh",
       }}
     >
       <Stack
@@ -27,8 +28,7 @@ const SideBar = (props) => {
           sx={{
             display: "flex",
             width: "90%",
-            height: "90%",
-            maxHeight: "80%",
+            height: "100%",
             left: "10px",
             flexDirection: "column",
             justifyContent: "space-evenly",

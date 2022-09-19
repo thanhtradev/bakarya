@@ -3,7 +3,7 @@ import Grid from "@mui/material/Unstable_Grid2";
 import { styled } from "@mui/material/styles";
 import Paper from "@mui/material/Paper";
 import CreateRecipe from "./CreateRecipe/CreateRecipe";
-import { Box } from "@mui/system";
+import { Box, Stack } from "@mui/system";
 import RecipePost from "./RecipePost/RecipePost";
 
 const NewsFeed = () => {
@@ -13,24 +13,24 @@ const NewsFeed = () => {
       md={6}
       sx={{
         width: "100vh",
-        bgcolor: "#F3F1F1",
-        border: "1px solid",
-        height: "60rem",
+        bgcolor: "#f6f6f6",
+        height: `${40 * 2.3}rem`,
       }}
     >
-      <Box
+      <Stack
+        justifyContent='space-around'
+        spacing={2}
         sx={{
-          backgroundColor: "#F6F6F6",
+          backgroundColor: "#f6f6f6",
           width: "100%",
           height: "100%",
-          display: "flex",
-          flexDirection: "column",
-          justifyContent: "space-evenly",
         }}
       >
         <CreateRecipe />
+        {/* <RecipePost /> */}
         <RecipePost />
-      </Box>
+        <RecipePost />
+      </Stack>
     </Grid>
   );
 };

@@ -7,11 +7,13 @@ const Body = (props) => {
       container
       rowSpacing={4}
       position='sticky'
-      columnSpacing={2}
+      columnSpacing={6}
       sx={{
         margin: 0,
         height: "43.3rem",
         justifyContent: "center",
+        // bgcolor: "#f3F1F1",
+        bgcolor: "transparent",
       }}
     >
       {props.children}

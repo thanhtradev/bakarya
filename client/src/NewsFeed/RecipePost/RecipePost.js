@@ -10,6 +10,7 @@ import PostSetting from "./PostInteraction/PostSetting";
 const RecipePost = () => {
   const [isFollow, setIsFollow] = useState(false);
   const followRef = useRef();
+
   useEffect(() => {
     if (isFollow) {
       followRef.current.textContent = "Following";
@@ -18,6 +19,7 @@ const RecipePost = () => {
       followRef.current.textContent = "Follow";
     }
   }, [isFollow]);
+
   const handleFollowButton = () => {
     if (isFollow) {
       setIsFollow(false);
@@ -25,9 +27,10 @@ const RecipePost = () => {
       setIsFollow(true);
     }
   };
+
   return (
     <Box className={classes.post}>
-      <Stack sx={{ padding: "0 13px" }} spacing={1.5}>
+      <Stack sx={{ padding: "7px 13px" }} spacing={1.5}>
         <Stack
           direction='row'
           spacing={2}
@@ -48,7 +51,7 @@ const RecipePost = () => {
               disableElevation
               variant='text'
               sx={{
-                ":hover": { backgroundColor: alpha("#FDEEDC", 0.49) },
+                ":hover": { backgroundColor: alpha("#FDEEDC", 0.7) },
                 width: 70,
                 height: 30,
                 textTransform: "capitalize",

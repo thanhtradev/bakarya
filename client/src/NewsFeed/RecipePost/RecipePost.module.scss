@@ -18,9 +18,10 @@ $text-Large: 23px;
 
 .post {
     @include flex-column-center;
-    background-color: rgba(176, 119, 119, 0.275);
+    background-color: #f3f1f1;
     padding: 13px 0;
     height: 40rem;
+    border-radius: 10px;
 }
 
 .post-header__user {

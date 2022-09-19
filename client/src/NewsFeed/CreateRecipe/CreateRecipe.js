@@ -3,7 +3,7 @@ import ShareRecipe from "./ShareRecipe";
 import { Paper } from "@mui/material";
 import Actions from "./Actions";
 //* SIZE CONFIG
-const width = "72%";
+const width = "100%";
 
 const CreateRecipe = () => {
   return (
@@ -13,7 +13,7 @@ const CreateRecipe = () => {
         display: "flex",
         justifyContent: "space-between",
         alignItems: "center",
-        height: "23%",
+        height: "15%",
         flexDirection: "column",
         borderRadius: "10px",
       }}
