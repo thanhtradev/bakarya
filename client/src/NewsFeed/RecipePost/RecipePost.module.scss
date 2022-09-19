@@ -1,0 +1,59 @@
+@mixin flex-alignCenter {
+    align-items: center;
+}
+
+@mixin flex-column-center {
+    flex-direction: column;
+    align-items: center;
+}
+
+@mixin flex-row-center {
+    flex-direction: row;
+    align-items: center;
+}
+
+$text-small: 15px;
+$text-medium: 19px;
+$text-Large: 23px;
+
+.post {
+    @include flex-column-center;
+    background-color: rgba(176, 119, 119, 0.275);
+    padding: 13px 0;
+    height: 40rem;
+}
+
+.post-header__user {
+    @include flex-alignCenter;
+    justify-content: space-evenly;
+    background-color: rgba(116, 154, 113, 0.414);
+}
+
+.post-header__more {
+    @include flex-alignCenter;
+    background-color: rgba(113, 125, 154, 0.414);
+}
+
+.post-content {
+}
+.post-media {
+    height: 400px;
+    width: 100%;
+}
+.post-interaction {
+    @include flex-row-center;
+    justify-content: center;
+    width: 100%;
+    // background-color: rgba(55, 154, 83, 0.126);
+    height: 2.3rem;
+}
+
+.interaction-content {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 11em;
+    height: 100%;
+    // background-color: #fdeedc;
+    // background-color: #976222;
+}
