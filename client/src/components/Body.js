@@ -6,7 +6,6 @@ const Body = (props) => {
     <Grid
       container
       rowSpacing={4}
-      position='sticky'
       columnSpacing={6}
       sx={{
         margin: 0,
