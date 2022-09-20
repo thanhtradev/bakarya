@@ -169,4 +169,9 @@ dist
 # SvelteKit build / generate output
 .svelte-kit
 
+#dotenv-vault
+server/.env*
+server/.flaskenv*
+server/!.env.project
+server/!.env.vault% 
 # End of https://www.toptal.com/developers/gitignore/api/node
