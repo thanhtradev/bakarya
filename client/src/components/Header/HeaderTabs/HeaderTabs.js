@@ -48,7 +48,7 @@ function HeaderTabs() {
       <Tabs
         component='nav'
         sx={{
-          width: "0.7",
+          width: "1",
           display: "flex",
           justifyContent: "space-around",
           "&& .Mui-selected": {
@@ -57,6 +57,10 @@ function HeaderTabs() {
           "& button:hover": {
             backgroundColor: "#cecece61",
           },
+          bgcolor: "#F3F1F1",
+          margin: "4px 0 ",
+          borderBottomLeftRadius: "14px",
+          borderBottomRightRadius: "14px",
         }}
         value={value}
         TabIndicatorProps={{

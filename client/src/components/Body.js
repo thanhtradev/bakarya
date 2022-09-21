@@ -5,7 +5,7 @@ const Body = (props) => {
   return (
     <Grid
       container
-      rowSpacing={4}
+      rowSpacing={2}
       columnSpacing={6}
       sx={{
         margin: 0,

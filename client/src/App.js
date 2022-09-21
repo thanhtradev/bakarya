@@ -5,7 +5,7 @@ import "./App.css";
 import { Route, Routes } from "react-router-dom";
 import Theme from "./Theme/Theme";
 import Body from "./components/Body";
-import NewsFeed from "./NewsFeed/NewsFeed";
+import NewsFeed from "./components/NewsFeed/NewsFeed";
 import SideBarLeft from "./components/SideBar/SideBarLeft";
 import SideBarRight from "./components/SideBar/SideBarRight";
 // We import all the components we need in our app
@@ -27,8 +27,8 @@ const App = () => {
   // );
   return (
     <Theme>
-      <Header />
       <Body>
+        {/* <Header /> */}
         <SideBarLeft />
         <NewsFeed />
         <SideBarRight />

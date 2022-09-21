@@ -30,14 +30,27 @@ const Header = () => {
   };
 
   return (
-    <Grid container direction='row' position='relative' sx={{ height: "66px" }}>
-      <AppBar position='fixed' sx={{ bgcolor: "white" }}>
-        <Container maxWidth='xl'>
+    <Container
+      maxWidth='xl'
+      direction='row'
+      position='relative'
+      sx={{ height: "66px" }}
+    >
+      <AppBar
+        position='fixed'
+        sx={{ bgcolor: "transparent", boxShadow: "none" }}
+      >
+        <Grid
+          maxWidth='xl'
+          container
+          columnSpacing={3}
+          sx={{
+            display: "flex",
+            justifyContent: "space-around",
+            backgroundColor: "transparent",
+          }}
+        >
           <Toolbar>
-            <Grid md={3}>
-              <Logo />
-            </Grid>
-
             {/* {Appear in XS screen } */}
 
             <Grid
@@ -103,20 +116,19 @@ const Header = () => {
             {/* {Appear in MD screen } */}
             <Grid
               direction='row'
-              justifyContent='space-around'
+              justifyContent='center'
               alignItems='center'
-              md={6}
               sx={{
                 flexGrow: 1,
                 display: { xs: "none", md: "flex" },
-                minWidth: "0.7",
                 padding: 0,
+                bgcolor: "brown",
               }}
             >
               <HeaderTabs />
             </Grid>
 
-            <Grid
+            {/* <Grid
               direction='row'
               alignItems='center'
               md={3}
@@ -137,11 +149,11 @@ const Header = () => {
                 <Notification />
                 <HeaderAvatar />
               </Stack>
-            </Grid>
+            </Grid> */}
           </Toolbar>
-        </Container>
+        </Grid>
       </AppBar>
-    </Grid>
+    </Container>
   );
 };
 

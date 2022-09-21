@@ -8,36 +8,42 @@ const SideBar = (props) => {
     <Grid
       xs={3}
       md={3}
+      rowSpacing={3}
+      position='relative'
       sx={{
         display: { xs: "none", md: "flex" },
         justifyContent: "flex-start",
-        bgcolor: "#f3F1F1",
-        height: "60vh",
+        bgcolor: "transparent",
+        // bgcolor: "darkcyan",
       }}
     >
       <Stack
-        justifyContent='center'
         position='fixed'
-        direction='row'
-        alignItems='flex-start'
-        sx={{ height: "40rem" }}
+        sx={{
+          display: { xs: "none", md: "flex" },
+          justifyContent: "flex-start",
+          bgcolor: "#f3F1F1",
+          marginTop: "8px",
+        }}
       >
-        <Box
-          component='div'
-          position='relative'
-          sx={{
-            display: "flex",
-            width: "90%",
-            height: "100%",
-            left: "10px",
-            flexDirection: "column",
-            justifyContent: "space-evenly",
-            alignItems: "center",
-            padding: "20px 0",
-          }}
-        >
-          {props.children}
-        </Box>
+        <Stack direction='row' alignItems='flex-start' sx={{ height: "40rem" }}>
+          <Box
+            component='div'
+            position='relative'
+            sx={{
+              display: "flex",
+              width: "90%",
+              height: "100%",
+              left: "10px",
+              flexDirection: "column",
+              justifyContent: "space-evenly",
+              alignItems: "center",
+              padding: "20px 0",
+            }}
+          >
+            {props.children}
+          </Box>
+        </Stack>
       </Stack>
     </Grid>
   );

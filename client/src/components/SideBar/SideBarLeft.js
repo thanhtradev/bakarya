@@ -4,8 +4,10 @@ import SideBar from "./SideBar";
 import List from "@mui/material/List";
 import ListItemButton from "@mui/material/ListItemButton";
 import ListItemText from "@mui/material/ListItemText";
-import SearchBar from "../../UI/InputBar";
-
+import SearchBar from "../UI/InputBar";
+import Grid from "@mui/material/Unstable_Grid2/Grid2";
+import { Stack } from "@mui/material";
+import Logo from "../Logo/logo";
 const Categories = [
   "Birthday cake",
   "Bread",
@@ -46,6 +48,9 @@ const SideBarLeft = () => {
   };
   return (
     <SideBar>
+      <Stack justifyContent='center' sx={{}}>
+        <Logo />
+      </Stack>
       <SearchBar placeholder='Search....' icon={<SearchIcon />} />
       <List
         component='nav'
