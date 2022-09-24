@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from "react";
-import { styled } from "@mui/material/styles";
-import Paper from "@mui/material/Paper";
+import Cart from "../Header/Cart/Cart";
+import Notification from "../Header/Notification/Notific";
+import HeaderAvatar from "../Header/HeaderAvatar";
 import SideBar from "./SideBar";
 import { Stack } from "@mui/material";
+import Grid from "@mui/material/Unstable_Grid2/Grid2";
 import Product from "../Suggestions/Product";
 
 let pro1;
@@ -44,27 +46,35 @@ const SideBarRight = () => {
     setIsLoading(false);
   };
 
-  console.log(productList);
-  console.log(pro1);
-  console.log(isLoading);
   if (!isLoading) {
     console.log("not loading");
   } else {
     console.log("loading");
   }
+
   return (
     <SideBar>
+      <Stack
+        direction='row'
+        justifyContent='space-between'
+        alignItems='flex-start'
+        sx={{ width: "0.89", height: "5rem" }}
+      >
+        <Cart />
+        <Notification />
+        <HeaderAvatar />
+      </Stack>
       {isLoading === false ? (
         <Stack
           alignItems='center'
           spacing={1}
-          sx={{ width: "22rem", height: "100%" }}
+          sx={{ width: "22rem", height: "84vh", overflow: "auto" }}
         >
           <Product title={pro1.title} price={pro1.price} img={pro1.image} />
           <Product title={pro2.title} price={pro2.price} img={pro2.image} />
         </Stack>
       ) : (
-        <Stack></Stack>
+        <Stack sx={{ width: "21rem", height: "84vh" }}></Stack>
       )}
       {/* {isLoading ? console.log("loading") : console.log("not")} */}
     </SideBar>

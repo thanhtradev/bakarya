@@ -13,7 +13,7 @@ const CreateRecipe = () => {
         display: "flex",
         justifyContent: "space-between",
         alignItems: "center",
-        height: "15%",
+        height: "10rem",
         flexDirection: "column",
         borderRadius: "10px",
       }}

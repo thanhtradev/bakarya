@@ -4,7 +4,7 @@ import HeaderFloatButton from "../../HeaderFloatButton";
 const Cart = () => {
   return (
     <HeaderFloatButton>
-      <ShoppingCartOutlinedIcon sx={{ color: "#767171", fontSize: "1.9em" }} />
+      <ShoppingCartOutlinedIcon sx={{ color: "#767171", fontSize: "2.4em" }} />
     </HeaderFloatButton>
   );
 };

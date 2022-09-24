@@ -6,15 +6,17 @@ import SideBarLeftContent from "./SideBarLeft";
 const SideBar = (props) => {
   return (
     <Grid
-      xs={3}
-      md={3}
+      xs={4}
+      md={4}
+      lg={3}
       rowSpacing={3}
-      position='relative'
       sx={{
-        display: { xs: "none", md: "flex" },
+        display: { xs: props.xs ?? "flex", md: props.md ?? "flex" },
         justifyContent: "flex-start",
-        bgcolor: "transparent",
+        // bgcolor: "transparent",
         // bgcolor: "darkcyan",
+        zIndex: "0",
+        overflow: "auto",
       }}
     >
       <Stack
@@ -22,23 +24,25 @@ const SideBar = (props) => {
         sx={{
           display: { xs: "none", md: "flex" },
           justifyContent: "flex-start",
-          bgcolor: "#f3F1F1",
           marginTop: "8px",
         }}
       >
-        <Stack direction='row' alignItems='flex-start' sx={{ height: "40rem" }}>
+        <Stack
+          direction='row'
+          alignItems='flex-start'
+          justifyContent='center'
+          sx={{ height: "100%", backgroundColor: "#f3f1f1", width: "100%" }}
+        >
           <Box
             component='div'
-            position='relative'
             sx={{
               display: "flex",
               width: "90%",
-              height: "100%",
-              left: "10px",
               flexDirection: "column",
               justifyContent: "space-evenly",
               alignItems: "center",
               padding: "20px 0",
+              height: "100%",
             }}
           >
             {props.children}

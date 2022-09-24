@@ -19,7 +19,6 @@ $text-Large: 23px;
 .post {
     @include flex-column-center;
     background-color: #f3f1f1;
-    padding: 13px 0;
     height: 40rem;
     border-radius: 10px;
 }
@@ -40,6 +39,11 @@ $text-Large: 23px;
 .post-media {
     height: 400px;
     width: 100%;
+}
+
+.post-media-box {
+    width: 100%;
+    height: 100%;
 }
 .post-interaction {
     @include flex-row-center;

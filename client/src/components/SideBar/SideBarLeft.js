@@ -48,7 +48,7 @@ const SideBarLeft = () => {
   };
   return (
     <SideBar>
-      <Stack justifyContent='center' sx={{}}>
+      <Stack justifyContent='center' sx={{ height: "7rem" }}>
         <Logo />
       </Stack>
       <SearchBar placeholder='Search....' icon={<SearchIcon />} />

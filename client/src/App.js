@@ -28,10 +28,9 @@ const App = () => {
   return (
     <Theme>
       <Body>
-        {/* <Header /> */}
-        <SideBarLeft />
+        <SideBarLeft xs='flex' md='flex' />
         <NewsFeed />
-        <SideBarRight />
+        <SideBarRight xs='flex' md='none' />
       </Body>
     </Theme>
   );

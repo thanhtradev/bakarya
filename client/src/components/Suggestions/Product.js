@@ -4,8 +4,8 @@ import classes from "./Product.module.css";
 const Product = (props) => {
   return (
     <Stack
-      justifyContent='stretch'
-      sx={{ width: "80%", height: "50%", bgcolor: "#FFD8A9" }}
+      justifyContent='space-between'
+      sx={{ width: "80%", height: "23rem", bgcolor: "#FFD8A9" }}
     >
       <Stack
         direction='row'
@@ -15,7 +15,7 @@ const Product = (props) => {
       >
         <Typography variant='subtitle1'>{"@someshop.vn"}</Typography>
       </Stack>
-      <Box sx={{ width: "100%", height: "65%" }}>
+      <Box sx={{ width: "100%", height: "55%" }}>
         <img src={props.img} className={classes["product-img"]} />
       </Box>
       <Stack

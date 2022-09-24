@@ -4,9 +4,9 @@ import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 import MoreVertIcon from "@mui/icons-material/MoreVert";
 
-const options = ["Edit Post", "Delete Post"];
+const options = ["Edit Post", "Delete Post", "Report"];
 
-const ITEM_HEIGHT = 35;
+const ITEM_HEIGHT = 30;
 
 function PostSetting() {
   const [anchorEl, setAnchorEl] = React.useState(null);
@@ -19,7 +19,7 @@ function PostSetting() {
   };
 
   return (
-    <div>
+    <React.Fragment>
       <IconButton
         aria-label='more'
         id='long-button'
@@ -42,7 +42,6 @@ function PostSetting() {
           style: {
             maxHeight: ITEM_HEIGHT * 4.5,
             padding: "none",
-            width: "7rem",
           },
         }}
       >
@@ -52,7 +51,7 @@ function PostSetting() {
           </MenuItem>
         ))}
       </Menu>
-    </div>
+    </React.Fragment>
   );
 }
 

@@ -58,7 +58,7 @@ function HeaderNews() {
           //   width: "70%",
         }}
       >
-        <Box sx={{ height: "10.1rem" }}>
+        <Box>
           <Stack
             direction='row'
             justifyContent='space-around'
