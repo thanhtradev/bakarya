@@ -4,7 +4,6 @@ import Notification from "../Header/Notification/Notific";
 import HeaderAvatar from "../Header/HeaderAvatar";
 import SideBar from "./SideBar";
 import { Stack } from "@mui/material";
-import Grid from "@mui/material/Unstable_Grid2/Grid2";
 import Product from "../Suggestions/Product";
 
 let pro1;
@@ -66,7 +65,7 @@ const SideBarRight = () => {
         <Notification />
         <HeaderAvatar />
       </Stack>
-      {isLoading === false ? (
+      {productList ? (
         <Stack
           alignItems='center'
           spacing={1}

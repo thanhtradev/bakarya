@@ -1,7 +1,6 @@
 import React from "react";
 import { useState, useEffect, useRef } from "react";
 import { Box, Typography, Button, Stack, alpha, Paper } from "@mui/material";
-import MoreVertIcon from "@mui/icons-material/MoreVert";
 import Interactions from "../PostInteraction/Interactions";
 import PostSetting from "../PostInteraction/PostSetting";
 import classes from "../RecipePost.module.scss";

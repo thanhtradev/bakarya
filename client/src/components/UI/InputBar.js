@@ -1,7 +1,5 @@
 import * as React from "react";
-import TagFacesIcon from "@mui/icons-material/TagFaces";
-import { styled, alpha } from "@mui/material/styles";
-import Paper from "@mui/material/Paper";
+import { styled } from "@mui/material/styles";
 import { InputBase } from "@mui/material";
 
 const SearchBar = (props) => {

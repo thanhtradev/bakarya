@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Box, Typography, Button, Stack, alpha } from "@mui/material";
-import MoreVertIcon from "@mui/icons-material/MoreVert";
 import classes from "./RecipePost.module.scss";
 import User from "./AvatarUserGroup/User";
 import Pic from "../../../Assets/Demo.jpg";

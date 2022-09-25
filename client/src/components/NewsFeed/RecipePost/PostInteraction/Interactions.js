@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Typography, Button, Stack, alpha, Divider } from "@mui/material";
+import { Typography, Button, Stack, alpha, Divider } from "@mui/material";
 import ChatBubbleOutlineOutlinedIcon from "@mui/icons-material/ChatBubbleOutlineOutlined";
 import GradeOutlinedIcon from "@mui/icons-material/GradeOutlined";
 import classes from "../RecipePost.module.scss";

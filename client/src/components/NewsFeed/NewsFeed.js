@@ -1,16 +1,12 @@
-import React, { useState } from "react";
+import React from "react";
 import Grid from "@mui/material/Unstable_Grid2";
-import { styled } from "@mui/material/styles";
-import Paper from "@mui/material/Paper";
 import CreateRecipe from "./CreateRecipe/CreateRecipe";
-import { Box, Stack } from "@mui/system";
-import RecipeContent from "./RecipePost/RecipeContent";
-import HeaderNews from "./HeaderNewsFeed/HeaderNews";
-import RecipeBox from "./RecipePost/RecipeBox/RecipeBox";
+import { Stack } from "@mui/system";
 import RecipePost from "./RecipePost/RecipePost";
+import { Box } from "@mui/material";
+
 const NewsFeed = () => {
   const numberPost = 4;
-  const viewRecipeBoxContent = () => {};
   return (
     <Grid
       xs={12}
@@ -30,9 +26,7 @@ const NewsFeed = () => {
           width: "100%",
         }}
       >
-        <Box sx={{ height: "100%", height: "4.1rem" }}>
-          <HeaderNews />
-        </Box>
+        <Box sx={{ height: "100%", height: "4.1rem" }} />
         <CreateRecipe />
         <RecipePost />
         <RecipePost />

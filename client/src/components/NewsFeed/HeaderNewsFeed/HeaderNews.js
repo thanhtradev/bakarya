@@ -6,10 +6,9 @@ import LiveTvOutlinedIcon from "@mui/icons-material/LiveTvOutlined";
 import BookmarksOutlinedIcon from "@mui/icons-material/BookmarksOutlined";
 import Tooltip from "@mui/material/Tooltip";
 import Tab from "@mui/material/Tab";
-import { Stack, Container, Box } from "@mui/material";
-import Grid from "@mui/material/Unstable_Grid2/Grid2";
-import { createTheme, ThemeProvider, styled } from "@mui/material/styles";
-import { spacing } from "@mui/system";
+import { Stack, Box } from "@mui/material";
+import { createTheme, ThemeProvider } from "@mui/material/styles";
+import { NavLink } from "react-router-dom";
 
 const theme = createTheme({
   overrides: {
@@ -19,23 +18,39 @@ const theme = createTheme({
   },
 });
 
-const HeaderContainer = styled("div")({
-  position: "fixed",
-});
-
-const tabNames = [
-  "Recipe Page",
-  "Shopping Page",
-  "Livestreams",
-  "Saved Recipe",
-];
-
 const tabComponents = [
-  <HomeOutlinedIcon sx={{ height: "42px" }} />,
-  <ShoppingBasketOutlinedIcon sx={{ height: "42px" }} />,
-  <LiveTvOutlinedIcon sx={{ height: "42px" }} />,
-  <BookmarksOutlinedIcon sx={{ height: "42px" }} />,
+  {
+    icon: <HomeOutlinedIcon sx={{ fontSize: "42px" }} />,
+    name: "Recipe Page",
+    navlink: "/recipe-page",
+  },
+  {
+    icon: <ShoppingBasketOutlinedIcon sx={{ fontSize: "42px" }} />,
+    name: "Shopping Page",
+    navlink: "/shopping-page",
+  },
+  {
+    icon: <LiveTvOutlinedIcon sx={{ fontSize: "42px" }} />,
+    name: "Livestreams",
+    navlink: "/livestream-page",
+  },
+  {
+    icon: <BookmarksOutlinedIcon sx={{ fontSize: "42px" }} />,
+    name: "Saved Recipe",
+    navlink: "/saved-recipe-page",
+  },
 ];
+
+const tabList = tabComponents.map((tab, index) => (
+  <Tooltip title={tab.name} arrow key={index}>
+    <Tab
+      label={tab.icon}
+      sx={{ width: "0.2" }}
+      to={tab.navlink}
+      component={NavLink}
+    />
+  </Tooltip>
+));
 
 function HeaderNews() {
   const [value, setValue] = React.useState(0);
@@ -100,33 +115,7 @@ function HeaderNews() {
               onChange={handleChange}
               centered
             >
-              {/* {tabsList} */}
-              <Tooltip title='Recipe Page' arrow>
-                <Tab
-                  label={<HomeOutlinedIcon sx={{ fontSize: "42px" }} />}
-                  sx={{ width: "0.2" }}
-                />
-              </Tooltip>
-              <Tooltip title='Shopping Page' arrow>
-                <Tab
-                  label={
-                    <ShoppingBasketOutlinedIcon sx={{ fontSize: "42px" }} />
-                  }
-                  sx={{ width: "0.2" }}
-                />
-              </Tooltip>
-              <Tooltip title='Livestreams' arrow>
-                <Tab
-                  label={<LiveTvOutlinedIcon sx={{ fontSize: "42px" }} />}
-                  sx={{ width: "0.2" }}
-                />
-              </Tooltip>
-              <Tooltip title='Saved Recipe' arrow>
-                <Tab
-                  label={<BookmarksOutlinedIcon sx={{ fontSize: "42px" }} />}
-                  sx={{ width: "0.2" }}
-                />
-              </Tooltip>
+              {tabList}
             </Tabs>
           </Stack>
         </Box>
