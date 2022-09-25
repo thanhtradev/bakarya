@@ -8,7 +8,7 @@ import Tooltip from "@mui/material/Tooltip";
 import Tab from "@mui/material/Tab";
 import { Stack, Box } from "@mui/material";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 
 const theme = createTheme({
   overrides: {
@@ -41,23 +41,28 @@ const tabComponents = [
   },
 ];
 
-const tabList = tabComponents.map((tab, index) => (
-  <Tooltip title={tab.name} arrow key={index}>
-    <Tab
-      label={tab.icon}
-      sx={{ width: "0.2" }}
-      to={tab.navlink}
-      component={NavLink}
-    />
-  </Tooltip>
-));
-
 function HeaderNews() {
-  const [value, setValue] = React.useState(0);
+  const location = useLocation();
+  const currentPathIndex = tabComponents.findIndex(
+    (item) => item.navlink === location.pathname
+  );
+  const [value, setValue] = React.useState(currentPathIndex);
+  console.log(location.pathname);
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
+
+  const tabList = tabComponents.map((tab, index) => (
+    <Tooltip title={tab.name} arrow key={index}>
+      <Tab
+        label={tab.icon}
+        sx={{ width: "0.2" }}
+        to={tab.navlink}
+        component={NavLink}
+      />
+    </Tooltip>
+  ));
 
   return (
     <ThemeProvider theme={theme}>
