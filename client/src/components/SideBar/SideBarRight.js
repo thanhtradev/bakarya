@@ -19,13 +19,14 @@ const SideBarRight = () => {
 
   const fetchSuggestHandler = async () => {
     try {
-      setIsLoading(true);
-      const res = await fetch("https://fakestoreapi.com/products");
+      setIsLoading(false);
+      const res = await fetch("https://fakestoreapi.com/products1");
       if (!res.ok) {
         throw new Error("Something went wrong");
       }
 
       const data = await res.json();
+
       const productList = data.map((product) => {
         return {
           id: product.id,
@@ -42,6 +43,7 @@ const SideBarRight = () => {
       setIsLoading(false);
     } catch (error) {
       console.log(error.messages);
+      return;
     }
     setIsLoading(false);
   };
@@ -70,8 +72,8 @@ const SideBarRight = () => {
           spacing={1}
           sx={{ width: "22rem", height: "84vh", overflow: "auto" }}
         >
-          <Product title={pro1.title} price={pro1.price} img={pro1.image} />
-          <Product title={pro2.title} price={pro2.price} img={pro2.image} />
+          <Product title={pro1?.title} price={pro1?.price} img={pro1?.image} />
+          <Product title={pro2?.title} price={pro2?.price} img={pro2?.image} />
         </Stack>
       ) : (
         <Stack sx={{ width: "21rem", height: "84vh" }}></Stack>
