@@ -1,35 +1,20 @@
 import React from "react";
-import { useState, useEffect, useRef } from "react";
-import { Box, Typography, Button, Stack, alpha, Paper } from "@mui/material";
+import {
+  Box,
+  Typography,
+  Stack,
+  Paper,
+  CardMedia,
+  CardContent,
+} from "@mui/material";
 import Interactions from "../PostInteraction/Interactions";
-import PostSetting from "../PostInteraction/PostSetting";
 import classes from "../RecipePost.module.scss";
-import User from "../AvatarUserGroup/User";
+import PostHeader from "../AvatarUserGroup/PostHeader";
 import Pic from "../../../../Assets/Demo.jpg";
 
 const imgSize = "21rem";
 
 const RecipeBox = () => {
-  const [isFollow, setIsFollow] = useState(false);
-  const followRef = useRef();
-
-  useEffect(() => {
-    if (isFollow) {
-      followRef.current.textContent = "Following";
-      console.dir(followRef.current.textContent);
-    } else {
-      followRef.current.textContent = "Follow";
-    }
-  }, [isFollow]);
-
-  const handleFollowButton = () => {
-    if (isFollow) {
-      setIsFollow(false);
-    } else {
-      setIsFollow(true);
-    }
-  };
-
   return (
     <Paper
       elevation={4}
@@ -51,19 +36,13 @@ const RecipeBox = () => {
           justifyContent='space-around'
           sx={{ height: imgSize, width: "100%" }}
         >
-          <Box
-            sx={{
-              borderRadius: "16px",
-              width: "46%",
-              height: "1",
-              backgroundColor: "blueviolet",
-              backgroundImage: `url(${Pic})`,
-              backgroundSize: "cover",
-              backgroundPositionX: "35%",
-            }}
-          >
-            {" "}
-          </Box>
+          <CardMedia
+            component='img'
+            image={`${Pic}`}
+            src={`${Pic}`}
+            alt='Picture of a chocolate cake'
+            sx={{ width: "46%", height: "1", borderRadius: "16px" }}
+          />
           <Box
             className={classes.post}
             sx={{ width: "50%", maxHeight: imgSize }}
@@ -80,39 +59,9 @@ const RecipeBox = () => {
                 alignItems='center'
                 sx={{ width: "100%" }}
               >
-                <Stack
-                  direction='row'
-                  spacing={2}
-                  justifyContent='space-between'
-                  alignItems='center'
-                  sx={{ width: "76%" }}
-                >
-                  <User />
-                  <Button
-                    ref={followRef}
-                    disableElevation
-                    variant='text'
-                    sx={{
-                      ":hover": { backgroundColor: alpha("#FDEEDC", 0.7) },
-                      width: 70,
-                      height: 30,
-                      textTransform: "capitalize",
-                      fontWeight: "bold",
-                    }}
-                    onClick={handleFollowButton}
-                  >
-                    Follow
-                  </Button>
-                </Stack>
-
-                <Stack>
-                  <PostSetting />
-                </Stack>
+                <PostHeader />
               </Stack>
-              <Box
-                className={classes["post-content"]}
-                sx={{ fontSize: "14px" }}
-              >
+              <CardContent sx={{ padding: 0 }}>
                 <Typography>
                   Lorem Ipsum is simply dummy text of the printing and
                   typesetting industry. Lorem Ipsum has been the industry's
@@ -120,7 +69,7 @@ const RecipeBox = () => {
                   printer took a galley of type and scrambled it to make a type
                   specimen book.
                 </Typography>
-              </Box>
+              </CardContent>
               <Interactions buttonWidth='2em' />
             </Stack>
           </Box>
