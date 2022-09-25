@@ -2,7 +2,7 @@ import React from "react";
 import Header from "./components/Header/Header";
 import "./App.css";
 // We use Route in order to define the different routes of our application
-import { Route, Switch } from "react-router-dom";
+import { Route, Switch, Redirect } from "react-router-dom";
 import Theme from "./Theme/Theme";
 import Body from "./components/Body";
 import NewsFeed from "./components/NewsFeed/NewsFeed";
@@ -35,7 +35,7 @@ const App = () => {
             <SavedRecipePage />
           </Route>
           <Route path='/'>
-            <NewsFeed />
+            <Redirect to='/recipe-page' />
           </Route>
         </Switch>
         <SideBarRight xs='flex' md='none' />

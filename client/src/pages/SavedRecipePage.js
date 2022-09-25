@@ -1,9 +1,16 @@
+import { Stack } from "@mui/material";
 import MainLayout from "../components/layout/mainLayout";
 
 const SavedRecipePage = () => {
   return (
     <MainLayout>
-      <h1>Saved Recipe Page</h1>
+      <Stack
+        justifyContent='center'
+        alignItems='center'
+        sx={{ width: "1", height: "1" }}
+      >
+        <h1>COMMING SOON</h1>
+      </Stack>
     </MainLayout>
   );
 };

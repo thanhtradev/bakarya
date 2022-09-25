@@ -17,13 +17,6 @@ const RecipePost = (props) => {
           sx={{ width: "100%" }}
         >
           <PostHeader />
-          {/* <Stack
-            direction='row'
-            spacing={2}
-            justifyContent='space-between'
-            alignItems='center'
-            sx={{ width: "33%" }}
-          ></Stack> */}
         </Stack>
         <Box className={classes["post-content"]}>
           <Typography>
