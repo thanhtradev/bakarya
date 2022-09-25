@@ -1,32 +1,11 @@
-import React, { useState, useEffect, useRef } from "react";
-import { Box, Typography, Button, Stack, alpha } from "@mui/material";
+import React from "react";
+import { Box, Typography, Stack } from "@mui/material";
 import classes from "./RecipePost.module.scss";
-import User from "./AvatarUserGroup/User";
+import PostHeader from "./AvatarUserGroup/PostHeader";
 import Pic from "../../../Assets/Demo.jpg";
 import Interactions from "./PostInteraction/Interactions";
-import PostSetting from "./PostInteraction/PostSetting";
 
 const RecipePost = (props) => {
-  const [isFollow, setIsFollow] = useState(false);
-  const followRef = useRef();
-
-  useEffect(() => {
-    if (isFollow) {
-      followRef.current.textContent = "Following";
-      console.dir(followRef.current.textContent);
-    } else {
-      followRef.current.textContent = "Follow";
-    }
-  }, [isFollow]);
-
-  const handleFollowButton = () => {
-    if (isFollow) {
-      setIsFollow(false);
-    } else {
-      setIsFollow(true);
-    }
-  };
-
   return (
     <Box className={classes.post}>
       <Stack sx={{ padding: "7px 13px" }} spacing={1.5}>
@@ -37,34 +16,14 @@ const RecipePost = (props) => {
           alignItems='center'
           sx={{ width: "100%" }}
         >
-          <Stack
+          <PostHeader />
+          {/* <Stack
             direction='row'
             spacing={2}
             justifyContent='space-between'
             alignItems='center'
             sx={{ width: "33%" }}
-          >
-            <User />
-            <Button
-              ref={followRef}
-              disableElevation
-              variant='text'
-              sx={{
-                ":hover": { backgroundColor: alpha("#FDEEDC", 0.7) },
-                width: 70,
-                height: 30,
-                textTransform: "capitalize",
-                fontWeight: "bold",
-              }}
-              onClick={handleFollowButton}
-            >
-              Follow
-            </Button>
-          </Stack>
-
-          <Stack>
-            <PostSetting />
-          </Stack>
+          ></Stack> */}
         </Stack>
         <Box className={classes["post-content"]}>
           <Typography>
