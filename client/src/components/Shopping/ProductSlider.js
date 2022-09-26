@@ -37,6 +37,7 @@ function ProductSlider(props) {
       sx={{ width: "1" }}
       navButtonsAlwaysVisible='true'
       cycleNavigation='true'
+      autoPlay={false}
       animation='slide'
       indicators={false}
     >
