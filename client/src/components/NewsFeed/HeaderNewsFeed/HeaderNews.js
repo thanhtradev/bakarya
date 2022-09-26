@@ -43,11 +43,15 @@ const tabComponents = [
 
 function HeaderNews() {
   const location = useLocation();
-  const currentPathIndex = tabComponents.findIndex(
+  let currentPathIndex = tabComponents.findIndex(
     (item) => item.navlink === location.pathname
   );
+
+  if (currentPathIndex === -1) {
+    currentPathIndex = 0;
+  }
+
   const [value, setValue] = React.useState(currentPathIndex);
-  console.log(location.pathname);
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
