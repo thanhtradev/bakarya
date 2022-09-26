@@ -1,26 +1,18 @@
 import { Stack } from "@mui/material";
-import Grid from "@mui/material/Unstable_Grid2/Grid2";
+import MainLayout from "../components/layout/mainLayout";
+import LiveSection from "../components/LiveStream/LiveSection";
 
 const LiveStreamPage = () => {
   return (
-    <Grid
-      xs={12}
-      md={8}
-      lg={6}
-      sx={{
-        bgcolor: "white",
-        height: `${24 * (1 + 0.4)}rem`,
-        zIndex: "0",
-      }}
-    >
+    <MainLayout>
       <Stack
-        justifyContent='center'
+        justifyContent='space-between'
         alignItems='center'
-        sx={{ width: "1", height: "1" }}
+        sx={{ width: "1", height: "1", backgroundColor: "blueviolet" }}
       >
-        <h1>COMMING SOON</h1>
+        <LiveSection />
       </Stack>
-    </Grid>
+    </MainLayout>
   );
 };
 
