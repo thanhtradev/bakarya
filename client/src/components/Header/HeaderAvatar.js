@@ -5,10 +5,14 @@ import IconButton from "@mui/material/IconButton";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 import Typography from "@mui/material/Typography";
-
+import LoginContext from "../../store/auth-context";
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
 
 const HeaderAvatar = () => {
+  const isLoggined = React.useContext(LoginContext);
+
+  console.log("from HeaderAvar: " + isLoggined);
+
   const handleCloseUserMenu = () => {
     setAnchorElUser(null);
   };
@@ -20,7 +24,10 @@ const HeaderAvatar = () => {
   return (
     <React.Fragment>
       <Tooltip title='Open settings'>
-        <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
+        <IconButton
+          onClick={handleOpenUserMenu}
+          sx={{ p: 0, height: "50", width: "50" }}
+        >
           <Avatar
             alt='Remy Sharp'
             src='/static/images/avatar/2.jpg'

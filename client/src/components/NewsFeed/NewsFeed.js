@@ -4,7 +4,7 @@ import CreateRecipe from "./CreateRecipe/CreateRecipe";
 import { Stack } from "@mui/system";
 import RecipePost from "./RecipePost/RecipePost";
 import { Box } from "@mui/material";
-
+import LoginContextProvider from "../../";
 const NewsFeed = () => {
   const numberPost = 4;
   return (
