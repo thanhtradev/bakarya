@@ -11,6 +11,7 @@ const LiveStreamPage = () => {
         sx={{ width: "1", height: "1", backgroundColor: "blueviolet" }}
       >
         <LiveSection />
+        <LiveSection />
       </Stack>
     </MainLayout>
   );

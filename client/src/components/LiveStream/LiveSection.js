@@ -13,7 +13,7 @@ import demo from "../../Assets/livestream.mp4";
 import VideoPlayer from "./VideoPlayer";
 import VideoInteraction from "./VideoInteraction";
 
-const LiveSection = () => {
+const LiveSection = ({ isPlaying }) => {
   const [isFollow, setIsFollow] = useState(false);
   const followRef = useRef();
 
@@ -81,7 +81,16 @@ const LiveSection = () => {
           //   backgroundColor: "darkcyan"
         }}
       >
-        <VideoPlayer url={demo} />
+        <Box
+          component='div'
+          sx={{
+            width: "50%",
+            height: "1",
+            position: "relative",
+          }}
+        >
+          <VideoPlayer url={demo} />
+        </Box>
         <VideoInteraction />
       </Stack>
     </Card>

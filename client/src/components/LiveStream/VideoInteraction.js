@@ -6,6 +6,7 @@ import { useReducer } from "react";
 
 const iconSize = "1em";
 
+//? temporary first state of all like button is not liked
 const initLikeState = {
   icon: <NormalHeartIcon fontSize={iconSize} />,
   isLiked: false,
@@ -26,7 +27,6 @@ const likeStateReducer = (state) => {
 };
 
 const VideoInteraction = () => {
-  //? temporary first state of all like button is not like
   const [likeState, dispatchLikeState] = useReducer(
     likeStateReducer,
     initLikeState
