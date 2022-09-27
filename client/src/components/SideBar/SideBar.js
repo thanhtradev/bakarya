@@ -15,7 +15,7 @@ const SideBar = (props) => {
         justifyContent: "flex-start",
         // bgcolor: "transparent",
         // bgcolor: "darkcyan",
-        zIndex: "0",
+        zIndex: "1050",
         overflow: "auto",
       }}
     >
