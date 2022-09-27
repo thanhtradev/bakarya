@@ -19,7 +19,7 @@ const SideBarRight = () => {
   const fetchSuggestHandler = async () => {
     try {
       setIsLoading(false);
-      const res = await fetch("https://fakestoreapi.com/products1");
+      const res = await fetch("https://fakestoreapi.com/products");
       if (!res.ok) {
         throw new Error("Something went wrong");
       }
