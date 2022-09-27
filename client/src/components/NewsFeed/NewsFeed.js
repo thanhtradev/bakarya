@@ -1,11 +1,15 @@
-import React from "react";
+import React, { useContext } from "react";
 import Grid from "@mui/material/Unstable_Grid2";
 import CreateRecipe from "./CreateRecipe/CreateRecipe";
 import { Stack } from "@mui/system";
 import RecipePost from "./RecipePost/RecipePost";
 import { Box } from "@mui/material";
+import AuthContext from "../../store/auth-context";
 
 const NewsFeed = () => {
+  const loggined = useContext(AuthContext);
+
+  console.log(loggined);
   const numberPost = 4;
   return (
     <Grid
