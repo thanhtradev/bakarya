@@ -1,43 +1,53 @@
 import React from "react";
 import Grid from "@mui/material/Unstable_Grid2";
 import { Box, Stack } from "@mui/system";
-import SideBarLeftContent from "./SideBarLeft";
+// import SideBarLeftContent from "./SideBarLeft";
 
 const SideBar = (props) => {
   return (
     <Grid
-      xs={3}
-      md={3}
+      xs={4}
+      md={4}
+      lg={3}
+      rowSpacing={3}
       sx={{
-        display: { xs: "none", md: "flex" },
+        display: { xs: props.xs ?? "flex", md: props.md ?? "flex" },
         justifyContent: "flex-start",
-        bgcolor: "#f3F1F1",
-        height: "60vh",
+        // bgcolor: "transparent",
+        // bgcolor: "darkcyan",
+        zIndex: "0",
+        overflow: "auto",
       }}
     >
       <Stack
-        justifyContent='center'
         position='fixed'
-        direction='row'
-        alignItems='flex-start'
-        sx={{ height: "40rem" }}
+        sx={{
+          display: { xs: "none", md: "flex" },
+          justifyContent: "flex-start",
+          marginTop: "8px",
+        }}
       >
-        <Box
-          component='div'
-          position='relative'
-          sx={{
-            display: "flex",
-            width: "90%",
-            height: "100%",
-            left: "10px",
-            flexDirection: "column",
-            justifyContent: "space-evenly",
-            alignItems: "center",
-            padding: "20px 0",
-          }}
+        <Stack
+          direction='row'
+          alignItems='flex-start'
+          justifyContent='center'
+          sx={{ height: "100%", backgroundColor: "#f3f1f1", width: "100%" }}
         >
-          {props.children}
-        </Box>
+          <Box
+            component='div'
+            sx={{
+              display: "flex",
+              width: "90%",
+              flexDirection: "column",
+              justifyContent: "space-evenly",
+              alignItems: "center",
+              padding: "20px 0",
+              height: "100%",
+            }}
+          >
+            {props.children}
+          </Box>
+        </Stack>
       </Stack>
     </Grid>
   );

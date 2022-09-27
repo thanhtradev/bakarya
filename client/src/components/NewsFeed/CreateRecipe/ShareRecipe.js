@@ -1,5 +1,5 @@
 import React from "react";
-import { Avatar, Paper } from "@mui/material";
+import { Avatar } from "@mui/material";
 import InputBar from "../../UI/InputBar";
 import { Box, Stack } from "@mui/system";
 

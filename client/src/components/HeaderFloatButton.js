@@ -14,6 +14,8 @@ const HeaderFloatButton = (props) => {
         "&:hover": {
           backgroundColor: "#F57328",
         },
+        height: "50px",
+        width: "50px",
       }}
     >
       <Badge

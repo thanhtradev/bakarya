@@ -2,36 +2,43 @@ import React from "react";
 import Header from "./components/Header/Header";
 import "./App.css";
 // We use Route in order to define the different routes of our application
-import { Route, Routes } from "react-router-dom";
+import { Route, Switch, Redirect } from "react-router-dom";
 import Theme from "./Theme/Theme";
 import Body from "./components/Body";
-import NewsFeed from "./NewsFeed/NewsFeed";
+import NewsFeed from "./components/NewsFeed/NewsFeed";
 import SideBarLeft from "./components/SideBar/SideBarLeft";
 import SideBarRight from "./components/SideBar/SideBarRight";
-// We import all the components we need in our app
-// import Navbar from "./components/navbar";
-// import RecordList from "./components/recordList";
-// import Edit from "./components/edit";
-// import Create from "./components/create";
-
+import { Box } from "@mui/material";
+import HeaderNews from "./components/NewsFeed/HeaderNewsFeed/HeaderNews";
+import ShoppingPage from "./pages/ShoppingPage";
+import LiveStreamPage from "./pages/LiveStreamPage";
+import SavedRecipePage from "./pages/SavedRecipePage";
 const App = () => {
-  // return (
-  //   <div>
-  //     <Navbar />
-  //     <Routes>
-  //       <Route exact path="/" element={<RecordList />} />
-  //       <Route path="/edit/:id" element={<Edit />} />
-  //       <Route path="/create" element={<Create />} />
-  //     </Routes>
-  //   </div>
-  // );
   return (
     <Theme>
-      <Header />
       <Body>
-        <SideBarLeft />
-        <NewsFeed />
-        <SideBarRight />
+        <SideBarLeft xs='flex' md='flex' />
+        <Box sx={{ height: "100%", height: "4.1rem" }}>
+          <HeaderNews />
+        </Box>
+        <Switch>
+          <Route path='/recipe-page'>
+            <NewsFeed />
+          </Route>
+          <Route path='/shopping-page'>
+            <ShoppingPage />
+          </Route>
+          <Route path='/livestream-page'>
+            <LiveStreamPage />
+          </Route>
+          <Route path='/saved-recipe-page'>
+            <SavedRecipePage />
+          </Route>
+          <Route path='/'>
+            <Redirect to='/recipe-page' />
+          </Route>
+        </Switch>
+        <SideBarRight xs='flex' md='none' />
       </Body>
     </Theme>
   );

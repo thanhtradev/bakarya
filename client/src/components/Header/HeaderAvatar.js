@@ -21,7 +21,11 @@ const HeaderAvatar = () => {
     <React.Fragment>
       <Tooltip title='Open settings'>
         <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-          <Avatar alt='Remy Sharp' src='/static/images/avatar/2.jpg' />
+          <Avatar
+            alt='Remy Sharp'
+            src='/static/images/avatar/2.jpg'
+            sx={{ height: "50px", width: "50px" }}
+          />
         </IconButton>
       </Tooltip>
       <Menu

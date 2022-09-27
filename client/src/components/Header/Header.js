@@ -8,13 +8,8 @@ import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
 import MenuItem from "@mui/material/MenuItem";
 import AdbIcon from "@mui/icons-material/Adb";
-import Logo from "../Logo/logo";
 import HeaderTabs from "./HeaderTabs/HeaderTabs";
-import HeaderAvatar from "./HeaderAvatar";
-import Cart from "./Cart/Cart";
-import Notification from "./Notification/Notific";
 import Grid from "@mui/material/Unstable_Grid2/Grid2";
-import Stack from "@mui/material/Stack";
 
 const Header = () => {
   const pages = ["Recipe", "Shops", "Blog"];
@@ -30,14 +25,27 @@ const Header = () => {
   };
 
   return (
-    <Grid container direction='row' position='relative' sx={{ height: "66px" }}>
-      <AppBar position='fixed' sx={{ bgcolor: "white" }}>
-        <Container maxWidth='xl'>
+    <Container
+      maxWidth='xl'
+      direction='row'
+      position='relative'
+      sx={{ height: "66px" }}
+    >
+      <AppBar
+        position='fixed'
+        sx={{ bgcolor: "transparent", boxShadow: "none" }}
+      >
+        <Grid
+          maxWidth='xl'
+          container
+          columnSpacing={3}
+          sx={{
+            display: "flex",
+            justifyContent: "space-around",
+            backgroundColor: "transparent",
+          }}
+        >
           <Toolbar>
-            <Grid md={3}>
-              <Logo />
-            </Grid>
-
             {/* {Appear in XS screen } */}
 
             <Grid
@@ -103,45 +111,21 @@ const Header = () => {
             {/* {Appear in MD screen } */}
             <Grid
               direction='row'
-              justifyContent='space-around'
+              justifyContent='center'
               alignItems='center'
-              md={6}
               sx={{
                 flexGrow: 1,
                 display: { xs: "none", md: "flex" },
-                minWidth: "0.7",
                 padding: 0,
+                bgcolor: "brown",
               }}
             >
-              <HeaderTabs />
-            </Grid>
-
-            <Grid
-              direction='row'
-              alignItems='center'
-              md={3}
-              justifyContent='flex-end'
-              sx={{
-                display: "flex",
-                flexGrow: 0,
-                width: "11rem",
-              }}
-            >
-              <Stack
-                direction='row'
-                justifyContent='space-between'
-                alignItems='center'
-                sx={{ width: "80%", backgroundColor: "azure" }}
-              >
-                <Cart />
-                <Notification />
-                <HeaderAvatar />
-              </Stack>
+              {/* <HeaderTabs /> */}
             </Grid>
           </Toolbar>
-        </Container>
+        </Grid>
       </AppBar>
-    </Grid>
+    </Container>
   );
 };
 
