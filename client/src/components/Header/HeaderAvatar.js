@@ -6,17 +6,48 @@ import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 import Typography from "@mui/material/Typography";
 import PersonIcon from "@mui/icons-material/Person";
-const settings = ["Profile", "Account", "Dashboard", "Logout"];
+import { Link } from "react-router-dom";
+import LoginContext from "../../store/auth-context";
+
+const logginedSettings = ["Profile", "Account", "Dashboard", "Logout"];
+const notLogginSetting = ["Login"];
 
 const HeaderAvatar = () => {
+  const isLoggined = React.useContext(LoginContext);
+
+  const settings = isLoggined ? logginedSettings : notLogginSetting;
+
   const handleCloseUserMenu = () => {
     setAnchorElUser(null);
   };
+
   const [anchorElUser, setAnchorElUser] = React.useState(null);
 
   const handleOpenUserMenu = (event) => {
     setAnchorElUser(event.currentTarget);
   };
+
+  const settingList = () => {
+    if (settings.length === 1) {
+      return (
+        <MenuItem onClick={handleCloseUserMenu}>
+          <Link
+            to='/login-page'
+            style={{ textDecoration: "none", color: "black" }}
+          >
+            <Typography textAlign='center'>{settings[0]}</Typography>
+          </Link>
+        </MenuItem>
+      );
+    } else {
+      return settings.map((setting) => (
+        <MenuItem key={setting} onClick={handleCloseUserMenu}>
+          <Typography textAlign='center'>{setting}</Typography>
+        </MenuItem>
+      ));
+    }
+  };
+
   return (
     <React.Fragment>
       <Tooltip title='Open settings'>
@@ -50,11 +81,7 @@ const HeaderAvatar = () => {
         open={Boolean(anchorElUser)}
         onClose={handleCloseUserMenu}
       >
-        {settings.map((setting) => (
-          <MenuItem key={setting} onClick={handleCloseUserMenu}>
-            <Typography textAlign='center'>{setting}</Typography>
-          </MenuItem>
-        ))}
+        {settingList()}
       </Menu>
     </React.Fragment>
   );

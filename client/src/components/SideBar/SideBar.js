@@ -36,7 +36,6 @@ const SideBar = (props) => {
           justifyContent='center'
           sx={{
             height: "100%",
-            backgroundColor: "#f3f1f1",
             backgroundColor: "transparent",
             boxShadow: props.boxShadow,
             width: props.width ?? "87%",

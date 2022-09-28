@@ -3,7 +3,7 @@ import Cart from "../Header/Cart/Cart";
 import Notification from "../Header/Notification/Notific";
 import HeaderAvatar from "../Header/HeaderAvatar";
 import SideBar from "./SideBar";
-import { Box, Divider, Stack, Typography } from "@mui/material";
+import { Box, Stack, Typography } from "@mui/material";
 import Product from "../Suggestions/Product";
 import AuthContext from "../../store/auth-context";
 import { Container } from "@mui/system";
@@ -73,13 +73,11 @@ const SideBarRight = ({ stackAlignItem }) => {
         sx={{
           height: "0.78",
           paddingTop: "10px",
-          // backgroundColor: "crimson",
         }}
       >
         <Stack
           sx={{
             height: "0.7",
-            // backgroundColor: "cyan"
           }}
         >
           <Stack
@@ -104,7 +102,6 @@ const SideBarRight = ({ stackAlignItem }) => {
                 width: "1",
                 height: "1",
                 overflow: "auto",
-                // backgroundColor: "crimson",
               }}
             >
               <Product
@@ -128,13 +125,11 @@ const SideBarRight = ({ stackAlignItem }) => {
           sx={{
             width: "1",
             height: "10rem",
-            // backgroundColor: "coral",
           }}
         >
           <Container component='footer' sx={{ width: "1" }}>
             <Typography
               sx={{
-                // backgroundColor: "cyan",
                 width: "1",
                 fontSize: "0.7em",
               }}
