@@ -1,14 +1,20 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import Cart from "../Header/Cart/Cart";
 import Notification from "../Header/Notification/Notific";
 import HeaderAvatar from "../Header/HeaderAvatar";
 import SideBar from "./SideBar";
-import { Stack } from "@mui/material";
+import { Box, Divider, Stack, Typography } from "@mui/material";
 import Product from "../Suggestions/Product";
+import AuthContext from "../../store/auth-context";
+import { Container } from "@mui/system";
 
 let pro1;
 let pro2;
-const SideBarRight = () => {
+
+const SideBarRight = ({ stackAlignItem }) => {
+  const loggined = useContext(AuthContext);
+
+  console.log(loggined);
   const [productList, setProductList] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
 
@@ -54,30 +60,98 @@ const SideBarRight = () => {
   }
 
   return (
-    <SideBar>
+    <SideBar
+      stackAlignItems={stackAlignItem}
+      width='78%'
+      boxShadow='5px 2px 5px 2px #323232'
+    >
       <Stack
-        direction='row'
+        height='1'
+        spacing={1}
+        alignItems='center'
         justifyContent='space-between'
-        alignItems='flex-start'
-        sx={{ width: "0.89", height: "5rem" }}
+        sx={{
+          height: "0.78",
+          paddingTop: "10px",
+          // backgroundColor: "crimson",
+        }}
       >
-        <Cart />
-        <Notification />
-        <HeaderAvatar />
-      </Stack>
-      {productList ? (
         <Stack
-          alignItems='center'
-          spacing={1}
-          sx={{ width: "22rem", height: "84vh", overflow: "auto" }}
+          sx={{
+            height: "0.7",
+            // backgroundColor: "cyan"
+          }}
         >
-          <Product title={pro1?.title} price={pro1?.price} img={pro1?.image} />
-          <Product title={pro2?.title} price={pro2?.price} img={pro2?.image} />
+          <Stack
+            direction='row'
+            justifyContent='space-between'
+            alignItems='flex-start'
+            sx={{
+              width: "0.95",
+              height: "5rem",
+              justifyContent: `${loggined ? "space-between" : "flex-end"}`,
+            }}
+          >
+            {loggined && <Cart />}
+            {loggined && <Notification />}
+            <HeaderAvatar />
+          </Stack>
+          {productList ? (
+            <Stack
+              alignItems='center'
+              spacing={1.2}
+              sx={{
+                width: "1",
+                height: "1",
+                overflow: "auto",
+                // backgroundColor: "crimson",
+              }}
+            >
+              <Product
+                title={pro1?.title}
+                subtitle={"shop123@vn.doc"}
+                price={pro1?.price}
+                img={pro1?.image}
+              />
+              <Product
+                title={pro2?.title}
+                subtitle={"shop123@vn.doc"}
+                price={pro2?.price}
+                img={pro2?.image}
+              />
+            </Stack>
+          ) : (
+            <Stack sx={{ width: "21rem", height: "84vh" }}></Stack>
+          )}
         </Stack>
-      ) : (
-        <Stack sx={{ width: "21rem", height: "84vh" }}></Stack>
-      )}
-      {/* {isLoading ? console.log("loading") : console.log("not")} */}
+        <Box
+          sx={{
+            width: "1",
+            height: "10rem",
+            // backgroundColor: "coral",
+          }}
+        >
+          <Container component='footer' sx={{ width: "1" }}>
+            <Typography
+              sx={{
+                // backgroundColor: "cyan",
+                width: "1",
+                fontSize: "0.7em",
+              }}
+              noWrap={true}
+              textAlign='center'
+            >
+              Copyright 2022 ©BakaryaTeam
+            </Typography>
+            <Typography
+              sx={{ width: "1", fontSize: "0.7em" }}
+              textAlign='center'
+            >
+              Support | Privacy Policy | Term of Use
+            </Typography>
+          </Container>
+        </Box>
+      </Stack>
     </SideBar>
   );
 };

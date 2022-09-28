@@ -5,7 +5,7 @@ import IconButton from "@mui/material/IconButton";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 import Typography from "@mui/material/Typography";
-
+import PersonIcon from "@mui/icons-material/Person";
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
 
 const HeaderAvatar = () => {
@@ -24,8 +24,14 @@ const HeaderAvatar = () => {
           <Avatar
             alt='Remy Sharp'
             src='/static/images/avatar/2.jpg'
-            sx={{ height: "50px", width: "50px" }}
-          />
+            sx={{
+              height: "50px",
+              width: "50px",
+              fontSize: "1.3em",
+            }}
+          >
+            <PersonIcon sx={{ fontSize: "1em" }} />
+          </Avatar>
         </IconButton>
       </Tooltip>
       <Menu

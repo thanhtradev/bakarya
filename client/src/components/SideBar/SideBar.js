@@ -12,7 +12,8 @@ const SideBar = (props) => {
       rowSpacing={3}
       sx={{
         display: { xs: props.xs ?? "flex", md: props.md ?? "flex" },
-        justifyContent: "flex-start",
+        justifyContent: props.justifyContent,
+        // flexDirection: props.direction ?? "row",
         // bgcolor: "transparent",
         // bgcolor: "darkcyan",
         zIndex: "1050",
@@ -21,17 +22,25 @@ const SideBar = (props) => {
     >
       <Stack
         position='fixed'
+        alignItems={`${props.stackAlignItems}`}
         sx={{
           display: { xs: "none", md: "flex" },
           justifyContent: "flex-start",
-          marginTop: "8px",
+          height: "1",
+          // marginTop: "8px",
         }}
       >
         <Stack
           direction='row'
-          alignItems='flex-start'
+          alignItems={`${props.stackAlignItems}`}
           justifyContent='center'
-          sx={{ height: "100%", backgroundColor: "#f3f1f1", width: "100%" }}
+          sx={{
+            height: "100%",
+            backgroundColor: "#f3f1f1",
+            backgroundColor: "transparent",
+            boxShadow: props.boxShadow,
+            width: props.width ?? "87%",
+          }}
         >
           <Box
             component='div'
@@ -39,9 +48,9 @@ const SideBar = (props) => {
               display: "flex",
               width: "90%",
               flexDirection: "column",
-              justifyContent: "space-evenly",
+              justifyContent: "flex-start",
               alignItems: "center",
-              padding: "20px 0",
+              // padding: "20px 0",
               height: "100%",
             }}
           >

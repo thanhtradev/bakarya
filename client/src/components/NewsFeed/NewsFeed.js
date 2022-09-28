@@ -4,12 +4,11 @@ import CreateRecipe from "./CreateRecipe/CreateRecipe";
 import { Stack } from "@mui/system";
 import RecipePost from "./RecipePost/RecipePost";
 import { Box } from "@mui/material";
-import AuthContext from "../../store/auth-context";
+import LoginContext from "../../store/auth-context";
 
 const NewsFeed = () => {
-  const loggined = useContext(AuthContext);
+  const isLoggined = useContext(LoginContext);
 
-  console.log(loggined);
   const numberPost = 4;
   return (
     <Grid
@@ -31,7 +30,7 @@ const NewsFeed = () => {
         }}
       >
         <Box sx={{ height: "100%", height: "4.1rem" }} />
-        <CreateRecipe />
+        {isLoggined && <CreateRecipe />}
         <RecipePost />
         <RecipePost />
         <RecipePost />

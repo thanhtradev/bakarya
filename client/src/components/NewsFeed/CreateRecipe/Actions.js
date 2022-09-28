@@ -118,7 +118,7 @@ const Actions = (props) => {
         justifyContent: "space-evenly",
         alignItems: "center",
         width: props?.width ?? "100%",
-        height: "55%",
+        height: "45%",
         backgroundColor: "#F57328",
         borderBottomLeftRadius: "10px",
         borderBottomRightRadius: "10px",

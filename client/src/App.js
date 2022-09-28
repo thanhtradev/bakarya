@@ -17,7 +17,12 @@ const App = () => {
   return (
     <Theme>
       <Body>
-        <SideBarLeft xs='flex' md='flex' />
+        <SideBarLeft
+          xs='flex'
+          md='flex'
+          justifyContent='flex-start'
+          stackAlignItem='flex-start'
+        />
         <Box sx={{ height: "100%", height: "4.1rem" }}>
           <HeaderNews />
         </Box>
@@ -38,7 +43,13 @@ const App = () => {
             <Redirect to='/recipe-page' />
           </Route>
         </Switch>
-        <SideBarRight xs='flex' md='none' />
+        <SideBarRight
+          xs='flex'
+          md='none'
+          justifyContent='flex-end'
+          stackAlignItem='flex-end'
+          direction='row-reverse'
+        />
       </Body>
     </Theme>
   );

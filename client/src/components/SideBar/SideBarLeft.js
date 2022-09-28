@@ -5,7 +5,7 @@ import List from "@mui/material/List";
 import ListItemButton from "@mui/material/ListItemButton";
 import ListItemText from "@mui/material/ListItemText";
 import SearchBar from "../UI/InputBar";
-import { Stack } from "@mui/material";
+import { Box, Stack } from "@mui/material";
 import Logo from "../Logo/logo";
 const Categories = [
   "Birthday cake",
@@ -27,6 +27,7 @@ const SideBarLeft = () => {
       onClick={(event) => handleListItemClick(event, index)}
       sx={{
         fontSize: "2rem",
+        height: "2.5rem",
       }}
     >
       <ListItemText
@@ -35,7 +36,6 @@ const SideBarLeft = () => {
           pointerEvents: "none",
           ".MuiTypography-root": {
             fontSize: "1.3rem",
-            fontWeight: "bold",
           },
         }}
       />
@@ -46,26 +46,42 @@ const SideBarLeft = () => {
     setSelectedIndex(index);
   };
   return (
-    <SideBar>
-      <Stack justifyContent='center' sx={{ height: "7rem" }}>
-        <Logo />
-      </Stack>
-      <SearchBar placeholder='Search....' icon={<SearchIcon />} />
-      <List
-        component='nav'
-        aria-label='Categories'
+    <SideBar boxShadow='-5px 3px 5px 2px #323232'>
+      <Box
         sx={{
-          width: "80%",
-          "&& .Mui-selected": {
-            backgroundColor: "#F57328",
-          },
-          "&&:not(.Mui-selected) :hover": {
-            backgroundColor: "#FFD8A9",
-          },
+          height: "0.6",
+          width: "1",
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "space-evenly",
+          alignItems: "center",
         }}
       >
-        {listItems}
-      </List>
+        <Stack justifyContent='center' sx={{ height: "7rem" }}>
+          <Logo />
+        </Stack>
+        <SearchBar placeholder='Search....' icon={<SearchIcon />} />
+        <Box sx={{ width: "80%" }}>
+          <List
+            component='nav'
+            aria-label='Categories'
+            sx={{
+              display: "flex",
+              justifyContent: "flex-start",
+              flexDirection: "column",
+              width: "1",
+              "&& .Mui-selected": {
+                backgroundColor: "#F57328",
+              },
+              "&&:not(.Mui-selected) :hover": {
+                backgroundColor: "#FFD8A9",
+              },
+            }}
+          >
+            {listItems}
+          </List>
+        </Box>
+      </Box>
     </SideBar>
   );
 };
