@@ -10,7 +10,10 @@ import { Link } from "react-router-dom";
 import LoginContext from "../../store/auth-context";
 
 const logginedSettings = ["Profile", "Account", "Dashboard", "Logout"];
-const notLogginSetting = ["Login"];
+const notLogginSetting = [
+  { title: "Sign in", link: "/login-page" },
+  { title: "Sign up", link: "/signup-page" },
+];
 
 const HeaderAvatar = () => {
   const isLoggined = React.useContext(LoginContext);
@@ -28,17 +31,17 @@ const HeaderAvatar = () => {
   };
 
   const settingList = () => {
-    if (settings.length === 1) {
-      return (
+    if (settings.length === 2) {
+      return settings.map((setting) => (
         <MenuItem onClick={handleCloseUserMenu}>
           <Link
-            to='/login-page'
+            to={setting.link}
             style={{ textDecoration: "none", color: "black" }}
           >
-            <Typography textAlign='center'>{settings[0]}</Typography>
+            <Typography textAlign='center'>{setting.title}</Typography>
           </Link>
         </MenuItem>
-      );
+      ));
     } else {
       return settings.map((setting) => (
         <MenuItem key={setting} onClick={handleCloseUserMenu}>
