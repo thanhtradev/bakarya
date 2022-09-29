@@ -13,6 +13,7 @@ import ShoppingPage from "./pages/ShoppingPage";
 import LiveStreamPage from "./pages/LiveStreamPage";
 import SavedRecipePage from "./pages/SavedRecipePage";
 import LoginPage from "./pages/LoginPage";
+import SignUpPage from "./pages/SignUpPage";
 
 const App = () => {
   return (
@@ -56,6 +57,9 @@ const App = () => {
           </Route>
           <Route path='/login-page'>
             <LoginPage />
+          </Route>
+          <Route path='/signup-page'>
+            <SignUpPage />
           </Route>
           <Route path='/'>
             <Redirect to='/home/recipe-page' />

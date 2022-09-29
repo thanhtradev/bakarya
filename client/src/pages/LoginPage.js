@@ -19,6 +19,7 @@ import FacebookLogin from "react-facebook-login";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import classes from "./LoginPage.module.css";
 import { useRef } from "react";
+import { Link as LinkSignUp } from "react-router-dom";
 
 function Copyright(props) {
   return (
@@ -184,7 +185,11 @@ export default function LoginPage() {
                   </Link>
                 </Grid>
                 <Grid item>
-                  <Link href='#' variant='body2'>
+                  <Link
+                    to='/signup-page'
+                    variant='body2'
+                    component={LinkSignUp}
+                  >
                     {"Don't have an account? Sign Up"}
                   </Link>
                 </Grid>
