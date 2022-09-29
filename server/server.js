@@ -7,6 +7,7 @@ require("dotenv").config({
 
 const db = require("./models");
 const ROLE = db.role;
+const RECIPECATEGORY = db.recipeCategory;
 
 const app = express();
 
@@ -71,6 +72,23 @@ function initial() {
         }
 
         console.log("added 'admin' to roles collection");
+      });
+    }
+  });
+
+  RECIPECATEGORY.estimatedDocumentCount((err, count) => {
+    if (!err && count === 0) {
+      db.RECIPECATEGORIES.forEach((category) => {
+        new RECIPECATEGORY({
+          name: category,
+        }).save((err) => {
+          if (err) {
+            console.log("error", err);
+          }
+          console.log(
+            "added '" + category + "' to recipe categories collection"
+          );
+        });
       });
     }
   });
