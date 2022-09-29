@@ -13,6 +13,13 @@ import LockOutlinedIcon from "@mui/icons-material/LockOutlined";
 import Typography from "@mui/material/Typography";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import SigninPic from "../Assets/signin3.jpg";
+import GoogleLogin from "react-google-login";
+import { Stack } from "@mui/material";
+import FacebookLogin from "react-facebook-login";
+import FacebookIcon from "@mui/icons-material/Facebook";
+import classes from "./LoginPage.module.css";
+import { useRef } from "react";
+
 function Copyright(props) {
   return (
     <Typography
@@ -31,9 +38,22 @@ function Copyright(props) {
   );
 }
 
+const responseFacebook = (response) => {
+  console.log(response);
+};
+
+const responseGoogle = (response) => {
+  console.log(response);
+};
+
+const componentClicked = () => {
+  console.log("clicked");
+};
+
 const theme = createTheme();
 
 export default function LoginPage() {
+  const FbBtnRef = useRef();
   const handleSubmit = (event) => {
     event.preventDefault();
     const data = new FormData(event.currentTarget);
@@ -110,14 +130,53 @@ export default function LoginPage() {
                 control={<Checkbox value='remember' color='primary' />}
                 label='Remember me'
               />
-              <Button
-                type='submit'
-                fullWidth
-                variant='contained'
-                sx={{ mt: 3, mb: 2 }}
+              <Stack
+                sx={{ width: "1" }}
+                justifyContent='center'
+                alignItems='center'
               >
-                Sign In
-              </Button>
+                <Stack
+                  direction='row'
+                  width='80%'
+                  spacing={2}
+                  justifyContent='center'
+                  alignItems='center'
+                >
+                  <GoogleLogin
+                    clientId='658977310896-knrl3gka66fldh83dao2rhgbblmd4un9.apps.googleusercontent.com'
+                    buttonText='Gmail'
+                    onSuccess={responseGoogle}
+                    onFailure={responseGoogle}
+                    className={classes["outside-login-button"]}
+                    cookiePolicy={"single_host_origin"}
+                    style={{
+                      "&& < span": { color: "red" },
+                      "&& button": {
+                        color: "red",
+                      },
+                    }}
+                  />
+                  <FacebookLogin
+                    ref={FbBtnRef}
+                    appId='1088597931155576'
+                    autoLoad={true}
+                    fields='name,email,picture'
+                    onClick={componentClicked}
+                    cssClass={`${classes["outside-login-button"]} ${classes["fb-login-btn"]}`}
+                    callback={responseFacebook}
+                    icon={<FacebookIcon />}
+                    textButton='Facebook'
+                  />
+                </Stack>
+                <Button
+                  type='submit'
+                  fullWidth
+                  variant='contained'
+                  sx={{ mt: 3, mb: 2 }}
+                >
+                  Sign In
+                </Button>
+              </Stack>
               <Grid container>
                 <Grid item xs>
                   <Link href='#' variant='body2'>
