@@ -56,6 +56,9 @@ const App = () => {
           <Route path='/login-page'>
             <LoginPage />
           </Route>
+          <Route path='/'>
+            <Redirect to='/home/recipe-page' />
+          </Route>
         </Switch>
       </Body>
     </Theme>
