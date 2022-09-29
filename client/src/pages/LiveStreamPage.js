@@ -8,7 +8,11 @@ const LiveStreamPage = () => {
       <Stack
         justifyContent='space-between'
         alignItems='center'
-        sx={{ width: "1", height: "1", backgroundColor: "blueviolet" }}
+        sx={{
+          width: "1",
+          height: "1",
+          // backgroundColor: "blueviolet"
+        }}
       >
         <LiveSection />
         <LiveSection />
