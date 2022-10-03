@@ -32,8 +32,8 @@ const HeaderAvatar = () => {
 
   const settingList = () => {
     if (settings.length === 2) {
-      return settings.map((setting) => (
-        <MenuItem onClick={handleCloseUserMenu}>
+      return settings.map((setting, i) => (
+        <MenuItem onClick={handleCloseUserMenu} key={i}>
           <Link
             to={setting.link}
             style={{ textDecoration: "none", color: "black" }}

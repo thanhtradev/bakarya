@@ -20,6 +20,7 @@ import FacebookIcon from "@mui/icons-material/Facebook";
 import classes from "./LoginPage.module.css";
 import { useRef } from "react";
 import { Link as LinkSignUp } from "react-router-dom";
+import useValidInput from "../hooks/use-valid-input";
 
 function Copyright(props) {
   return (
@@ -55,6 +56,19 @@ const theme = createTheme();
 
 export default function LoginPage() {
   const FbBtnRef = useRef();
+
+  const {
+    value: userNameValue,
+    isValid: userNameIsValid,
+    hasError: hasErrorUser,
+    inputChangeHandler: userNameChangeHandler,
+    inputBlurHandler: userNameBlurHandler,
+  } = useValidInput((value) => value.trim() !== "");
+
+  const isFormValid = () => {
+    return userNameIsValid;
+  };
+
   const handleSubmit = (event) => {
     event.preventDefault();
     const data = new FormData(event.currentTarget);
@@ -75,7 +89,6 @@ export default function LoginPage() {
           md={7}
           sx={{
             backgroundImage: `url(${SigninPic})`,
-            // backgroundImage: "url(https://source.unsplash.com/random)",
             backgroundRepeat: "no-repeat",
             backgroundColor: (t) =>
               t.palette.mode === "light"
@@ -116,6 +129,10 @@ export default function LoginPage() {
                 name='email'
                 autoComplete='email'
                 autoFocus
+                value={userNameValue}
+                onChange={userNameChangeHandler}
+                onBlur={userNameBlurHandler}
+                helperText='Ex: abc@gmail.com'
               />
               <TextField
                 margin='normal'
@@ -174,6 +191,9 @@ export default function LoginPage() {
                   fullWidth
                   variant='contained'
                   sx={{ mt: 3, mb: 2 }}
+                  className={
+                    isFormValid() === false ? classes["btn-invalid"] : ""
+                  }
                 >
                   Sign In
                 </Button>
