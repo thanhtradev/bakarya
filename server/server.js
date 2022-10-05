@@ -5,6 +5,8 @@ require("dotenv").config({
   path: "./.env",
 });
 
+const dbConfig = require('./config/db.config');
+
 const db = require("./models");
 const ROLE = db.role;
 const RECIPECATEGORY = db.recipeCategory;
@@ -29,6 +31,7 @@ app.use(
 
 db.mongoose
   .connect(process.env.ATLAS_URI, {
+    // .connect(`mongodb://${dbConfig.HOST}:${dbConfig.PORT}/${dbConfig.DB}`, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })

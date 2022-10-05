@@ -2,6 +2,34 @@ const db = require("../models");
 const ROLES = db.ROLES;
 const User = db.user;
 
+checkEnoughInformation = (req, res, next) => {
+  // Username
+  if (!req.body.username) {
+    res.status(400).send({
+      message: "Username is required!",
+    });
+    return;
+  }
+
+  // Email
+  if (!req.body.email) {
+    res.status(400).send({
+      message: "Email is required!",
+    });
+    return;
+  }
+
+  // Password
+  if (!req.body.password) {
+    res.status(400).send({
+      message: "Password is required!",
+    });
+    return;
+  }
+
+  next();
+};
+
 checkDuplicateUsernameOrEmail = (req, res, next) => {
   // Username
   User.findOne({
@@ -58,9 +86,21 @@ checkRolesExisted = (req, res, next) => {
   next();
 };
 
+checkPasswordInvalid = (req, res, next) => {
+  if (!/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/.test(req.body.password)) {
+    res.status(400).send({
+      message: "Failed! Password must be at least 8 characters, contain at least one uppercase letter, one lowercase letter, one number and one special character.",
+    });
+    return;
+  }
+  next();
+};
+
 const verifySignUp = {
+  checkEnoughInformation,
   checkDuplicateUsernameOrEmail,
   checkRolesExisted,
+  checkPasswordInvalid,
 };
 
 module.exports = verifySignUp;

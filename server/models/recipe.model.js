@@ -8,13 +8,10 @@ const Recipe = mongoose.model(
     ingredients: String,
     instructions: String,
     image: String,
-    published: Boolean,
-    categories: [
-      {
-        type: mongoose.Schema.Types.ObjectId,
-        ref: "RecipeCategory",
-      },
-    ],
+    categories: [{
+      type: mongoose.Schema.Types.ObjectId,
+      ref: "RecipeCategory",
+    }, ],
   })
 );
 
