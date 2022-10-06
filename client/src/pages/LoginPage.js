@@ -39,7 +39,12 @@ function Copyright(props) {
     </Typography>
   );
 }
-
+const passCriteria = [
+  "At least 8 characters",
+  "Contains 1 number",
+  "Contains a Capital Letter",
+  "Contains a special character",
+];
 const responseFacebook = (response) => {
   console.log(response);
 };
@@ -63,6 +68,16 @@ export default function LoginPage() {
     hasError: hasErrorUser,
     inputChangeHandler: userNameChangeHandler,
     inputBlurHandler: userNameBlurHandler,
+    reset: resetUsername,
+  } = useValidInput((value) => value.trim() !== "");
+
+  const {
+    value: passwordValue,
+    isValid: passwordIsValid,
+    hasError: hasErrorPassword,
+    inputChangeHandler: passwordChangeHandler,
+    inputBlurHandler: passwordBlurHandler,
+    reset: resetPassword,
   } = useValidInput((value) => value.trim() !== "");
 
   const isFormValid = () => {
@@ -73,9 +88,12 @@ export default function LoginPage() {
     event.preventDefault();
     const data = new FormData(event.currentTarget);
     console.log({
-      email: data.get("email"),
+      email: data.get("username"),
       password: data.get("password"),
     });
+
+    resetUsername();
+    resetPassword();
   };
 
   return (
@@ -125,14 +143,17 @@ export default function LoginPage() {
                 required
                 fullWidth
                 id='email'
-                label='Email Address'
-                name='email'
+                label='Username'
+                name='username'
                 autoComplete='email'
                 autoFocus
                 value={userNameValue}
                 onChange={userNameChangeHandler}
                 onBlur={userNameBlurHandler}
-                helperText='Ex: abc@gmail.com'
+                helperText={`${
+                  hasErrorUser ? "Fill in username" : "Ex: abc@gmail.com"
+                }`}
+                error={hasErrorUser}
               />
               <TextField
                 margin='normal'
@@ -142,7 +163,12 @@ export default function LoginPage() {
                 label='Password'
                 type='password'
                 id='password'
+                value={passwordValue}
+                onChange={passwordChangeHandler}
+                onBlur={passwordBlurHandler}
                 autoComplete='current-password'
+                helperText={`${hasErrorPassword ? "Fill in password" : ""}`}
+                error={hasErrorPassword}
               />
               <FormControlLabel
                 control={<Checkbox value='remember' color='primary' />}

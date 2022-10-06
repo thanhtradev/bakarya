@@ -3,9 +3,9 @@ import { useState } from "react";
 const useValidInput = (validateHandler) => {
   const [enteredValue, setEnteredValue] = useState("");
   const [isTouched, setIsTouched] = useState(false);
-  const valueIsValid = validateHandler(enteredValue);
 
-  const hasError = !valueIsValid && isTouched;
+  const valueIsValid = validateHandler(enteredValue);
+  const hasError = !valueIsValid && isTouched; //? hasError === true only value is not valid and not touched
 
   const inputChangeHandler = (event) => {
     setIsTouched(true);
@@ -13,7 +13,8 @@ const useValidInput = (validateHandler) => {
   };
 
   const inputBlurHandler = () => {
-    setIsTouched(false);
+    //? if blurred = touched
+    setIsTouched(true);
   };
 
   const reset = () => {
@@ -27,6 +28,7 @@ const useValidInput = (validateHandler) => {
     hasError,
     inputChangeHandler,
     inputBlurHandler,
+    reset,
   };
 };
 
