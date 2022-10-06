@@ -16,6 +16,7 @@ import useValidInput from "../hooks/use-valid-input";
 import ValidateInput from "../components/UI/ValidateInput/ValidateInput";
 import PasswordChecklist from "react-password-checklist";
 import classes from "./SignInPage.module.css";
+import { SignUp } from "../apis/api";
 
 function Copyright(props) {
   return (
@@ -26,21 +27,14 @@ function Copyright(props) {
       {...props}
     >
       {"Copyright © "}
-      <Link color='inherit' href='https://mui.com/'>
-        Your Website
+      <Link color='inherit' href='https://bakarya.com/'>
+        Bakarya
       </Link>{" "}
       {new Date().getFullYear()}
       {"."}
     </Typography>
   );
 }
-
-// const pwdCriteria = [
-//   "At least 8 characters",
-//   "Contains 1 number",
-//   "Contains a Capital Letter",
-//   "Contains a special character",
-// ];
 
 const theme = createTheme();
 
@@ -53,7 +47,9 @@ export default function SignUpPage() {
     inputBlurHandler: emailBlurHandler,
     reset: resetEmail,
   } = useValidInput(
-    (value) => /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(value) //? email regex
+    (value) =>
+      value.trim().length < 50 &&
+      /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(value) //? email regex
   );
 
   const {
@@ -113,19 +109,23 @@ export default function SignUpPage() {
     event.preventDefault();
     if (isFormValid) {
       const data = new FormData(event.currentTarget);
-      console.log({
-        email: data.get("email"),
-        password: data.get("password"),
+      SignUp({
+        lastname: data.get("lastname"),
+        firstname: data.get("firstname"),
+        username: data.get("email"),
+        pwd: data.get("password"),
       });
+
+      // SignUp();
     } else {
       alert("non");
     }
 
-    resetEmail();
-    resetFirstName();
-    resetLastName();
-    resetPwd();
-    resetConfirmPwd();
+    // resetEmail();
+    // resetFirstName();
+    // resetLastName();
+    // resetPwd();
+    // resetConfirmPwd();
   };
 
   const isFormValid =
@@ -134,7 +134,6 @@ export default function SignUpPage() {
     lastNameIsValid &&
     pwdIsValid &&
     confirmPwdIsValid;
-  console.log(isFormValid);
   return (
     <ThemeProvider theme={theme}>
       <Container component='main' maxWidth='xs'>
@@ -164,7 +163,7 @@ export default function SignUpPage() {
                 <ValidateInput
                   id='first name'
                   label='First name'
-                  name='first name'
+                  name='firstname'
                   autoFocus={true}
                   validate={(value) => value.trim() !== ""}
                   helperText='Example : John'
@@ -194,7 +193,7 @@ export default function SignUpPage() {
                 <ValidateInput
                   id='lastName'
                   label='Last Name'
-                  name='lastName'
+                  name='lastname'
                   validate={(value) =>
                     value.trim.length > 0 && value.trim.length < 50
                   }
