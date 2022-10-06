@@ -39,12 +39,7 @@ function Copyright(props) {
     </Typography>
   );
 }
-const passCriteria = [
-  "At least 8 characters",
-  "Contains 1 number",
-  "Contains a Capital Letter",
-  "Contains a special character",
-];
+
 const responseFacebook = (response) => {
   console.log(response);
 };
@@ -81,7 +76,7 @@ export default function LoginPage() {
   } = useValidInput((value) => value.trim() !== "");
 
   const isFormValid = () => {
-    return userNameIsValid;
+    return userNameIsValid && passwordIsValid;
   };
 
   const handleSubmit = (event) => {
@@ -193,12 +188,6 @@ export default function LoginPage() {
                     onFailure={responseGoogle}
                     className={classes["outside-login-button"]}
                     cookiePolicy={"single_host_origin"}
-                    style={{
-                      "&& < span": { color: "red" },
-                      "&& button": {
-                        color: "red",
-                      },
-                    }}
                   />
                   <FacebookLogin
                     ref={FbBtnRef}
