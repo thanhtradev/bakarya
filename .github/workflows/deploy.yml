@@ -17,9 +17,10 @@ jobs:
           passphrase: ${{secrets.SSH_PASSPHRASE}}
 
           script: |
+            rm -rf bakarya
             git clone https://github.com/thanhtradev/bakarya.git
             cd bakarya
             cd server
             npm install
-            pm2 start server.js
+            pm2 start -f server.js
             echo "Deployed"
