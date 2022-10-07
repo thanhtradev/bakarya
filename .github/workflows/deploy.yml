@@ -18,7 +18,7 @@ jobs:
 
           script: |
             rm -rf bakarya
-            git clone https://github.com/thanhtradev/bakarya.git
+            git clone --branch release https://github.com/thanhtradev/bakarya.git
             cd bakarya
             cd server
             npm install
