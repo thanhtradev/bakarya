@@ -19,7 +19,7 @@ module.exports = function (app) {
     app.get("/api/recipes", controller.findAll);
 
     // Retrieve a single Recipe with recipeId
-    app.get("/recipes/:recipeId", controller.findOne);
+    app.get("/api/recipes/:recipeId", controller.findOne);
 
     // // Update a Recipe with recipeId
     // app.put("/recipes/:recipeId", [authJwt.verifyToken], controller.update);
