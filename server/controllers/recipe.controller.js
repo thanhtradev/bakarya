@@ -77,3 +77,27 @@ exports.findAll = (req, res) => {
             res.send(recipes);
         });
 }
+
+// Retrieve a single recipe with recipeId
+
+exports.findOne = (req, res) => {
+    const id = req.params.recipeId;
+
+    Recipe.findById(id)
+        .populate('categories')
+        .exec((err, recipe) => {
+            if (err) {
+                if (err.kind === 'ObjectId') {
+                    res.status(404).send({
+                        message: "Recipe not found with id " + id
+                    });
+                    return;
+                }
+                res.status(500).send({
+                    message: "Error retrieving recipe with id " + id
+                });
+                return;
+            }
+            res.send(recipe);
+        });
+}
