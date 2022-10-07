@@ -1,4 +1,4 @@
-import { Box, Stack } from "@mui/material";
+import { Stack } from "@mui/material";
 import MainLayout from "../components/layout/mainLayout";
 import CategorySection from "../components/Shopping/CategorySection";
 
