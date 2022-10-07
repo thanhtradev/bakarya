@@ -22,5 +22,6 @@ jobs:
             cd bakarya
             cd server
             npm install
+            pm2 kill
             pm2 start -f server.js
             echo "Deployed"
