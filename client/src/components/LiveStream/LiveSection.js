@@ -34,7 +34,7 @@ const LiveSection = ({ isPlaying }) => {
   };
 
   return (
-    <Card sx={{ width: "0.9" }}>
+    <Card sx={{ width: "0.9", boxShadow: "none" }}>
       <CardHeader
         avatar={
           <Avatar

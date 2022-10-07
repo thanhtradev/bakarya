@@ -1,14 +1,12 @@
 import React from "react";
 import {
   Typography,
-  Box,
   CardMedia,
   CardHeader,
   Card,
   Divider,
   CardActionArea,
 } from "@mui/material";
-import classes from "./Product.module.css";
 const Product = (props) => {
   return (
     <Card

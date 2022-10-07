@@ -22,22 +22,22 @@ const tabComponents = [
   {
     icon: <HomeOutlinedIcon sx={{ fontSize: "42px" }} />,
     name: "Recipe Page",
-    navlink: "/recipe-page",
+    navlink: "/home/recipe-page",
   },
   {
     icon: <ShoppingBasketOutlinedIcon sx={{ fontSize: "42px" }} />,
     name: "Shopping Page",
-    navlink: "/shopping-page",
+    navlink: "/home/shopping-page",
   },
   {
     icon: <LiveTvOutlinedIcon sx={{ fontSize: "42px" }} />,
     name: "Livestreams",
-    navlink: "/livestream-page",
+    navlink: "/home/livestream-page",
   },
   {
     icon: <BookmarksOutlinedIcon sx={{ fontSize: "42px" }} />,
     name: "Saved Recipe",
-    navlink: "/saved-recipe-page",
+    navlink: "/home/saved-recipe-page",
   },
 ];
 
