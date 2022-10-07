@@ -17,8 +17,6 @@ jobs:
           passphrase: ${{secrets.SSH_PASSPHRASE}}
 
           script: |
-            mkdir test 
-            cd test
             git clone https://github.com/thanhtradev/bakarya.git
             cd bakarya
             cd server
