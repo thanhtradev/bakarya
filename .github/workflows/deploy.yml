@@ -21,6 +21,11 @@ jobs:
             git clone --branch release https://github.com/thanhtradev/bakarya.git
             cd bakarya
             cd server
+
+            touch .env
+            echo "PORT=5000" >> .env
+            echo ATLAS_URI=${{ secrets.ATLAS_URI }} >> .env
+
             npm install
             pm2 kill
             pm2 start -f server.js
