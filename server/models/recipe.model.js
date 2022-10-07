@@ -4,17 +4,22 @@ const Recipe = mongoose.model(
   "Recipe",
   new mongoose.Schema({
     name: String,
-    description: String,
-    ingredients: String,
-    instructions: String,
-    image: String,
-    published: Boolean,
-    categories: [
-      {
-        type: mongoose.Schema.Types.ObjectId,
-        ref: "RecipeCategory",
-      },
-    ],
+    expert: String,
+    time: String,
+    makes: String,
+    ingredients: [{
+      type: String
+    }],
+    directions: [{
+      type: String
+    }],
+    nutrition: String,
+    categories: [{
+      type: mongoose.Schema.Types.ObjectId,
+      ref: "RecipeCategory",
+    }, ],
+  }, {
+    timestamps: true
   })
 );
 
