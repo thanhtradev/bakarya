@@ -5,7 +5,11 @@ const {
 const controller = require("../controllers/product.controller.js");
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 module.exports = function(app) {
+=======
+module.exports = function (app) {
+>>>>>>> d561dd4bf163ea208cf7e85236281d0235168005
 =======
 module.exports = function (app) {
 >>>>>>> d561dd4bf163ea208cf7e85236281d0235168005

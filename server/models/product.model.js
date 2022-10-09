@@ -1,15 +1,15 @@
+const { Timestamp, Double, Int32 } = require("mongodb");
 const mongoose = require("mongoose");
 
 const Product = mongoose.model(
   "Product",
-<<<<<<< HEAD
   new mongoose.Schema(
     {
       name: String,
-      unit_price: Number,
+      unit_price: Double,
       description: String,
       thumbnail: String,
-      units_stock: Number,
+      units_stock: Int32,
       product_categories: [
         {
           type: mongoose.Schema.Types.ObjectId,
@@ -21,21 +21,6 @@ const Product = mongoose.model(
       timestamps: true,
     }
   )
-=======
-  new mongoose.Schema({
-    name: String,
-    unit_price: Number,
-    description: String,
-    thumbnail: String,
-    units_stock: Number,
-    product_categories: [{
-      type: mongoose.Schema.Types.ObjectId,
-      ref: "ProductCategory",
-    }, ],
-  }, {
-    timestamps: true,
-  })
->>>>>>> d561dd4bf163ea208cf7e85236281d0235168005
 );
 
 module.exports = Product;
