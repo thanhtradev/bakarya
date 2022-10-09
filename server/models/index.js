@@ -10,7 +10,7 @@ db.role = require("./role.model");
 db.recipeCategory = require("./recipeCategory.model");
 db.recipe = require("./recipe.model");
 db.product = require("./product.model");
-
+db.productCategory = require.resolve("./productCategory.model.js");
 db.ROLES = ["baker", "retail", "admin"];
 db.RECIPECATEGORIES = [
   "Angel Food Cakes",
