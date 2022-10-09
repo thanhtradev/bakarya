@@ -109,6 +109,7 @@ require("./routes/auth.routes")(app);
 require("./routes/user.routes")(app);
 require("./routes/recipe.routes")(app);
 require("./routes/admin.routes")(app);
+require("./routes/product.routes")(app);
 
 // set port, listen for requests
 const PORT = process.env.PORT || 5000;
