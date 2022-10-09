@@ -74,7 +74,7 @@ exports.findAll = (req, res) => {
                 });
                 return;
             }
-            res.send(recipes);
+            res.status(200).send(recipes);
         });
 }
 

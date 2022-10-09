@@ -13,6 +13,7 @@ exports.signup = (req, res) => {
     password: bcrypt.hashSync(req.body.password, 8),
     firstName: req.body.firstName,
     lastName: req.body.lastName,
+    isBlocked: false,
   });
   user.save((err, user) => {
     if (err) {
@@ -132,3 +133,5 @@ exports.signin = (req, res) => {
       });
     });
 };
+
+// Reset password
