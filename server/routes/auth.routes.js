@@ -24,4 +24,7 @@ module.exports = function (app) {
   );
 
   app.post("/api/auth/signin", controller.signin);
+
+  // Forgot password
+  // app.post("/api/auth/forgot-password", controller.forgotPassword);
 };
