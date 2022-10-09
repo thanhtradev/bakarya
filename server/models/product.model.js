@@ -11,7 +11,7 @@ const Product = mongoose.model(
     product_categories: [{
       type: mongoose.Schema.Types.ObjectId,
       ref: "ProductCategory",
-    }],
+    }, ],
   }, {
     timestamps: true,
   })
