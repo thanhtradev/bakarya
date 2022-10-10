@@ -15,7 +15,23 @@ exports.findAllUsers = (req, res) => {
                 });
                 return;
             }
-            res.status(200).send(users);
+            var returnUsers = [];
+            users.forEach(user => {
+                var authorities = [];
+                for (let i = 0; i < user.roles.length; i++) {
+                    authorities.push(user.roles[i].name.toUpperCase());
+                }
+                returnUsers.push({
+                    id: user._id,
+                    username: user.username,
+                    email: user.email,
+                    roles: authorities,
+                    registerDate: user.createdAt,
+                    isBlocked: user.isBlocked
+                });
+            });
+
+            res.status(200).send(returnUsers);
         });
 }
 

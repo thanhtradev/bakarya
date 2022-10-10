@@ -63,7 +63,7 @@ exports.create = (req, res) => {
 
 exports.findAll = (req, res) => {
     Product.find()
-        .populate('categories')
+        .populate('product_categories')
         .exec((err, products) => {
             if (err) {
                 res.status(500).send({
