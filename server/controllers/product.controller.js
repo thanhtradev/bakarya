@@ -81,7 +81,7 @@ exports.findOne = (req, res) => {
     const id = req.params.productId;
 
     Product.findById(id)
-        .populate('categories')
+        .populate('product_categories')
         .exec((err, product) => {
             if (err) {
                 if (err.kind === 'ObjectId') {
