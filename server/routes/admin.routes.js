@@ -14,7 +14,7 @@ module.exports = function (app) {
         next();
     });
 
-    //Retrieve information for overview
+    // Retrieve information for overview
     // Return the number of products, users, orders, and categories
     app.get("/api/admin/overview", [authJwt.verifyToken], controller.overview);
 
