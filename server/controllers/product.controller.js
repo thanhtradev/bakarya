@@ -23,26 +23,26 @@ exports.create = (req, res) => {
     });
 
     // Save product in the database
-    recipe.save((err, recipe) => {
+    recipe.save((err, product) => {
         if (err) {
             res.status(500).send({
                 message: err.message || "Some error occurred while creating the product."
             });
             return;
         }
-        if (req.body.categories) {
+        if (req.body.product_categories) {
             ProductCategory.find({
                 name: {
-                    $in: req.body.categories
+                    $in: req.body.product_categories
                 }
-            }, (err, categories) => {
+            }, (err, product_categories) => {
                 if (err) {
                     res.status(500).send({
                         message: err.message || "Some error occurred while creating the product."
                     });
                     return;
                 }
-                product.categories = categories.map(category => category._id);
+                product.product_categories = product_categories.map(category => category._id);
                 product.save((err) => {
                     if (err) {
                         res.status(500).send({
@@ -81,7 +81,7 @@ exports.findOne = (req, res) => {
     const id = req.params.productId;
 
     Product.findById(id)
-        .populate('categories')
+        .populate('product_categories')
         .exec((err, product) => {
             if (err) {
                 if (err.kind === 'ObjectId') {
