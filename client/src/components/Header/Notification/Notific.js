@@ -6,7 +6,10 @@ const Notific = () => {
   return (
     <HeaderFloatButton>
       <NotificationsActiveOutlinedIcon
-        sx={{ color: "#767171", fontSize: "1.9em" }}
+        sx={{
+          color: "#767171",
+          fontSize: "2.4em",
+        }}
       />
     </HeaderFloatButton>
   );

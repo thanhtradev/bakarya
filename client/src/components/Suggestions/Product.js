@@ -1,43 +1,56 @@
 import React from "react";
-import { Stack, Typography, Box } from "@mui/material";
-import classes from "./Product.module.css";
+import {
+  Typography,
+  CardMedia,
+  CardHeader,
+  Card,
+  Divider,
+  CardActionArea,
+} from "@mui/material";
 const Product = (props) => {
   return (
-    <Stack
-      justifyContent='stretch'
-      sx={{ width: "80%", height: "50%", bgcolor: "#FFD8A9" }}
+    <Card
+      elevation={0}
+      sx={{ width: "0.9", height: "0.36", marginBottom: "20px" }}
     >
-      <Stack
-        direction='row'
-        justifyContent='flex-start'
-        alignItems='center'
-        sx={{ width: "100%", height: "10%" }}
+      <CardActionArea
+        sx={{
+          display: "flex",
+          flexDirection: "row",
+          justifyContent: "space-evenly",
+          alignItems: "center",
+          width: "1",
+          height: "1",
+          borderBottom: "1px solid #888",
+          padding: "5px",
+        }}
       >
-        <Typography variant='subtitle1'>{"@someshop.vn"}</Typography>
-      </Stack>
-      <Box sx={{ width: "100%", height: "65%" }}>
-        <img src={props.img} className={classes["product-img"]} />
-      </Box>
-      <Stack
-        direction='row'
-        justifyContent='center'
-        alignItems='center'
-        sx={{ width: "100%", height: "25%" }}
-      >
-        <Stack>
-          <Stack>
-            <Typography variant='subtitle1' textAlign='center'>
-              {props.title}
-            </Typography>
-          </Stack>
-          <Stack>
-            <Typography variant='subtitle1' textAlign='center'>
-              {`${props.price}$ `}
-            </Typography>
-          </Stack>
-        </Stack>
-      </Stack>
-    </Stack>
+        <CardMedia
+          component='img'
+          image={props.img}
+          src={props.img}
+          sx={{ width: "0.6", height: "0.95" }}
+        />
+        <CardHeader
+          title={props.title}
+          titleTypographyProps={{
+            fontSize: "1.13em",
+          }}
+          subheader={
+            <React.Fragment>
+              <Typography sx={{ fontSize: "1em" }}>{props.subtitle}</Typography>
+              <Typography
+                sx={{ fontSize: "1em" }}
+              >{`${props.price}$`}</Typography>
+            </React.Fragment>
+          }
+          subheaderTypographyProps={{
+            fontSize: "1em",
+          }}
+        />
+      </CardActionArea>
+      <Divider variant='fullWidth' />
+    </Card>
   );
 };
 

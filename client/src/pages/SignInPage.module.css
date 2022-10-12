@@ -1,0 +1,11 @@
+.center-checklist {
+}
+
+.center-checklist li {
+  align-items: center;
+}
+
+.invalid {
+  background-color: gray !important;
+  pointer-events: none;
+}

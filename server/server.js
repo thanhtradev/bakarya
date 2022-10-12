@@ -5,13 +5,16 @@ require("dotenv").config({
   path: "./.env",
 });
 
+const dbConfig = require('./config/db.config');
+
 const db = require("./models");
 const ROLE = db.role;
+const RECIPECATEGORY = db.recipeCategory;
 
 const app = express();
 
 var corsOptions = {
-  origin: "http://localhost:8081",
+  origin: ["http://localhost:8081", "http://admin.bakarya.com"],
 };
 
 app.use(cors(corsOptions));
@@ -28,6 +31,7 @@ app.use(
 
 db.mongoose
   .connect(process.env.ATLAS_URI, {
+    // .connect(`mongodb://${dbConfig.HOST}:${dbConfig.PORT}/${dbConfig.DB}`, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
@@ -44,23 +48,23 @@ function initial() {
   ROLE.estimatedDocumentCount((err, count) => {
     if (!err && count === 0) {
       new ROLE({
-        name: "user",
+        name: "baker",
       }).save((err) => {
         if (err) {
           console.log("error", err);
         }
 
-        console.log("added 'user' to roles collection");
+        console.log("added 'baker' to roles collection");
       });
 
       new ROLE({
-        name: "moderator",
+        name: "retail",
       }).save((err) => {
         if (err) {
           console.log("error", err);
         }
 
-        console.log("added 'moderator' to roles collection");
+        console.log("added 'retail' to roles collection");
       });
 
       new ROLE({
@@ -71,6 +75,23 @@ function initial() {
         }
 
         console.log("added 'admin' to roles collection");
+      });
+    }
+  });
+
+  RECIPECATEGORY.estimatedDocumentCount((err, count) => {
+    if (!err && count === 0) {
+      db.RECIPECATEGORIES.forEach((category) => {
+        new RECIPECATEGORY({
+          name: category,
+        }).save((err) => {
+          if (err) {
+            console.log("error", err);
+          }
+          console.log(
+            "added '" + category + "' to recipe categories collection"
+          );
+        });
       });
     }
   });
@@ -85,24 +106,13 @@ function initial() {
 
 //route
 require("./routes/auth.routes")(app);
-require("./routes/user.router")(app);
+require("./routes/user.routes")(app);
+require("./routes/recipe.routes")(app);
+require("./routes/admin.routes")(app);
+require("./routes/product.routes")(app);
 
 // set port, listen for requests
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}.`);
 });
-
-// const port = process.env.PORT || 5000;
-// app.use(express.json());
-// app.use(require('./routes/record'));
-// // get driver connection
-// const dbo = require('./db/conn');
-
-// app.listen(port, () => {
-//     // perform a database connection when server starts
-//     dbo.connectToServer(function (err) {
-//         if (err) console.error(err);
-//     });
-//     console.log(`Server is running on port: ${port}`);
-// });

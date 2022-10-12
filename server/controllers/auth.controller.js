@@ -11,6 +11,9 @@ exports.signup = (req, res) => {
     username: req.body.username,
     email: req.body.email,
     password: bcrypt.hashSync(req.body.password, 8),
+    firstName: req.body.firstName,
+    lastName: req.body.lastName,
+    isBlocked: false,
   });
   user.save((err, user) => {
     if (err) {
@@ -20,8 +23,7 @@ exports.signup = (req, res) => {
       return;
     }
     if (req.body.roles) {
-      Role.find(
-        {
+      Role.find({
           name: {
             $in: req.body.roles,
           },
@@ -50,9 +52,8 @@ exports.signup = (req, res) => {
         }
       );
     } else {
-      Role.findOne(
-        {
-          name: "user",
+      Role.findOne({
+          name: "baker",
         },
         (err, role) => {
           if (err) {
@@ -82,16 +83,22 @@ exports.signup = (req, res) => {
 };
 
 exports.signin = (req, res) => {
-  User.findOne({ username: req.body.username })
+  User.findOne({
+      username: req.body.username
+    })
     .populate("roles", "-__v")
     .exec((err, user) => {
       if (err) {
-        res.status(500).send({ message: err });
+        res.status(500).send({
+          message: err
+        });
         return;
       }
 
       if (!user) {
-        return res.status(404).send({ message: "User not found" });
+        return res.status(404).send({
+          message: "User not found"
+        });
       }
       var passwordIsValid = bcrypt.compareSync(
         req.body.password,
@@ -105,7 +112,9 @@ exports.signin = (req, res) => {
         });
       }
 
-      var token = jwt.sign({ id: user.id }, config.secret, {
+      var token = jwt.sign({
+        id: user.id
+      }, config.secret, {
         expiresIn: 86400, // 24 hours
       });
 
@@ -124,3 +133,5 @@ exports.signin = (req, res) => {
       });
     });
 };
+
+// Reset password

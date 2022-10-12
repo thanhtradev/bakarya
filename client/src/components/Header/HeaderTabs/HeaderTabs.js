@@ -1,14 +1,12 @@
 import * as React from "react";
 import Tabs from "@mui/material/Tabs";
-import HTab from "./Tab";
 import HomeOutlinedIcon from "@mui/icons-material/HomeOutlined";
 import ShoppingBasketOutlinedIcon from "@mui/icons-material/ShoppingBasketOutlined";
 import LiveTvOutlinedIcon from "@mui/icons-material/LiveTvOutlined";
 import BookmarksOutlinedIcon from "@mui/icons-material/BookmarksOutlined";
 import Tooltip from "@mui/material/Tooltip";
 import Tab from "@mui/material/Tab";
-import { createTheme, ThemeProvider, styled } from "@mui/material/styles";
-import { spacing } from "@mui/system";
+import { createTheme, ThemeProvider } from "@mui/material/styles";
 
 const theme = createTheme({
   overrides: {
@@ -32,10 +30,6 @@ const tabComponents = [
   <BookmarksOutlinedIcon sx={{ height: "42px" }} />,
 ];
 
-const tabsList = tabNames.map((name, index) => (
-  <HTab title={name} label={tabComponents[index]} />
-));
-
 function HeaderTabs() {
   const [value, setValue] = React.useState(0);
 
@@ -48,7 +42,7 @@ function HeaderTabs() {
       <Tabs
         component='nav'
         sx={{
-          width: "0.7",
+          width: "1",
           display: "flex",
           justifyContent: "space-around",
           "&& .Mui-selected": {
@@ -57,6 +51,10 @@ function HeaderTabs() {
           "& button:hover": {
             backgroundColor: "#cecece61",
           },
+          bgcolor: "#F3F1F1",
+          margin: "4px 0 ",
+          borderBottomLeftRadius: "14px",
+          borderBottomRightRadius: "14px",
         }}
         value={value}
         TabIndicatorProps={{

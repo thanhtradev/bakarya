@@ -5,12 +5,12 @@ const Body = (props) => {
   return (
     <Grid
       container
-      rowSpacing={4}
-      columnSpacing={6}
+      // rowSpacing={2}
+      columnSpacing={0}
       sx={{
         margin: 0,
         height: "43.3rem",
-        justifyContent: "center",
+        // justifyContent: "center",
         // bgcolor: "#f3F1F1",
         bgcolor: "transparent",
       }}
