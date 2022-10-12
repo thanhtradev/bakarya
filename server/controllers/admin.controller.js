@@ -1,6 +1,47 @@
 const db = require("../models");
 const User = db.user;
 const Role = db.role;
+const Recipe = db.recipe;
+const Product = db.product;
+
+
+// Retrieve information for overview
+// Return the number of products, users, orders, and categories
+exports.overview = (req, res) => {
+    User.countDocuments({}, (err, userCount) => {
+        if (err) {
+            res.status(500).send({
+                message: err.message || "Some error occurred while retrieving users."
+            });
+            return;
+        }
+        Recipe.countDocuments({}, (err, recipeCount) => {
+            if (err) {
+                res.status(500).send({
+                    message: err.message || "Some error occurred while retrieving recipe."
+                });
+                return;
+            }
+            Product.countDocuments({}, (err, productCount) => {
+                if (err) {
+                    res.status(500).send({
+                        message: err.message || "Some error occurred while retrieving product."
+                    });
+                    return;
+                }
+                res.send({
+                    userCount: userCount,
+                    recipeCount: recipeCount,
+                    productCount: productCount
+                });
+            });
+        });
+    });
+
+
+
+};
+
 
 
 // Retrieve all Users from the database.
