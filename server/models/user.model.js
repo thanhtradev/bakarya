@@ -40,7 +40,7 @@ User.methods.generateVerificationCode = function () {
     const verificationToken = jwt.sign({
         ID: user._id
     }, process.env.USER_VERIFICATION_TOKEN_SECRET, {
-        expiresIn: '7d'
+        expiresIn: '1d'
     });
     return verificationToken;
 }
