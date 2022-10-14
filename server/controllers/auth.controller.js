@@ -1,10 +1,24 @@
+const nodemailer = require('nodemailer');
 const config = require("../config/auth.config");
 const db = require("../models");
 const User = db.user;
 const Role = db.role;
 
+require("dotenv").config({
+  path: "../.env",
+});
+
 var jwt = require("jsonwebtoken");
 var bcrypt = require("bcryptjs");
+const ejs = require('ejs');
+
+const transporter = nodemailer.createTransport({
+  service: 'Gmail',
+  auth: {
+    user: process.env.EMAIL_USERNAME,
+    pass: process.env.EMAIL_PASSWORD
+  }
+});
 
 exports.signup = (req, res) => {
   const user = new User({
@@ -13,7 +27,6 @@ exports.signup = (req, res) => {
     password: bcrypt.hashSync(req.body.password, 8),
     firstName: req.body.firstName,
     lastName: req.body.lastName,
-    isBlocked: false,
   });
   user.save((err, user) => {
     if (err) {
@@ -72,9 +85,40 @@ exports.signup = (req, res) => {
               return;
             }
 
-            res.send({
-              message: "User was registered successfully!",
-            });
+            // Generate verification code
+            const verificationToken = user.generateVerificationCode();
+
+            // Get email verification page
+            url = `http://api.bakarya.com/api/auth/verify/${verificationToken}`;
+            ejs.renderFile('./template/email_verification.ejs', {
+              link: url
+            }, (err, data) => {
+              if (err) {
+                console.log(err)
+              } else {
+                // Send verification email
+                transporter.sendMail({
+                  to: user.email,
+                  subject: 'Please verify your email',
+                  html: data
+                  // html: `Please click this link to confirm your email: <a href="${url}">here</a>`
+                }, (err, info) => {
+                  if (err) {
+                    res.status(500).send({
+                      message: err,
+                    });
+                    return;
+                  }
+                  res.send({
+                    message: "User was registered successfully! Please check your email to verify your account.",
+                  });
+                });
+              }
+            })
+
+            // res.send({
+            //   message: "User was registered successfully!",
+            // });
           });
         }
       );
@@ -134,4 +178,47 @@ exports.signin = (req, res) => {
     });
 };
 
-// Reset password
+// Verify email
+exports.verify = (req, res) => {
+  const token = req.params.token;
+  if (!token) {
+    return res.status(422).send({
+      message: "Missing token"
+    });
+  }
+  let payload = null;
+  // Verify token from URL
+  try {
+    payload = jwt.verify(
+      token,
+      process.env.USER_VERIFICATION_TOKEN_SECRET
+    );
+  } catch (e) {
+    return res.status(500).send(e);
+  }
+  // Find user by id
+  User.findById(payload.ID, (err, user) => {
+    if (err) {
+      return res.status(500).send({
+        message: err
+      });
+    }
+    if (!user) {
+      return res.status(404).send({
+        message: "User not found"
+      });
+    }
+    // Verify user
+    user.isVerified = true;
+    user.save((err) => {
+      if (err) {
+        return res.status(500).send({
+          message: err
+        });
+      }
+      res.status(200).send({
+        message: "User verified successfully"
+      });
+    });
+  });
+}

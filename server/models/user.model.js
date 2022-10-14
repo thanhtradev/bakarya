@@ -1,7 +1,9 @@
 const mongoose = require('mongoose');
-
-const User = mongoose.model(
-    "User",
+const jwt = require('jsonwebtoken');
+require("dotenv").config({
+    path: "../.env",
+});
+const User =
     new mongoose.Schema({
         username: {
             type: String,
@@ -23,11 +25,26 @@ const User = mongoose.model(
         }],
         isBlocked: {
             type: Boolean,
-            required: true
+            default: false
+        },
+        isVerified: {
+            type: Boolean,
+            default: false
         },
     }, {
         timestamps: true
-    })
-);
+    });
+// Generate verification code
+User.methods.generateVerificationCode = function () {
+    const user = this;
+    const verificationToken = jwt.sign({
+        ID: user._id
+    }, process.env.USER_VERIFICATION_TOKEN_SECRET, {
+        expiresIn: '7d'
+    });
+    return verificationToken;
+}
 
-module.exports = User;
+// Export the model
+
+module.exports = mongoose.model("User", User);

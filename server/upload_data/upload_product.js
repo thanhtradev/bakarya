@@ -1,5 +1,5 @@
 require("dotenv").config({
-    path: "/home/thanhtra/FPT/SWP391/bakarya/server/.env",
+    path: "../.env",
 });
 const fs = require('fs');
 const db = require("../models");

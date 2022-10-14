@@ -25,6 +25,9 @@ module.exports = function (app) {
 
   app.post("/api/auth/signin", controller.signin);
 
+  // Verify email 
+  app.get("/api/auth/verify/:token", controller.verify);
+
   // Forgot password
   // app.post("/api/auth/forgot-password", controller.forgotPassword);
 };
