@@ -8,7 +8,7 @@ const Product = mongoose.model(
     description: String,
     thumbnail: String,
     stock: Number,
-    product_categories: [{
+    productSubCategories: [{
       type: mongoose.Schema.Types.ObjectId,
       ref: "ProductSubCategory",
     }],

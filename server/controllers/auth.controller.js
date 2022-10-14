@@ -8,8 +8,12 @@ require("dotenv").config({
   path: "../.env",
 });
 
-var jwt = require("jsonwebtoken");
-var bcrypt = require("bcryptjs");
+const jwt = require("jsonwebtoken");
+const {
+  OAuth2Client
+} = require("google-auth-library")
+const client = new OAuth2Client(process.env.GOOGLE_CLIENT_ID)
+const bcrypt = require("bcryptjs");
 const ejs = require('ejs');
 
 const transporter = nodemailer.createTransport({
@@ -220,5 +224,93 @@ exports.verify = (req, res) => {
         message: "User verified successfully"
       });
     });
+  });
+}
+
+// Login with Google
+exports.googleLogin = (req, res) => {
+  const {
+    tokenId
+  } = req.body;
+  client.verifyIdToken({
+    idToken: tokenId,
+    audience: process.env.GOOGLE_CLIENT_ID
+  }).then(response => {
+    const {
+      email_verified,
+      name,
+      email
+    } = response.payload;
+    if (email_verified) {
+      User.findOne({
+        email
+      }).exec((err, user) => {
+        if (err) {
+          return res.status(400).json({
+            error: "Something went wrong"
+          });
+        } else {
+          // If user exists
+          if (user) {
+            const token = jwt.sign({
+              _id: user._id
+            }, config.secret, {
+              expiresIn: "7d"
+            });
+            const {
+              _id,
+              username,
+              email,
+              role
+            } = user;
+            return res.json({
+              token,
+              user: {
+                _id,
+                username,
+                email,
+                role
+              }
+            });
+          } else
+          // If user doesn't exist
+          {
+            let password = email + config.secret;
+            user = new User({
+              username: name,
+              email,
+              password
+            });
+            user.save((err, data) => {
+              if (err) {
+                return res.status(400).json({
+                  error: "Something went wrong"
+                });
+              }
+              const token = jwt.sign({
+                _id: data._id
+              }, config.secret, {
+                expiresIn: "7d"
+              });
+              const {
+                _id,
+                username,
+                email,
+                role
+              } = data;
+              return res.json({
+                token,
+                user: {
+                  _id,
+                  username,
+                  email,
+                  role
+                }
+              });
+            });
+          }
+        }
+      });
+    }
   });
 }
