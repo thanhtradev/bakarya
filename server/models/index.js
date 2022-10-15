@@ -13,6 +13,7 @@ db.product = require("./product.model");
 db.productCategory = require("./productCategory.model");
 db.productSubCategory = require("./productSubCategory.model");
 db.comment = require("./comment.model");
+db.mlem = require("./mlem.model");
 
 
 db.ROLES = ["baker", "retail", "admin"];

@@ -16,6 +16,6 @@ module.exports = function (app) {
     app.post("/api/comment", [authJwt.verifyToken, checkBadWords.checkVNBadWords, checkBadWords.checkENBadWords], controller.create);
     // Retrieve all Comments
     app.get("/api/comments", controller.findAll);
-    // Retrieve a single Comment with recipeId
+    // Retrieve all Comment with recipeId
     app.get("/api/comments/:recipeId", controller.findAllWithRecipeId);
 };
