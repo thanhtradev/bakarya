@@ -28,11 +28,13 @@ function getRandomInt(min, max) {
 }
 
 function initial() {
-    let rawData = fs.readFileSync('./products/equipment.json');
+    // let rawData = fs.readFileSync('./products/decorations.json');
+    // let rawData = fs.readFileSync('./products/equipment.json');
+    // let rawData = fs.readFileSync('./products/ingredients.json');
+    let rawData = fs.readFileSync('./products/presentation-storage.json');
     let ingredients = JSON.parse(rawData);
     for (let i = 0; i < ingredients.length; i++) {
         let subCate = ingredients[i];
-        console.log(subCate.subCategoryName);
         PRODUCTSUBCATEGORY.findOne({
                 name: subCate.subCategoryName
             },
@@ -41,28 +43,28 @@ function initial() {
                     console.log(err)
                     return;
                 }
-                let productSubCategoryID = productSubCategory._id;
-                product = subCate.products;
-                for (let j = 0; j < subCate.products.length; j++) {
-                    let product = subCate.products[j];
-                    let newProduct = new PRODUCT({
-                        name: product.productName,
-                        price: parseInt(product.productPrice),
-                        description: product.productDescription,
-                        thumbnail: product.productImage,
-                        product_categories: productSubCategoryID,
-                        stock: getRandomInt(0, 1000),
-                    });
-                    newProduct.save((err, product) => {
-                        if (err) {
-                            console.log(err);
-                            return;
-                        }
-                        console.log("added " + product.name);
-                    });
+                if (productSubCategory) {
+                    products = subCate.products;
+                    for (let j = 0; j < subCate.products.length; j++) {
+                        let product = subCate.products[j];
+                        let newProduct = new PRODUCT({
+                            name: product.productName,
+                            price: [parseInt(product.productPrice)],
+                            description: product.productDescription,
+                            thumbnail: product.productImage,
+                            product_categories: [productSubCategory._id],
+                            stock: getRandomInt(0, 1000),
+                        });
+                        newProduct.save((err, product) => {
+                            if (err) {
+                                console.log(err);
+                                return;
+                            }
+                            console.log("added " + product.name);
+                        });
+                    }
                 }
             }
         )
     }
 }
-initial();

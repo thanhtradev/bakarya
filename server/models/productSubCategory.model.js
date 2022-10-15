@@ -10,7 +10,8 @@ const ProductSubCategory = mongoose.model(
         productCategory: {
             type: mongoose.Schema.Types.ObjectId,
             ref: 'ProductCategory'
-        }
+        },
+        productSubCategory: this,
     })
 );
 
