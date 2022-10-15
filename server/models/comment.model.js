@@ -12,7 +12,10 @@ const Comment = mongoose.model(
             ref: 'User',
         },
         comment: String,
-
+        replies: [{
+            type: mongoose.Schema.Types.ObjectId,
+            ref: 'Comment',
+        }]
     }, {
         timestamps: true
     })

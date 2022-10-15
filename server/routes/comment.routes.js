@@ -14,6 +14,9 @@ module.exports = function (app) {
 
     // Create a new Comment
     app.post("/api/comment", [authJwt.verifyToken, checkBadWords.checkVNBadWords, checkBadWords.checkENBadWords], controller.create);
+
+    // Reply a Comment
+    app.post("/api/comment/reply", [authJwt.verifyToken, checkBadWords.checkVNBadWords, checkBadWords.checkENBadWords], controller.reply);
     // Retrieve all Comments
     app.get("/api/comments", controller.findAll);
     // Retrieve all Comment with recipeId
