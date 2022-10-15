@@ -14,10 +14,13 @@ const Recipe = mongoose.model(
       type: String
     }],
     nutrition: String,
+    thumbnail_url: String,
+    video_url: String,
     categories: [{
       type: mongoose.Schema.Types.ObjectId,
       ref: "RecipeCategory",
-    }, ],
+    }],
+    hashtag: [String],
   }, {
     timestamps: true
   })

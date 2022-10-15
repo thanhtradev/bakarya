@@ -12,6 +12,9 @@ db.recipe = require("./recipe.model");
 db.product = require("./product.model");
 db.productCategory = require("./productCategory.model");
 db.productSubCategory = require("./productSubCategory.model");
+db.comment = require("./comment.model");
+
+
 db.ROLES = ["baker", "retail", "admin"];
 db.RECIPECATEGORIES = [
   "Angel Food Cakes",
