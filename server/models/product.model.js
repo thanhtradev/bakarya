@@ -4,14 +4,14 @@ const Product = mongoose.model(
   "Product",
   new mongoose.Schema({
     name: String,
-    unit_price: Number,
+    price: Number,
     description: String,
     thumbnail: String,
-    units_stock: Number,
-    product_categories: [{
+    stock: Number,
+    productSubCategories: [{
       type: mongoose.Schema.Types.ObjectId,
-      ref: "ProductCategory",
-    }, ],
+      ref: "ProductSubCategory",
+    }],
   }, {
     timestamps: true,
   })

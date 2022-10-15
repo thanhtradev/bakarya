@@ -25,6 +25,12 @@ module.exports = function (app) {
 
   app.post("/api/auth/signin", controller.signin);
 
+  // Login with google account
+  app.post("/api/auth/google", controller.googleLogin);
+
+  // Verify email 
+  app.get("/api/auth/verify/:token", controller.verify);
+
   // Forgot password
   // app.post("/api/auth/forgot-password", controller.forgotPassword);
 };

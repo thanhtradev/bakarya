@@ -25,6 +25,9 @@ jobs:
             touch .env
             echo "PORT=5000" >> .env
             echo "ATLAS_URI=${{ secrets.ATLAS_URI }}" >> .env
+            echo "USER_VERIFICATION_TOKEN_SECRET=${{ secrets.USER_VERIFICATION_TOKEN_SECRET }}" >> .env
+            echo "EMAIL_USERNAME=${{ secrets.EMAIL_USERNAME }}" >> .env
+            echo "EMAIL_PASSWORD=${{ secrets.EMAIL_PASSWORD }}" >> .env
 
             npm install
             pm2 kill
