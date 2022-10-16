@@ -23,6 +23,16 @@ const User =
             type: mongoose.Schema.Types.ObjectId,
             ref: "Role"
         }],
+        // Followed users
+        following: [{
+            type: mongoose.Schema.Types.ObjectId,
+            ref: "User"
+        }],
+        // Followers
+        followers: [{
+            type: mongoose.Schema.Types.ObjectId,
+            ref: "User"
+        }],
         isBlocked: {
             type: Boolean,
             default: false
