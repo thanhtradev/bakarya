@@ -87,7 +87,7 @@ checkRolesExisted = (req, res, next) => {
 };
 
 checkPasswordInvalid = (req, res, next) => {
-  if (!/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/.test(req.body.password)) {
+  if (!/^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[\d])(?=.*?[^\sa-zA-Z0-9]).{8,16}$/.test(req.body.password)) {
     res.status(400).send({
       message: "Failed! Password must be at least 8 characters, contain at least one uppercase letter, one lowercase letter, one number and one special character.",
     });

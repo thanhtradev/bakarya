@@ -12,6 +12,10 @@ db.recipe = require("./recipe.model");
 db.product = require("./product.model");
 db.productCategory = require("./productCategory.model");
 db.cart = require("./cart.model");
+db.productSubCategory = require("./productSubCategory.model");
+db.comment = require("./comment.model");
+db.mlem = require("./mlem.model");
+
 
 db.ROLES = ["baker", "retail", "admin"];
 db.RECIPECATEGORIES = [
@@ -42,5 +46,11 @@ db.RECIPECATEGORIES = [
   "Tortes",
   "Upside-Down Cakes",
 ];
+db.PRODUCTCATEGORIES = [
+  'Ingredients & Edibles',
+  'Equipment',
+  'Presentation & Storage',
+  'Decorations',
+]
 
 module.exports = db;

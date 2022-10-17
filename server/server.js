@@ -111,6 +111,8 @@ require("./routes/recipe.routes")(app);
 require("./routes/admin.routes")(app);
 require("./routes/product.routes")(app);
 require("./routes/cart.routes")(app);
+require("./routes/comment.routes")(app);
+require("./routes/mlem.routes")(app);
 
 // set port, listen for requests
 const PORT = process.env.PORT || 5000;

@@ -1,7 +1,9 @@
 const mongoose = require('mongoose');
-
-const User = mongoose.model(
-    "User",
+const jwt = require('jsonwebtoken');
+require("dotenv").config({
+    path: "../.env",
+});
+const User =
     new mongoose.Schema({
         username: {
             type: String,
@@ -21,9 +23,23 @@ const User = mongoose.model(
             type: mongoose.Schema.Types.ObjectId,
             ref: "Role"
         }],
+        // Followed users
+        following: [{
+            type: mongoose.Schema.Types.ObjectId,
+            ref: "User"
+        }],
+        // Followers
+        followers: [{
+            type: mongoose.Schema.Types.ObjectId,
+            ref: "User"
+        }],
         isBlocked: {
             type: Boolean,
-            required: true
+            default: false
+        },
+        isVerified: {
+            type: Boolean,
+            default: false
         },
         cardId: [{
             type: mongoose.Schema.Types.ObjectId,
@@ -31,7 +47,18 @@ const User = mongoose.model(
         }]
     }, {
         timestamps: true
-    })
-);
+    });
+// Generate verification code
+User.methods.generateVerificationCode = function () {
+    const user = this;
+    const verificationToken = jwt.sign({
+        ID: user._id
+    }, process.env.USER_VERIFICATION_TOKEN_SECRET, {
+        expiresIn: '1d'
+    });
+    return verificationToken;
+}
 
-module.exports = User;
+// Export the model
+
+module.exports = mongoose.model("User", User);

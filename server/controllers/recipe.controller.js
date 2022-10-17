@@ -66,6 +66,7 @@ exports.create = (req, res) => {
 
 exports.findAll = (req, res) => {
     Recipe.find()
+        .populate('user_id')
         .populate('categories')
         .exec((err, recipes) => {
             if (err) {
@@ -74,7 +75,24 @@ exports.findAll = (req, res) => {
                 });
                 return;
             }
-            res.status(200).send(recipes);
+            recipeList = recipes.map(recipe => {
+                return {
+                    id: recipe._id,
+                    author: recipe.user_id.username,
+                    name: recipe.name,
+                    expert: recipe.expert,
+                    time: recipe.time,
+                    makes: recipe.makes,
+                    ingredients: recipe.ingredients,
+                    directions: recipe.directions,
+                    nutrition: recipe.nutrition,
+                    number_of_mlems: recipe.number_of_mlems,
+                    number_of_comments: recipe.number_of_comments,
+                    categories: recipe.categories.map(category => category.name),
+                    createdAt: recipe.createdAt,
+                }
+            });
+            res.status(200).send(recipeList);
         });
 }
 
@@ -99,5 +117,41 @@ exports.findOne = (req, res) => {
                 return;
             }
             res.send(recipe);
+        });
+}
+
+exports.findTop10 = (req, res) => {
+    Recipe.find()
+        .sort({
+            number_of_mlems: -1
+        })
+        .limit(10)
+        .populate('user_id')
+        .populate('categories')
+        .exec((err, recipes) => {
+            if (err) {
+                res.status(500).send({
+                    message: err.message || "Some error occurred while retrieving recipes."
+                });
+                return;
+            }
+            recipeList = recipes.map(recipe => {
+                return {
+                    id: recipe._id,
+                    author: recipe.user_id.username,
+                    name: recipe.name,
+                    expert: recipe.expert,
+                    time: recipe.time,
+                    makes: recipe.makes,
+                    ingredients: recipe.ingredients,
+                    directions: recipe.directions,
+                    nutrition: recipe.nutrition,
+                    number_of_mlems: recipe.number_of_mlems,
+                    number_of_comments: recipe.number_of_comments,
+                    categories: recipe.categories.map(category => category.name),
+                    createdAt: recipe.createdAt,
+                }
+            });
+            res.status(200).send(recipeList);
         });
 }

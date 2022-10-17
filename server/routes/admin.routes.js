@@ -14,6 +14,11 @@ module.exports = function (app) {
         next();
     });
 
+    // Retrieve information for overview
+    // Return the number of products, users, orders, and categories
+    app.get("/api/admin/overview", [authJwt.verifyToken], controller.overview);
+
+    // Retrieve all users
     app.get("/api/admin/users", [authJwt.verifyToken, authJwt.isAdmin], controller.findAllUsers);
 
     //Block user by id

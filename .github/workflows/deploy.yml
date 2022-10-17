@@ -1,0 +1,35 @@
+name: Build & Deploy
+
+on:
+  push:
+    branches: [release]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy NodeJS app
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{secrets.SSH_HOST}}
+          key: ${{secrets.SSH_KEY}}
+          username: ${{secrets.SSH_USERNAME}}
+          passphrase: ${{secrets.SSH_PASSPHRASE}}
+
+          script: |
+            rm -rf bakarya
+            git clone --branch release https://github.com/thanhtradev/bakarya.git
+            cd bakarya
+            cd server
+
+            touch .env
+            echo "PORT=5000" >> .env
+            echo "ATLAS_URI=${{ secrets.ATLAS_URI }}" >> .env
+            echo "USER_VERIFICATION_TOKEN_SECRET=${{ secrets.USER_VERIFICATION_TOKEN_SECRET }}" >> .env
+            echo "EMAIL_USERNAME=${{ secrets.EMAIL_USERNAME }}" >> .env
+            echo "EMAIL_PASSWORD=${{ secrets.EMAIL_PASSWORD }}" >> .env
+
+            npm install
+            pm2 kill
+            pm2 start -f server.js
+            echo "Deployed"
