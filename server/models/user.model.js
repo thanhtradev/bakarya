@@ -25,6 +25,10 @@ const User = mongoose.model(
             type: Boolean,
             required: true
         },
+        cardId: [{
+            type: mongoose.Schema.Types.ObjectId,
+            ref: "User"
+        }]
     }, {
         timestamps: true
     })

@@ -23,7 +23,7 @@ exports.create = (req, res) => {
     });
 
     // Save product in the database
-    recipe.save((err, product) => {
+    product.save((err, product) => {
         if (err) {
             res.status(500).send({
                 message: err.message || "Some error occurred while creating the product."
