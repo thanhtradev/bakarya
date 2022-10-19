@@ -1,5 +1,6 @@
 const {
-  verifySignUp
+  verifySignUp,
+  authJwt
 } = require("../middlewares");
 const controller = require("../controllers/auth.controller");
 
@@ -33,4 +34,11 @@ module.exports = function (app) {
 
   // Forgot password
   // app.post("/api/auth/forgot-password", controller.forgotPassword);
+
+  // Check user is admin
+  app.get(
+    "/api/auth/admin",
+    [authJwt.verifyToken, authJwt.isAdmin],
+    controller.authorizeAdmin
+  );
 };

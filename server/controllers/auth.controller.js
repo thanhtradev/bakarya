@@ -314,3 +314,9 @@ exports.googleLogin = (req, res) => {
     }
   });
 }
+
+exports.authorizeAdmin = (req, res) => {
+  res.status(200).send({
+    isAdmin: true
+  });
+};
