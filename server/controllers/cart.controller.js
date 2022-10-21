@@ -1,4 +1,7 @@
-const { user, cart } = require('../models');
+const {
+    user,
+    cart
+} = require('../models');
 const db = require('../models');
 const Cart = db.cart;
 const Product = db.product;
@@ -16,7 +19,7 @@ exports.create = (req, res) => {
     // }
 
     // Create a new Cart
-    const cart = new Cart ({
+    const cart = new Cart({
         items: [{
             productId: req.body.productId,
             quantity: req.body.quantity,
@@ -32,7 +35,7 @@ exports.create = (req, res) => {
             })
             return;
         }
-        if (req.body.userId){
+        if (req.body.userId) {
             User.find({
                 userId: {
                     $in: req.body.userId
