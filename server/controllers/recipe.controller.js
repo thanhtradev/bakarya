@@ -16,7 +16,7 @@ exports.create = (req, res) => {
 
     // Create a Recipe
     const recipe = new Recipe({
-        user_id: req.body.user_id,
+        user_id: req.userId,
         name: req.body.name,
         expert: req.body.expert,
         time: req.body.time,
