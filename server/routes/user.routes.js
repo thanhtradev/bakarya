@@ -30,4 +30,7 @@ module.exports = function (app) {
 
   // Follow a user
   app.post("/api/user/follow", [authJwt.verifyToken], controller.followUser);
+
+  // Update user profile
+  app.put("/api/user/update", [authJwt.verifyToken], controller.updateUserProfile);
 };

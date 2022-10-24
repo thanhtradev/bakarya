@@ -1,4 +1,4 @@
-const db = require('../models');
+const db = require("../models");
 const User = db.user;
 
 // Follow a user
@@ -8,23 +8,22 @@ const User = db.user;
  * Follow a user by adding the user to the following list of the current user
  * and adding the current user to the followers list of the user to follow
  * @param  req.body.followUserId - id of the user to follow
- * @return 200 - OK 
+ * @return 200 - OK
  */
 exports.followUser = (req, res) => {
-
   // Get the current user and check if current followUserId is already in the following list
 
   User.findById(req.userId).exec((err, user) => {
     if (err) {
       res.status(500).send({
-        message: err
+        message: err,
       });
       return;
     }
     // Check if the user is already following the user to follow
     if (user.following.includes(req.body.followUserId)) {
       res.status(400).send({
-        message: "You are already following this user"
+        message: "You are already following this user",
       });
       return;
     }
@@ -33,7 +32,7 @@ exports.followUser = (req, res) => {
     user.save((err) => {
       if (err) {
         res.status(500).send({
-          message: err
+          message: err,
         });
         return;
       }
@@ -41,24 +40,41 @@ exports.followUser = (req, res) => {
       User.findById(req.body.followUserId).exec((err, userToFollow) => {
         if (err) {
           res.status(500).send({
-            message: err
+            message: err,
           });
           return;
         }
         userToFollow.followers.push(req.userId);
         userToFollow.save((err) => {
           if (err) {
-
             res.status(500).send({
-              message: err
+              message: err,
             });
             return;
           }
           res.status(200).send({
-            message: "User followed successfully"
+            message: "User followed successfully",
           });
         });
       });
     });
   });
-}
+};
+
+//Update user profile
+exports.updateUserProfile = (req, res, next) => {
+  User.updateMany({ 
+    firstName: req.body.firstName, 
+    lastName: req.body.lastName 
+  }).exec().then((result) => {
+      res.status(200).json({ 
+        message: "User updated" 
+      });
+    })
+    .catch((err) => {
+      console.log(err);
+      res.status(500).json({ 
+        error: err
+      });
+    });
+};
