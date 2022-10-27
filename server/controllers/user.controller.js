@@ -67,13 +67,13 @@ exports.updateUserProfile = (req, res, next) => {
     firstName: req.body.firstName, 
     lastName: req.body.lastName 
   }).exec().then((result) => {
-      res.status(200).json({ 
+      res.status(200).send({ 
         message: "User updated" 
       });
     })
     .catch((err) => {
       console.log(err);
-      res.status(500).json({ 
+      res.status(500).send({ 
         error: err
       });
     });
