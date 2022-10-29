@@ -20,49 +20,41 @@ exports.create = (req, res) => {
     // Create a Comment
     const comment = new Comment({
         // recipe_id: req.body.recipeid,
-        // user_id: req.body.userid,
+        user_id: req.userId,
         comment: req.body.comment,
     });
 
     // Check if recipe exists
     Recipe.findById(req.body.recipeid)
-        .then(data => {
-            if (!data) {
+        .then(recipe => {
+            if (!recipe) {
                 res.status(404).send({
                     message: `Cannot find Recipe with id ${req.body.recipeid}.`
                 });
             } else {
-                comment.recipe_id = data._id;
-                // Check if user exists
-                User.findById(req.body.userid)
-
-                    .then(data => {
-                        if (!data) {
-                            res.status(404).send({
-                                message: `Cannot find User with id ${req.body.userid}.`
-                            });
-                        } else {
-                            comment.user_id = data._id;
-                            // Save Comment in the database
-                            comment.save((err) => {
-                                if (err) {
-                                    res.status(500).send({
-                                        message: err.message || "Some error occurred while creating the Comment."
-                                    });
-                                }
-                                // Success
-                                res.send({
-                                    message: "Comment created successfully!",
-                                })
-
+                comment.recipe_id = recipe._id;
+                // Save Comment in the database
+                comment.save((err) => {
+                    if (err) {
+                        res.status(500).send({
+                            message: err.message || "Some error occurred while creating the Comment."
+                        });
+                    }
+                    // Update number comments of recipe
+                    recipe.number_of_comments = recipe.number_of_comments + 1;
+                    recipe.save((err) => {
+                        if (err) {
+                            res.status(500).send({
+                                message: err.message || "Some error occurred while updating the Recipe."
                             });
                         }
-                    })
-                    .catch(err => {
-                        res.status(500).send({
-                            message: `Error retrieving User with id  ${req.body.userid}`
-                        });
+                        // Success
+                        res.send({
+                            message: "Comment created successfully!",
+                        })
                     });
+
+                });
             }
         })
         .catch(_ => {
@@ -124,6 +116,8 @@ exports.findAllWithRecipeId = (req, res) => {
         });
 }
 
+/*
+
 exports.reply = (req, res) => {
     // Validate request
     if (!req.body.comment || !req.body.commentid) {
@@ -183,5 +177,54 @@ exports.reply = (req, res) => {
                     });
             });
         }
+    });
+}
+
+*/
+
+exports.reply = (req, res) => {
+    // Validate request
+    if (!req.body.comment || !req.body.commentid) {
+        res.status(400).send({
+            message: "Content can not be empty!"
+        });
+        return;
+    }
+
+    // Create a Comment
+    const comment = new Comment({
+        user_id: req.userId,
+        comment: req.body.comment,
+    });
+
+    // Save Comment and push to replies array
+    comment.save((err, comment) => {
+        if (err) {
+            res.status(500).send({
+                message: err.message || "Some error occurred while creating the Comment."
+            });
+        }
+        // Success
+        Comment.findByIdAndUpdate(req.body.commentid, {
+                $push: {
+                    replies: comment._id
+                }
+            }, {
+                new: true
+            })
+            .then(comment => {
+                if (!comment) {
+                    res.status(404).send({
+                        message: `Cannot update Comment with id=${req.body.commentid}. Maybe Comment was not found!`
+                    });
+                } else res.send({
+                    message: "Reply comment successfully."
+                });
+            })
+            .catch(err => {
+                res.status(500).send({
+                    message: "Error updating Comment with id=" + req.body.commentid
+                });
+            });
     });
 }
