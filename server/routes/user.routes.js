@@ -35,5 +35,5 @@ module.exports = function (app) {
   app.post("/api/user/unfollow", [authJwt.verifyToken], controller.unFollowUser);
 
   // Update user profile
-  app.put("/api/user/update", [authJwt.verifyToken], controller.updateUserProfile);
+  app.post("/api/user/update", [authJwt.verifyToken], controller.updateUserProfile);
 };

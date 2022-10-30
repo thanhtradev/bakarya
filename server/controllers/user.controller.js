@@ -1,4 +1,7 @@
 const db = require("../models");
+const {
+  update
+} = require("../models/user.model");
 const User = db.user;
 
 
@@ -121,19 +124,51 @@ exports.unFollowUser = (req, res) => {
 };
 
 //Update user profile
-exports.updateUserProfile = (req, res, next) => {
-  User.updateMany({
-      firstName: req.body.firstName,
-      lastName: req.body.lastName
-    }).exec().then((result) => {
-      res.status(200).send({
-        message: "User updated"
-      });
-    })
-    .catch((err) => {
-      console.log(err);
-      res.status(500).send({
-        error: err
-      });
+exports.updateUserProfile = (req, res) => {
+  // Validate request
+  if (req.body.firstname === undefined && req.body.lastname === undefined && req.body.birthday === undefined) {
+    res.status(400).send({
+      message: "Content can not be empty!",
     });
+    return;
+  }
+  var update = {};
+  // Check what fields are need to be updated
+  if (req.body.firstname != null) {
+    update.firstName = req.body.firstname;
+  }
+  if (req.body.lastname != null) {
+    update.lastName = req.body.lastname;
+  }
+  if (req.body.birthday != null) {
+    //Validate birthday
+    if (isNaN(Date.parse(req.body.birthday))) {
+      res.status(400).send({
+        message: "Invalid birthday",
+      });
+      return;
+    }
+    update.birthday = Date.parse(req.body.birthday);
+  }
+  console.log(update);
+  // Update the user profile
+  User.findByIdAndUpdate(req.userId, update, {
+    useFindAndModify: false,
+  }).exec((err, user) => {
+    if (err) {
+      res.status(500).send({
+        message: err,
+      });
+      return;
+    }
+    if (!user) {
+      res.status(404).send({
+        message: "User not found",
+      });
+      return;
+    }
+    res.status(200).send({
+      message: "User profile updated successfully",
+    });
+  });
 };

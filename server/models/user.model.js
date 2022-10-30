@@ -44,7 +44,8 @@ const User =
         cardId: [{
             type: mongoose.Schema.Types.ObjectId,
             ref: "User"
-        }]
+        }],
+        birthday: Date,
     }, {
         timestamps: true
     });
