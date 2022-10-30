@@ -16,8 +16,6 @@ db.productSubCategory = require("./productSubCategory.model");
 db.comment = require("./comment.model");
 db.mlem = require("./mlem.model");
 
-//This is for test
-db.qa = require("./qa.model");
 
 
 db.ROLES = ["baker", "retail", "admin"];

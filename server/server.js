@@ -114,9 +114,6 @@ require("./routes/cart.routes")(app);
 require("./routes/comment.routes")(app);
 require("./routes/mlem.routes")(app);
 
-// This is for test
-require("./routes/qa.routes")(app);
-
 // set port, listen for requests
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {

@@ -68,7 +68,9 @@ exports.findAllUsers = (req, res) => {
                     email: user.email,
                     roles: authorities,
                     registerDate: user.createdAt,
-                    isBlocked: user.isBlocked
+                    isBlocked: user.isBlocked,
+                    followers: user.followers.length,
+                    following: user.following.length,
                 });
             });
 

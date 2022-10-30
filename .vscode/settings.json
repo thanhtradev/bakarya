@@ -4,6 +4,7 @@
     "badwords",
     "bakarya",
     "commentid",
+    "followuserid",
     "Mlem",
     "mlemed",
     "mlemers",
@@ -17,6 +18,9 @@
     "RECIPECATEGORY",
     "recipeid",
     "signin",
+    "Unfollow",
+    "unfollowed",
+    "unfollowuserid",
     "unmlem",
     "userid"
   ]
