@@ -156,3 +156,40 @@ exports.findTop10 = (req, res) => {
             res.status(200).send(recipeList);
         });
 }
+// Retrieve limited number of Recipes
+exports.findLimited = (req, res) => {
+    const limit = req.params.limit;
+    Recipe.find()
+        .sort({
+            createdAt: -1
+        })
+        .limit(parseInt(limit))
+        .populate('user_id')
+        .populate('categories')
+        .exec((err, recipes) => {
+            if (err) {
+                res.status(500).send({
+                    message: err.message || "Some error occurred while retrieving recipes."
+                });
+                return;
+            }
+            recipeList = recipes.map(recipe => {
+                return {
+                    id: recipe._id,
+                    author: recipe.user_id.username,
+                    name: recipe.name,
+                    expert: recipe.expert,
+                    time: recipe.time,
+                    makes: recipe.makes,
+                    ingredients: recipe.ingredients,
+                    directions: recipe.directions,
+                    nutrition: recipe.nutrition,
+                    number_of_mlems: recipe.number_of_mlems,
+                    number_of_comments: recipe.number_of_comments,
+                    categories: recipe.categories.map(category => category.name),
+                    createdAt: recipe.createdAt,
+                }
+            });
+            res.status(200).send(recipeList);
+        });
+}

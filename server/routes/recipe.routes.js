@@ -18,6 +18,9 @@ module.exports = function (app) {
     // Retrieve all Recipes
     app.get("/api/recipes", controller.findAll);
 
+    // Retrieve limited number of Recipes
+    app.get("/api/recipes/limit/:limit", controller.findLimited);
+
     // Retrieve top 5 recipes with most mlems
     app.get("/api/recipes/top10", controller.findTop10);
 
