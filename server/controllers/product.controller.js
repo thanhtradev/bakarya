@@ -1,7 +1,7 @@
 const db = require('../models');
 const Product = db.product;
 const ProductCategory = db.productCategory;
-
+const ProductSubCategory = db.productSubCategory;
 //Create a new Product
 exports.create = (req, res) => {
 
@@ -97,4 +97,83 @@ exports.findOne = (req, res) => {
             }
             res.send(product);
         });
+}
+
+// Retrieve product with specific category
+exports.findByCategory = (req, res) => {
+    const category = req.params.category;
+    // If category is productCategory, then find all subcategories of category
+    ProductCategory.findOne({
+        name: category
+    }).exec((err, productCategory) => {
+        if (err) {
+            res.status(500).send({
+                message: err.message || "Some error occurred while retrieving products."
+            });
+            return;
+        }
+        if (!productCategory) {
+            // Find subcategories of category
+            ProductSubCategory.findOne({
+                name: category
+            }).exec((err, productSubCategories) => {
+                if (err) {
+                    res.status(500).send({
+                        message: err.message || "Some error occurred while retrieving products."
+                    });
+                    return;
+                }
+                if (!productSubCategories) {
+                    res.status(404).send({
+                        message: "Product not found with category " + category
+                    });
+                    return;
+                }
+                // Find products with subcategory
+                Product.find({
+                    product_categories: productSubCategories._id
+                }).populate('product_categories').exec((err, products) => {
+                    if (err) {
+                        res.status(500).send({
+                            message: err.message || "Some error occurred while retrieving products."
+                        });
+                        return;
+                    }
+                    res.send(products);
+                });
+            });
+        } else {
+            // Find all subcategories of category
+            ProductSubCategory.find({
+                productCategory: productCategory._id
+            }).exec((err, productSubCategories) => {
+                if (err) {
+                    res.status(500).send({
+                        message: err.message || "Some error occurred while retrieving products."
+                    });
+                    return;
+                }
+                if (productSubCategories.length === 0) {
+                    res.status(404).send({
+                        message: "Product not found with category " + category
+                    });
+                    return;
+                }
+                // Find all product with each subcategory
+                Product.find({
+                    product_categories: {
+                        $in: productSubCategories.map(subCategory => subCategory._id)
+                    }
+                }).populate('product_categories').exec((err, products) => {
+                    if (err) {
+                        res.status(500).send({
+                            message: err.message || "Some error occurred while retrieving products."
+                        });
+                        return;
+                    }
+                    res.send(products);
+                });
+            });
+        }
+    });
 }

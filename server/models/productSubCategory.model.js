@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 const ProductSubCategory = mongoose.model(
-    'ProductSubCategory',
+    "ProductSubCategory",
     new mongoose.Schema({
         name: {
             type: String,
@@ -11,7 +11,6 @@ const ProductSubCategory = mongoose.model(
             type: mongoose.Schema.Types.ObjectId,
             ref: 'ProductCategory'
         },
-        productSubCategory: this,
     })
 );
 

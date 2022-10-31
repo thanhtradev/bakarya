@@ -21,4 +21,7 @@ module.exports = function (app) {
 
     //Retrieve a single product with productId
     app.get("/api/products/:productId", controller.findOne);
+
+    //Retrieve product with specific category
+    app.get("/api/products/category/:category", controller.findByCategory);
 }
