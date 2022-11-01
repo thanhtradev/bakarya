@@ -3,6 +3,8 @@ const {
   update
 } = require("../models/user.model");
 const User = db.user;
+const fs = require('fs');
+const path = require("path");
 
 
 /**
@@ -150,7 +152,6 @@ exports.updateUserProfile = (req, res) => {
     }
     update.birthday = Date.parse(req.body.birthday);
   }
-  console.log(update);
   // Update the user profile
   User.findByIdAndUpdate(req.userId, update, {
     useFindAndModify: false,
@@ -172,3 +173,55 @@ exports.updateUserProfile = (req, res) => {
     });
   });
 };
+
+// Update user avatar
+exports.updateUserAvatar = (req, res) => {
+  const obj = {
+    img: {
+      data: fs.readFileSync(path.join(__dirname, '../uploads/' + req.file.filename)),
+      contentType: 'image/png'
+    }
+  }
+  // update the user avatar
+  User.findByIdAndUpdate(req.userId, {
+    avatar: obj.img
+  }, {
+    useFindAndModify: false,
+  }).exec((err, user) => {
+    if (err) {
+      res.status(500).send({
+        message: err,
+      });
+      return;
+    }
+    if (!user) {
+      res.status(404).send({
+        message: "User not found",
+      });
+      return;
+    }
+    res.status(200).send({
+      message: "User avatar updated successfully",
+    });
+  });
+}
+
+// Retrieve user profile picture
+exports.getUserAvatar = (req, res) => {
+  // Find the user by id
+  User.findById(req.userId).exec((err, user) => {
+    if (err) {
+      res.status(500).send({
+        message: err,
+      });
+      return;
+    }
+    if (!user) {
+      res.status(404).send({
+        message: "User not found",
+      });
+      return;
+    }
+    res.status(200).send(user.avatar);
+  });
+}

@@ -46,6 +46,10 @@ const User =
             ref: "User"
         }],
         birthday: Date,
+        avatar: {
+            data: Buffer,
+            contentType: String
+        }
     }, {
         timestamps: true
     });

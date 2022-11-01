@@ -1,5 +1,6 @@
 const {
-  authJwt
+  authJwt,
+  upload
 } = require("../middlewares");
 const controller = require("../controllers/user.controller");
 
@@ -36,4 +37,10 @@ module.exports = function (app) {
 
   // Update user profile
   app.post("/api/user/update", [authJwt.verifyToken], controller.updateUserProfile);
+
+  // Update user profile picture
+  app.post("/api/user/update/avatar", [authJwt.verifyToken, upload.upload.single("avatar")], controller.updateUserAvatar);
+
+  // Retrieve user profile picture
+  app.get("/api/user/avatar", [authJwt.verifyToken], controller.getUserAvatar);
 };
