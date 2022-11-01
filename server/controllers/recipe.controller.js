@@ -214,3 +214,43 @@ exports.findLimited = (req, res) => {
             res.status(200).send(recipeList);
         });
 }
+
+// Retrieve recipes belonging to a user
+exports.findAllByUser = (req, res) => {
+    const id = req.userId;
+    // Find recipe with user_id and sort by createdAtS
+    Recipe.find({
+            user_id: id
+        })
+        .populate('user_id')
+        .populate('categories')
+        .sort({
+            createdAt: -1
+        })
+        .exec((err, recipes) => {
+            if (err) {
+                res.status(500).send({
+                    message: err.message || "Some error occurred while retrieving recipes."
+                });
+                return;
+            }
+            recipeList = recipes.map(recipe => {
+                return {
+                    id: recipe._id,
+                    author: recipe.user_id.username,
+                    name: recipe.name,
+                    expert: recipe.expert,
+                    time: recipe.time,
+                    makes: recipe.makes,
+                    ingredients: recipe.ingredients,
+                    directions: recipe.directions,
+                    nutrition: recipe.nutrition,
+                    number_of_mlems: recipe.number_of_mlems,
+                    number_of_comments: recipe.number_of_comments,
+                    categories: recipe.categories.map(category => category.name),
+                    createdAt: recipe.createdAt,
+                }
+            });
+            res.status(200).send(recipeList);
+        });
+}

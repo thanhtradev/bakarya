@@ -25,7 +25,10 @@ module.exports = function (app) {
     app.get("/api/recipes/top10", controller.findTop10);
 
     // Retrieve a single Recipe with recipeId
-    app.get("/api/recipes/:recipeId", controller.findOne);
+    app.get("/api/recipes/id/:recipeId", controller.findOne);
+
+    // Retrieve all Recipes belonging to a user
+    app.get("/api/recipes/user", [authJwt.verifyToken], controller.findAllByUser);
 
     // // Update a Recipe with recipeId
     // app.put("/recipes/:recipeId", [authJwt.verifyToken], controller.update);
