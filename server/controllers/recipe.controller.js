@@ -101,8 +101,8 @@ exports.findAll = (req, res) => {
 
 exports.findOne = (req, res) => {
     const id = req.params.recipeId;
-
     Recipe.findById(id)
+        .populate('user_id')
         .populate('categories')
         .exec((err, recipe) => {
             if (err) {
@@ -117,7 +117,28 @@ exports.findOne = (req, res) => {
                 });
                 return;
             }
-            res.send(recipe);
+            if (!recipe) {
+                res.status(404).send({
+                    message: "Recipe not found with id " + id
+                });
+                return;
+            }
+            var tmpRecipe = {
+                id: recipe._id,
+                author: recipe.user_id.username,
+                name: recipe.name,
+                expert: recipe.expert,
+                time: recipe.time,
+                makes: recipe.makes,
+                ingredients: recipe.ingredients,
+                directions: recipe.directions,
+                nutrition: recipe.nutrition,
+                number_of_mlems: recipe.number_of_mlems,
+                number_of_comments: recipe.number_of_comments,
+                categories: recipe.categories.map(category => category.name),
+                createdAt: recipe.createdAt,
+            }
+            res.status(200).send(tmpRecipe);
         });
 }
 
