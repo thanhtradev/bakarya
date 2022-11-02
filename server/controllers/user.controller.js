@@ -200,6 +200,15 @@ exports.updateUserAvatar = (req, res) => {
       });
       return;
     }
+    // Delete the uploaded file from the uploads folder
+    fs.unlink(path.join(__dirname, '../uploads/' + req.file.filename), (err) => {
+      if (err) {
+        res.status(500).send({
+          message: err,
+        });
+        return;
+      }
+    });
     res.status(200).send({
       message: "User avatar updated successfully",
     });
