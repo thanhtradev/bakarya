@@ -21,4 +21,7 @@ module.exports = function (app) {
 
     // Retrieve all Mlem with recipeId
     app.get("/api/mlems/:recipeId", controller.findAllWithRecipeId);
+
+    // Check if a user has mlemmed a recipe
+    app.post("/api/mlem/check", [authJwt.verifyToken], controller.checkIfMlemmed);
 }

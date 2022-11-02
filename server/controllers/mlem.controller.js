@@ -134,7 +134,7 @@ exports.unmlem = (req, res) => {
             }
             if (!mlem || mlem.mlem === false) {
                 res.status(404).send({
-                    message: "You haven't mlemed this recipe yet ."
+                    message: "You haven't mlemmed this recipe yet ."
                 });
                 return;
             } else {
@@ -192,4 +192,30 @@ exports.findAllWithRecipeId = (req, res) => {
                 message: err.message || "Some error occurred while retrieving Mlems."
             });
         });
+}
+
+// Check if user has mlemmed a recipe
+exports.checkIfMlemmed = (req, res) => {
+    // Get recipe id and check if mlem exists
+    const recipeid = req.body.recipeid;
+    Mlem.findOne({
+        recipe_id: recipeid,
+        user_id: req.userId,
+    }).exec((err, mlem) => {
+        if (err) {
+            res.status(500).send({
+                message: err.message || "Some error occurred while creating the Mlem."
+            });
+            return;
+        }
+        if (!mlem) {
+            res.send({
+                mlemmed: false
+            });
+        } else {
+            res.send({
+                mlemmed: mlem.mlem
+            });
+        }
+    });
 }
