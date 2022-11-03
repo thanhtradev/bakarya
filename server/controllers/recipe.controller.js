@@ -1,6 +1,7 @@
 const db = require('../models');
 const Recipe = db.recipe;
 const RecipeCategory = db.recipeCategory;
+const Mlem = db.mlem;
 
 // Create a new Recipe
 
@@ -254,3 +255,94 @@ exports.findAllByUser = (req, res) => {
             res.status(200).send(recipeList);
         });
 }
+
+const ContentBasedRecommender = require('content-based-recommender')
+const recommender = new ContentBasedRecommender({
+    minScore: 0.1,
+    maxSimilarDocuments: 2000
+});
+
+
+// Retrieve suggested recipes
+exports.findSuggestions = (req, res) => {
+    // Find recent recipes which user has mlemmed
+    const id = req.userId;
+    Mlem.find({
+            user_id: id
+        })
+        .sort({
+            createdAt: -1
+        })
+        .limit(1)
+        .exec((err, mlems) => {
+            if (err) {
+                res.status(500).send({
+                    message: err.message || "Some error occurred while retrieving recipes."
+                });
+                return;
+            }
+            // Get recipe 
+            var recipeId = mlems[0].recipe_id._id.toString();
+            // Get all recipe
+            Recipe.find().exec((err, recipes) => {
+                if (err) {
+                    res.status(500).send({
+                        message: err.message || "Some error occurred while retrieving recipes."
+                    });
+                    return;
+                }
+                var recipeDataTraining = recipes.map(recipe => {
+                    return {
+                        id: recipe._id.toString(),
+                        content: recipe.expert + " " + recipe.time + " " + recipe.makes + " " + recipe.ingredients + " " + recipe.directions + " " + recipe.nutrition,
+                    }
+                });
+                // Add all recipes to recommender
+                recommender.train(recipeDataTraining);
+                // Check if recipeId is undefined, if undefined get random recipe
+                if (recipeId == undefined) {
+                    var randomRecipe = recipeDataTraining[Math.floor(Math.random() * recipeDataTraining.length)];
+                    recipeId = randomRecipe.id;
+                }
+                // Get suggestions
+                var suggestions = recommender.getSimilarDocuments(recipeId, 0, 15);
+                // Get recipe ids
+                var recipeIds = suggestions.map(suggestion => suggestion.id);
+                // Find recipes
+                console.log(recipeIds);
+                Recipe.find({
+                        _id: {
+                            $in: recipeIds
+                        }
+                    })
+                    .populate('user_id')
+                    .populate('categories')
+                    .exec((err, recipes) => {
+                        if (err) {
+                            res.status(500).send({
+                                message: err.message || "Some error occurred while retrieving recipes."
+                            });
+                            return;
+                        }
+                        var recipeList = recipes.map(recipe => {
+                            return {
+                                id: recipe._id,
+                                author: recipe.user_id.username,
+                                name: recipe.name,
+                                expert: recipe.expert,
+                                time: recipe.time,
+                                makes: recipe.makes,
+                                ingredients: recipe.ingredients,
+                                directions: recipe.directions,
+                                nutrition: recipe.nutrition,
+                                number_of_mlems: recipe.number_of_mlems,
+                                number_of_comments: recipe.number_of_comments,
+                                categories: recipe.categories.map(category => category.name),
+                                createdAt: recipe.createdAt,
+                            }
+                        });
+                        res.send(recipeList);
+                    });
+            });
+        });
+};

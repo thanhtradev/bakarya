@@ -35,5 +35,7 @@ module.exports = function (app) {
 
     // // Delete a Recipe with recipeId
     // app.delete("/recipes/:recipeId", [authJwt.verifyToken], controller.delete);
+    // Retrieve suggestions for a recipe
+    app.get("/api/recipes/suggestion", [authJwt.verifyToken], controller.findSuggestions);
 
 }
