@@ -262,6 +262,7 @@ function formatRecipeData(recipe) {
         expert: recipe.expert,
         time: recipe.time,
         makes: recipe.makes,
+        images: recipe.images,
         ingredients: recipe.ingredients,
         directions: recipe.directions,
         nutrition: recipe.nutrition,
