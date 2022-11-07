@@ -26,28 +26,60 @@ exports.mlem = (req, res) => {
                 message: "Recipe not found."
             });
             return;
-        }
-        // Check if mlem already exists
-        Mlem.findOne({
-            recipe_id: req.body.recipeid,
-            user_id: req.userId,
-        }).exec((err, mlem) => {
-            if (err) {
-                res.status(500).send({
-                    message: err.message || "Some error occurred while creating the Mlem."
-                });
-                return;
-            }
-            if (mlem) {
-                if (mlem.mlem === true) {
-                    res.status(400).send({
-                        message: "You are already mlem this recipe."
+        } else {
+            // Check if mlem already exists
+
+            Mlem.findOne({
+                recipe_id: req.body.recipeid,
+                user_id: req.userId,
+            }).exec((err, mlem) => {
+                if (err) {
+                    res.status(500).send({
+                        message: err.message || "Some error occurred while creating the Mlem."
                     });
                     return;
+                }
+                if (mlem) {
+                    if (mlem.mlem === true) {
+                        res.status(400).send({
+                            message: "You are already mlem this recipe."
+                        });
+                        return;
+                    } else {
+                        // Update mlem to true
+                        mlem.mlem = true;
+                        mlem.save((err) => {
+                            if (err) {
+                                res.status(500).send({
+                                    message: err.message || "Some error occurred while creating the Mlem."
+                                });
+                                return;
+                            }
+                            // Update mlem count of recipe
+                            recipe.number_of_mlems += 1;
+                            console.log(recipe);
+                            recipe.save((err) => {
+                                if (err) {
+                                    res.status(500).send({
+                                        message: err.message || "Some error occurred while creating the Mlem."
+                                    });
+                                    return;
+                                }
+                                res.send({
+                                    message: "Mlem this recipe successfully!"
+                                });
+                            });
+                        });
+                    }
                 } else {
-                    // Update mlem to true
-                    mlem.mlem = true;
-                    mlem.save((err) => {
+                    // If mlem does not exist, create a new mlem
+                    // Create a Mlem
+                    const tmpMlem = new Mlem({
+                        recipe_id: req.body.recipeid,
+                        user_id: req.userId,
+                    });
+                    // Save Mlem in the database
+                    tmpMlem.save((err) => {
                         if (err) {
                             res.status(500).send({
                                 message: err.message || "Some error occurred while creating the Mlem."
@@ -56,7 +88,7 @@ exports.mlem = (req, res) => {
                         }
                         // Update mlem count of recipe
                         recipe.number_of_mlems += 1;
-                        console.log(recipe.number_of_mlems);
+                        console.log(recipe);
                         recipe.save((err) => {
                             if (err) {
                                 res.status(500).send({
@@ -70,27 +102,8 @@ exports.mlem = (req, res) => {
                         });
                     });
                 }
-            } else {
-                // If mlem does not exist, create a new mlem
-                // Create a Mlem
-                const tmpMlem = new Mlem({
-                    recipe_id: req.body.recipeid,
-                    user_id: req.userId,
-                });
-                // Save Mlem in the database
-                tmpMlem.save((err) => {
-                    if (err) {
-                        res.status(500).send({
-                            message: err.message || "Some error occurred while creating the Mlem."
-                        });
-                        return;
-                    }
-                    res.send({
-                        message: "Mlem this recipe successfully!"
-                    });
-                });
-            }
-        });
+            });
+        }
     });
 }
 
@@ -147,7 +160,7 @@ exports.unmlem = (req, res) => {
                         return;
                     }
                     // Update mlem count of recipe
-                    recipe.number_of_mlems -= 1;
+                    recipe.number_of_mlems === 0 ? recipe.number_of_mlems = 0 : recipe.number_of_mlems -= 1;
                     recipe.save((err) => {
                         if (err) {
                             res.status(500).send({
