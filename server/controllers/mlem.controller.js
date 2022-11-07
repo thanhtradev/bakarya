@@ -13,8 +13,6 @@ exports.mlem = (req, res) => {
         return;
     }
 
-
-
     // Check if recipe exists
     Recipe.findById(req.body.recipeid).exec((err, recipe) => {
         if (err) {
@@ -58,6 +56,7 @@ exports.mlem = (req, res) => {
                         }
                         // Update mlem count of recipe
                         recipe.number_of_mlems += 1;
+                        console.log(recipe.number_of_mlems);
                         recipe.save((err) => {
                             if (err) {
                                 res.status(500).send({

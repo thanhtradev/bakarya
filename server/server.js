@@ -17,7 +17,7 @@ var corsOptions = {
   origin: ["http://localhost:8081", "http://admin.bakarya.com", "http://www.admin.bakarya.com", "http://bakarya.com", "http://www.bakarya.com", "*"],
 };
 
-app.use(cors());
+app.use(cors(corsOptions));
 
 // parse requests of content-type - application/json
 app.use(express.json());
