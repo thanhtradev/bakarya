@@ -17,7 +17,9 @@ const Recipe =
       type: String
     }],
     nutrition: String,
-    thumbnail_url: String,
+    images: [{
+      type: String
+    }],
     video_url: String,
     number_of_mlems: {
       type: Number,

@@ -2,269 +2,67 @@
     "category": "Angel Food Cakes",
     "recipes": [
         {
-            "name": "Fruity Coconut Cake Roll",
-            "expert": "Kiwi and coconut add tropical flair to this moist, fruity and simply delicious dessert from Nancy Granaman of Burlington, Iowa. It makes a light, refreshing and stunning finale to even the fanciest meal!",
-            "time": "Prep: 30 min. Bake: 20 min. + chilling",
-            "makes": "12 servings",
-            "ingredients": [
-                "1 package (16 ounces) angel food cake mix",
-                "1/2 teaspoon plus 3 tablespoons confectioners' sugar, divided",
-                "3/4 cup cold fat-free milk",
-                "1 package (1 ounce) sugar-free instant white chocolate pudding mix",
-                "1 carton (8 ounces) frozen fat-free whipped topping, thawed",
-                "1/2 teaspoon coconut extract",
-                "2 medium kiwifruit, peeled and thinly sliced",
-                "2 cups fresh strawberries, sliced",
-                "1/3 cup plus 2 tablespoons sweetened shredded coconut, divided",
-                "2 tablespoons apricot spreadable fruit",
-                "1/2 teaspoon hot water"
-            ],
-            "directions": [
-                "Line a 15x10x1-in. baking pan with waxed paper; coat the paper with cooking spray and set aside. Prepare cake batter according to package directions. Spread evenly in prepared pan.",
-                "Bake at 350\u00b0 for 16-20 minutes or until golden brown. Turn cake onto a kitchen towel dusted with 1/2 teaspoon confectioners' sugar. Gently peel off waxed paper. Dust with remaining confectioners' sugar. Roll up cake in the towel jelly-roll style, starting with a short side. Cool completely on a wire rack.",
-                "For filling, in a large bowl, whisk milk and pudding mix for 2 minutes. Let stand for 2 minutes or until soft-set. Stir in 1 cup whipped topping. Fold in remaining whipped topping; stir in extract.",
-                "Unroll cake; spread with filling to within 1 in. of edges. Arrange kiwi and strawberries over filling. Sprinkle with 1/3 cup coconut. Roll up again. Refrigerate for 1-2 hours.",
-                "Toast the remaining coconut. In a small bowl, whisk spreadable fruit and water until smooth. Drizzle over cake. Sprinkle with toasted coconut. Cut into slices. Refrigerate leftovers."
-            ],
-            "nutrition": "1 slice: 233 calories, 2g fat (1g saturated fat), 0 cholesterol, 378mg sodium, 50g carbohydrate (36g sugars, 1g fiber), 4g protein."
-        },
-        {
-            "name": "Lemon-Thyme Angel Food Cake",
-            "expert": "Thyme adds a new twist to the classic angel food cake. The flavors pair well together. We enjoy this alongside strawberry ice cream. \u2014Janie Colle, Hutchinson, Kansas",
-            "time": "Prep: 40 min. Bake: 30 min. + cooling",
-            "makes": "12 servings",
-            "ingredients": [
-                "1-1/4 cups egg whites (about 9 large)",
-                "1 cup cake flour",
-                "1/2 cup confectioners' sugar",
-                "3 tablespoons lemon juice",
-                "1 teaspoon cream of tartar",
-                "1/2 teaspoon salt",
-                "1 cup sugar",
-                "2 tablespoons minced fresh thyme",
-                "2 tablespoons lemon zest"
-            ],
-            "directions": [
-                "Place egg whites in a large bowl; let stand at room temperature 30 minutes.",
-                "Meanwhile, preheat oven to 350\u00b0. Sift flour and confectioners' sugar together twice.",
-                "Add lemon juice, cream of tartar and salt to egg whites; beat on medium speed until soft peaks form. Gradually add sugar, 1 tablespoon at a time, beating on high after each addition until sugar is dissolved. Continue beating until soft glossy peaks form. Beat in thyme and lemon zest. Gradually fold in flour mixture, about 1/2 cup at a time.",
-                "Gently transfer to an ungreased 10-in. tube pan. Cut through batter with a knife to remove air pockets. Bake on lowest oven rack 30-35 minutes or until top crust is golden brown and cracks feel dry. Immediately invert pan; cool completely in pan, about 1-1/2 hours.",
-                "Run a knife around sides and center tube of pan. Remove cake to a serving plate."
-            ],
-            "nutrition": "1 piece: 141 calories, 0 fat (0 saturated fat), 0 cholesterol, 141mg sodium, 32g carbohydrate (22g sugars, 0 fiber), 4g protein. Diabetic Exchanges: 2 starch."
-        },
-        {
-            "name": "Berried Treasure Angel Food Cake",
-            "expert": "My husband grills anything and everything\u2014even dessert! With his gentle nudging, I came up with this simple recipe that takes just a few minutes to prepare, yet always impresses dinner guests. \u2014Anita Archibald, Richmond Hill, Ontario",
-            "time": "Prep/Total Time: 25 min.",
-            "makes": "4 servings",
-            "ingredients": [
-                "8 slices angel food cake (1-1/2 inches thick)",
-                "1/4 cup butter, softened",
-                "1/2 cup heavy whipping cream",
-                "1/4 teaspoon almond extract",
-                "1/4 cup almond cake and pastry filling",
-                "1/2 cup fresh blueberries",
-                "1/2 cup fresh raspberries",
-                "1/2 cup sliced fresh strawberries",
-                "1/4 cup mixed nuts, coarsely chopped",
-                "Confectioners' sugar"
-            ],
-            "directions": [
-                "Using a 1-1/2-in. round cookie cutter, cut out the centers of half of the cake slices (discard removed cake or save for another use).  Spread butter over both sides of cake slices. Grill, covered, over medium heat or broil 4 in. from heat 1-2 minutes on each side or until toasted.",
-                "In a small bowl, beat cream until it begins to thicken. Add extract; beat until soft peaks form.",
-                "To serve, stack one solid and one cutout slice of cake on each desert plate, placing the outer edges on opposite sides for a more even thickness. Spoon almond filling into holes; top with whipped cream, berries and nuts. Dust with confectioners' sugar."
-            ],
-            "nutrition": "1 serving (calculated without confectioners' sugar): 486 calories, 29g fat (15g saturated fat), 72mg cholesterol, 575mg sodium, 53g carbohydrate (11g sugars, 3g fiber), 6g protein."
-        },
-        {
-            "name": "Toffee Angel Food Cake",
-            "expert": "Chopped toffee bits and whipped cream make the sweet flavor and light, moist texture of angel food even more indulgent. For best results, refrigerate the cake for at least an hour before serving. \u2014Collette Gaugler, Fogelsville, Pennsylvania",
-            "time": "Prep: 45 min. Bake: 50 min. + cooling",
-            "makes": "16 servings",
-            "ingredients": [
-                "11 large egg whites",
-                "1 cup confectioners' sugar",
-                "1 cup cake flour",
-                "1 teaspoon cream of tartar",
-                "1 teaspoon vanilla extract",
-                "Pinch salt",
-                "1-1/4 cups superfine sugar",
-                "WHIPPED CREAM:",
-                "2 cups heavy whipping cream",
-                "1/2 cup hot caramel ice cream topping, room temperature",
-                "1 teaspoon vanilla extract",
-                "4 Heath candy bars (1-1/2 ounces each), chopped",
-                "Chocolate curls, optional"
-            ],
-            "directions": [
-                "Place egg whites in a large bowl; let stand at room temperature 30 minutes.",
-                "Meanwhile, place oven rack in the lowest position and remove upper rack if needed. Preheat oven to 325\u00b0. Sift confectioners' sugar and cake flour together twice.",
-                "Add cream of tartar, vanilla and salt to egg whites; beat on medium speed until soft peaks form. Gradually add superfine sugar, 1 tablespoon at a time, beating on high after each addition until sugar is dissolved. Continue beating until soft glossy peaks form. Gradually fold in flour mixture, about 1/2 cup at a time.",
-                "Gently transfer to an ungreased 10-in. tube pan. Cut through batter with a knife to remove air pockets. Bake on lowest rack until top crust is golden brown and cracks feel dry, 50-60 minutes. Immediately invert pan; cool completely in pan, about 1-1/2 hours.",
-                "Run a knife around sides and center tube of pan. Remove cake to a serving plate. Using a long serrated knife, cut cake horizontally into 3 layers. In a large bowl, beat cream until it begins to thicken. Gradually add caramel topping and vanilla; beat until soft peaks form.",
-                "Place 1 cake layer on a serving plate; spread with 1 cup whipped cream mixture. Sprinkle with a third of the chopped candies. Repeat layers. Top with remaining cake layer. Frost top and sides of cake with remaining whipped cream mixture; sprinkle with remaining candy. If desired, sprinkle chocolate curls over top and around bottom of cake."
-            ],
-            "nutrition": "1 slice: 315 calories, 14g fat (9g saturated fat), 36mg cholesterol, 117mg sodium, 44g carbohydrate (36g sugars, 0 fiber), 5g protein."
-        },
-        {
-            "name": "Chocolate-Filled Cherry Angel Cake",
-            "expert": "Here's a cake that will catch the eye of all your guests. It's beautiful and is ideal for parties or holidays. If you loved chocolate and cherries together, you'll love this cake! \u2014Barbara Wheeler, Royal Oak, Michigan",
-            "time": "Prep: 20 min. Bake: 45 min. + cooling",
+            "name": "Chocolate Cappuccino Mousse Cake",
+            "image_url": "https://www.tasteofhome.com/wp-content/themes/bumblebee-toh-child/images/recipes/Image-69-2x.png",
+            "expert": "Layers of coffee-flavored angel food cake and decadent chocolate mousse are covered with a to-die-for buttercream frosting. Each slice of this dessert is like a piece of heaven. It takes some time to prepare, but the compliments that follow make the effort worth it.\u2014Jane Woods, Fort Worth, Texas",
+            "time": "Prep: 70 min. Bake: 20 min. + cooling",
             "makes": "16 servings",
             "ingredients": [
                 "1 package (16 ounces) angel food cake mix",
-                "1/2 cup finely chopped maraschino cherries",
-                "1 cup semisweet chocolate chips",
-                "1 tablespoon maraschino cherry juice",
-                "2 teaspoons strong brewed coffee",
-                "1/2 teaspoon vanilla extract",
-                "1 cup sour cream",
-                "1 container (8 ounces) frozen whipped topping, thawed",
-                "Chopped walnuts, grated chocolate and additional maraschino cherries"
-            ],
-            "directions": [
-                "Prepare cake mix batter according to package directions; fold in chopped cherries. Gently spoon into an ungreased 10-in. tube pan. Cut through batter with a knife to remove air pockets.",
-                "Bake on the lowest oven rack at 350\u00b0 for 45-55 minutes or until lightly browned and entire top appears dry. Immediately invert pan; cool completely, about 1 hour. Run a knife around side and center tube of pan. Cut cake horizontally into three layers.",
-                "For filling, in a small heavy saucepan, cook and stir the chocolate chips, cherry juice, coffee and vanilla over medium-low heat until melted. Remove from the heat; stir in sour cream.",
-                "To assemble, place one cake layer on a serving plate; spread with one half of the filling. Repeat layers. Top with remaining cake layer. Spread whipped topping over top and sides of cake. Garnish with walnuts, chocolate and cherries. Refrigerate until serving."
-            ],
-            "nutrition": "1 slice (calculated without garnishes): 236 calories, 8g fat (6g saturated fat), 9mg cholesterol, 219mg sodium, 37g carbohydrate (22g sugars, 1g fiber), 3g protein."
-        },
-        {
-            "name": "Grilled Angel Food Cake with Strawberries",
-            "expert": "One night I goofed, accidentally using the balsamic butter I save for grilling chicken on my pound cake. What a delicious  mistake that my entire family loved! For a patriotic look, add a drizzle of blueberry syrup. \u2014Tammy Hathaway, Freeman Twp, Maine",
-            "time": "Prep/Total Time: 15 min.",
-            "makes": "8 servings",
-            "ingredients": [
-                "2 cups sliced fresh strawberries",
-                "2 teaspoons sugar",
-                "3 tablespoons butter, melted",
-                "2 tablespoons balsamic vinegar",
-                "8 slices angel food cake (about 1 ounce each)",
-                "Optional: Reduced-fat vanilla ice cream and blueberry syrup"
-            ],
-            "directions": [
-                "In a small bowl, toss strawberries with sugar. In another bowl, mix butter and vinegar; brush over cut sides of cake.",
-                "On a greased rack, grill cake, uncovered, over medium heat until golden brown, 1-2 minutes on each side. Serve cake with strawberries and, if desired, ice cream and blueberry syrup."
-            ],
-            "nutrition": "1 cake slice with 1/4 cup strawberries (calculated without ice cream and syrup): 132 calories, 5g fat (3g saturated fat), 11mg cholesterol, 247mg sodium, 22g carbohydrate (4g sugars, 1g fiber), 2g protein.  Diabetic Exchanges: 1-1/2 starch, 1 fat."
-        },
-        {
-            "name": "Cranberry Cake Roll",
-            "expert": "This low-fat angel food cake roll is a guilt-free indulgence, which is much-appreciated during the Christmas season. \u2014Paige Kowolewski, Topton, Pennsylvania",
-            "time": "Prep: 45 min. + chilling Bake: 20 min. + cooling",
-            "makes": "12 servings",
-            "ingredients": [
-                "9 large egg whites",
-                "1-1/2 teaspoons vanilla extract",
-                "3/4 teaspoon cream of tartar",
-                "1/4 teaspoon salt",
-                "1 cup plus 2 tablespoons sugar",
-                "3/4 cup cake flour",
-                "Confectioners' sugar",
+                "1 cup plus 2 tablespoons cold water",
+                "2 tablespoons brewed coffee",
                 "FILLING:",
-                "2-1/3 cups fresh or frozen cranberries",
-                "1 cup sugar",
-                "6 tablespoons water, divided",
-                "1/3 cup chopped candied orange peel, optional",
-                "1 tablespoon orange liqueur, optional",
-                "1 teaspoon grated orange zest, optional",
-                "2 tablespoons cornstarch"
+                "4 ounces bittersweet chocolate, chopped",
+                "1 teaspoon instant coffee granules",
+                "1 teaspoon ground cinnamon",
+                "1-3/4 cups heavy whipping cream",
+                "FROSTING:",
+                "2/3 cup butter, softened",
+                "5-1/2 cups confectioners' sugar",
+                "6 tablespoons coffee liqueur",
+                "2-1/2 teaspoons vanilla extract"
             ],
             "directions": [
-                "Preheat oven to 350\u00b0. Place egg whites in a large bowl; let stand at room temperature for 30 minutes. Meanwhile, line a greased 15x10x1-in. baking pan with waxed paper; grease the paper.",
-                "Add vanilla, cream of tartar and salt to egg whites; beat on medium speed until soft peaks form. Gradually beat in sugar, 2 tablespoons at a time, on high until stiff glossy peaks form and sugar is dissolved. Fold in flour, about 1/4 cup at a time.",
-                "Carefully spread into prepared pan. Bake until cake springs back when lightly touched, 15-20 minutes. Cool for 5 minutes. Turn cake onto a kitchen towel dusted with confectioners\u2019 sugar. Gently peel off waxed paper. Roll up cake in the towel jelly-roll style, starting with a short side. Cool completely on a wire rack.",
-                "For filling, in a large saucepan, combine the cranberries, sugar and 4 tablespoons water. Bring to a boil. Reduce heat; simmer, uncovered, until berries pop, 5-6 minutes. Mash berries; strain, reserving juice and discarding pulp. Return juice to the pan and if desired, add chopped candied orange peel, orange liqueur and orange zest. Combine cornstarch and remaining 2 tablespons water until smooth; gradually add to cranberry juice mixture. Bring to a boil; cook and stir until thickened, about 2 minutes. Chill.",
-                "Unroll cake and spread filling to within 1/2 in. of edges. Roll up again. Cover and refrigerate for 1 hour before serving. If desired, top with additional confectioners' sugar, candied orange peel and sugared cranberries. Refrigerate leftovers."
+                "Line the bottoms of three 9-in. round baking pans with waxed paper; set aside. In a large bowl, beat the cake mix, water and coffee on low speed for 30 seconds. Beat on medium for 1 minute. Gently spoon batter into prepared pans. Bake at 350\u00b0 for 20-25 minutes or until tops are golden brown and dry. Cool in pans on wire racks.",
+                "Meanwhile, in a large bowl, combine the chocolate, coffee granules and cinnamon. In a small saucepan, cook and stir cream over medium heat until hot (do not boil). Pour over chocolate mixture; stir until smooth. Refrigerate for about 1 hour or until chilled and slightly thickened, stirring occasionally. Beat on medium speed just until stiff peaks form.",
+                "In a large bowl, beat the frosting ingredients until light and fluffy. Place one cake layer on a serving plate; spread with half of the filling. Repeat layers. Top with remaining cake layer. Spread frosting over the top and sides of cake. Refrigerate leftovers."
             ],
-            "nutrition": "1 piece: 196 calories, 0 fat (0 saturated fat), 0 cholesterol, 91mg sodium, 46g carbohydrate (36g sugars, 1g fiber), 3g protein."
+            "nutrition": "1 slice: 478 calories, 20g fat (12g saturated fat), 54mg cholesterol, 270mg sodium, 73g carbohydrate (56g sugars, 1g fiber), 4g protein."
         },
         {
-            "name": "Best Angel Food Cake",
-            "expert": "For our daughter's wedding, a friend made this lovely, angel food cake from a recipe she's used for decades. It really is one of the best angel food cake recipes I've found. Serve slices plain or dress them up with fresh fruit. \u2014Marilyn Niemeyer, Doon, Iowa",
-            "time": "Prep: 15 min. + standing Bake: 35 min. + cooling",
+            "name": "Contest-Winning Brown Sugar Angel Food Cake",
+            "image_url": "https://www.tasteofhome.com/wp-content/uploads/2018/01/Contest-Winning-Brown-Sugar-Angel-Food-Cake_exps47712_CW1794336D37B_RMS.jpg?fit=700,1024",
+            "expert": "Brown sugar makes this moist, tender angel food cake delicious and different. Chunks of chopped toffee give its fluffy frosting some snap. The cake\u2019s lovely with a hot cup of coffee.",
+            "time": "Prep: 1 hour + chilling Bake: 25 min. + cooling",
             "makes": "16 servings",
             "ingredients": [
-                "1-1/4 cups egg whites (about 9 large)",
-                "1-1/2 cups sugar, divided",
+                "1-1/2 cups large egg whites (about 10)",
+                "1-3/4 cups packed brown sugar, divided",
                 "1 cup cake flour",
-                "1-1/4 teaspoons cream of tartar",
-                "1 teaspoon vanilla extract",
-                "1/4 teaspoon almond extract",
-                "1/4 teaspoon salt"
-            ],
-            "directions": [
-                "Place egg whites in a large bowl; let stand at room temperature 30 minutes. Sift 1/2 cup sugar and flour together twice; set aside.",
-                "Place oven rack in the lowest position. Preheat oven to 350\u00b0. Add cream of tartar, extracts and salt to egg whites; beat on medium speed until soft peaks form. Gradually add remaining sugar, about 2 tablespoons at a time, beating on high until stiff peaks form. Gradually fold in flour mixture, about 1/2 cup at a time.",
-                "Gently spoon into an ungreased 10-in. tube pan. Cut through batter with a knife to remove air pockets. Bake until lightly browned and entire top appears dry, 35-40 minutes. Immediately invert pan; cool completely, about 1 hour.",
-                "Run a knife around side and center tube of pan. Remove cake to a serving plate."
-            ],
-            "nutrition": "1 piece: 115 calories, 0 fat (0 saturated fat), 0 cholesterol, 68mg sodium, 26g carbohydrate (19g sugars, 0 fiber), 3g protein. Diabetic Exchanges: 1-1/2 starch."
-        },
-        {
-            "name": "Peach Angel Food Cake",
-            "expert": "Dessert doesn't mean slaving in the kitchen all day long when you use this recipe. The prepared angel food cake makes it so easy.\u2014Jean Nichols, Eugene, Oregon",
-            "time": "Prep/Total Time: 5 min.",
-            "makes": "6 servings",
-            "ingredients": [
-                "6 slices angel food cake",
-                "2 cups canned sliced peaches, drained",
-                "3/4 cup heavy whipping cream, whipped",
-                "Ground nutmeg, optional"
-            ],
-            "directions": [
-                "Place cake on individual plates. Top with peaches and whipped cream; sprinkle with nutmeg if desired."
-            ],
-            "nutrition": ""
-        },
-        {
-            "name": "Blueberry Lemon Trifle",
-            "expert": "A refreshing lemon filling and fresh blueberries give this sunny dessert sensation plenty of color. Don't worry about heating up the oven\u2014this trifle doesn't require baking. \u2014Ellen Peden, Houston, Texas",
-            "time": "Prep: 15 min. + chilling",
-            "makes": "14 servings",
-            "ingredients": [
-                "3 cups fresh blueberries, divided",
-                "2 cans (15-3/4 ounces each) lemon pie filling",
-                "2 cups lemon yogurt",
-                "1 prepared angel food cake (8 to 10 ounces), cut into 1-inch cubes",
-                "1 carton (8 ounces) frozen whipped topping, thawed",
-                "Optional: Lemon slices and fresh mint"
-            ],
-            "directions": [
-                "Set aside 1/4 cup blueberries for garnish. In a large bowl, combine pie filling and yogurt.",
-                "In a 3-1/2-qt. serving or trifle bowl, layer a third of the cake cubes, lemon mixture and blueberries. Repeat layers twice. Top with whipped topping. Cover and refrigerate for at least 2 hours. Garnish with reserved blueberries and, if desired, lemon and mint."
-            ],
-            "nutrition": "1 serving: 230 calories, 4g fat (3g saturated fat), 2mg cholesterol, 235mg sodium, 44g carbohydrate (27g sugars, 1g fiber), 3g protein."
-        },
-        {
-            "name": "Gluten-Free Angel Food Cake",
-            "expert": "My daughter can\u2019t have gluten and my husband is diabetic, so there are a lot of special recipes at our house. This is one of them. \u2014Anne Wiebe, Gladstone, Manitoba",
-            "time": "Prep: 15 min. Bake: 45 min. + cooling",
-            "makes": "16 servings",
-            "ingredients": [
-                "1-1/2 cups egg whites (about 10)",
-                "3/4 cup plus 1/2 cup sugar, divided",
-                "1/4 cup cornstarch",
-                "1/4 cup white rice flour",
-                "1/4 cup tapioca flour",
-                "1/4 cup potato starch",
                 "1-1/2 teaspoons cream of tartar",
-                "3/4 teaspoon salt",
-                "3/4 teaspoon vanilla extract",
-                "Assorted fresh fruit, optional"
+                "1-1/2 teaspoons vanilla extract",
+                "1/2 teaspoon salt",
+                "TOFFEE/TOPPING:",
+                "1 teaspoon plus 1 cup butter, divided",
+                "1-1/2 cups chopped pecans",
+                "1-1/2 cups packed brown sugar",
+                "1 cup semisweet chocolate chips",
+                "1 carton (12 ounces) frozen whipped topping, thawed"
             ],
             "directions": [
-                "Place egg whites in a large bowl; let stand at room temperature for 30 minutes. Sift 3/4 cup sugar, cornstarch, flours and potato starch together twice; set aside.",
-                "Add cream of tartar, salt and vanilla to egg whites; beat on medium speed until soft peaks form. Gradually add remaining sugar, about 2 tablespoons at a time, beating on high until stiff peaks form. Gradually fold in flour mixture, about 1/2 cup at a time.",
-                "Gently spoon into an ungreased 10-in. tube pan. Cut through the batter with a knife to remove air pockets. Bake on the lowest oven rack at 350\u00b0 for 45-50 minutes or until lightly browned and entire top appears dry. Immediately invert pan; cool completely, about 1 hour.",
-                "Run a knife around side and center tube of pan. Remove cake to a serving plate. Top with fresh fruit if desired."
+                "Place egg whites in a large bowl; let stand at room temperature 30 minutes. Sift 1 cup brown sugar and flour together twice; set aside.",
+                "Place oven rack in lowest position. Preheat oven to 350\u00b0. Add cream of tartar, vanilla and salt to egg whites; beat on medium speed until soft peaks form. Gradually add remaining brown sugar, about 2 tablespoons at a time, beating on high until stiff glossy peaks form and sugar is dissolved. Gradually fold in flour mixture, about 1/2 cup at a time.",
+                "Gently spoon into an ungreased 10-in. tube pan. Cut through batter with a knife to remove air pockets. Bake 25-30 minutes or until lightly browned and entire top appears dry. Immediately invert pan; cool completely, about 1 hour.",
+                "Run a knife around side and center tube of pan. Remove cake to a serving plate.",
+                "For toffee, line a 13x9-in. baking pan with foil; grease the foil with 1 teaspoon butter. Sprinkle pecans into prepared pan; set aside.",
+                "In a small heavy saucepan over medium-low heat, bring brown sugar and remaining butter to a boil, stirring constantly. Cover and cook 2 minutes. Cook and stir with a clean spoon until a candy thermometer reads 300\u00b0 (hard-crack stage). Immediately pour into prepared pan. Sprinkle with chips; spread with a knife when melted. Refrigerate for about 1 hour or until set.",
+                "Frost cake with whipped topping. Finely chop half of the toffee; press onto cake. Serve with remaining toffee if desired. Store leftover toffee in an airtight container."
             ],
-            "nutrition": "1 piece: 101 calories, 0 fat (0 saturated fat), 0 cholesterol, 149mg sodium, 23g carbohydrate (16g sugars, 0 fiber), 3g protein."
+            "nutrition": "1 slice: 349 calories, 15g fat (9g saturated fat), 15mg cholesterol, 167mg sodium, 49g carbohydrate (39g sugars, 1g fiber), 4g protein."
         },
         {
             "name": "Angel Food Cake Roll",
+            "image_url": "https://www.tasteofhome.com/wp-content/uploads/2018/01/Angel-Food-Cake-Roll_EXPS_FT20_16977_F_0422_1_HOME-1-13.jpg?fit=700,1024",
             "expert": "There's always room for dessert\u2014especially when it's this eye-catching angel food cake roll. We like strawberry yogurt in the filling, but different flavors work well, too. \u2014Joan Colbert, Sigourney, Iowa",
             "time": "Prep: 30 min. + freeezing Bake: 15 min. + cooling",
             "makes": "12 servings",
@@ -286,6 +84,7 @@
         },
         {
             "name": "Layered Toffee Cake",
+            "image_url": "https://www.tasteofhome.com/wp-content/uploads/2018/01/exps8010_QC2162C27C-2.jpg",
             "expert": "This is a quick and yummy way to dress up a purchased angel food cake. To keep the plate clean while assembling this pretty layered dessert, cut two half circles of waxed paper to place under the bottom layer and remove them after frosting the cake and sprinkling on the toffee. \n-Pat Squire\nAlexandria, Virginia",
             "time": "Prep/Total Time: 20 min.",
             "makes": "14 servings",
@@ -302,27 +101,8 @@
             "nutrition": ""
         },
         {
-            "name": "Apple-Spice Angel Food Cake",
-            "expert": "I dressed up an angel food cake mix with some nuts, spice and applesauce to make an easy and light dessert. I serve it with a dollop of whipped topping mixed with a half cup of sour cream. \u2014Joan Buehnerkemper, Teutopolis, Illinois",
-            "time": "Prep: 10 min. Bake: 35 min. + cooling",
-            "makes": "16 servings",
-            "ingredients": [
-                "1 package (16 ounces) angel food cake mix",
-                "1 cup water",
-                "2/3 cup unsweetened applesauce",
-                "1/2 cup finely chopped pecans, toasted",
-                "1 teaspoon apple pie spice",
-                "Reduced-fat whipped topping and/or apple slices, optional"
-            ],
-            "directions": [
-                "In a large bowl, combine cake mix and water. Beat on low speed for 30 seconds. Beat on medium speed for 1 minute. Fold in the applesauce, pecans and pie spice.",
-                "Gently spoon into an ungreased 10-in. tube pan. Cut through batter with a knife to remove air pockets. Bake on the lowest oven rack at 350\u00b0 for 35-45 minutes or until lightly browned and entire top appears dry. Immediately invert pan; cool completely, about 1 hour.",
-                "Run a knife around side and center tube of pan. Remove cake to a serving plate. Garnish with whipped topping and/or apple slices if desired."
-            ],
-            "nutrition": "1 slice: 136 calories, 3g fat (0 saturated fat), 0 cholesterol, 209mg sodium, 26g carbohydrate (14g sugars, 1g fiber), 3g protein. Diabetic Exchanges: 1-1/2 starch, 1/2 fat."
-        },
-        {
             "name": "Angel Food Cake with Berry Sauce",
+            "image_url": "https://www.tasteofhome.com/wp-content/uploads/2018/01/exps45548_HC1597097D185-4.jpg",
             "expert": "We top light and airy angel food cake with a lovely berry sauce for a heavenly dessert. The sauce can also be used to top cake made from a mix.\u2014Taste of Home Test Kitchen",
             "time": "Prep: 30 min. Bake: 50 min. + cooling",
             "makes": "16 servings (6 cups sauce)",
@@ -355,126 +135,124 @@
             ],
             "nutrition": "1 slice: 189 calories, 0 fat (0 saturated fat), 0 cholesterol, 79mg sodium, 39g carbohydrate (29g sugars, 3g fiber), 4g protein."
         },
-        {},
         {
-            "name": "Mocha-Hazelnut Glazed Angel Food Cake",
-            "expert": "I love this recipe because it combines three of my favorite flavors: coffee, hazelnuts and cherries. \u2014Joan Pecsek, Chesapeake, Virginia",
-            "time": "Prep: 25 min. Bake: 30 min. + cooling",
-            "makes": "16 servings",
+            "name": "Grilled Angel Food Cake with Strawberries",
+            "image_url": "https://www.tasteofhome.com/wp-content/uploads/2018/01/exps162471_SD153320B12_10_8b-2.jpg?fit=700,1024",
+            "expert": "One night I goofed, accidentally using the balsamic butter I save for grilling chicken on my pound cake. What a delicious  mistake that my entire family loved! For a patriotic look, add a drizzle of blueberry syrup. \u2014Tammy Hathaway, Freeman Twp, Maine",
+            "time": "Prep/Total Time: 15 min.",
+            "makes": "8 servings",
             "ingredients": [
-                "12 large egg whites (about 1-2/3 cups)",
-                "1 cup cake flour",
-                "1/4 teaspoon instant coffee granules",
-                "1 teaspoon cream of tartar",
-                "1 teaspoon almond extract",
-                "1/2 teaspoon salt",
-                "1-1/4 cups sugar",
-                "GLAZE:",
-                "1 cup Nutella",
-                "1/2 cup confectioners' sugar",
-                "1/3 cup brewed coffee",
-                "1/4 cup chopped hazelnuts",
-                "16 maraschino cherries with stems"
+                "2 cups sliced fresh strawberries",
+                "2 teaspoons sugar",
+                "3 tablespoons butter, melted",
+                "2 tablespoons balsamic vinegar",
+                "8 slices angel food cake (about 1 ounce each)",
+                "Optional: Reduced-fat vanilla ice cream and blueberry syrup"
             ],
             "directions": [
-                "Place egg whites in a large bowl; let stand at room temperature 30 minutes.",
-                "Meanwhile, preheat oven to 350\u00b0. In a small bowl, mix flour and coffee granules until blended.",
-                "Add cream of tartar, extract and salt to egg whites; beat on medium speed until soft peaks form. Gradually add sugar, 1 tablespoon at a time, beating on high after each addition until sugar is dissolved. Continue beating until soft glossy peaks form. Gradually fold in flour mixture, about 1/2 cup at a time.",
-                "Gently transfer to an ungreased 10-in. tube pan. Cut through batter with a knife to remove air pockets. Bake on lowest oven rack 30-40 minutes or until top springs back when lightly touched. Immediately invert pan; cool cake in pan, about 1-1/2 hours.",
-                "Run a knife around sides and center tube of pan. Remove cake to a serving plate. In a small bowl, whisk Nutella, confectioners' sugar and coffee until smooth. Drizzle over cake; sprinkle with hazelnuts. Serve with cherries."
+                "In a small bowl, toss strawberries with sugar. In another bowl, mix butter and vinegar; brush over cut sides of cake.",
+                "On a greased rack, grill cake, uncovered, over medium heat until golden brown, 1-2 minutes on each side. Serve cake with strawberries and, if desired, ice cream and blueberry syrup."
             ],
-            "nutrition": "1 slice: 234 calories, 7g fat (1g saturated fat), 0 cholesterol, 123mg sodium, 41g carbohydrate (33g sugars, 1g fiber), 5g protein."
+            "nutrition": "1 cake slice with 1/4 cup strawberries (calculated without ice cream and syrup): 132 calories, 5g fat (3g saturated fat), 11mg cholesterol, 247mg sodium, 22g carbohydrate (4g sugars, 1g fiber), 2g protein.  Diabetic Exchanges: 1-1/2 starch, 1 fat."
         },
         {
-            "name": "Homemade Chocolate Angel Food Cake",
-            "expert": "I developed this cake using my mother's angel food cake recipe because my husband and three daughters all love chocolate. It won first place at our county and state fairs, as well as best of class at the state fair! \u2014Lois Bayles, Hastings, Nebraska",
-            "time": "Prep: 30 min. Bake: 45 min. + cooling",
-            "makes": "16 servings",
+            "name": "Peach Angel Dessert",
+            "image_url": "https://www.tasteofhome.com/wp-content/uploads/2018/01/exps21204_LT10350D49.jpg",
+            "expert": "This light and lovely dessert is absolutely heavenly! Marge Hubrich of St. Cloud, Minnesota suggests, \"Try this with fresh strawberries, raspberries or blueberries, too, using the corresponding flavor of gelatin. It's delicious with any of them.\"",
+            "time": "Prep: 20 min. + chilling",
+            "makes": "15 servings",
             "ingredients": [
-                "1-1/2 cups plus 1/3 cup sugar, divided",
-                "1-1/4 cups sifted cake flour",
-                "1/4 cup baking cocoa",
-                "2 cups egg whites (about 14), room temperature",
-                "1 teaspoon vanilla extract",
-                "1/2 teaspoon chocolate flavoring",
-                "1-1/2 teaspoons cream of tartar",
-                "1/2 teaspoon salt",
-                "Optional: Ice cream and fudge sauce"
+                "3/4 cup sugar",
+                "2 tablespoons cornstarch",
+                "1 cup water",
+                "2 tablespoons corn syrup",
+                "1/4 cup peach, apricot or orange gelatin powder",
+                "1 loaf-shaped angel food cake (10-1/2 ounces)",
+                "1 package (8 ounces) reduced-fat cream cheese",
+                "2/3 cup confectioners' sugar",
+                "2 tablespoons fat-free milk",
+                "1 carton (8 ounces) frozen reduced-fat whipped topping, thawed",
+                "3 cups sliced peeled fresh or frozen unsweetened sliced peaches, thawed"
             ],
             "directions": [
-                "Sift together 1-1/2 cups sugar with flour and cocoa; set aside. In a large bowl, beat egg whites, vanilla and chocolate flavoring until foamy. Combine cream of tartar, salt and remaining sugar; add a little at a time to egg mixture. Beat until very stiff but not dry peaks form. Gradually fold in flour mixture; do not overmix. Pour into an ungreased 10-in. tube pan. Bake at 350\u00b0 for 45 minutes. Remove from oven and invert pan; allow to cool completely before removing from pan. Serve with ice cream and fudge sauce if desired."
+                "In a small saucepan, combine sugar and cornstarch. Gradually whisk in water and corn syrup until smooth. Bring to a boil. Cook and stir for 1-2 minutes or until thickened. Remove from the heat; stir in gelatin until dissolved. Cool to room temperature, stirring several times.",
+                "Cut angel food cake into nine slices. Line an ungreased 13-in. x 9-in. dish with the slices; set aside. In a large bowl, beat cream cheese and confectioners' sugar until smooth. Gradually beat in milk.",
+                "Set aside 1/3 cup whipped topping for garnish. Fold remaining whipped topping into cream cheese mixture; spread over cake. Top with peaches. Pour gelatin mixture over peaches.",
+                "Cover and refrigerate for at least 4 hours. Cut into squares. Top each piece with about 1 teaspoon of reserved whipped topping. Refrigerate leftovers."
             ],
-            "nutrition": "1 piece: 148 calories, 0 fat (0 saturated fat), 0 cholesterol, 124mg sodium, 32g carbohydrate (23g sugars, 0 fiber), 4g protein."
+            "nutrition": "1 piece: 215 calories, 4g fat (3g saturated fat), 9mg cholesterol, 157mg sodium, 40g carbohydrate (0 sugars, 1g fiber), 3g protein."
         },
         {
-            "name": "Angel Berry Tunnel Cake",
-            "expert": "This tasty cake is a light favorite for summer. To save time, I rely on a purchased angel food cake and frozen whipped topping. \u2014Ruth Marie Lyons, Boulder, Colorado",
-            "time": "Prep/Total Time: 30 min.",
+            "name": "Brown Sugar Angel Food Cake",
+            "image_url": "https://www.tasteofhome.com/wp-content/themes/bumblebee-toh-child/images/recipes/Image-69-2x.png",
+            "expert": "For a new twist on angel food cake, give this recipe a try. It's light and tasty!\u2014Nina Summan, Connersville, Indiana",
+            "time": "Prep: 30 min. Bake: 40 min. + cooling",
             "makes": "12 servings",
             "ingredients": [
-                "1 prepared angel food cake (8 to 10 ounces)",
-                "1-1/2 cups fresh or frozen raspberries, thawed and drained",
-                "1-1/2 cups fresh or frozen blueberries",
-                "8 cups whipped topping",
-                "Additional berries, optional"
+                "1-1/2 cups egg whites (about 10)",
+                "2 cups packed brown sugar, divided",
+                "1-1/4 cups cake flour",
+                "1-1/2 teaspoons cream tartar",
+                "1 teaspoon salt",
+                "2 teaspoons vanilla extract"
             ],
             "directions": [
-                "With a serrated knife, slice off the top 1/2 in. of the cake; set aside. Cut a tunnel about 2 in. deep in the cake, leaving a 3/4-in. shell. Remove cake from tunnel; cut into 1-in. cubes.",
-                "Combine cake cubes, berries and half of the whipped topping; spoon into tunnel. Replace cake top.",
-                "Frost with remaining whipped topping. Garnish with berries if desired. Refrigerate until serving."
+                "Place egg whites in a large bowl, let stand at room temperature for 30 minutes. Sift 1 cup brown sugar and flour together twice; set aside. Sift remaining sugar; set aside.",
+                "Beat egg whites until foamy. Add cream of tartar and salt; beat until soft peaks form. Add vanilla. Gradually add reserved sugar, about 2 tablespoons at a time, beating well after each addition; beat until stiff glossy peaks form. Gradually fold in flour mixture, abut 1/2 cup at a time.",
+                "Gently spoon into an ungreased 10-in. tube pan. Bake at 350\u00b0 for 40-45 minutes or until lightly browned and entire top appears dry.",
+                "Immediately invert pan onto a wire rack; cool completely, about 1 hour. Run a knife around side of cake and remove to a serving plate."
             ],
-            "nutrition": "1 piece: 200 calories, 8g fat (8g saturated fat), 0 cholesterol, 142mg sodium, 26g carbohydrate (13g sugars, 2g fiber), 1g protein."
+            "nutrition": ""
         },
         {
-            "name": "Mocha Frosting",
-            "expert": "This easy-to-make mocha frosting adds a kiss of coffee flavor to your favorite desserts. \u2014Taste of Home Test Kitchen",
-            "time": "Prep/Total Time: 20 min.",
-            "makes": "2-1/2 cups",
+            "name": "Homemade Angel Food Cake",
+            "image_url": "https://www.tasteofhome.com/wp-content/uploads/2018/01/exps10195_TH10039C8.jpg",
+            "expert": "\"Whipped cream and a hint of chocolate make this cake delightful,\" remarks Joan Schroeder of Pinedale, Wyoming.",
+            "time": "Prep: 30 min. Bake: 50 min. + cooling",
+            "makes": "12-16 servings",
             "ingredients": [
-                "2 tablespoons instant coffee granules",
-                "3 tablespoons boiling water",
-                "1 cup butter, softened",
-                "2 tablespoons baking cocoa",
-                "4 cups confectioners' sugar"
-            ],
-            "directions": [
-                "For frosting, in a small bowl, dissolve coffee granules in water; set aside. In a bowl, cream butter until light and fluffy. Beat in cocoa. Gradually beat in confectioners' sugar and coffee mixture until smooth. Use immediately or refrigerate."
-            ],
-            "nutrition": "2 tablespoons: 177 calories, 9g fat (6g saturated fat), 24mg cholesterol, 74mg sodium, 24g carbohydrate (23g sugars, 0 fiber), 0 protein."
-        },
-        {
-            "name": "Chocolate Angel Cake",
-            "expert": "When I was married in 1944, I could barely boil water. My dear mother-in-law taught me her specialty\u2014making the lightest angel food cakes ever. This chocolate version is an easy, impressive treat. \u2014Joyce Shiffler, Colorado Springs, Colorado",
-            "time": "Prep: 25 min. Bake: 35 min. + cooling",
-            "makes": "16 servings",
-            "ingredients": [
-                "1-1/2 cups egg whites (about 10 large)",
-                "1-1/2 cups confectioners' sugar",
+                "1-1/2 cups egg whites (about 10)",
                 "1 cup cake flour",
-                "1/4 cup baking cocoa",
-                "1-1/2 teaspoons cream of tartar",
-                "1/2 teaspoon salt",
-                "1 cup sugar",
+                "1 cup confectioners' sugar",
+                "1 teaspoon cream of tartar",
+                "1 teaspoon vanilla extract",
+                "Pinch salt",
+                "1-1/4 cups sugar",
                 "FROSTING:",
-                "1-1/2 cups heavy whipping cream",
-                "1/2 cup sugar",
-                "1/4 cup baking cocoa",
-                "1/2 teaspoon salt",
-                "1/2 teaspoon vanilla extract",
-                "Chocolate leaves, optional"
+                "1 plain milk chocolate candy bar (7 ounces)",
+                "2 cups heavy whipping cream",
+                "3 tablespoons confectioners' sugar",
+                "1 teaspoon vanilla extract",
+                "Chocolate shavings, optional"
             ],
             "directions": [
-                "Place egg whites in a large bowl; let stand at room temperature for 30 minutes. Sift together confectioners' sugar, flour and cocoa 3 times.",
-                "Add cream of tartar and salt to egg whites; beat on medium speed until soft peaks form. Gradually add sugar, about 2 tablespoons at a time, beating on high until stiff glossy peaks form and sugar is dissolved. Gradually fold in flour mixture, about 1/2 cup at a time.",
-                "Spoon into an ungreased 10-in. tube pan. Cut through batter with a knife to remove air pockets. Bake on the lowest oven rack at 375\u00b0 until lightly browned and entire top appears dry, 35-40 minutes. Immediately invert pan; cool completely, about 1 hour.",
-                "Run a knife around side and center tube of pan. Remove cake to a serving plate.",
-                "In a large bowl, combine the first 5 frosting ingredients; cover and chill for 1 hour. Beat until stiff peaks form.",
-                "Spread over the top and sides of cake. Store in the refrigerator. Garnish with chocolate leaves if desired."
+                "Let egg whites stand at room temperature 30 minutes. Sift flour and confectioners' sugar together twice; set aside. In a large bowl, beat the egg whites, cream of tartar and salt on medium speed until soft peaks form. Add vanilla and salt on medium speed until soft peaks form. Gradually add sugar, about 2 tablespoons at a time, beating on high until stiff glossy peaks form and sugar is dissolved. Gradually fold in flour mixture, about 1/2 cup at a time.",
+                "Gently spoon into an ungreased 10-in. tube pan. Bake at 325\u00b0 for 50-60 minutes or until lightly browned and entire top appears dry. Immediately invert the pan onto a wire rack; cool completely.",
+                "For frosting, melt the candy bar in a heavy saucepan or microwave; stir until smooth. Cool for 5 minutes. In a chilled large bowl, beat cream until it begins to thicken. Add confectioners' sugar; beat until stiff peaks form. Stir in vanilla. Fold in melted chocolate.",
+                "Run a knife around sides and center tube of pan. Invert cake onto a serving plate; frost top and sides. Garnish with chocolate shavings if desired. Store in the refrigerator."
             ],
-            "nutrition": "1 piece: 244 calories, 9g fat (5g saturated fat), 31mg cholesterol, 194mg sodium, 39g carbohydrate (30g sugars, 1g fiber), 4g protein."
+            "nutrition": "1 slice: 305 calories, 15g fat (9g saturated fat), 43mg cholesterol, 69mg sodium, 40g carbohydrate (31g sugars, 1g fiber), 5g protein."
+        },
+        {
+            "name": "Peach Angel Food Cake",
+            "image_url": "https://www.tasteofhome.com/wp-content/uploads/2018/01/exps16115_CW10200C39.jpg",
+            "expert": "Dessert doesn't mean slaving in the kitchen all day long when you use this recipe. The prepared angel food cake makes it so easy.\u2014Jean Nichols, Eugene, Oregon",
+            "time": "Prep/Total Time: 5 min.",
+            "makes": "6 servings",
+            "ingredients": [
+                "6 slices angel food cake",
+                "2 cups canned sliced peaches, drained",
+                "3/4 cup heavy whipping cream, whipped",
+                "Ground nutmeg, optional"
+            ],
+            "directions": [
+                "Place cake on individual plates. Top with peaches and whipped cream; sprinkle with nutmeg if desired."
+            ],
+            "nutrition": ""
         },
         {
             "name": "Grilled Angel Food Cake with Fruit Salsa",
+            "image_url": "https://www.tasteofhome.com/wp-content/uploads/2018/01/exps36562_GI163846C12_16_5b-4.jpg?fit=700,1024",
             "expert": "When I need dessert fast, I go with angel food cake. Mix fruit salsa ahead of time, and pop the cake on the grill. \u2014Glorimar Jimenez, Indianapolis, Indiana",
             "time": "Prep/Total Time: 15 min.",
             "makes": "6 servings",
@@ -492,30 +270,65 @@
             "nutrition": "1 slice with 1/4 cup salsa: 169 calories, 1g fat (0 saturated fat), 0 cholesterol, 372mg sodium, 39g carbohydrate (30g sugars, 2g fiber), 3g protein."
         },
         {
-            "name": "Strawberry Tunnel Cake",
-            "expert": "My son doesn\u2019t like traditional birthday cakes and always asks for something with strawberries for the occasion. I hit the jackpot when I dreamed up this delicious cake with a \u201csurprise\u201d inside. \u2014Janis Borstad, Ponsford, Minnesota",
-            "time": "Prep: 25 min. Bake: 45 min. + chilling",
+            "name": "Apple-Spice Angel Food Cake",
+            "image_url": "https://www.tasteofhome.com/wp-content/uploads/2018/01/Apple-Spice-Angel-Food-Cake_exps129503_THHC2377564D07_10_4bC_RMS-2.jpg?fit=700,1024",
+            "expert": "I dressed up an angel food cake mix with some nuts, spice and applesauce to make an easy and light dessert. I serve it with a dollop of whipped topping mixed with a half cup of sour cream. \u2014Joan Buehnerkemper, Teutopolis, Illinois",
+            "time": "Prep: 10 min. Bake: 35 min. + cooling",
             "makes": "16 servings",
             "ingredients": [
                 "1 package (16 ounces) angel food cake mix",
-                "6 ounces cream cheese, softened",
-                "1 can (14 ounces) sweetened condensed milk",
-                "1/3 cup lemon juice",
-                "1/4 teaspoon almond extract, optional",
-                "6 drops red food coloring, optional",
-                "1 cup sliced fresh strawberries",
-                "1 carton (12 ounces) frozen whipped topping, thawed, divided"
+                "1 cup water",
+                "2/3 cup unsweetened applesauce",
+                "1/2 cup finely chopped pecans, toasted",
+                "1 teaspoon apple pie spice",
+                "Reduced-fat whipped topping and/or apple slices, optional"
             ],
             "directions": [
-                "Prepare and bake cake according to package directions, using a 10-in. ungreased tube pan. Cool completely, about 1 hour.",
-                "Run a knife around side and center tube of pan. Remove cake to a serving plate. Cut a 1-in. slice off the top of the cake; set aside. To make a tunnel, carefully hollow out bottom, leaving a 1-in. shell. Tear removed cake into 1-in. cubes.",
-                "In a large bowl, beat cream cheese until fluffy. Beat in milk and lemon juice until smooth. Stir in extract and food coloring if desired. Stir in cake cubes and strawberries. Fold in 1 cup whipped topping.",
-                "Fill tunnel with strawberry mixture; replace cake top. Spread remaining whipped topping over top and sides of cake. Refrigerate for 4 hours or overnight."
+                "In a large bowl, combine cake mix and water. Beat on low speed for 30 seconds. Beat on medium speed for 1 minute. Fold in the applesauce, pecans and pie spice.",
+                "Gently spoon into an ungreased 10-in. tube pan. Cut through batter with a knife to remove air pockets. Bake on the lowest oven rack at 350\u00b0 for 35-45 minutes or until lightly browned and entire top appears dry. Immediately invert pan; cool completely, about 1 hour.",
+                "Run a knife around side and center tube of pan. Remove cake to a serving plate. Garnish with whipped topping and/or apple slices if desired."
             ],
-            "nutrition": "1 piece: 267 calories, 8g fat (6g saturated fat), 14mg cholesterol, 256mg sodium, 44g carbohydrate (36g sugars, 0 fiber), 5g protein."
+            "nutrition": "1 slice: 136 calories, 3g fat (0 saturated fat), 0 cholesterol, 209mg sodium, 26g carbohydrate (14g sugars, 1g fiber), 3g protein. Diabetic Exchanges: 1-1/2 starch, 1/2 fat."
+        },
+        {
+            "name": "Mocha Frosting",
+            "image_url": "https://www.tasteofhome.com/wp-content/uploads/2018/01/Mocha-Frosting_EXPS_FT21_29400_F_1112_1.jpg?fit=700,1024",
+            "expert": "This easy-to-make mocha frosting adds a kiss of coffee flavor to your favorite desserts. \u2014Taste of Home Test Kitchen",
+            "time": "Prep/Total Time: 20 min.",
+            "makes": "2-1/2 cups",
+            "ingredients": [
+                "2 tablespoons instant coffee granules",
+                "3 tablespoons boiling water",
+                "1 cup butter, softened",
+                "2 tablespoons baking cocoa",
+                "4 cups confectioners' sugar"
+            ],
+            "directions": [
+                "For frosting, in a small bowl, dissolve coffee granules in water; set aside. In a bowl, cream butter until light and fluffy. Beat in cocoa. Gradually beat in confectioners' sugar and coffee mixture until smooth. Use immediately or refrigerate."
+            ],
+            "nutrition": "2 tablespoons: 177 calories, 9g fat (6g saturated fat), 24mg cholesterol, 74mg sodium, 24g carbohydrate (23g sugars, 0 fiber), 0 protein."
+        },
+        {
+            "name": "Blueberry Angel Dessert",
+            "image_url": "https://www.tasteofhome.com/wp-content/uploads/2018/01/exps15368_SD132778C04_09_7b_WEB2-14.jpg?fit=700,1024",
+            "expert": "Make the most of angel food cake, pie filling and whipped topping by creating this light impressive dessert that doesn't keep you in the kitchen for hours. It's the perfect way to end a summer meal. \u2014Carol Johnson, Tyler, Texas",
+            "time": "Prep: 10 min. + chilling",
+            "makes": "12 servings",
+            "ingredients": [
+                "1 package (8 ounces) cream cheese, softened",
+                "1 cup confectioners' sugar",
+                "1 carton (8 ounces) frozen whipped topping, thawed",
+                "1 prepared angel food cake (8 to 10 ounces), cut into 1-inch cubes",
+                "2 cans (21 ounces each) blueberry pie filling"
+            ],
+            "directions": [
+                "In a large bowl, beat cream cheese and confectioners' sugar until smooth; fold in whipped topping and cake cubes. Spread evenly into an ungreased 13x9-in. dish; top with pie filling. Refrigerate, covered, at least 2 hours before serving."
+            ],
+            "nutrition": "1 piece: 384 calories, 10g fat (7g saturated fat), 21mg cholesterol, 223mg sodium, 70g carbohydrate (50g sugars, 3g fiber), 3g protein."
         },
         {
             "name": "Moist Lemon Angel Cake Roll",
+            "image_url": "https://www.tasteofhome.com/wp-content/uploads/2018/01/Moist-Lemon-Angel-Cake-Roll_EXPS_HRBZ16_39665_C09_07_3b-7.jpg?fit=700,1024",
             "expert": "Tart and delicious, this pretty cake roll will tickle any lemon lover's fancy. Its feathery, angel food texture enhances its guilt-free goodness. \u2014Taste of Home Test Kitchen",
             "time": "Prep: 30 min. Bake: 15 min. + cooling",
             "makes": "10 servings",
@@ -548,147 +361,39 @@
             "nutrition": "1 piece: 243 calories, 1g fat (0 saturated fat), 21mg cholesterol, 57mg sodium, 55g carbohydrate (43g sugars, 0 fiber), 5g protein."
         },
         {
-            "name": "Rainbow Sherbet Angel Food Cake",
-            "expert": "Talk about a dessert that pops off the plate! Sometimes I make this easy cake even more eye-catching by tinting the whipped cream. Use whatever sherbet flavor combination you like. \u2014Bonnie Hawkins, Elkhorn, Wisconsin",
-            "time": "Prep: 25 min. + freezing",
-            "makes": "12 servings",
-            "ingredients": [
-                "1 prepared angel food cake (8 to 10 ounces)",
-                "3 cups rainbow sherbet, softened if necessary",
-                "WHIPPED CREAM:",
-                "2 cups heavy whipping cream",
-                "1/3 cup confectioners' sugar",
-                "1 teaspoon vanilla extract"
-            ],
-            "directions": [
-                "Using a long serrated knife, cut cake horizontally into 4 layers. Place bottom layer on a freezer-safe serving plate; spread with 1 cup sherbet. Repeat twice with middle cake layers and remaining 2 cups sherbet. Top with remaining cake layer. Freeze, covered, until sherbet is firm, about 1 hour.",
-                "In a large bowl, beat cream until it begins to thicken. Add confectioners' sugar and vanilla; beat until soft peaks form. Frost top and sides of cake. Freeze until firm.",
-                "Thaw in refrigerator 30 minutes before serving. Cut cake with a serrated knife."
-            ],
-            "nutrition": "1 slice: 253 calories, 16g fat (10g saturated fat), 54mg cholesterol, 174mg sodium, 27g carbohydrate (12g sugars, 2g fiber), 2g protein."
-        },
-        {
-            "name": "Vanilla Bean Angel Food Cake",
-            "expert": "Angel food cake is everyone\u2019s favorite blank slate for making awesome desserts. Serve it with a simple glaze or pile on fresh fruit, chocolate sauce or nutty sprinkles. \u2014Leah Rekau, Milwaukee, Wisconsin",
-            "time": "Prep: 30 min. Bake: 45 min. + cooling",
+            "name": "Makeover Macaroon Cake",
+            "image_url": "https://www.tasteofhome.com/wp-content/uploads/2018/01/Makeover-Macaroon-Cake_exps42491_THHC1757657D22_RMS-6.jpg?fit=700,1024",
+            "expert": "\"This is one of my husband\u2019s favorite recipes and now with it made over, he can really enjoy it, and even go back for seconds!\" Gaye Andree \u2014 Rochester, New York",
+            "time": "Prep: 20 min. Bake: 65 min. + cooling",
             "makes": "16 servings",
             "ingredients": [
-                "12 large egg whites (about 1-2/3 cups)",
-                "1 cup cake flour",
-                "1-1/2 cups sugar, divided",
-                "1 vanilla bean (see Editor's Note) or 1 teaspoon vanilla extract",
+                "6 egg whites",
+                "4 egg yolks",
+                "2-1/4 cups sugar",
+                "1/2 cup unsweetened applesauce",
+                "1/4 cup canola oil",
+                "3/4 cup fat-free milk",
+                "1/2 teaspoon almond extract",
+                "1-1/2 cups cake flour",
+                "1-1/2 cups all-purpose flour",
+                "1 cup sweetened shredded coconut",
+                "3 teaspoons baking powder",
+                "1/4 teaspoon salt",
                 "1/2 teaspoon cream of tartar",
-                "1/4 teaspoon salt",
-                "GLAZE:",
-                "2 cups confectioners' sugar",
-                "1 vanilla bean or 1 teaspoon vanilla extract",
-                "3 to 4 tablespoons 2% milk"
+                "1 teaspoon confectioners' sugar"
             ],
             "directions": [
-                "Place egg whites in a large bowl; let stand at room temperature 30 minutes.",
-                "Preheat oven to 325\u00b0. In a small bowl, mix flour and 3/4 cup sugar until blended.",
-                "Add seeds from vanilla bean (or extract if using), cream of tartar and salt to egg whites. Beat on medium speed until soft peaks form. Gradually add remaining 3/4 cup sugar, 1 tablespoon at a time, beating on high after each addition until sugar is dissolved. Continue beating until soft glossy peaks form. Gradually fold in flour mixture, about 1/2 cup at a time.",
-                "Gently transfer batter to an ungreased 10-in. tube pan. Cut through batter with a knife to remove air pockets. Bake on lowest oven rack until top springs back when lightly touched, 45-55 minutes. Immediately invert pan; cool completely in pan, about 1-1/2 hours.",
-                "Run a knife around sides and center tube of pan. Remove cake to a serving plate.",
-                "For glaze, in a small bowl, mix confectioners' sugar, seeds from vanilla bean (or extract if using) and enough milk to reach desired consistency. Spread glaze over cake, allowing some to drip down sides."
+                "Let egg whites stand at room temperature for 30 minutes.",
+                "Move oven rack to lowest position. Preheat oven to 325\u00b0. In a large bowl, beat egg yolks, sugar, applesauce and oil until well blended; beat in milk and extract. Combine flours, coconut, baking powder and salt; gradually beat into egg yolk mixture until blended.",
+                "In another bowl, beat egg whites and cream of tartar until stiff peaks form; fold into batter.",
+                "Gently spoon into an ungreased 10-in. tube pan. Cut through batter with a knife to remove air pockets. Bake on the lowest oven rack 65-75 minutes or until cake springs back when lightly touched. Immediately invert pan; cool completely, about 1 hour.",
+                "Run a knife around side and center tube of pan. Remove cake to a serving plate. Sprinkle with confectioners' sugar."
             ],
-            "nutrition": "1 slice: 177 calories, 0 fat (0 saturated fat), 0 cholesterol, 80mg sodium, 41g carbohydrate (34g sugars, 0 fiber), 3g protein."
-        },
-        {
-            "name": "Blueberry Angel Dessert",
-            "expert": "Make the most of angel food cake, pie filling and whipped topping by creating this light impressive dessert that doesn't keep you in the kitchen for hours. It's the perfect way to end a summer meal. \u2014Carol Johnson, Tyler, Texas",
-            "time": "Prep: 10 min. + chilling",
-            "makes": "12 servings",
-            "ingredients": [
-                "1 package (8 ounces) cream cheese, softened",
-                "1 cup confectioners' sugar",
-                "1 carton (8 ounces) frozen whipped topping, thawed",
-                "1 prepared angel food cake (8 to 10 ounces), cut into 1-inch cubes",
-                "2 cans (21 ounces each) blueberry pie filling"
-            ],
-            "directions": [
-                "In a large bowl, beat cream cheese and confectioners' sugar until smooth; fold in whipped topping and cake cubes. Spread evenly into an ungreased 13x9-in. dish; top with pie filling. Refrigerate, covered, at least 2 hours before serving."
-            ],
-            "nutrition": "1 piece: 384 calories, 10g fat (7g saturated fat), 21mg cholesterol, 223mg sodium, 70g carbohydrate (50g sugars, 3g fiber), 3g protein."
-        },
-        {
-            "name": "Peach Angel Dessert",
-            "expert": "This light and lovely dessert is absolutely heavenly! Marge Hubrich of St. Cloud, Minnesota suggests, \"Try this with fresh strawberries, raspberries or blueberries, too, using the corresponding flavor of gelatin. It's delicious with any of them.\"",
-            "time": "Prep: 20 min. + chilling",
-            "makes": "15 servings",
-            "ingredients": [
-                "3/4 cup sugar",
-                "2 tablespoons cornstarch",
-                "1 cup water",
-                "2 tablespoons corn syrup",
-                "1/4 cup peach, apricot or orange gelatin powder",
-                "1 loaf-shaped angel food cake (10-1/2 ounces)",
-                "1 package (8 ounces) reduced-fat cream cheese",
-                "2/3 cup confectioners' sugar",
-                "2 tablespoons fat-free milk",
-                "1 carton (8 ounces) frozen reduced-fat whipped topping, thawed",
-                "3 cups sliced peeled fresh or frozen unsweetened sliced peaches, thawed"
-            ],
-            "directions": [
-                "In a small saucepan, combine sugar and cornstarch. Gradually whisk in water and corn syrup until smooth. Bring to a boil. Cook and stir for 1-2 minutes or until thickened. Remove from the heat; stir in gelatin until dissolved. Cool to room temperature, stirring several times.",
-                "Cut angel food cake into nine slices. Line an ungreased 13-in. x 9-in. dish with the slices; set aside. In a large bowl, beat cream cheese and confectioners' sugar until smooth. Gradually beat in milk.",
-                "Set aside 1/3 cup whipped topping for garnish. Fold remaining whipped topping into cream cheese mixture; spread over cake. Top with peaches. Pour gelatin mixture over peaches.",
-                "Cover and refrigerate for at least 4 hours. Cut into squares. Top each piece with about 1 teaspoon of reserved whipped topping. Refrigerate leftovers."
-            ],
-            "nutrition": "1 piece: 215 calories, 4g fat (3g saturated fat), 9mg cholesterol, 157mg sodium, 40g carbohydrate (0 sugars, 1g fiber), 3g protein."
-        },
-        {
-            "name": "Brown Sugar Angel Food Cake",
-            "expert": "For a new twist on angel food cake, give this recipe a try. It's light and tasty!\u2014Nina Summan, Connersville, Indiana",
-            "time": "Prep: 30 min. Bake: 40 min. + cooling",
-            "makes": "12 servings",
-            "ingredients": [
-                "1-1/2 cups egg whites (about 10)",
-                "2 cups packed brown sugar, divided",
-                "1-1/4 cups cake flour",
-                "1-1/2 teaspoons cream tartar",
-                "1 teaspoon salt",
-                "2 teaspoons vanilla extract"
-            ],
-            "directions": [
-                "Place egg whites in a large bowl, let stand at room temperature for 30 minutes. Sift 1 cup brown sugar and flour together twice; set aside. Sift remaining sugar; set aside.",
-                "Beat egg whites until foamy. Add cream of tartar and salt; beat until soft peaks form. Add vanilla. Gradually add reserved sugar, about 2 tablespoons at a time, beating well after each addition; beat until stiff glossy peaks form. Gradually fold in flour mixture, abut 1/2 cup at a time.",
-                "Gently spoon into an ungreased 10-in. tube pan. Bake at 350\u00b0 for 40-45 minutes or until lightly browned and entire top appears dry.",
-                "Immediately invert pan onto a wire rack; cool completely, about 1 hour. Run a knife around side of cake and remove to a serving plate."
-            ],
-            "nutrition": ""
-        },
-        {
-            "name": "Chippy Macaroon Angel Cake",
-            "expert": "This homemade angel cake, filled with coconut and chocolate chips, is as light as a cloud. It\u2019s so pretty with the sweetened whipped cream \u201cfrosting\u201d piped around it. I love to bake breads and desserts for our large family.",
-            "time": "Prep: 25 min. + standing Bake: 50 min. + cooling",
-            "makes": "12-16 servings",
-            "ingredients": [
-                "1-1/2 cups large egg whites (about 10)",
-                "1-1/2 cups confectioners' sugar",
-                "1 cup cake flour",
-                "1-1/2 teaspoons cream of tartar",
-                "1 teaspoon almond extract",
-                "1 teaspoon vanilla extract",
-                "1/4 teaspoon salt",
-                "1 cup sugar",
-                "1 cup miniature semisweet chocolate chips",
-                "1/2 cup sweetened shredded coconut",
-                "TOPPING:",
-                "1 cup heavy whipping cream",
-                "2 tablespoons confectioners' sugar",
-                "1/2 cup sweetened shredded coconut, toasted"
-            ],
-            "directions": [
-                "Place egg whites in a large bowl; let stand at room temperature for 30 minutes. Sift confectioners' sugar and flour together twice; set aside.",
-                "Add the cream of tartar, extracts and salt to egg whites; beat on medium speed until soft peaks form. Gradually add granulated sugar, 1 tablespoon at a time, beating on high until glossy peaks form and sugar is dissolved. Gradually fold in flour mixture, about 1/2 cup at a time. Fold in chocolate chips and coconut.",
-                "Gently spoon into an ungreased 10-in. tube pan. Cut through batter with a knife to remove air pockets. Bake on the lowest oven rack at 325\u00b0 for 50-55 minutes or until top springs back when lightly touched and cracks feel dry. Immediately invert baking pan; cool completely.",
-                "For topping, in a large bowl, beat cream until it begins to thicken. Add confectioners' sugar; beat until stiff peaks form. Serve with cake; sprinkle with coconut. Refrigerate any leftover topping."
-            ],
-            "nutrition": "1 slice: 272 calories, 11g fat (7g saturated fat), 20mg cholesterol, 97mg sodium, 42g carbohydrate (32g sugars, 1g fiber), 4g protein."
+            "nutrition": "1 slice: 287 calories, 7g fat (3g saturated fat), 51mg cholesterol, 155mg sodium, 52g carbohydrate (32g sugars, 1g fiber), 5g protein."
         },
         {
             "name": "Raspberry Angel Cake",
+            "image_url": "https://www.tasteofhome.com/wp-content/uploads/2018/01/exps32041_LTA1132860D226A-5.jpg",
             "expert": "Not only is this is a refreshing dessert, but it's virtually fat-free and has no cholesterol. Best of all, it's a special and delicious treat that comes together easily. -Sheri Erickson of Montrose, Iowa",
             "time": "Prep: 15 min. Bake: 45 min. + cooling",
             "makes": "12 servings",
@@ -708,7 +413,208 @@
             "nutrition": "1 slice: 155 calories, 0 fat (0 saturated fat), 0 cholesterol, 224mg sodium, 35g carbohydrate (25g sugars, 1g fiber), 4g protein."
         },
         {
+            "name": "Orange-Coconut Angel Food Cake",
+            "image_url": "https://www.tasteofhome.com/wp-content/uploads/2018/01/Orange-Coconut-Angel-Food-Cake_exps38151_SD19999445B08_30_4b_RMS-2.jpg?fit=700,1024",
+            "expert": "Everyone who tries this luscious cake loves it, even those who aren't watching their weight. I have several cake recipes, but this is my favorite. \u2014Betty Kinser, Elizabethton, Tennessee",
+            "time": "Prep: 25 min. Bake: 30 min. + cooling",
+            "makes": "14 servings",
+            "ingredients": [
+                "1 package (16 ounces) angel food cake mix",
+                "1 cup cold water",
+                "1/3 cup orange juice",
+                "2 teaspoons orange extract, divided",
+                "1-3/4 cups cold fat-free milk",
+                "1 package (1 ounce) sugar-free instant vanilla pudding mix",
+                "1 tablespoon grated orange zest",
+                "1-1/4 cups sweetened shredded coconut, divided",
+                "1 carton (8 ounces) frozen reduced-fat whipped topping, thawed, divided"
+            ],
+            "directions": [
+                "In a large bowl, combine the cake mix, water, orange juice and 1 teaspoon orange extract. Beat on low speed for 30 seconds. Beat on medium for 2 minutes. Spoon into an ungreased 10-in. tube pan.",
+                "Bake at 375\u00b0 for 30-35 minutes or until lightly browned and entire top appears dry. Immediately invert pan onto a wire rack; cool completely, about 1 hour. Run a knife around sides of cake and remove from pan.",
+                "In a small bowl, whisk milk and pudding mix for 2 minutes. Stir in orange zest and remaining orange extract. Let stand for 2 minutes or until soft-set. Fold in 3/4 cup coconut and 3/4 cup whipped topping.",
+                "Split cake into three horizontal layers. Place bottom layer on a serving plate; top with half of the pudding mixture. Repeat layers. Top with remaining cake layer. Frost top and sides of cake with remaining whipped topping. Toast remaining coconut; sprinkle over top and sides of cake. Store in the refrigerator."
+            ],
+            "nutrition": "1 slice: 222 calories, 5g fat (4g saturated fat), 1mg cholesterol, 361mg sodium, 39g carbohydrate (29g sugars, 1g fiber), 4g protein."
+        },
+        {
+            "name": "Best Angel Food Cake",
+            "image_url": "",
+            "expert": "For our daughter's wedding, a friend made this lovely, angel food cake from a recipe she's used for decades. It really is one of the best angel food cake recipes I've found. Serve slices plain or dress them up with fresh fruit. \u2014Marilyn Niemeyer, Doon, Iowa",
+            "time": "Prep: 15 min. + standing Bake: 35 min. + cooling",
+            "makes": "16 servings",
+            "ingredients": [
+                "1-1/4 cups egg whites (about 9 large)",
+                "1-1/2 cups sugar, divided",
+                "1 cup cake flour",
+                "1-1/4 teaspoons cream of tartar",
+                "1 teaspoon vanilla extract",
+                "1/4 teaspoon almond extract",
+                "1/4 teaspoon salt"
+            ],
+            "directions": [
+                "Place egg whites in a large bowl; let stand at room temperature 30 minutes. Sift 1/2 cup sugar and flour together twice; set aside.",
+                "Place oven rack in the lowest position. Preheat oven to 350\u00b0. Add cream of tartar, extracts and salt to egg whites; beat on medium speed until soft peaks form. Gradually add remaining sugar, about 2 tablespoons at a time, beating on high until stiff peaks form. Gradually fold in flour mixture, about 1/2 cup at a time.",
+                "Gently spoon into an ungreased 10-in. tube pan. Cut through batter with a knife to remove air pockets. Bake until lightly browned and entire top appears dry, 35-40 minutes. Immediately invert pan; cool completely, about 1 hour.",
+                "Run a knife around side and center tube of pan. Remove cake to a serving plate."
+            ],
+            "nutrition": "1 piece: 115 calories, 0 fat (0 saturated fat), 0 cholesterol, 68mg sodium, 26g carbohydrate (19g sugars, 0 fiber), 3g protein. Diabetic Exchanges: 1-1/2 starch."
+        },
+        {
+            "name": "Angel Berry Tunnel Cake",
+            "image_url": "https://www.tasteofhome.com/wp-content/uploads/2018/01/Angel-Berry-Tunnel-Cake_exps10361_PSG143429C03_04_8bC_RMS.jpg?fit=700,1024",
+            "expert": "This tasty cake is a light favorite for summer. To save time, I rely on a purchased angel food cake and frozen whipped topping. \u2014Ruth Marie Lyons, Boulder, Colorado",
+            "time": "Prep/Total Time: 30 min.",
+            "makes": "12 servings",
+            "ingredients": [
+                "1 prepared angel food cake (8 to 10 ounces)",
+                "1-1/2 cups fresh or frozen raspberries, thawed and drained",
+                "1-1/2 cups fresh or frozen blueberries",
+                "8 cups whipped topping",
+                "Additional berries, optional"
+            ],
+            "directions": [
+                "With a serrated knife, slice off the top 1/2 in. of the cake; set aside. Cut a tunnel about 2 in. deep in the cake, leaving a 3/4-in. shell. Remove cake from tunnel; cut into 1-in. cubes.",
+                "Combine cake cubes, berries and half of the whipped topping; spoon into tunnel. Replace cake top.",
+                "Frost with remaining whipped topping. Garnish with berries if desired. Refrigerate until serving."
+            ],
+            "nutrition": "1 piece: 200 calories, 8g fat (8g saturated fat), 0 cholesterol, 142mg sodium, 26g carbohydrate (13g sugars, 2g fiber), 1g protein."
+        },
+        {},
+        {
+            "name": "Cranberry Cake Roll",
+            "image_url": "https://www.tasteofhome.com/wp-content/uploads/2018/01/Cranberry-Cake-Roll_EXPS_TOHCA21_27127_B12_17_1b-11.jpg?fit=700,1024",
+            "expert": "This low-fat angel food cake roll is a guilt-free indulgence, which is much-appreciated during the Christmas season. \u2014Paige Kowolewski, Topton, Pennsylvania",
+            "time": "Prep: 45 min. + chilling Bake: 20 min. + cooling",
+            "makes": "12 servings",
+            "ingredients": [
+                "9 large egg whites",
+                "1-1/2 teaspoons vanilla extract",
+                "3/4 teaspoon cream of tartar",
+                "1/4 teaspoon salt",
+                "1 cup plus 2 tablespoons sugar",
+                "3/4 cup cake flour",
+                "Confectioners' sugar",
+                "FILLING:",
+                "2-1/3 cups fresh or frozen cranberries",
+                "1 cup sugar",
+                "6 tablespoons water, divided",
+                "1/3 cup chopped candied orange peel, optional",
+                "1 tablespoon orange liqueur, optional",
+                "1 teaspoon grated orange zest, optional",
+                "2 tablespoons cornstarch"
+            ],
+            "directions": [
+                "Preheat oven to 350\u00b0. Place egg whites in a large bowl; let stand at room temperature for 30 minutes. Meanwhile, line a greased 15x10x1-in. baking pan with waxed paper; grease the paper.",
+                "Add vanilla, cream of tartar and salt to egg whites; beat on medium speed until soft peaks form. Gradually beat in sugar, 2 tablespoons at a time, on high until stiff glossy peaks form and sugar is dissolved. Fold in flour, about 1/4 cup at a time.",
+                "Carefully spread into prepared pan. Bake until cake springs back when lightly touched, 15-20 minutes. Cool for 5 minutes. Turn cake onto a kitchen towel dusted with confectioners\u2019 sugar. Gently peel off waxed paper. Roll up cake in the towel jelly-roll style, starting with a short side. Cool completely on a wire rack.",
+                "For filling, in a large saucepan, combine the cranberries, sugar and 4 tablespoons water. Bring to a boil. Reduce heat; simmer, uncovered, until berries pop, 5-6 minutes. Mash berries; strain, reserving juice and discarding pulp. Return juice to the pan and if desired, add chopped candied orange peel, orange liqueur and orange zest. Combine cornstarch and remaining 2 tablespons water until smooth; gradually add to cranberry juice mixture. Bring to a boil; cook and stir until thickened, about 2 minutes. Chill.",
+                "Unroll cake and spread filling to within 1/2 in. of edges. Roll up again. Cover and refrigerate for 1 hour before serving. If desired, top with additional confectioners' sugar, candied orange peel and sugared cranberries. Refrigerate leftovers."
+            ],
+            "nutrition": "1 piece: 196 calories, 0 fat (0 saturated fat), 0 cholesterol, 91mg sodium, 46g carbohydrate (36g sugars, 1g fiber), 3g protein."
+        },
+        {
+            "name": "Lemon-Thyme Angel Food Cake",
+            "image_url": "https://www.tasteofhome.com/wp-content/themes/bumblebee-toh-child/images/recipes/Image-69-2x.png",
+            "expert": "Thyme adds a new twist to the classic angel food cake. The flavors pair well together. We enjoy this alongside strawberry ice cream. \u2014Janie Colle, Hutchinson, Kansas",
+            "time": "Prep: 40 min. Bake: 30 min. + cooling",
+            "makes": "12 servings",
+            "ingredients": [
+                "1-1/4 cups egg whites (about 9 large)",
+                "1 cup cake flour",
+                "1/2 cup confectioners' sugar",
+                "3 tablespoons lemon juice",
+                "1 teaspoon cream of tartar",
+                "1/2 teaspoon salt",
+                "1 cup sugar",
+                "2 tablespoons minced fresh thyme",
+                "2 tablespoons lemon zest"
+            ],
+            "directions": [
+                "Place egg whites in a large bowl; let stand at room temperature 30 minutes.",
+                "Meanwhile, preheat oven to 350\u00b0. Sift flour and confectioners' sugar together twice.",
+                "Add lemon juice, cream of tartar and salt to egg whites; beat on medium speed until soft peaks form. Gradually add sugar, 1 tablespoon at a time, beating on high after each addition until sugar is dissolved. Continue beating until soft glossy peaks form. Beat in thyme and lemon zest. Gradually fold in flour mixture, about 1/2 cup at a time.",
+                "Gently transfer to an ungreased 10-in. tube pan. Cut through batter with a knife to remove air pockets. Bake on lowest oven rack 30-35 minutes or until top crust is golden brown and cracks feel dry. Immediately invert pan; cool completely in pan, about 1-1/2 hours.",
+                "Run a knife around sides and center tube of pan. Remove cake to a serving plate."
+            ],
+            "nutrition": "1 piece: 141 calories, 0 fat (0 saturated fat), 0 cholesterol, 141mg sodium, 32g carbohydrate (22g sugars, 0 fiber), 4g protein. Diabetic Exchanges: 2 starch."
+        },
+        {
+            "name": "Grilled Angel Food Cake with Fruit Salsa",
+            "image_url": "https://www.tasteofhome.com/wp-content/uploads/2018/01/exps36562_GI163846C12_16_5b-4.jpg?fit=700,1024",
+            "expert": "When I need dessert fast, I go with angel food cake. Mix fruit salsa ahead of time, and pop the cake on the grill. \u2014Glorimar Jimenez, Indianapolis, Indiana",
+            "time": "Prep/Total Time: 15 min.",
+            "makes": "6 servings",
+            "ingredients": [
+                "1/2 cup each fresh raspberries, blueberries and chopped strawberries",
+                "1 medium kiwifruit, peeled and chopped",
+                "2 tablespoons sugar",
+                "1 tablespoon lime juice",
+                "1 loaf-shaped angel food cake (10-1/2 ounces), split horizontally",
+                "Whipped topping, optional"
+            ],
+            "directions": [
+                "In a small bowl, combine berries, kiwi, sugar and lime juice. Grill cake, cut side down, over medium heat or broil 4 in. from heat 1-3 minutes or until lightly browned. Cut into slices. Serve with fruit salsa and, if desired, whipped topping."
+            ],
+            "nutrition": "1 slice with 1/4 cup salsa: 169 calories, 1g fat (0 saturated fat), 0 cholesterol, 372mg sodium, 39g carbohydrate (30g sugars, 2g fiber), 3g protein."
+        },
+        {
+            "name": "Lemon-Thyme Angel Food Cake",
+            "image_url": "https://www.tasteofhome.com/wp-content/themes/bumblebee-toh-child/images/recipes/Image-69-2x.png",
+            "expert": "Thyme adds a new twist to the classic angel food cake. The flavors pair well together. We enjoy this alongside strawberry ice cream. \u2014Janie Colle, Hutchinson, Kansas",
+            "time": "Prep: 40 min. Bake: 30 min. + cooling",
+            "makes": "12 servings",
+            "ingredients": [
+                "1-1/4 cups egg whites (about 9 large)",
+                "1 cup cake flour",
+                "1/2 cup confectioners' sugar",
+                "3 tablespoons lemon juice",
+                "1 teaspoon cream of tartar",
+                "1/2 teaspoon salt",
+                "1 cup sugar",
+                "2 tablespoons minced fresh thyme",
+                "2 tablespoons lemon zest"
+            ],
+            "directions": [
+                "Place egg whites in a large bowl; let stand at room temperature 30 minutes.",
+                "Meanwhile, preheat oven to 350\u00b0. Sift flour and confectioners' sugar together twice.",
+                "Add lemon juice, cream of tartar and salt to egg whites; beat on medium speed until soft peaks form. Gradually add sugar, 1 tablespoon at a time, beating on high after each addition until sugar is dissolved. Continue beating until soft glossy peaks form. Beat in thyme and lemon zest. Gradually fold in flour mixture, about 1/2 cup at a time.",
+                "Gently transfer to an ungreased 10-in. tube pan. Cut through batter with a knife to remove air pockets. Bake on lowest oven rack 30-35 minutes or until top crust is golden brown and cracks feel dry. Immediately invert pan; cool completely in pan, about 1-1/2 hours.",
+                "Run a knife around sides and center tube of pan. Remove cake to a serving plate."
+            ],
+            "nutrition": "1 piece: 141 calories, 0 fat (0 saturated fat), 0 cholesterol, 141mg sodium, 32g carbohydrate (22g sugars, 0 fiber), 4g protein. Diabetic Exchanges: 2 starch."
+        },
+        {
+            "name": "Orange Dream Angel Food Cake",
+            "image_url": "https://www.tasteofhome.com/wp-content/uploads/2018/01/Orange-Dream-Angel-Food-Cake_exps45551_HCKA143243D08_28_1bC_RMS-10.jpg?fit=700,1024",
+            "expert": "A basic angel food cake becomes a heavenly indulgence, thanks to a hint of orange flavor swirled into every bite. The orange color makes slices of the cake look so pretty when arranged on individual dessert plates.\u2014Lauren Osborne, Holtwood, Pennsylvania",
+            "time": "Prep: 25 min. Bake: 30 min. + cooling",
+            "makes": "16 servings",
+            "ingredients": [
+                "12 large egg whites",
+                "1 cup all-purpose flour",
+                "1-3/4 cups sugar, divided",
+                "1-1/2 teaspoons cream of tartar",
+                "1/2 teaspoon salt",
+                "1 teaspoon almond extract",
+                "1 teaspoon vanilla extract",
+                "1 teaspoon grated orange zest",
+                "1 teaspoon orange extract",
+                "6 drops red food coloring, optional",
+                "6 drops yellow food coloring, optional"
+            ],
+            "directions": [
+                "Place egg whites in a large bowl; let stand at room temperature for 30 minutes. Sift flour and 3/4 cup sugar together twice; set aside.",
+                "Add the cream of tartar, salt and almond and vanilla extracts to egg whites; beat on medium speed until soft peaks form. Gradually add remaining sugar, about 2 tablespoons at a time, beating on high until stiff glossy peaks form and sugar is dissolved. Gradually fold in flour mixture, about 1/2 cup at a time.",
+                "Gently spoon half of batter into an ungreased 10-in. tube pan. To the remaining batter, stir in the orange zest, orange extract and, if desired, food colorings. Gently spoon orange batter over white batter. Cut through both layers with a knife to swirl the orange and remove air pockets.",
+                "Bake on the lowest oven rack at 375\u00b0 for 30-35 minutes or until lightly browned and entire top appears dry. Immediately invert pan; cool completely, about 1 hour.",
+                "Run a knife around side and center tube of pan. Remove cake to a serving plate."
+            ],
+            "nutrition": "1 slice: 130 calories, 0 fat (0 saturated fat), 0 cholesterol, 116mg sodium, 28g carbohydrate (22g sugars, 0 fiber), 4g protein.  Diabetic Exchanges: 2 starch."
+        },
+        {
             "name": "Angel Peach Melba",
+            "image_url": "https://www.tasteofhome.com/wp-content/uploads/2018/01/exps32591_SD950750D60A-3.jpg",
             "expert": "Store-bought angel food cake, canned peaches, frozen yogurt and raspberries combine to make a sweet, summery dessert in just minutes. This easy recipe is a keeper all year-round! \u2014Janice Prytz, Murrieta, California",
             "time": "Prep/Total Time: 15 min.",
             "makes": "10 servings",
@@ -726,31 +632,99 @@
             "nutrition": "1 each: 177 calories, 2g fat (1g saturated fat), 5mg cholesterol, 193mg sodium, 39g carbohydrate (31g sugars, 2g fiber), 3g protein."
         },
         {
-            "name": "Delightful Angel Food Cake",
-            "expert": "\"This light, moist cake is my favorite,\" shares Fayrene De Koker of Auburn, Washington. \"It tastes heavenly and is special enough for most any occasion.\"\u2014Fayrene De Koker, Vancouver, Washington",
-            "time": "Prep: 10 min. Bake: 40 min. + cooling",
-            "makes": "20 servings",
+            "name": "Homemade Chocolate Angel Food Cake",
+            "image_url": "https://www.tasteofhome.com/wp-content/themes/bumblebee-toh-child/images/recipes/Image-69-2x.png",
+            "expert": "I developed this cake using my mother's angel food cake recipe because my husband and three daughters all love chocolate. It won first place at our county and state fairs, as well as best of class at the state fair! \u2014Lois Bayles, Hastings, Nebraska",
+            "time": "Prep: 30 min. Bake: 45 min. + cooling",
+            "makes": "16 servings",
             "ingredients": [
-                "1-1/2 cups egg whites (about12 large)",
-                "1-1/4 cups confectioners' sugar",
-                "1 cup all-purpose flour",
+                "1-1/2 cups plus 1/3 cup sugar, divided",
+                "1-1/4 cups sifted cake flour",
+                "1/4 cup baking cocoa",
+                "2 cups egg whites (about 14), room temperature",
+                "1 teaspoon vanilla extract",
+                "1/2 teaspoon chocolate flavoring",
                 "1-1/2 teaspoons cream of tartar",
-                "1-1/2 teaspoons vanilla extract",
-                "1/2 teaspoon almond extract",
-                "1/4 teaspoon salt",
-                "1 cup sugar"
+                "1/2 teaspoon salt",
+                "Optional: Ice cream and fudge sauce"
             ],
             "directions": [
-                "Place egg whites in a large bowl; let stand at room temperature for 30 minutes. Sift confectioners' sugar and flour together twice; set aside.",
-                "Add the cream of tartar, extracts and salt to egg whites; beat on medium speed until soft peaks form. Gradually add granulated sugar, about 2 tablespoons at a time, beating on high until stiff glossy peaks form and sugar is dissolved. Gradually fold in flour mixture, about 1/2 cup at a time.",
-                "Gently spoon into an ungreased 10-in. tube pan. Cut through the batter with a knife to remove air pockets. Bake on the lowest oven rack at 350\u00b0 for 40-45 minutes or until lightly browned and entire top appears dry. Immediately invert pan; cool completely, about 1 hour.",
-                "Run a knife around side and center tube of pan. Cake may be frozen for up to 6 months. Remove cake to a serving plate.",
-                ""
+                "Sift together 1-1/2 cups sugar with flour and cocoa; set aside. In a large bowl, beat egg whites, vanilla and chocolate flavoring until foamy. Combine cream of tartar, salt and remaining sugar; add a little at a time to egg mixture. Beat until very stiff but not dry peaks form. Gradually fold in flour mixture; do not overmix. Pour into an ungreased 10-in. tube pan. Bake at 350\u00b0 for 45 minutes. Remove from oven and invert pan; allow to cool completely before removing from pan. Serve with ice cream and fudge sauce if desired."
+            ],
+            "nutrition": "1 piece: 148 calories, 0 fat (0 saturated fat), 0 cholesterol, 124mg sodium, 32g carbohydrate (23g sugars, 0 fiber), 4g protein."
+        },
+        {
+            "name": "Double Berry Lemon Dessert",
+            "image_url": "https://www.tasteofhome.com/wp-content/uploads/2018/01/exps37330_CFT1437887D14.jpg",
+            "expert": "\u201cWhen a neighbor of mine gave me a bowl of blackberries, I developed this recipe,\u201d says Glenwood, Iowa cook Vicki Melies. \u201cMy mother is diabetic and loves this dessert.\u201d",
+            "time": "Prep: 25 min. Bake: 20 min. + cooling",
+            "makes": "8 servings",
+            "ingredients": [
+                "1-1/3 cups angel food cake mix",
+                "2/3 cup cold water",
+                "1 cup cold 2% milk",
+                "1 package (1 ounce) sugar-free instant lemon pudding mix",
+                "1 package (8 ounces) reduced-fat cream cheese",
+                "1/2 cup fresh or frozen raspberries",
+                "1/2 cup fresh or frozen blackberries",
+                "1 teaspoon sugar"
+            ],
+            "directions": [
+                "In a small bowl, combine cake mix and water; beat on low speed for 30 seconds. Beat on medium for 1 minute. Pour into an ungreased 11x7-in. baking pan. Bake at 350\u00b0 for 20-25 minutes or until golden brown and entire top appears dry. Cool completely, about 40 minutes.",
+                "In a small bowl, whisk milk and pudding mix. In a small bowl, beat cream cheese until smooth; beat in pudding mixture until blended. Run a knife around sides of pan. Remove cake and cut horizontally into two layers. Place bottom layer on a serving plate; spread with half of pudding mixture. Top with remaining cake layer and pudding mixture.",
+                "In a small bowl, combine the raspberries, blackberries and sugar. Serve with cake. Refrigerate leftovers."
+            ],
+            "nutrition": "1 piece: 212 calories, 7g fat (4g saturated fat), 22mg cholesterol, 491mg sodium, 32g carbohydrate (16g sugars, 1g fiber), 7g protein."
+        },
+        {
+            "name": "Blueberry Lemon Trifle",
+            "image_url": "https://www.tasteofhome.com/wp-content/uploads/2018/01/exps12386_MTC153706C03_03_4b-5.jpg?fit=700,1024",
+            "expert": "A refreshing lemon filling and fresh blueberries give this sunny dessert sensation plenty of color. Don't worry about heating up the oven\u2014this trifle doesn't require baking. \u2014Ellen Peden, Houston, Texas",
+            "time": "Prep: 15 min. + chilling",
+            "makes": "14 servings",
+            "ingredients": [
+                "3 cups fresh blueberries, divided",
+                "2 cans (15-3/4 ounces each) lemon pie filling",
+                "2 cups lemon yogurt",
+                "1 prepared angel food cake (8 to 10 ounces), cut into 1-inch cubes",
+                "1 carton (8 ounces) frozen whipped topping, thawed",
+                "Optional: Lemon slices and fresh mint"
+            ],
+            "directions": [
+                "Set aside 1/4 cup blueberries for garnish. In a large bowl, combine pie filling and yogurt.",
+                "In a 3-1/2-qt. serving or trifle bowl, layer a third of the cake cubes, lemon mixture and blueberries. Repeat layers twice. Top with whipped topping. Cover and refrigerate for at least 2 hours. Garnish with reserved blueberries and, if desired, lemon and mint."
+            ],
+            "nutrition": "1 serving: 230 calories, 4g fat (3g saturated fat), 2mg cholesterol, 235mg sodium, 44g carbohydrate (27g sugars, 1g fiber), 3g protein."
+        },
+        {
+            "name": "Anniversary Angel Food",
+            "image_url": "https://www.tasteofhome.com/wp-content/uploads/2018/01/exps8472_CB1234C106-1.jpg",
+            "expert": "\"For my daughter's first birthday, I baked this tasty cake\u2014and I've been happily doing so ever since,\" grins 78-year-young Sarah Curci of San Jose, California. \"She's 55 now and still looks forward to her special treat each year. But it's a dessert that works for almost any other occasion, too.\"\u2014 Sarah Curci, San Jose, California",
+            "time": "Prep: 15 min. Bake: 40 min. + cooling",
+            "makes": "16 servings",
+            "ingredients": [
+                "1 cup cake flour",
+                "1-1/2 cups sugar, divided",
+                "1-1/2 cups egg whites (10 to 12 large eggs)",
+                "1 teaspoon cream of tartar",
+                "1 teaspoon vanilla extract",
+                "1/2 teaspoon salt",
+                "2 cups heavy whipping cream, whipped",
+                "6 tablespoons confectioners' sugar",
+                "1 teaspoon ground cinnamon",
+                "1/2 to 1 teaspoon ground ginger",
+                "Fresh or silk roses or mint, optional"
+            ],
+            "directions": [
+                "Sift flour and 3/4 cup sugar four times; set aside. In a bowl, beat egg whites, cream of tartar, vanilla and salt on high speed until soft peaks form but mixture is still moist and glossy. Add remaining sugar, 2 tablespoons at a time, beating well after each addition.",
+                "Sift flour mixture, a fourth at a time, over egg white mixture; fold gently, using about 15 strokes for each addition. Pour into an ungreased 10-in. tube pan.",
+                "Bake at 325\u00b0 for 40-45 minutes or until lightly browned and cracks feel dry. Immediately invert the pan; cool completely. Remove to a serving plate. Combine cream, sugar, cinnamon and ginger; frost top and sides of cake. Decorate with roses and mint if desired. Refrigerate or serve immediately."
             ],
             "nutrition": ""
         },
         {
             "name": "Chocolate-Filled Cherry Angel Cake",
+            "image_url": "https://www.tasteofhome.com/wp-content/uploads/2018/01/Chocolate-Filled-Cherry-Angel-Cake_exps64640_THCM143200C09_04_3bCx_RMS.jpg?fit=700,1024",
             "expert": "Here's a cake that will catch the eye of all your guests. It's beautiful and is ideal for parties or holidays. If you loved chocolate and cherries together, you'll love this cake! \u2014Barbara Wheeler, Royal Oak, Michigan",
             "time": "Prep: 20 min. Bake: 45 min. + cooling",
             "makes": "16 servings",
@@ -774,24 +748,116 @@
             "nutrition": "1 slice (calculated without garnishes): 236 calories, 8g fat (6g saturated fat), 9mg cholesterol, 219mg sodium, 37g carbohydrate (22g sugars, 1g fiber), 3g protein."
         },
         {
-            "name": "Blueberry Angel Dessert",
-            "expert": "Make the most of angel food cake, pie filling and whipped topping by creating this light impressive dessert that doesn't keep you in the kitchen for hours. It's the perfect way to end a summer meal. \u2014Carol Johnson, Tyler, Texas",
-            "time": "Prep: 10 min. + chilling",
-            "makes": "12 servings",
+            "name": "Homemade Angel Food Cake",
+            "image_url": "https://www.tasteofhome.com/wp-content/uploads/2018/01/exps10195_TH10039C8.jpg",
+            "expert": "\"Whipped cream and a hint of chocolate make this cake delightful,\" remarks Joan Schroeder of Pinedale, Wyoming.",
+            "time": "Prep: 30 min. Bake: 50 min. + cooling",
+            "makes": "12-16 servings",
             "ingredients": [
-                "1 package (8 ounces) cream cheese, softened",
+                "1-1/2 cups egg whites (about 10)",
+                "1 cup cake flour",
                 "1 cup confectioners' sugar",
-                "1 carton (8 ounces) frozen whipped topping, thawed",
-                "1 prepared angel food cake (8 to 10 ounces), cut into 1-inch cubes",
-                "2 cans (21 ounces each) blueberry pie filling"
+                "1 teaspoon cream of tartar",
+                "1 teaspoon vanilla extract",
+                "Pinch salt",
+                "1-1/4 cups sugar",
+                "FROSTING:",
+                "1 plain milk chocolate candy bar (7 ounces)",
+                "2 cups heavy whipping cream",
+                "3 tablespoons confectioners' sugar",
+                "1 teaspoon vanilla extract",
+                "Chocolate shavings, optional"
             ],
             "directions": [
-                "In a large bowl, beat cream cheese and confectioners' sugar until smooth; fold in whipped topping and cake cubes. Spread evenly into an ungreased 13x9-in. dish; top with pie filling. Refrigerate, covered, at least 2 hours before serving."
+                "Let egg whites stand at room temperature 30 minutes. Sift flour and confectioners' sugar together twice; set aside. In a large bowl, beat the egg whites, cream of tartar and salt on medium speed until soft peaks form. Add vanilla and salt on medium speed until soft peaks form. Gradually add sugar, about 2 tablespoons at a time, beating on high until stiff glossy peaks form and sugar is dissolved. Gradually fold in flour mixture, about 1/2 cup at a time.",
+                "Gently spoon into an ungreased 10-in. tube pan. Bake at 325\u00b0 for 50-60 minutes or until lightly browned and entire top appears dry. Immediately invert the pan onto a wire rack; cool completely.",
+                "For frosting, melt the candy bar in a heavy saucepan or microwave; stir until smooth. Cool for 5 minutes. In a chilled large bowl, beat cream until it begins to thicken. Add confectioners' sugar; beat until stiff peaks form. Stir in vanilla. Fold in melted chocolate.",
+                "Run a knife around sides and center tube of pan. Invert cake onto a serving plate; frost top and sides. Garnish with chocolate shavings if desired. Store in the refrigerator."
             ],
-            "nutrition": "1 piece: 384 calories, 10g fat (7g saturated fat), 21mg cholesterol, 223mg sodium, 70g carbohydrate (50g sugars, 3g fiber), 3g protein."
+            "nutrition": "1 slice: 305 calories, 15g fat (9g saturated fat), 43mg cholesterol, 69mg sodium, 40g carbohydrate (31g sugars, 1g fiber), 5g protein."
+        },
+        {
+            "name": "Homemade Chocolate Angel Food Cake",
+            "image_url": "https://www.tasteofhome.com/wp-content/themes/bumblebee-toh-child/images/recipes/Image-69-2x.png",
+            "expert": "I developed this cake using my mother's angel food cake recipe because my husband and three daughters all love chocolate. It won first place at our county and state fairs, as well as best of class at the state fair! \u2014Lois Bayles, Hastings, Nebraska",
+            "time": "Prep: 30 min. Bake: 45 min. + cooling",
+            "makes": "16 servings",
+            "ingredients": [
+                "1-1/2 cups plus 1/3 cup sugar, divided",
+                "1-1/4 cups sifted cake flour",
+                "1/4 cup baking cocoa",
+                "2 cups egg whites (about 14), room temperature",
+                "1 teaspoon vanilla extract",
+                "1/2 teaspoon chocolate flavoring",
+                "1-1/2 teaspoons cream of tartar",
+                "1/2 teaspoon salt",
+                "Optional: Ice cream and fudge sauce"
+            ],
+            "directions": [
+                "Sift together 1-1/2 cups sugar with flour and cocoa; set aside. In a large bowl, beat egg whites, vanilla and chocolate flavoring until foamy. Combine cream of tartar, salt and remaining sugar; add a little at a time to egg mixture. Beat until very stiff but not dry peaks form. Gradually fold in flour mixture; do not overmix. Pour into an ungreased 10-in. tube pan. Bake at 350\u00b0 for 45 minutes. Remove from oven and invert pan; allow to cool completely before removing from pan. Serve with ice cream and fudge sauce if desired."
+            ],
+            "nutrition": "1 piece: 148 calories, 0 fat (0 saturated fat), 0 cholesterol, 124mg sodium, 32g carbohydrate (23g sugars, 0 fiber), 4g protein."
+        },
+        {
+            "name": "Contest-Winning Brown Sugar Angel Food Cake",
+            "image_url": "https://www.tasteofhome.com/wp-content/uploads/2018/01/Contest-Winning-Brown-Sugar-Angel-Food-Cake_exps47712_CW1794336D37B_RMS.jpg?fit=700,1024",
+            "expert": "Brown sugar makes this moist, tender angel food cake delicious and different. Chunks of chopped toffee give its fluffy frosting some snap. The cake\u2019s lovely with a hot cup of coffee.",
+            "time": "Prep: 1 hour + chilling Bake: 25 min. + cooling",
+            "makes": "16 servings",
+            "ingredients": [
+                "1-1/2 cups large egg whites (about 10)",
+                "1-3/4 cups packed brown sugar, divided",
+                "1 cup cake flour",
+                "1-1/2 teaspoons cream of tartar",
+                "1-1/2 teaspoons vanilla extract",
+                "1/2 teaspoon salt",
+                "TOFFEE/TOPPING:",
+                "1 teaspoon plus 1 cup butter, divided",
+                "1-1/2 cups chopped pecans",
+                "1-1/2 cups packed brown sugar",
+                "1 cup semisweet chocolate chips",
+                "1 carton (12 ounces) frozen whipped topping, thawed"
+            ],
+            "directions": [
+                "Place egg whites in a large bowl; let stand at room temperature 30 minutes. Sift 1 cup brown sugar and flour together twice; set aside.",
+                "Place oven rack in lowest position. Preheat oven to 350\u00b0. Add cream of tartar, vanilla and salt to egg whites; beat on medium speed until soft peaks form. Gradually add remaining brown sugar, about 2 tablespoons at a time, beating on high until stiff glossy peaks form and sugar is dissolved. Gradually fold in flour mixture, about 1/2 cup at a time.",
+                "Gently spoon into an ungreased 10-in. tube pan. Cut through batter with a knife to remove air pockets. Bake 25-30 minutes or until lightly browned and entire top appears dry. Immediately invert pan; cool completely, about 1 hour.",
+                "Run a knife around side and center tube of pan. Remove cake to a serving plate.",
+                "For toffee, line a 13x9-in. baking pan with foil; grease the foil with 1 teaspoon butter. Sprinkle pecans into prepared pan; set aside.",
+                "In a small heavy saucepan over medium-low heat, bring brown sugar and remaining butter to a boil, stirring constantly. Cover and cook 2 minutes. Cook and stir with a clean spoon until a candy thermometer reads 300\u00b0 (hard-crack stage). Immediately pour into prepared pan. Sprinkle with chips; spread with a knife when melted. Refrigerate for about 1 hour or until set.",
+                "Frost cake with whipped topping. Finely chop half of the toffee; press onto cake. Serve with remaining toffee if desired. Store leftover toffee in an airtight container."
+            ],
+            "nutrition": "1 slice: 349 calories, 15g fat (9g saturated fat), 15mg cholesterol, 167mg sodium, 49g carbohydrate (39g sugars, 1g fiber), 4g protein."
+        },
+        {
+            "name": "Anniversary Angel Food",
+            "image_url": "https://www.tasteofhome.com/wp-content/uploads/2018/01/exps8472_CB1234C106-1.jpg",
+            "expert": "\"For my daughter's first birthday, I baked this tasty cake\u2014and I've been happily doing so ever since,\" grins 78-year-young Sarah Curci of San Jose, California. \"She's 55 now and still looks forward to her special treat each year. But it's a dessert that works for almost any other occasion, too.\"\u2014 Sarah Curci, San Jose, California",
+            "time": "Prep: 15 min. Bake: 40 min. + cooling",
+            "makes": "16 servings",
+            "ingredients": [
+                "1 cup cake flour",
+                "1-1/2 cups sugar, divided",
+                "1-1/2 cups egg whites (10 to 12 large eggs)",
+                "1 teaspoon cream of tartar",
+                "1 teaspoon vanilla extract",
+                "1/2 teaspoon salt",
+                "2 cups heavy whipping cream, whipped",
+                "6 tablespoons confectioners' sugar",
+                "1 teaspoon ground cinnamon",
+                "1/2 to 1 teaspoon ground ginger",
+                "Fresh or silk roses or mint, optional"
+            ],
+            "directions": [
+                "Sift flour and 3/4 cup sugar four times; set aside. In a bowl, beat egg whites, cream of tartar, vanilla and salt on high speed until soft peaks form but mixture is still moist and glossy. Add remaining sugar, 2 tablespoons at a time, beating well after each addition.",
+                "Sift flour mixture, a fourth at a time, over egg white mixture; fold gently, using about 15 strokes for each addition. Pour into an ungreased 10-in. tube pan.",
+                "Bake at 325\u00b0 for 40-45 minutes or until lightly browned and cracks feel dry. Immediately invert the pan; cool completely. Remove to a serving plate. Combine cream, sugar, cinnamon and ginger; frost top and sides of cake. Decorate with roses and mint if desired. Refrigerate or serve immediately."
+            ],
+            "nutrition": ""
         },
         {
             "name": "Layered Toffee Cake",
+            "image_url": "https://www.tasteofhome.com/wp-content/uploads/2018/01/exps8010_QC2162C27C-2.jpg",
             "expert": "This is a quick and yummy way to dress up a purchased angel food cake. To keep the plate clean while assembling this pretty layered dessert, cut two half circles of waxed paper to place under the bottom layer and remove them after frosting the cake and sprinkling on the toffee. \n-Pat Squire\nAlexandria, Virginia",
             "time": "Prep/Total Time: 20 min.",
             "makes": "14 servings",
@@ -808,54 +874,8 @@
             "nutrition": ""
         },
         {
-            "name": "Toffee Angel Food Cake",
-            "expert": "Chopped toffee bits and whipped cream make the sweet flavor and light, moist texture of angel food even more indulgent. For best results, refrigerate the cake for at least an hour before serving. \u2014Collette Gaugler, Fogelsville, Pennsylvania",
-            "time": "Prep: 45 min. Bake: 50 min. + cooling",
-            "makes": "16 servings",
-            "ingredients": [
-                "11 large egg whites",
-                "1 cup confectioners' sugar",
-                "1 cup cake flour",
-                "1 teaspoon cream of tartar",
-                "1 teaspoon vanilla extract",
-                "Pinch salt",
-                "1-1/4 cups superfine sugar",
-                "WHIPPED CREAM:",
-                "2 cups heavy whipping cream",
-                "1/2 cup hot caramel ice cream topping, room temperature",
-                "1 teaspoon vanilla extract",
-                "4 Heath candy bars (1-1/2 ounces each), chopped",
-                "Chocolate curls, optional"
-            ],
-            "directions": [
-                "Place egg whites in a large bowl; let stand at room temperature 30 minutes.",
-                "Meanwhile, place oven rack in the lowest position and remove upper rack if needed. Preheat oven to 325\u00b0. Sift confectioners' sugar and cake flour together twice.",
-                "Add cream of tartar, vanilla and salt to egg whites; beat on medium speed until soft peaks form. Gradually add superfine sugar, 1 tablespoon at a time, beating on high after each addition until sugar is dissolved. Continue beating until soft glossy peaks form. Gradually fold in flour mixture, about 1/2 cup at a time.",
-                "Gently transfer to an ungreased 10-in. tube pan. Cut through batter with a knife to remove air pockets. Bake on lowest rack until top crust is golden brown and cracks feel dry, 50-60 minutes. Immediately invert pan; cool completely in pan, about 1-1/2 hours.",
-                "Run a knife around sides and center tube of pan. Remove cake to a serving plate. Using a long serrated knife, cut cake horizontally into 3 layers. In a large bowl, beat cream until it begins to thicken. Gradually add caramel topping and vanilla; beat until soft peaks form.",
-                "Place 1 cake layer on a serving plate; spread with 1 cup whipped cream mixture. Sprinkle with a third of the chopped candies. Repeat layers. Top with remaining cake layer. Frost top and sides of cake with remaining whipped cream mixture; sprinkle with remaining candy. If desired, sprinkle chocolate curls over top and around bottom of cake."
-            ],
-            "nutrition": "1 slice: 315 calories, 14g fat (9g saturated fat), 36mg cholesterol, 117mg sodium, 44g carbohydrate (36g sugars, 0 fiber), 5g protein."
-        },
-        {
-            "name": "Lemon Custard Cake",
-            "expert": "This custard cake recipe comes from my grandma\u2014 it's nice to whip up when unexpected company stops in. It's a cool, creamy dessert that tastes like you fussed. \u2014Sue Gronholz, Beaver Dam, Wisconsin",
-            "time": "Prep/Total Time: 15 min.",
-            "makes": "12 servings",
-            "ingredients": [
-                "1 prepared angel food cake (8 to 10 ounces)",
-                "1 package (3.4 ounces) instant lemon pudding mix",
-                "1-1/2 cups cold 2% milk",
-                "1 cup sour cream",
-                "1 can (21 ounces) cherry or strawberry pie filling"
-            ],
-            "directions": [
-                "Tear angel food cake into bite-sized pieces. Place in a 13 x 9-in. pan. In a bowl, combine the pudding mix, milk and sour cream. Beat until thickened, about 2 minutes. Spread over cake. Spoon pie filling on top. Chill until serving time."
-            ],
-            "nutrition": "1 serving: 184 calories, 5g fat (3g saturated fat), 7mg cholesterol, 270mg sodium, 31g carbohydrate (18g sugars, 1g fiber), 3g protein."
-        },
-        {
             "name": "Angel Berry Tunnel Cake",
+            "image_url": "https://www.tasteofhome.com/wp-content/uploads/2018/01/Angel-Berry-Tunnel-Cake_exps10361_PSG143429C03_04_8bC_RMS.jpg?fit=700,1024",
             "expert": "This tasty cake is a light favorite for summer. To save time, I rely on a purchased angel food cake and frozen whipped topping. \u2014Ruth Marie Lyons, Boulder, Colorado",
             "time": "Prep/Total Time: 30 min.",
             "makes": "12 servings",
@@ -874,7 +894,92 @@
             "nutrition": "1 piece: 200 calories, 8g fat (8g saturated fat), 0 cholesterol, 142mg sodium, 26g carbohydrate (13g sugars, 2g fiber), 1g protein."
         },
         {
+            "name": "Delightful Angel Food Cake",
+            "image_url": "https://www.tasteofhome.com/wp-content/uploads/2018/01/exps10920_QC10064C37-3.jpg",
+            "expert": "\"This light, moist cake is my favorite,\" shares Fayrene De Koker of Auburn, Washington. \"It tastes heavenly and is special enough for most any occasion.\"\u2014Fayrene De Koker, Vancouver, Washington",
+            "time": "Prep: 10 min. Bake: 40 min. + cooling",
+            "makes": "20 servings",
+            "ingredients": [
+                "1-1/2 cups egg whites (about12 large)",
+                "1-1/4 cups confectioners' sugar",
+                "1 cup all-purpose flour",
+                "1-1/2 teaspoons cream of tartar",
+                "1-1/2 teaspoons vanilla extract",
+                "1/2 teaspoon almond extract",
+                "1/4 teaspoon salt",
+                "1 cup sugar"
+            ],
+            "directions": [
+                "Place egg whites in a large bowl; let stand at room temperature for 30 minutes. Sift confectioners' sugar and flour together twice; set aside.",
+                "Add the cream of tartar, extracts and salt to egg whites; beat on medium speed until soft peaks form. Gradually add granulated sugar, about 2 tablespoons at a time, beating on high until stiff glossy peaks form and sugar is dissolved. Gradually fold in flour mixture, about 1/2 cup at a time.",
+                "Gently spoon into an ungreased 10-in. tube pan. Cut through the batter with a knife to remove air pockets. Bake on the lowest oven rack at 350\u00b0 for 40-45 minutes or until lightly browned and entire top appears dry. Immediately invert pan; cool completely, about 1 hour.",
+                "Run a knife around side and center tube of pan. Cake may be frozen for up to 6 months. Remove cake to a serving plate.",
+                ""
+            ],
+            "nutrition": ""
+        },
+        {
+            "name": "Chocolate Layered Angel Food Cake",
+            "image_url": "https://www.tasteofhome.com/wp-content/uploads/2018/01/exps44368_TH1443686D14-2.jpg",
+            "expert": "The creamy chocolate filling of this tall, impressive cake will make a hit at any party. It will be a perfect birthday cake for anyone. \u2014Teri Roberts, Hilliard, Ohio",
+            "time": "Prep: 20 min. Bake: 35 min. + chilling",
+            "makes": "12 servings",
+            "ingredients": [
+                "1 package (16 ounces) angel food cake mix",
+                "24 large marshmallows",
+                "6 milk chocolate candy bars with almonds (1.45 ounces each), chopped",
+                "2/3 cup whole milk",
+                "1 carton (12 ounces) frozen whipped topping, thawed, divided"
+            ],
+            "directions": [
+                "Prepare and bake cake according to package directions, using an ungreased 10-in. tube pan. Cool.",
+                "For filling, in a small saucepan, combine the marshmallows, candy bars and milk. Cook and stir over low heat until marshmallows are melted. Transfer to a small bowl; cool to room temperature. Fold in 3/4 cup whipped topping.",
+                "Cut cake horizontally into three layers. Place bottom layer on a serving plate; spread with a third of the filling. Repeat layers twice. Refrigerate for at least 1 hour.",
+                "Frost top and sides of cake with remaining whipped topping."
+            ],
+            "nutrition": "1 slice: 382 calories, 12g fat (8g saturated fat), 5mg cholesterol, 306mg sodium, 62g carbohydrate (38g sugars, 1g fiber), 6g protein."
+        },
+        {
+            "name": "Blueberry Lemon Trifle",
+            "image_url": "https://www.tasteofhome.com/wp-content/uploads/2018/01/exps12386_MTC153706C03_03_4b-5.jpg?fit=700,1024",
+            "expert": "A refreshing lemon filling and fresh blueberries give this sunny dessert sensation plenty of color. Don't worry about heating up the oven\u2014this trifle doesn't require baking. \u2014Ellen Peden, Houston, Texas",
+            "time": "Prep: 15 min. + chilling",
+            "makes": "14 servings",
+            "ingredients": [
+                "3 cups fresh blueberries, divided",
+                "2 cans (15-3/4 ounces each) lemon pie filling",
+                "2 cups lemon yogurt",
+                "1 prepared angel food cake (8 to 10 ounces), cut into 1-inch cubes",
+                "1 carton (8 ounces) frozen whipped topping, thawed",
+                "Optional: Lemon slices and fresh mint"
+            ],
+            "directions": [
+                "Set aside 1/4 cup blueberries for garnish. In a large bowl, combine pie filling and yogurt.",
+                "In a 3-1/2-qt. serving or trifle bowl, layer a third of the cake cubes, lemon mixture and blueberries. Repeat layers twice. Top with whipped topping. Cover and refrigerate for at least 2 hours. Garnish with reserved blueberries and, if desired, lemon and mint."
+            ],
+            "nutrition": "1 serving: 230 calories, 4g fat (3g saturated fat), 2mg cholesterol, 235mg sodium, 44g carbohydrate (27g sugars, 1g fiber), 3g protein."
+        },
+        {
+            "name": "Lemon Custard Cake",
+            "image_url": "https://www.tasteofhome.com/wp-content/uploads/2018/01/Lemon-Custard-Cake_EXPS_HHRBZ22_1034_P3_CK_08_11_1b.jpg?fit=700,1024",
+            "expert": "This custard cake recipe comes from my grandma\u2014 it's nice to whip up when unexpected company stops in. It's a cool, creamy dessert that tastes like you fussed. \u2014Sue Gronholz, Beaver Dam, Wisconsin",
+            "time": "Prep/Total Time: 15 min.",
+            "makes": "12 servings",
+            "ingredients": [
+                "1 prepared angel food cake (8 to 10 ounces)",
+                "1 package (3.4 ounces) instant lemon pudding mix",
+                "1-1/2 cups cold 2% milk",
+                "1 cup sour cream",
+                "1 can (21 ounces) cherry or strawberry pie filling"
+            ],
+            "directions": [
+                "Tear angel food cake into bite-sized pieces. Place in a 13 x 9-in. pan. In a bowl, combine the pudding mix, milk and sour cream. Beat until thickened, about 2 minutes. Spread over cake. Spoon pie filling on top. Chill until serving time."
+            ],
+            "nutrition": "1 serving: 184 calories, 5g fat (3g saturated fat), 7mg cholesterol, 270mg sodium, 31g carbohydrate (18g sugars, 1g fiber), 3g protein."
+        },
+        {
             "name": "Angel Food Cake with Berry Sauce",
+            "image_url": "https://www.tasteofhome.com/wp-content/uploads/2018/01/exps45548_HC1597097D185-4.jpg",
             "expert": "We top light and airy angel food cake with a lovely berry sauce for a heavenly dessert. The sauce can also be used to top cake made from a mix.\u2014Taste of Home Test Kitchen",
             "time": "Prep: 30 min. Bake: 50 min. + cooling",
             "makes": "16 servings (6 cups sauce)",
@@ -908,179 +1013,83 @@
             "nutrition": "1 slice: 189 calories, 0 fat (0 saturated fat), 0 cholesterol, 79mg sodium, 39g carbohydrate (29g sugars, 3g fiber), 4g protein."
         },
         {
-            "name": "Mocha-Hazelnut Glazed Angel Food Cake",
-            "expert": "I love this recipe because it combines three of my favorite flavors: coffee, hazelnuts and cherries. \u2014Joan Pecsek, Chesapeake, Virginia",
-            "time": "Prep: 25 min. Bake: 30 min. + cooling",
-            "makes": "16 servings",
-            "ingredients": [
-                "12 large egg whites (about 1-2/3 cups)",
-                "1 cup cake flour",
-                "1/4 teaspoon instant coffee granules",
-                "1 teaspoon cream of tartar",
-                "1 teaspoon almond extract",
-                "1/2 teaspoon salt",
-                "1-1/4 cups sugar",
-                "GLAZE:",
-                "1 cup Nutella",
-                "1/2 cup confectioners' sugar",
-                "1/3 cup brewed coffee",
-                "1/4 cup chopped hazelnuts",
-                "16 maraschino cherries with stems"
-            ],
-            "directions": [
-                "Place egg whites in a large bowl; let stand at room temperature 30 minutes.",
-                "Meanwhile, preheat oven to 350\u00b0. In a small bowl, mix flour and coffee granules until blended.",
-                "Add cream of tartar, extract and salt to egg whites; beat on medium speed until soft peaks form. Gradually add sugar, 1 tablespoon at a time, beating on high after each addition until sugar is dissolved. Continue beating until soft glossy peaks form. Gradually fold in flour mixture, about 1/2 cup at a time.",
-                "Gently transfer to an ungreased 10-in. tube pan. Cut through batter with a knife to remove air pockets. Bake on lowest oven rack 30-40 minutes or until top springs back when lightly touched. Immediately invert pan; cool cake in pan, about 1-1/2 hours.",
-                "Run a knife around sides and center tube of pan. Remove cake to a serving plate. In a small bowl, whisk Nutella, confectioners' sugar and coffee until smooth. Drizzle over cake; sprinkle with hazelnuts. Serve with cherries."
-            ],
-            "nutrition": "1 slice: 234 calories, 7g fat (1g saturated fat), 0 cholesterol, 123mg sodium, 41g carbohydrate (33g sugars, 1g fiber), 5g protein."
-        },
-        {
-            "name": "Blueberry Lemon Trifle",
-            "expert": "A refreshing lemon filling and fresh blueberries give this sunny dessert sensation plenty of color. Don't worry about heating up the oven\u2014this trifle doesn't require baking. \u2014Ellen Peden, Houston, Texas",
-            "time": "Prep: 15 min. + chilling",
-            "makes": "14 servings",
-            "ingredients": [
-                "3 cups fresh blueberries, divided",
-                "2 cans (15-3/4 ounces each) lemon pie filling",
-                "2 cups lemon yogurt",
-                "1 prepared angel food cake (8 to 10 ounces), cut into 1-inch cubes",
-                "1 carton (8 ounces) frozen whipped topping, thawed",
-                "Optional: Lemon slices and fresh mint"
-            ],
-            "directions": [
-                "Set aside 1/4 cup blueberries for garnish. In a large bowl, combine pie filling and yogurt.",
-                "In a 3-1/2-qt. serving or trifle bowl, layer a third of the cake cubes, lemon mixture and blueberries. Repeat layers twice. Top with whipped topping. Cover and refrigerate for at least 2 hours. Garnish with reserved blueberries and, if desired, lemon and mint."
-            ],
-            "nutrition": "1 serving: 230 calories, 4g fat (3g saturated fat), 2mg cholesterol, 235mg sodium, 44g carbohydrate (27g sugars, 1g fiber), 3g protein."
-        },
-        {
-            "name": "Vanilla Bean Angel Food Cake",
-            "expert": "Angel food cake is everyone\u2019s favorite blank slate for making awesome desserts. Serve it with a simple glaze or pile on fresh fruit, chocolate sauce or nutty sprinkles. \u2014Leah Rekau, Milwaukee, Wisconsin",
-            "time": "Prep: 30 min. Bake: 45 min. + cooling",
-            "makes": "16 servings",
-            "ingredients": [
-                "12 large egg whites (about 1-2/3 cups)",
-                "1 cup cake flour",
-                "1-1/2 cups sugar, divided",
-                "1 vanilla bean (see Editor's Note) or 1 teaspoon vanilla extract",
-                "1/2 teaspoon cream of tartar",
-                "1/4 teaspoon salt",
-                "GLAZE:",
-                "2 cups confectioners' sugar",
-                "1 vanilla bean or 1 teaspoon vanilla extract",
-                "3 to 4 tablespoons 2% milk"
-            ],
-            "directions": [
-                "Place egg whites in a large bowl; let stand at room temperature 30 minutes.",
-                "Preheat oven to 325\u00b0. In a small bowl, mix flour and 3/4 cup sugar until blended.",
-                "Add seeds from vanilla bean (or extract if using), cream of tartar and salt to egg whites. Beat on medium speed until soft peaks form. Gradually add remaining 3/4 cup sugar, 1 tablespoon at a time, beating on high after each addition until sugar is dissolved. Continue beating until soft glossy peaks form. Gradually fold in flour mixture, about 1/2 cup at a time.",
-                "Gently transfer batter to an ungreased 10-in. tube pan. Cut through batter with a knife to remove air pockets. Bake on lowest oven rack until top springs back when lightly touched, 45-55 minutes. Immediately invert pan; cool completely in pan, about 1-1/2 hours.",
-                "Run a knife around sides and center tube of pan. Remove cake to a serving plate.",
-                "For glaze, in a small bowl, mix confectioners' sugar, seeds from vanilla bean (or extract if using) and enough milk to reach desired consistency. Spread glaze over cake, allowing some to drip down sides."
-            ],
-            "nutrition": "1 slice: 177 calories, 0 fat (0 saturated fat), 0 cholesterol, 80mg sodium, 41g carbohydrate (34g sugars, 0 fiber), 3g protein."
-        },
-        {
-            "name": "Fruity Coconut Cake Roll",
-            "expert": "Kiwi and coconut add tropical flair to this moist, fruity and simply delicious dessert from Nancy Granaman of Burlington, Iowa. It makes a light, refreshing and stunning finale to even the fanciest meal!",
-            "time": "Prep: 30 min. Bake: 20 min. + chilling",
+            "name": "Rainbow Sherbet Angel Food Cake",
+            "image_url": "https://www.tasteofhome.com/wp-content/uploads/2018/01/Rainbow-Sherbet-Angel-Food-Cake_EXPS_GBDBZ20_40577_B01_09_4b-6.jpg?fit=700,1024",
+            "expert": "Talk about a dessert that pops off the plate! Sometimes I make this easy cake even more eye-catching by tinting the whipped cream. Use whatever sherbet flavor combination you like. \u2014Bonnie Hawkins, Elkhorn, Wisconsin",
+            "time": "Prep: 25 min. + freezing",
             "makes": "12 servings",
             "ingredients": [
-                "1 package (16 ounces) angel food cake mix",
-                "1/2 teaspoon plus 3 tablespoons confectioners' sugar, divided",
-                "3/4 cup cold fat-free milk",
-                "1 package (1 ounce) sugar-free instant white chocolate pudding mix",
-                "1 carton (8 ounces) frozen fat-free whipped topping, thawed",
-                "1/2 teaspoon coconut extract",
-                "2 medium kiwifruit, peeled and thinly sliced",
-                "2 cups fresh strawberries, sliced",
-                "1/3 cup plus 2 tablespoons sweetened shredded coconut, divided",
-                "2 tablespoons apricot spreadable fruit",
-                "1/2 teaspoon hot water"
+                "1 prepared angel food cake (8 to 10 ounces)",
+                "3 cups rainbow sherbet, softened if necessary",
+                "WHIPPED CREAM:",
+                "2 cups heavy whipping cream",
+                "1/3 cup confectioners' sugar",
+                "1 teaspoon vanilla extract"
             ],
             "directions": [
-                "Line a 15x10x1-in. baking pan with waxed paper; coat the paper with cooking spray and set aside. Prepare cake batter according to package directions. Spread evenly in prepared pan.",
-                "Bake at 350\u00b0 for 16-20 minutes or until golden brown. Turn cake onto a kitchen towel dusted with 1/2 teaspoon confectioners' sugar. Gently peel off waxed paper. Dust with remaining confectioners' sugar. Roll up cake in the towel jelly-roll style, starting with a short side. Cool completely on a wire rack.",
-                "For filling, in a large bowl, whisk milk and pudding mix for 2 minutes. Let stand for 2 minutes or until soft-set. Stir in 1 cup whipped topping. Fold in remaining whipped topping; stir in extract.",
-                "Unroll cake; spread with filling to within 1 in. of edges. Arrange kiwi and strawberries over filling. Sprinkle with 1/3 cup coconut. Roll up again. Refrigerate for 1-2 hours.",
-                "Toast the remaining coconut. In a small bowl, whisk spreadable fruit and water until smooth. Drizzle over cake. Sprinkle with toasted coconut. Cut into slices. Refrigerate leftovers."
+                "Using a long serrated knife, cut cake horizontally into 4 layers. Place bottom layer on a freezer-safe serving plate; spread with 1 cup sherbet. Repeat twice with middle cake layers and remaining 2 cups sherbet. Top with remaining cake layer. Freeze, covered, until sherbet is firm, about 1 hour.",
+                "In a large bowl, beat cream until it begins to thicken. Add confectioners' sugar and vanilla; beat until soft peaks form. Frost top and sides of cake. Freeze until firm.",
+                "Thaw in refrigerator 30 minutes before serving. Cut cake with a serrated knife."
             ],
-            "nutrition": "1 slice: 233 calories, 2g fat (1g saturated fat), 0 cholesterol, 378mg sodium, 50g carbohydrate (36g sugars, 1g fiber), 4g protein."
+            "nutrition": "1 slice: 253 calories, 16g fat (10g saturated fat), 54mg cholesterol, 174mg sodium, 27g carbohydrate (12g sugars, 2g fiber), 2g protein."
         },
         {
-            "name": "Strawberry Tunnel Cake",
-            "expert": "My son doesn\u2019t like traditional birthday cakes and always asks for something with strawberries for the occasion. I hit the jackpot when I dreamed up this delicious cake with a \u201csurprise\u201d inside. \u2014Janis Borstad, Ponsford, Minnesota",
-            "time": "Prep: 25 min. Bake: 45 min. + chilling",
+            "name": "Gluten-Free Angel Food Cake",
+            "image_url": "https://www.tasteofhome.com/wp-content/uploads/2018/01/Gluten-Free-Angel-Food-Cake_exps48424_THHC1757658D2_RMS-14.jpg?fit=700,1024",
+            "expert": "My daughter can\u2019t have gluten and my husband is diabetic, so there are a lot of special recipes at our house. This is one of them. \u2014Anne Wiebe, Gladstone, Manitoba",
+            "time": "Prep: 15 min. Bake: 45 min. + cooling",
             "makes": "16 servings",
             "ingredients": [
-                "1 package (16 ounces) angel food cake mix",
-                "6 ounces cream cheese, softened",
-                "1 can (14 ounces) sweetened condensed milk",
-                "1/3 cup lemon juice",
-                "1/4 teaspoon almond extract, optional",
-                "6 drops red food coloring, optional",
-                "1 cup sliced fresh strawberries",
-                "1 carton (12 ounces) frozen whipped topping, thawed, divided"
+                "1-1/2 cups egg whites (about 10)",
+                "3/4 cup plus 1/2 cup sugar, divided",
+                "1/4 cup cornstarch",
+                "1/4 cup white rice flour",
+                "1/4 cup tapioca flour",
+                "1/4 cup potato starch",
+                "1-1/2 teaspoons cream of tartar",
+                "3/4 teaspoon salt",
+                "3/4 teaspoon vanilla extract",
+                "Assorted fresh fruit, optional"
             ],
             "directions": [
-                "Prepare and bake cake according to package directions, using a 10-in. ungreased tube pan. Cool completely, about 1 hour.",
-                "Run a knife around side and center tube of pan. Remove cake to a serving plate. Cut a 1-in. slice off the top of the cake; set aside. To make a tunnel, carefully hollow out bottom, leaving a 1-in. shell. Tear removed cake into 1-in. cubes.",
-                "In a large bowl, beat cream cheese until fluffy. Beat in milk and lemon juice until smooth. Stir in extract and food coloring if desired. Stir in cake cubes and strawberries. Fold in 1 cup whipped topping.",
-                "Fill tunnel with strawberry mixture; replace cake top. Spread remaining whipped topping over top and sides of cake. Refrigerate for 4 hours or overnight."
+                "Place egg whites in a large bowl; let stand at room temperature for 30 minutes. Sift 3/4 cup sugar, cornstarch, flours and potato starch together twice; set aside.",
+                "Add cream of tartar, salt and vanilla to egg whites; beat on medium speed until soft peaks form. Gradually add remaining sugar, about 2 tablespoons at a time, beating on high until stiff peaks form. Gradually fold in flour mixture, about 1/2 cup at a time.",
+                "Gently spoon into an ungreased 10-in. tube pan. Cut through the batter with a knife to remove air pockets. Bake on the lowest oven rack at 350\u00b0 for 45-50 minutes or until lightly browned and entire top appears dry. Immediately invert pan; cool completely, about 1 hour.",
+                "Run a knife around side and center tube of pan. Remove cake to a serving plate. Top with fresh fruit if desired."
             ],
-            "nutrition": "1 piece: 267 calories, 8g fat (6g saturated fat), 14mg cholesterol, 256mg sodium, 44g carbohydrate (36g sugars, 0 fiber), 5g protein."
+            "nutrition": "1 piece: 101 calories, 0 fat (0 saturated fat), 0 cholesterol, 149mg sodium, 23g carbohydrate (16g sugars, 0 fiber), 3g protein."
         },
         {
-            "name": "Orange Dream Angel Food Cake",
-            "expert": "A basic angel food cake becomes a heavenly indulgence, thanks to a hint of orange flavor swirled into every bite. The orange color makes slices of the cake look so pretty when arranged on individual dessert plates.\u2014Lauren Osborne, Holtwood, Pennsylvania",
-            "time": "Prep: 25 min. Bake: 30 min. + cooling",
+            "name": "Chocolate Angel Cake",
+            "image_url": "https://www.tasteofhome.com/wp-content/uploads/2018/01/exps7756_HB143427C07_17_5b-2.jpg?fit=700,1024",
+            "expert": "When I was married in 1944, I could barely boil water. My dear mother-in-law taught me her specialty\u2014making the lightest angel food cakes ever. This chocolate version is an easy, impressive treat. \u2014Joyce Shiffler, Colorado Springs, Colorado",
+            "time": "Prep: 25 min. Bake: 35 min. + cooling",
             "makes": "16 servings",
             "ingredients": [
-                "12 large egg whites",
-                "1 cup all-purpose flour",
-                "1-3/4 cups sugar, divided",
+                "1-1/2 cups egg whites (about 10 large)",
+                "1-1/2 cups confectioners' sugar",
+                "1 cup cake flour",
+                "1/4 cup baking cocoa",
                 "1-1/2 teaspoons cream of tartar",
                 "1/2 teaspoon salt",
-                "1 teaspoon almond extract",
-                "1 teaspoon vanilla extract",
-                "1 teaspoon grated orange zest",
-                "1 teaspoon orange extract",
-                "6 drops red food coloring, optional",
-                "6 drops yellow food coloring, optional"
-            ],
-            "directions": [
-                "Place egg whites in a large bowl; let stand at room temperature for 30 minutes. Sift flour and 3/4 cup sugar together twice; set aside.",
-                "Add the cream of tartar, salt and almond and vanilla extracts to egg whites; beat on medium speed until soft peaks form. Gradually add remaining sugar, about 2 tablespoons at a time, beating on high until stiff glossy peaks form and sugar is dissolved. Gradually fold in flour mixture, about 1/2 cup at a time.",
-                "Gently spoon half of batter into an ungreased 10-in. tube pan. To the remaining batter, stir in the orange zest, orange extract and, if desired, food colorings. Gently spoon orange batter over white batter. Cut through both layers with a knife to swirl the orange and remove air pockets.",
-                "Bake on the lowest oven rack at 375\u00b0 for 30-35 minutes or until lightly browned and entire top appears dry. Immediately invert pan; cool completely, about 1 hour.",
-                "Run a knife around side and center tube of pan. Remove cake to a serving plate."
-            ],
-            "nutrition": "1 slice: 130 calories, 0 fat (0 saturated fat), 0 cholesterol, 116mg sodium, 28g carbohydrate (22g sugars, 0 fiber), 4g protein.  Diabetic Exchanges: 2 starch."
-        },
-        {
-            "name": "Giant Snowball Cake",
-            "expert": "Just like the frosty version would, this snowball is sure to disappear fast at warm-weather gatherings! Tangy citrus is the delightful surprise when you taste the coconut-topped confection from Betty Friesen of Lake Oswego, Oregon. \"My family's enjoyed the refreshing dessert at Christmas for nearly 50 years,\" she writes. \"But it would be wonderful any time.",
-            "time": "Prep: 30 min. + chilling",
-            "makes": "16 servings",
-            "ingredients": [
-                "1 envelope unflavored gelatin",
-                "1/4 cup cold water",
-                "1/2 cup boiling water",
                 "1 cup sugar",
-                "1 cup orange juice",
-                "1/4 cup lemon or lime juice",
-                "2 cups heavy whipping cream, divided",
-                "1 angel food cake (12 ounces), cut into cubes (10 cups)",
-                "1 cup sweetened shredded coconut"
+                "FROSTING:",
+                "1-1/2 cups heavy whipping cream",
+                "1/2 cup sugar",
+                "1/4 cup baking cocoa",
+                "1/2 teaspoon salt",
+                "1/2 teaspoon vanilla extract",
+                "Chocolate leaves, optional"
             ],
             "directions": [
-                "In a bowl, sprinkle gelatin over cold water; let stand for 1 minute. Add boiling water; stir until gelatin is dissolved. Add sugar and juices; stir until sugar is dissolved. Refrigerate until partially thickened, about 2 hours.",
-                "Beat 1 cup cream until stiff peaks form; fold into gelatin mixture. Line a 4-qt. round bowl with plastic wrap. Spoon about 1 cup whipped cream mixture into bowl. Alternate layers of cake and whipped cream mixture until bowl is filled, ending with cream mixture. Refrigerate for at least 3 hours.",
-                "Unmold onto a serving plate. Whip remaining cream; frost cake. Sprinkle with coconut."
+                "Place egg whites in a large bowl; let stand at room temperature for 30 minutes. Sift together confectioners' sugar, flour and cocoa 3 times.",
+                "Add cream of tartar and salt to egg whites; beat on medium speed until soft peaks form. Gradually add sugar, about 2 tablespoons at a time, beating on high until stiff glossy peaks form and sugar is dissolved. Gradually fold in flour mixture, about 1/2 cup at a time.",
+                "Spoon into an ungreased 10-in. tube pan. Cut through batter with a knife to remove air pockets. Bake on the lowest oven rack at 375\u00b0 until lightly browned and entire top appears dry, 35-40 minutes. Immediately invert pan; cool completely, about 1 hour.",
+                "Run a knife around side and center tube of pan. Remove cake to a serving plate.",
+                "In a large bowl, combine the first 5 frosting ingredients; cover and chill for 1 hour. Beat until stiff peaks form.",
+                "Spread over the top and sides of cake. Store in the refrigerator. Garnish with chocolate leaves if desired."
             ],
-            "nutrition": ""
+            "nutrition": "1 piece: 244 calories, 9g fat (5g saturated fat), 31mg cholesterol, 194mg sodium, 39g carbohydrate (30g sugars, 1g fiber), 4g protein."
         }
     ]
 }

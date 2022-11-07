@@ -2,7 +2,148 @@
     "category": "Snack Cakes",
     "recipes": [
         {
+            "name": "Gingerbread",
+            "image_url": "https://www.tasteofhome.com/wp-content/uploads/2018/01/Gingerbread_EXPS_TOHDJ20_4148_E07_31_4b-2.jpg?fit=700,1024",
+            "expert": "My grandmother first used this recipe for gingerbread more than 100 years ago. I remember that the kitchen smelled like heaven when Grandmother baked her gingerbread. The only thing better was when she took it out of the oven and served it with a generous topping of fresh whipped cream! \u2014Ellouise Halstead, Union Grove, Wisconsin",
+            "time": "Prep: 15 min. Bake: 20 min.",
+            "makes": "9 servings",
+            "ingredients": [
+                "1 large egg, room temperature, beaten",
+                "1/2 cup sugar",
+                "1/2 cup molasses",
+                "5 tablespoons butter, melted",
+                "2/3 cup cold water",
+                "1-1/2 cups all-purpose flour",
+                "1 teaspoon baking soda",
+                "1 teaspoon ground ginger",
+                "1/2 teaspoon salt",
+                "Whipped cream"
+            ],
+            "directions": [
+                "Combine egg, sugar, molasses, butter and water; mix well. In a large bowl, stir together flour, baking soda, ginger and salt; add molasses mixture. Beat until well mixed. Pour into a greased 8-in. square baking pan. Bake at 350\u00b0 until cake tests done, 20-25 minutes. Cut into squares; serve warm with whipped cream."
+            ],
+            "nutrition": "1 piece: 232 calories, 7g fat (4g saturated fat), 41mg cholesterol, 350mg sodium, 40g carbohydrate (22g sugars, 1g fiber), 3g protein."
+        },
+        {
+            "name": "Crazy Cake",
+            "image_url": "https://www.tasteofhome.com/wp-content/uploads/2018/01/Moist-Chocolate-Snack-Cake_EXPS_FT21_38749_F_1007_1-15.jpg?fit=700,1024",
+            "expert": "I have made this dessert\u2014otherwise known as crazy cake\u2014for more than 50 years. It is classic, tender and moist, and requires only three easy steps. \u2014Devota Angell, Allenstown, New Hampshire",
+            "time": "Prep: 10 min. Bake: 25 min. + cooling",
+            "makes": "4 servings",
+            "ingredients": [
+                "1/2 cup sugar",
+                "1/2 cup water",
+                "2 tablespoons plus 1 teaspoon canola oil",
+                "1-1/2 teaspoons white vinegar",
+                "1/2 teaspoon vanilla extract",
+                "3/4 cup all-purpose flour",
+                "4-1/2 teaspoons baking cocoa",
+                "1/2 teaspoon baking soda",
+                "1/4 teaspoon salt",
+                "Confectioners' sugar, optional"
+            ],
+            "directions": [
+                "Preheat oven to 350\u00b0. Grease a 8-1/2x4-1/2-in. loaf pan. In a small bowl, beat the sugar, water, oil, vinegar and vanilla until well blended. Combine flour, cocoa, baking soda and salt; gradually beat into sugar mixture until blended.",
+                "Pour into prepared pan. Bake until a toothpick inserted in the center comes out clean, 25-30 minutes.",
+                "Cool 10 minutes before removing from pan to a wire rack to cool completely. Dust with confectioners' sugar if desired."
+            ],
+            "nutrition": "1 piece: 262 calories, 9g fat (1g saturated fat), 0 cholesterol, 306mg sodium, 44g carbohydrate (25g sugars, 1g fiber), 3g protein."
+        },
+        {
+            "name": "Tropical Carrot Cake",
+            "image_url": "",
+            "expert": "I look forward to August because our family reunion means fun and great food, like this classic cake with the special flair it gets from pineapple. My great-aunt gave me this recipe, and I always make it for the reunion.\r\n\u2014Victoria Casey, Enterprise, Oregon",
+            "time": "Prep: 15 min. Bake: 45 min. + cooling",
+            "makes": "16 servings",
+            "ingredients": [
+                "3 large eggs",
+                "3/4 cup canola oil",
+                "3/4 cup buttermilk",
+                "2 cups all-purpose flour",
+                "2 cups sugar",
+                "2 teaspoons baking soda",
+                "2 teaspoons ground cinnamon",
+                "1/2 teaspoon salt",
+                "2 teaspoons vanilla extract",
+                "2 cups finely shredded carrots",
+                "1 cup raisins",
+                "1 can (8 ounces) crushed pineapple, undrained",
+                "1 cup chopped walnuts",
+                "1 cup sweetened shredded coconut",
+                "FROSTING:",
+                "1 package (8 ounces) cream cheese, softened",
+                "4 to 4-1/2 cups confectioners' sugar",
+                "1 to 2 tablespoons heavy whipping cream",
+                "1 teaspoon vanilla extract"
+            ],
+            "directions": [
+                "In a large bowl, beat eggs, oil and buttermilk. Combine flour, sugar, baking soda, cinnamon and salt; add to egg mixture and mix well. Stir in vanilla, carrots, raisins, pineapple, walnuts and coconut; mix well. Pour into a greased 13-in. x 9-in. baking pan. Bake at 350\u00b0 for 45-50 minutes or until cake tests done. Cool.",
+                "For frosting, beat all ingredients in a bowl until smooth. Frost cake."
+            ],
+            "nutrition": ""
+        },
+        {
+            "name": "Mocha Frosted Snack Cake",
+            "image_url": "https://www.tasteofhome.com/wp-content/uploads/2018/01/exps23634_HCK153422B08_22_2b-3.jpg?fit=700,1024",
+            "expert": "Here's a lighter version of a chocolate mocha cake I've been baking for my family for over 30 years. I replaced part of the sugar with a lower-calorie sugar blend and some of the oil with applesauce. It turned out just as delicious.\u2014Donna Roberts, Manhattan, Kansas",
+            "time": "Prep: 20 min. Bake: 35 min. + cooling",
+            "makes": "9 servings",
+            "ingredients": [
+                "1 teaspoon instant coffee granules",
+                "1 cup boiling water",
+                "1-1/4 cups all-purpose flour",
+                "1/2 cup packed brown sugar",
+                "1/4 cup cornstarch",
+                "1/4 cup sugar blend",
+                "3 tablespoons baking cocoa",
+                "1 teaspoon baking soda",
+                "1/2 teaspoon salt",
+                "1/4 cup unsweetened applesauce",
+                "2 tablespoons canola oil",
+                "1 tablespoon white vinegar",
+                "1/2 teaspoon vanilla extract",
+                "FROSTING:",
+                "1/2 teaspoon instant coffee granules",
+                "1 tablespoon fat-free milk",
+                "1-1/2 cups confectioners' sugar",
+                "2 tablespoons baking cocoa",
+                "3 tablespoons reduced-fat butter, softened",
+                "1/2 teaspoon vanilla extract"
+            ],
+            "directions": [
+                "Preheat oven to 350\u00b0. In a small bowl, dissolve coffee granules in boiling water; cool slightly. Coat an 8-in. square baking dish with cooking spray.",
+                "In a large bowl, whisk flour, brown sugar, cornstarch, sugar blend, cocoa, baking soda and salt. Whisk applesauce, oil, vinegar and vanilla into coffee mixture. Add to flour mixture; stir just until moistened.",
+                "Transfer to prepared dish. Bake 35-40 minutes or until a toothpick inserted in center comes out clean. Cool completely on a wire rack.",
+                "For frosting, in a small bowl, dissolve coffee granules in milk. In a large bowl, mix confectioners' sugar and cocoa until blended; beat in butter, vanilla and enough coffee mixture to reach a spreading consistency. Spread over cake."
+            ],
+            "nutrition": "1 piece: 280 calories, 6g fat (2g saturated fat), 7mg cholesterol, 301mg sodium, 56g carbohydrate (32g sugars, 1g fiber), 3g protein."
+        },
+        {
+            "name": "Dinette Cake",
+            "image_url": "https://www.tasteofhome.com/wp-content/uploads/2018/01/exps9024_RX2850C47B-3.jpg",
+            "expert": "IT ONLY TAKES MINUTES to get this cake into the oven. It's one of my favorite desserts.\r\n   I love serving this treat to guests, and it's also one of my grandchildren frequently request I make for them.\r\n-Margaret Sanders, Indianapolis, Indiana",
+            "time": "Prep: 10 min. Bake: 30 min. + cooling",
+            "makes": "9 servings",
+            "ingredients": [
+                "1 cup sugar",
+                "2/3 cup milk",
+                "1/3 cup canola oil",
+                "1 large egg, room temperature",
+                "1 teaspoon vanilla extract",
+                "1-1/2 cups all-purpose flour",
+                "2 teaspoons baking powder",
+                "1/2 teaspoon salt",
+                "Fresh fruit or ice cream, optional"
+            ],
+            "directions": [
+                "In a large bowl, beat the sugar, milk, oil, egg and vanilla until well blended. Combine the flour, baking powder and salt; gradually add to sugar mixture until blended.",
+                "Pour into a greased 9-in. square baking pan. Bake at 350\u00b0 for 30-35 minutes or until a toothpick inserted in the center comes out clean. Cool on a wire rack. Serve with fruit or ice cream if desired."
+            ],
+            "nutrition": "1 piece: 253 calories, 9g fat (2g saturated fat), 26mg cholesterol, 237mg sodium, 39g carbohydrate (23g sugars, 1g fiber), 3g protein."
+        },
+        {
             "name": "Devil\u2019s Food Snack Cake",
+            "image_url": "https://www.tasteofhome.com/wp-content/uploads/2020/03/Devil-s-Food-Snack-Cake_EXPS_FT20_114038_F_0616_1_HOME-1.jpg?fit=700,1024",
             "expert": "My husband and his friends request this devil's food snack cake for camping trips because it\u2019s easy to transport. That makes it great for taking to potlucks and other events, too, as there's no frosting involved. \u2014Julie Danler, Bel Aire, Kansas",
             "time": "Prep: 30 min. Bake: 35 min. + cooling",
             "makes": "24 servings",
@@ -33,29 +174,8 @@
             "nutrition": "1 piece: 174 calories, 9g fat (3g saturated fat), 23mg cholesterol, 91mg sodium, 22g carbohydrate (13g sugars, 2g fiber), 3g protein. Diabetic Exchanges:  2 fat, 1-1/2 starch."
         },
         {
-            "name": "Classic Chocolate Cake",
-            "expert": "If you need to learn how to make chocolate cake from scratch, this easy homemade chocolate cake recipe is a perfect place to start. It appeared on a can of Hershey's cocoa way back in 1943. I tried it, my boys liked it, and I've been making it ever since. \u2014Betty Follas, Morgan Hill, California",
-            "time": "Prep: 15 min. Bake: 35 min.",
-            "makes": "15 servings",
-            "ingredients": [
-                "2/3 cup butter, softened",
-                "1-2/3 cups sugar",
-                "3 large eggs, room temperature",
-                "2 cups all-purpose flour",
-                "2/3 cup baking cocoa",
-                "1-1/4 teaspoons baking soda",
-                "1 teaspoon salt",
-                "1-1/3 cups whole milk",
-                "Confectioners' sugar or favorite frosting"
-            ],
-            "directions": [
-                "In a bowl, cream butter and sugar until light and fluffy, 5-7 minutes. Add eggs, 1 at a time, beating well after each addition. Combine flour, cocoa, baking soda and salt; add to creamed mixture alternately with milk, beating until smooth after each addition. Pour batter into a greased and floured 13x9-in. baking pan.",
-                "Bake at 350\u00b0 until a toothpick inserted in center comes out clean, 35-40 minutes. Cool on a wire rack. When cake is cool, dust with confectioners' sugar or top with your favorite frosting."
-            ],
-            "nutrition": "1 piece: 257 calories, 10g fat (6g saturated fat), 67mg cholesterol, 368mg sodium, 38g carbohydrate (23g sugars, 1g fiber), 4g protein."
-        },
-        {
             "name": "Mississippi Mud Cake",
+            "image_url": "https://www.tasteofhome.com/wp-content/uploads/2018/01/Mississippi-Mud-Cake_EXPS_CWAM19_14082_C01_04_5b-5.jpg?fit=700,1024",
             "expert": "Make this tempting cake and you'll satisfy kids of all ages! A fudgy brownie-like base is topped with marshmallow creme and a nutty frosting. Your family will be very merry when you serve up big slices with glasses of cold milk or steaming mugs of coffee.",
             "time": "Prep: 20 min. Bake: 35 min. + cooling",
             "makes": "20 servings",
@@ -84,6 +204,7 @@
         },
         {
             "name": "Peanut Butter Chocolate Chip Zucchini Cake",
+            "image_url": "https://www.tasteofhome.com/wp-content/uploads/2018/05/Peanut-Butter-Chocolate-Chip-Zucchini-Cake_EXPS_SDJJ18_213755_B02_14_2b-1.jpg?fit=700,1024",
             "expert": "Years ago, I added some zucchini to a peanut butter bar I had created, and this time I wanted to try adding it to a cake. The zucchini makes the cake super moist but doesn\u2019t get in the way of the chocolate and peanut butter goodness. \u2014Marilyn Blankschien, Clintonville, Wisconsin",
             "time": "Prep: 20 min. Bake: 20 min.",
             "makes": "10 servings",
@@ -109,24 +230,91 @@
             "nutrition": "1 piece: 297 calories, 12g fat (6g saturated fat), 31mg cholesterol, 281mg sodium, 44g carbohydrate (28g sugars, 2g fiber), 5g protein."
         },
         {
-            "name": "Brownie Mix Snack Cake",
-            "expert": "Theresa uses a few cups of her homemade mix to create a snack that's ideal for those who prefer their cake with mild chocolate flavor.",
-            "time": "Prep: 10 min. Bake: 25 min.",
-            "makes": "9 servings",
+            "name": "Banana Split Cake Bars",
+            "image_url": "https://www.tasteofhome.com/wp-content/uploads/2019/04/Banana-Split-Cake-Bars_EXPS_TOHAS19_185038_E04_19_5b-9.jpg?fit=700,1024",
+            "expert": "Summer isn\u2019t summer without a banana split or two, and these fun bars bring that same delicious flavor in potluck-perfect form. \u2014Jasey McBurnett, Rock Springs, Wyoming",
+            "time": "Prep: 25 min. Bake: 25 min. + cooling",
+            "makes": "2 dozen",
             "ingredients": [
-                "2 cups Brownie Mix",
-                "3 eggs, separated",
-                "3 tablespoons milk",
-                "1 teaspoon vanilla extract"
+                "1/2 cup butter, softened",
+                "1-1/2 cups sugar",
+                "2 large eggs, room temperature",
+                "1-1/2 cups mashed ripe bananas (about 3 large)",
+                "1 cup sour cream",
+                "2 teaspoons vanilla extract",
+                "2 cups all-purpose flour",
+                "1 teaspoon baking soda",
+                "3/4 teaspoon salt",
+                "2 jars (10 ounces each) maraschino cherries, drained and chopped",
+                "2 cups semisweet chocolate chips",
+                "1 package (10 ounces) miniature marshmallows",
+                "Optional: Chopped salted peanuts and banana slices or dried banana chips"
             ],
             "directions": [
-                "In a large bowl, combine the brownie mix, egg yolks, milk and vanilla. In a small bowl, beat egg whites until stiff peaks form; fold into the batter.",
-                "Pour into a greased 8-in. square baking pan. Bake at 350\u00b0 for 25-30 minutes or until a toothpick inserted in the center comes out clean. Cool on a wire rack."
+                "Preheat oven to 375\u00b0. Grease a 15x10x1-in. baking pan.",
+                "In a large bowl, beat butter and sugar until crumbly, about 2 minutes. Add eggs; mix well. Beat in bananas, sour cream and vanilla. In another bowl, whisk flour, baking soda and salt; gradually add to butter mixture. Transfer to prepared pan.",
+                "Bake until a toothpick inserted in center comes out clean, 18-20 minutes. Top cake with cherries, chocolate chips, marshmallows and, if desired, peanuts. Bake until chips are slightly melted and marshmallows puff, 3-5 minutes longer. Cool completely in pan on a wire rack; cut into bars. If desired, top with banana slices or banana chips before serving."
             ],
-            "nutrition": ""
+            "nutrition": "1 piece: 294 calories, 11g fat (6g saturated fat), 28mg cholesterol, 177mg sodium, 52g carbohydrate (38g sugars, 1g fiber), 3g protein."
+        },
+        {
+            "name": "Cranberry Christmas Cake",
+            "image_url": "https://www.tasteofhome.com/wp-content/uploads/2018/01/Tart-Cranberry-Cake_EXPS_FT21_2849_F_1118_1.jpg?fit=700,1024",
+            "expert": "The ruby cranberries in this recipe stay bright and beautiful, and their tartness is irresistible. I've made this cranberry Christmas cake many times to share. \u2014Marilyn Paradis, Woodburn, Oregon",
+            "time": "Prep: 15 min. Bake: 45 min.",
+            "makes": "20 servings",
+            "ingredients": [
+                "3 large eggs, room temperature",
+                "2 cups sugar",
+                "3/4 cup butter, softened",
+                "1 teaspoon almond extract",
+                "2 cups all-purpose flour",
+                "2-1/2 cups fresh or frozen cranberries, thawed",
+                "2/3 cup chopped pecans",
+                "Optional: Whipped cream and cranberries"
+            ],
+            "directions": [
+                "Preheat oven to 350\u00b0. In a large bowl, beat eggs and sugar until slightly thickened and lemon-colored, about 5 minutes. Add butter and extract; beat 2 minutes. Gradually stir in flour just until combined. Stir in cranberries and pecans. Spread in a greased 13x9-in. baking dish.",
+                "Bake until a toothpick inserted in the center comes out clean, 45-50 minutes. If desired, serve each piece with whipped cream and a cranberry."
+            ],
+            "nutrition": "1 piece: 227 calories, 10g fat (5g saturated fat), 46mg cholesterol, 66mg sodium, 32g carbohydrate (21g sugars, 1g fiber), 3g protein."
+        },
+        {
+            "name": "Billie\u2019s Southern Sweet Potato Cake",
+            "image_url": "https://www.tasteofhome.com/wp-content/uploads/2018/01/exps170868_TH143190B09_25_5b_WEB-5.jpg?fit=700,1024",
+            "expert": "I made sweet potato cakes for my kids when they were younger and they told me in their little voices, \"Mommy, you're the best baker.\" Little did they know that was Mommy's first attempt at homemade cake! \u2014Billie Williams-Henderson, Bowie, Maryland",
+            "time": "Prep: 25 min. Bake: 40 min. + cooling",
+            "makes": "20 servings",
+            "ingredients": [
+                "4 large eggs, room temperature",
+                "2 cups sugar",
+                "2 cups canola oil",
+                "2 teaspoons vanilla extract",
+                "2 cups all-purpose flour",
+                "2 teaspoons baking soda",
+                "2 teaspoons ground cinnamon",
+                "1/2 teaspoon ground ginger",
+                "1/2 teaspoon ground allspice",
+                "1/2 teaspoon salt",
+                "3 cups shredded peeled sweet potatoes (about 2 medium)",
+                "1 cup finely chopped walnuts",
+                "FROSTING:",
+                "1 package (8 ounces) cream cheese, softened",
+                "1/2 cup butter, softened",
+                "1 teaspoon vanilla extract",
+                "2 cups confectioners' sugar"
+            ],
+            "directions": [
+                "Preheat oven to 350\u00b0. Grease a 13x9-in. baking pan.",
+                "In a large bowl, beat eggs, sugar, oil and vanilla until well blended. In another bowl, whisk flour, baking soda, spices and salt; gradually beat into egg mixture. Stir in sweet potatoes and walnuts.",
+                "Transfer to prepared pan. Bake until a toothpick inserted in center comes out clean, 40-45 minutes. Cool completely in pan on a wire rack.",
+                "In a small bowl, beat cream cheese, butter and vanilla until blended. Gradually beat in confectioners\u2019 sugar until smooth. Spread over cooled cake. Refrigerate leftovers."
+            ],
+            "nutrition": "1 piece: 519 calories, 36g fat (8g saturated fat), 67mg cholesterol, 276mg sodium, 47g carbohydrate (32g sugars, 1g fiber), 5g protein."
         },
         {
             "name": "Snack Cake Mix",
+            "image_url": "https://www.tasteofhome.com/wp-content/themes/bumblebee-toh-child/images/recipes/Image-69-2x.png",
             "expert": "Your family can enjoy two distinctly different snack cakes with this simple mix from Kathy Nieratko of Fair Haven, Vermont. The moist and sweet banana version is chock-full of crunchy nuts while the applesauce cake has plenty of spicy goodness.",
             "time": "Prep: 15 min. Bake: 30 min.",
             "makes": "6-8 servings",
@@ -158,82 +346,36 @@
             "nutrition": "1 piece: 372 calories, 19g fat (2g saturated fat), 28mg cholesterol, 285mg sodium, 45g carbohydrate (23g sugars, 2g fiber), 8g protein."
         },
         {
-            "name": "Banana Split Cake Bars",
-            "expert": "Summer isn\u2019t summer without a banana split or two, and these fun bars bring that same delicious flavor in potluck-perfect form. \u2014Jasey McBurnett, Rock Springs, Wyoming",
-            "time": "Prep: 25 min. Bake: 25 min. + cooling",
-            "makes": "2 dozen",
+            "name": "Mrs. Thompson\u2019s Carrot Cake",
+            "image_url": "https://www.tasteofhome.com/wp-content/uploads/2018/01/Mrs-Thompson-s-Carrot-Cake_exps158404_TH2379807A10_31_5bC_RMS-2.jpg?fit=700,1024",
+            "expert": "I received this recipe from the mother of a patient I cared for back in 1972 in St. Paul, Minnesota. It was, and is, the best carrot cake I have ever tasted. It\u2019s requested for many family gatherings and celebrations. \u2014Becky Wachob, Kelly, Wyoming",
+            "time": "Prep: 30 min. Bake: 35 min.",
+            "makes": "15 servings",
             "ingredients": [
-                "1/2 cup butter, softened",
-                "1-1/2 cups sugar",
-                "2 large eggs, room temperature",
-                "1-1/2 cups mashed ripe bananas (about 3 large)",
-                "1 cup sour cream",
-                "2 teaspoons vanilla extract",
+                "3 cups shredded carrots",
+                "1 can (20 ounces) crushed pineapple, well drained",
+                "2 cups sugar",
+                "1 cup canola oil",
+                "4 large eggs",
                 "2 cups all-purpose flour",
-                "1 teaspoon baking soda",
-                "3/4 teaspoon salt",
-                "2 jars (10 ounces each) maraschino cherries, drained and chopped",
-                "2 cups semisweet chocolate chips",
-                "1 package (10 ounces) miniature marshmallows",
-                "Optional: Chopped salted peanuts and banana slices or dried banana chips"
-            ],
-            "directions": [
-                "Preheat oven to 375\u00b0. Grease a 15x10x1-in. baking pan.",
-                "In a large bowl, beat butter and sugar until crumbly, about 2 minutes. Add eggs; mix well. Beat in bananas, sour cream and vanilla. In another bowl, whisk flour, baking soda and salt; gradually add to butter mixture. Transfer to prepared pan.",
-                "Bake until a toothpick inserted in center comes out clean, 18-20 minutes. Top cake with cherries, chocolate chips, marshmallows and, if desired, peanuts. Bake until chips are slightly melted and marshmallows puff, 3-5 minutes longer. Cool completely in pan on a wire rack; cut into bars. If desired, top with banana slices or banana chips before serving."
-            ],
-            "nutrition": "1 piece: 294 calories, 11g fat (6g saturated fat), 28mg cholesterol, 177mg sodium, 52g carbohydrate (38g sugars, 1g fiber), 3g protein."
-        },
-        {
-            "name": "Oatmeal Chocolate Chip Cake",
-            "expert": "I first started making this cake when my husband was stationed with the military in California. Now, 20 years later, I've prepared it all across the country and in Germany. Chocolate lovers especially rave about this recipe!",
-            "time": "Prep: 20 min. Bake: 40 min.",
-            "makes": "12 servings",
-            "ingredients": [
-                "1-3/4 cups boiling water",
-                "1 cup uncooked oatmeal",
-                "1 cup packed brown sugar",
-                "1 cup sugar",
-                "1/2 cup butter, softened",
-                "3 large eggs",
-                "1-3/4 cups all-purpose flour",
-                "1 teaspoon baking soda",
-                "1 teaspoon baking cocoa",
-                "1/4 teaspoon salt",
-                "1 package (12 ounces) semisweet chocolate chips, divided",
-                "3/4 cup chopped walnuts"
-            ],
-            "directions": [
-                "In a bowl, pour water over oatmeal. Allow to stand 10 minutes. Add sugars and butter, stirring until the butter melts. Add eggs, one at a time, mixing well after each addition. Sift flour, soda, cocoa and salt together. Add to batter. Mix well. Stir in half the chocolate chips. Pour into a greased 13x9-in. baking pan. Sprinkle top of cake with walnuts and remaining chips. Bake at 350\u00b0 for about 40 minutes."
-            ],
-            "nutrition": "1 piece: 494 calories, 22g fat (11g saturated fat), 74mg cholesterol, 258mg sodium, 72g carbohydrate (51g sugars, 3g fiber), 8g protein."
-        },
-        {
-            "name": "Homemade Chocolate Snack Cake",
-            "expert": "THIS is a moist delicious snack cake, so good that icing is not necessary. Sometimes my husband puts a scoop of vanilla ice cream on top with a drizzle of chocolate syrup.\r\n   Either way, it always satisfies our sweet tooth.\r\n-Debi Peschka, Broken Arrow, Oklahoma",
-            "time": "Prep: 10 min. Bake: 25 min. + cooling",
-            "makes": "9 servings",
-            "ingredients": [
-                "1 cup boiling water",
+                "2 teaspoons baking soda",
+                "2 teaspoons ground cinnamon",
+                "FROSTING:",
+                "1 package (8 ounces) cream cheese, softened",
                 "1/4 cup butter, softened",
-                "1 egg",
-                "1 teaspoon vanilla extract",
-                "1 cup all-purpose flour",
-                "1 cup sugar",
-                "3 tablespoons baking cocoa",
-                "1 teaspoon baking powder",
-                "1/2 teaspoon baking soda",
-                "1/4 teaspoon salt",
-                "Confectioners' sugar"
+                "2 teaspoons vanilla extract",
+                "3-3/4 cups confectioners' sugar"
             ],
             "directions": [
-                "In a bowl, beat water and butter until butter is melted. Beat in egg and vanilla. Combine flour, sugar, cocoa, baking powder, baking soda and salt; add to the egg mixture. Beat for 2 minutes.",
-                "Pour into a greased 8-in. square baking pan. Bake at 350\u00b0 for 25-30 minutes or until a toothpick inserted in the center comes out clean. Cool on a wire rack. Dust with confectioners' sugar."
+                "In a large bowl, beat the first five ingredients until well blended. In another bowl, mix the flour, baking soda and cinnamon; gradually beat into carrot mixture.",
+                "Transfer to a greased 13x9-in. baking pan. Bake at 350\u00b0 for 35-40 minutes or until a toothpick inserted in center comes out clean. Cool completely in pan on a wire rack.",
+                "For frosting, in a large bowl, beat the cream cheese, butter and vanilla until blended. Gradually beat in confectioners' sugar until smooth. Spread over cake. Store in refrigerator."
             ],
-            "nutrition": "1 piece: 195 calories, 6g fat (3g saturated fat), 37mg cholesterol, 239mg sodium, 34g carbohydrate (22g sugars, 1g fiber), 3g protein."
+            "nutrition": "1 piece: 552 calories, 25g fat (7g saturated fat), 81mg cholesterol, 269mg sodium, 80g carbohydrate (63g sugars, 2g fiber), 5g protein."
         },
         {
             "name": "Oatmeal Cake with Caramel Icing",
+            "image_url": "https://www.tasteofhome.com/wp-content/uploads/2018/01/Oatmeal-Cake-with-Caramel-Icing_EXPS_FT20_47623_F_0424_1_home-3.jpg?fit=700,1024",
             "expert": "This oatmeal cake recipe tastes anything but light. The caramel icing sets up quick, so frost the cake immediately after it cools. \u2014Summer Marks, Louisville, Kentucky",
             "time": "Prep: 30 min. Bake: 20 min. + cooling",
             "makes": "20 servings",
@@ -269,288 +411,33 @@
             "nutrition": "1 piece: 218 calories, 5g fat (3g saturated fat), 31mg cholesterol, 203mg sodium, 41g carbohydrate (30g sugars, 1g fiber), 2g protein."
         },
         {
-            "name": "Apple Spice Snack Cake",
-            "expert": "\"Nothing could be simpler or more delicious than this moist apple cake,\" relates Reba Savoie of Roswell, New Mexico. It's easy to create the four-ingredient treat with a spice cake mix...and even easier on your pocketbook at just 18 cents per piece.",
-            "time": "Prep: 10 min. Bake: 30 min.",
-            "makes": "15 servings",
-            "ingredients": [
-                "1 package  spice cake mix (regular size)",
-                "1 can (21 ounces) apple pie filling",
-                "2 eggs",
-                "2 tablespoons canola oil"
-            ],
-            "directions": [
-                "In a large bowl, combine all the ingredients; beat on low speed for 30 seconds. Beat on medium for 2 minutes.",
-                "Pour into a greased 13x9-in. baking dish. Bake at 350\u00b0 for 30-35 minutes or until a toothpick inserted in the center comes out clean. Cool on a wire rack."
-            ],
-            "nutrition": "1 piece: 213 calories, 7g fat (2g saturated fat), 37mg cholesterol, 289mg sodium, 36g carbohydrate (23g sugars, 1g fiber), 3g protein."
-        },
-        {
-            "name": "Cocoa Cake",
-            "expert": "THIS CAKE is so moist it doesn't need frosting. I simply sprinkle powdered sugar over the top. It's my favorite dessert to bring for potlucks, and there's never a piece left to take home!\r\n-Beulah Sak, Fairport, New York",
-            "time": "Prep: 10 min. Bake: 30 min. + cooling",
-            "makes": "9 servings",
-            "ingredients": [
-                "1-1/2 cups all-purpose flour",
-                "1 cup sugar",
-                "3 tablespoons baking cocoa",
-                "1 teaspoon baking soda",
-                "1/2 teaspoon salt",
-                "1/3 cup canola oil",
-                "1 tablespoon white vinegar",
-                "1 teaspoon vanilla extract",
-                "1 cup cold water",
-                "Confectioners' sugar"
-            ],
-            "directions": [
-                "Preheat oven to 350\u00b0. In a large bowl, whisk flour, sugar, cocoa, baking soda and salt. Using a spoon, make 3 wells in the dry ingredients. Pour oil into the first, vinegar into another and vanilla into the third. Slowly pour water over all. Beat on low speed until thoroughly combined (batter will be thin).",
-                "Pour into a greased 8-in. square baking dish. Bake until a toothpick inserted in the center comes out clean, 30-35 minutes. Cool in pan on a wire rack. Dust with confectioners' sugar."
-            ],
-            "nutrition": "1 piece: 242 calories, 9g fat (1g saturated fat), 0 cholesterol, 272mg sodium, 39g carbohydrate (22g sugars, 1g fiber), 2g protein."
-        },
-        {
-            "name": "Billie\u2019s Southern Sweet Potato Cake",
-            "expert": "I made sweet potato cakes for my kids when they were younger and they told me in their little voices, \"Mommy, you're the best baker.\" Little did they know that was Mommy's first attempt at homemade cake! \u2014Billie Williams-Henderson, Bowie, Maryland",
-            "time": "Prep: 25 min. Bake: 40 min. + cooling",
-            "makes": "20 servings",
-            "ingredients": [
-                "4 large eggs, room temperature",
-                "2 cups sugar",
-                "2 cups canola oil",
-                "2 teaspoons vanilla extract",
-                "2 cups all-purpose flour",
-                "2 teaspoons baking soda",
-                "2 teaspoons ground cinnamon",
-                "1/2 teaspoon ground ginger",
-                "1/2 teaspoon ground allspice",
-                "1/2 teaspoon salt",
-                "3 cups shredded peeled sweet potatoes (about 2 medium)",
-                "1 cup finely chopped walnuts",
-                "FROSTING:",
-                "1 package (8 ounces) cream cheese, softened",
-                "1/2 cup butter, softened",
-                "1 teaspoon vanilla extract",
-                "2 cups confectioners' sugar"
-            ],
-            "directions": [
-                "Preheat oven to 350\u00b0. Grease a 13x9-in. baking pan.",
-                "In a large bowl, beat eggs, sugar, oil and vanilla until well blended. In another bowl, whisk flour, baking soda, spices and salt; gradually beat into egg mixture. Stir in sweet potatoes and walnuts.",
-                "Transfer to prepared pan. Bake until a toothpick inserted in center comes out clean, 40-45 minutes. Cool completely in pan on a wire rack.",
-                "In a small bowl, beat cream cheese, butter and vanilla until blended. Gradually beat in confectioners\u2019 sugar until smooth. Spread over cooled cake. Refrigerate leftovers."
-            ],
-            "nutrition": "1 piece: 519 calories, 36g fat (8g saturated fat), 67mg cholesterol, 276mg sodium, 47g carbohydrate (32g sugars, 1g fiber), 5g protein."
-        },
-        {
-            "name": "Banana Bread Snack Cakes",
-            "expert": "This banana bread snack cake doesn't need any frosting\u2014just a dusting of powdered sugar. Guests are always amazed that I made this treat from scratch. \u2014Denise Loewenthal, Hinckley, Ohio",
-            "time": "Prep: 10 min. Bake: 30 min. + cooling",
-            "makes": "9 servings",
-            "ingredients": [
-                "1-2/3 cups all-purpose flour",
-                "1 teaspoon baking soda",
-                "1 cup packed brown sugar",
-                "1/2 cup water",
-                "1/3 cup mashed ripe bananas (about 1 small)",
-                "1/3 cup canola oil",
-                "1/2 teaspoon vanilla extract",
-                "Confectioners' sugar"
-            ],
-            "directions": [
-                "Preheat oven to 350&deg;. In a bowl, combine flour and baking soda. In another bowl, whisk brown sugar, water, banana, oil and vanilla. Stir into dry ingredients just until moistened. Transfer to a greased 8-in. square baking pan.",
-                "Bake until a toothpick inserted in the center comes out clean, 30-35 minutes. Cool on a wire rack. Dust cake with confectioners' sugar. Cut into 9 pieces."
-            ],
-            "nutrition": "1 piece: 259 calories, 9g fat (1g saturated fat), 0 cholesterol, 147mg sodium, 44g carbohydrate (25g sugars, 1g fiber), 3g protein."
-        },
-        {
-            "name": "Crazy Cake",
-            "expert": "I have made this dessert\u2014otherwise known as crazy cake\u2014for more than 50 years. It is classic, tender and moist, and requires only three easy steps. \u2014Devota Angell, Allenstown, New Hampshire",
+            "name": "Homemade Chocolate Snack Cake",
+            "image_url": "https://www.tasteofhome.com/wp-content/uploads/2018/01/exps11969_RM10104C49B-4.jpg",
+            "expert": "THIS is a moist delicious snack cake, so good that icing is not necessary. Sometimes my husband puts a scoop of vanilla ice cream on top with a drizzle of chocolate syrup.\r\n   Either way, it always satisfies our sweet tooth.\r\n-Debi Peschka, Broken Arrow, Oklahoma",
             "time": "Prep: 10 min. Bake: 25 min. + cooling",
-            "makes": "4 servings",
-            "ingredients": [
-                "1/2 cup sugar",
-                "1/2 cup water",
-                "2 tablespoons plus 1 teaspoon canola oil",
-                "1-1/2 teaspoons white vinegar",
-                "1/2 teaspoon vanilla extract",
-                "3/4 cup all-purpose flour",
-                "4-1/2 teaspoons baking cocoa",
-                "1/2 teaspoon baking soda",
-                "1/4 teaspoon salt",
-                "Confectioners' sugar, optional"
-            ],
-            "directions": [
-                "Preheat oven to 350\u00b0. Grease a 8-1/2x4-1/2-in. loaf pan. In a small bowl, beat the sugar, water, oil, vinegar and vanilla until well blended. Combine flour, cocoa, baking soda and salt; gradually beat into sugar mixture until blended.",
-                "Pour into prepared pan. Bake until a toothpick inserted in the center comes out clean, 25-30 minutes.",
-                "Cool 10 minutes before removing from pan to a wire rack to cool completely. Dust with confectioners' sugar if desired."
-            ],
-            "nutrition": "1 piece: 262 calories, 9g fat (1g saturated fat), 0 cholesterol, 306mg sodium, 44g carbohydrate (25g sugars, 1g fiber), 3g protein."
-        },
-        {
-            "name": "Zucchini Walnut Cake",
-            "expert": "What gardener doesn't have extra zucchini? When it's abundant, I shred and freeze plenty so I have it on hand to bake this moist zucchini cake recipe all year long. The cream cheese frosting is yummy, and the big panful always goes fast at picnics or potlucks. \u2014Marie Hoyer, Hodgenville, Kentucky",
-            "time": "Prep: 20 min. Bake: 35 min. + cooling",
-            "makes": "24 servings",
-            "ingredients": [
-                "2 cups shredded zucchini",
-                "2 cups sugar",
-                "1 cup canola oil",
-                "4 large eggs, room temperature",
-                "2-1/2 cups all-purpose flour",
-                "1-1/2 teaspoons ground cinnamon",
-                "1 teaspoon salt",
-                "1/2 teaspoon baking powder",
-                "1/2 teaspoon baking soda",
-                "1/2 cup chopped toasted walnuts, optional",
-                "FROSTING:",
-                "3 ounces cream cheese, softened",
-                "1/4 cup butter, softened",
-                "1 tablespoon 2% milk",
-                "1 teaspoon vanilla extract",
-                "2 cups confectioners' sugar",
-                "Chopped toasted walnuts, optional"
-            ],
-            "directions": [
-                "Preheat oven to 350\u00b0. Grease a 13x9-in. baking pan; set aside.",
-                "In a large bowl, beat the zucchini, sugar, oil and eggs until well blended. Combine the flour, cinnamon, salt, baking powder and baking soda; gradually beat into zucchini mixture until blended. Fold in walnuts if desired.",
-                "Pour into prepared pan. Bake until a toothpick inserted in the center comes out clean, 35-40 minutes. Cool completely on a wire rack.",
-                "For frosting, in a small bowl, beat the cream cheese, butter, milk and vanilla until smooth. Add confectioners' sugar and mix well. Frost cake. Sprinkle with nuts if desired. Store in the refrigerator."
-            ],
-            "nutrition": "1 piece: 275 calories, 13g fat (3g saturated fat), 45mg cholesterol, 174mg sodium, 37g carbohydrate (26g sugars, 1g fiber), 3g protein."
-        },
-        {
-            "name": "Cranberry Christmas Cake",
-            "expert": "The ruby cranberries in this recipe stay bright and beautiful, and their tartness is irresistible. I've made this cranberry Christmas cake many times to share. \u2014Marilyn Paradis, Woodburn, Oregon",
-            "time": "Prep: 15 min. Bake: 45 min.",
-            "makes": "20 servings",
-            "ingredients": [
-                "3 large eggs, room temperature",
-                "2 cups sugar",
-                "3/4 cup butter, softened",
-                "1 teaspoon almond extract",
-                "2 cups all-purpose flour",
-                "2-1/2 cups fresh or frozen cranberries, thawed",
-                "2/3 cup chopped pecans",
-                "Optional: Whipped cream and cranberries"
-            ],
-            "directions": [
-                "Preheat oven to 350\u00b0. In a large bowl, beat eggs and sugar until slightly thickened and lemon-colored, about 5 minutes. Add butter and extract; beat 2 minutes. Gradually stir in flour just until combined. Stir in cranberries and pecans. Spread in a greased 13x9-in. baking dish.",
-                "Bake until a toothpick inserted in the center comes out clean, 45-50 minutes. If desired, serve each piece with whipped cream and a cranberry."
-            ],
-            "nutrition": "1 piece: 227 calories, 10g fat (5g saturated fat), 46mg cholesterol, 66mg sodium, 32g carbohydrate (21g sugars, 1g fiber), 3g protein."
-        },
-        {
-            "name": "Mocha Frosted Snack Cake",
-            "expert": "Here's a lighter version of a chocolate mocha cake I've been baking for my family for over 30 years. I replaced part of the sugar with a lower-calorie sugar blend and some of the oil with applesauce. It turned out just as delicious.\u2014Donna Roberts, Manhattan, Kansas",
-            "time": "Prep: 20 min. Bake: 35 min. + cooling",
             "makes": "9 servings",
             "ingredients": [
-                "1 teaspoon instant coffee granules",
                 "1 cup boiling water",
-                "1-1/4 cups all-purpose flour",
-                "1/2 cup packed brown sugar",
-                "1/4 cup cornstarch",
-                "1/4 cup sugar blend",
-                "3 tablespoons baking cocoa",
-                "1 teaspoon baking soda",
-                "1/2 teaspoon salt",
-                "1/4 cup unsweetened applesauce",
-                "2 tablespoons canola oil",
-                "1 tablespoon white vinegar",
-                "1/2 teaspoon vanilla extract",
-                "FROSTING:",
-                "1/2 teaspoon instant coffee granules",
-                "1 tablespoon fat-free milk",
-                "1-1/2 cups confectioners' sugar",
-                "2 tablespoons baking cocoa",
-                "3 tablespoons reduced-fat butter, softened",
-                "1/2 teaspoon vanilla extract"
-            ],
-            "directions": [
-                "Preheat oven to 350\u00b0. In a small bowl, dissolve coffee granules in boiling water; cool slightly. Coat an 8-in. square baking dish with cooking spray.",
-                "In a large bowl, whisk flour, brown sugar, cornstarch, sugar blend, cocoa, baking soda and salt. Whisk applesauce, oil, vinegar and vanilla into coffee mixture. Add to flour mixture; stir just until moistened.",
-                "Transfer to prepared dish. Bake 35-40 minutes or until a toothpick inserted in center comes out clean. Cool completely on a wire rack.",
-                "For frosting, in a small bowl, dissolve coffee granules in milk. In a large bowl, mix confectioners' sugar and cocoa until blended; beat in butter, vanilla and enough coffee mixture to reach a spreading consistency. Spread over cake."
-            ],
-            "nutrition": "1 piece: 280 calories, 6g fat (2g saturated fat), 7mg cholesterol, 301mg sodium, 56g carbohydrate (32g sugars, 1g fiber), 3g protein."
-        },
-        {
-            "name": "Quick Chocolate Snack Cake",
-            "expert": "\u201cI recently learned I\u2019m diabetic. I never thought I\u2019d be able to curb my sweet tooth\u2014until I made this!\u201d Angela Oelschlaeger - Tonganoxie, KS",
-            "time": "Prep: 25 min. Bake: 20 min. + cooling",
-            "makes": "18 servings",
-            "ingredients": [
-                "1/3 cup prune baby food or unsweetened applesauce",
-                "1 cup sugar",
-                "1/2 cup sugar blend",
-                "1/2 cup egg substitute",
-                "1/2 cup water",
-                "1/3 cup canola oil",
+                "1/4 cup butter, softened",
+                "1 egg",
                 "1 teaspoon vanilla extract",
-                "3/4 cup baking cocoa",
-                "2/3 cup all-purpose flour",
-                "2/3 cup whole wheat pastry flour",
+                "1 cup all-purpose flour",
+                "1 cup sugar",
+                "3 tablespoons baking cocoa",
+                "1 teaspoon baking powder",
                 "1/2 teaspoon baking soda",
                 "1/4 teaspoon salt",
-                "1/2 cup semisweet chocolate chips"
+                "Confectioners' sugar"
             ],
             "directions": [
-                "In a large bowl, beat the baby food, sugar, sugar blend, egg substitute, water, oil and vanilla until well blended. Combine the cocoa, flours, baking soda and salt; gradually beat into prune mixture until blended. Transfer to a 13x9-in. baking dish coated with cooking spray.",
-                "Bake at 350\u00b0 for 20-25 minutes or until a toothpick inserted in the center comes out clean. Sprinkle with chips. Cool on a wire rack."
+                "In a bowl, beat water and butter until butter is melted. Beat in egg and vanilla. Combine flour, sugar, cocoa, baking powder, baking soda and salt; add to the egg mixture. Beat for 2 minutes.",
+                "Pour into a greased 8-in. square baking pan. Bake at 350\u00b0 for 25-30 minutes or until a toothpick inserted in the center comes out clean. Cool on a wire rack. Dust with confectioners' sugar."
             ],
-            "nutrition": "1 piece: 170 calories, 6g fat (1g saturated fat), 0 cholesterol, 82mg sodium, 29g carbohydrate (20g sugars, 1g fiber), 2g protein. Diabetic Exchanges: 2 starch, 1 fat."
-        },
-        {
-            "name": "Root Beer Float Cake",
-            "expert": "I add root beer to both the cake batter and fluffy frosting of this summery dessert to get that great root beer float taste. Serve this moist cake to a bunch of hungry kids and watch it disappear! \u2014Kat Thompson, Prineville, Oregon",
-            "time": "Prep: 15 min. Bake: 30 min. + cooling",
-            "makes": "15 servings",
-            "ingredients": [
-                "1 package  white cake mix (regular size)",
-                "1-3/4 cups cold root beer, divided",
-                "1/4 cup canola oil",
-                "2 large eggs",
-                "1 envelope whipped topping mix (Dream Whip)"
-            ],
-            "directions": [
-                "In a large bowl, combine cake mix, 1-1/4 cups root beer, oil and eggs. Beat on low speed for 2 minutes or stir by hand for 3 minutes.",
-                "Pour into a greased 13x9-in. baking pan. Bake at 350\u00b0 for 30-35 minutes or until a toothpick inserted in the center comes out clean. Cool completely on a wire rack.",
-                "In a small bowl, combine the whipped topping mix and remaining root beer. Beat until soft peaks form. Frost cake. Store in the refrigerator."
-            ],
-            "nutrition": "1 piece: 203 calories, 8g fat (2g saturated fat), 27mg cholesterol, 216mg sodium, 31g carbohydrate (19g sugars, 0 fiber), 2g protein."
-        },
-        {
-            "name": "Banana Snack Cake",
-            "expert": "\"I often make this moist banana cake for birthday days,\" remarks Dawn Fagerstrom from Warren, Minnesota. \"The recipe is good for making cupcakes, too - they taste great even without frosting.\"",
-            "time": "Prep: 25 min. Bake: 25 min. + cooling",
-            "makes": "12 servings",
-            "ingredients": [
-                "1/2 cup shortening",
-                "3/4 cup packed brown sugar",
-                "1/2 cup sugar",
-                "2 large eggs, room temperature",
-                "1 cup mashed ripe bananas (2 to 3 medium)",
-                "1 teaspoon vanilla extract",
-                "2 cups all-purpose or whole wheat flour",
-                "1 teaspoon baking soda",
-                "1 teaspoon salt",
-                "1/2 cup buttermilk",
-                "1/2 cup chopped nuts",
-                "FROSTING:",
-                "1/2 cup packed brown sugar",
-                "1/4 cup butter, softened",
-                "6 tablespoons 2% milk",
-                "2-1/2 to 3 cups confectioners' sugar"
-            ],
-            "directions": [
-                "In a large bowl, cream shortening and sugars until light and fluffy. Add 1 egg at a time, beating well after each addition. Beat in bananas and vanilla. Combine flour, baking soda and salt; add to the creamed mixture alternately with buttermilk, beating well after each addition. Stir in nuts.",
-                "Pour into a greased 13x9-in. baking pan. Bake at 350\u00b0 until a toothpick inserted in the center comes out clean, 25-30 minutes. Cool on a wire rack.",
-                "For frosting, in a large saucepan, combine brown sugar, butter and milk. Bring to a boil over medium heat; boil and stir for 2 minutes. Remove from the heat; cool to lukewarm.",
-                "Gradually beat in confectioners' sugar until frosting reaches spreading consistency. Frost cake."
-            ],
-            "nutrition": "1 piece: 461 calories, 16g fat (5g saturated fat), 47mg cholesterol, 376mg sodium, 76g carbohydrate (58g sugars, 3g fiber), 6g protein."
+            "nutrition": "1 piece: 195 calories, 6g fat (3g saturated fat), 37mg cholesterol, 239mg sodium, 34g carbohydrate (22g sugars, 1g fiber), 3g protein."
         },
         {
             "name": "Grandma Riley\u2019s Banana Cake",
+            "image_url": "https://www.tasteofhome.com/wp-content/uploads/2018/01/exps190123__PMI15D01_21_5b-7.jpg?fit=700,1024",
             "expert": "This favorite recipe has been passed down through my husband\u2019s family. His grandmother wrote this out for me shortly after we were married. She copied it from a recipe that her mother had written out for her many years before. These handwritten treasures in my recipe box bring back so many fond memories. \u2014Jamie Dunn, Milwaukee, Wisconsin",
             "time": "Prep: 15 min. + cooling. Cook: 25 min.",
             "makes": "12 servings",
@@ -581,7 +468,123 @@
             "nutrition": ""
         },
         {
+            "name": "Oatmeal Chocolate Chip Cake",
+            "image_url": "https://www.tasteofhome.com/wp-content/uploads/2018/01/exps3276_C0706C321B-6.jpg",
+            "expert": "I first started making this cake when my husband was stationed with the military in California. Now, 20 years later, I've prepared it all across the country and in Germany. Chocolate lovers especially rave about this recipe!",
+            "time": "Prep: 20 min. Bake: 40 min.",
+            "makes": "12 servings",
+            "ingredients": [
+                "1-3/4 cups boiling water",
+                "1 cup uncooked oatmeal",
+                "1 cup packed brown sugar",
+                "1 cup sugar",
+                "1/2 cup butter, softened",
+                "3 large eggs",
+                "1-3/4 cups all-purpose flour",
+                "1 teaspoon baking soda",
+                "1 teaspoon baking cocoa",
+                "1/4 teaspoon salt",
+                "1 package (12 ounces) semisweet chocolate chips, divided",
+                "3/4 cup chopped walnuts"
+            ],
+            "directions": [
+                "In a bowl, pour water over oatmeal. Allow to stand 10 minutes. Add sugars and butter, stirring until the butter melts. Add eggs, one at a time, mixing well after each addition. Sift flour, soda, cocoa and salt together. Add to batter. Mix well. Stir in half the chocolate chips. Pour into a greased 13x9-in. baking pan. Sprinkle top of cake with walnuts and remaining chips. Bake at 350\u00b0 for about 40 minutes."
+            ],
+            "nutrition": "1 piece: 494 calories, 22g fat (11g saturated fat), 74mg cholesterol, 258mg sodium, 72g carbohydrate (51g sugars, 3g fiber), 8g protein."
+        },
+        {
+            "name": "Banana Bread Snack Cakes",
+            "image_url": "https://www.tasteofhome.com/wp-content/uploads/2018/01/Banana-Bread-Snack-Cakes_EXPS_FT20_22856_F_0331_1_home-17.jpg?fit=700,1024",
+            "expert": "This banana bread snack cake doesn't need any frosting\u2014just a dusting of powdered sugar. Guests are always amazed that I made this treat from scratch. \u2014Denise Loewenthal, Hinckley, Ohio",
+            "time": "Prep: 10 min. Bake: 30 min. + cooling",
+            "makes": "9 servings",
+            "ingredients": [
+                "1-2/3 cups all-purpose flour",
+                "1 teaspoon baking soda",
+                "1 cup packed brown sugar",
+                "1/2 cup water",
+                "1/3 cup mashed ripe bananas (about 1 small)",
+                "1/3 cup canola oil",
+                "1/2 teaspoon vanilla extract",
+                "Confectioners' sugar"
+            ],
+            "directions": [
+                "Preheat oven to 350&deg;. In a bowl, combine flour and baking soda. In another bowl, whisk brown sugar, water, banana, oil and vanilla. Stir into dry ingredients just until moistened. Transfer to a greased 8-in. square baking pan.",
+                "Bake until a toothpick inserted in the center comes out clean, 30-35 minutes. Cool on a wire rack. Dust cake with confectioners' sugar. Cut into 9 pieces."
+            ],
+            "nutrition": "1 piece: 259 calories, 9g fat (1g saturated fat), 0 cholesterol, 147mg sodium, 44g carbohydrate (25g sugars, 1g fiber), 3g protein."
+        },
+        {
+            "name": "Banana Snack Cake",
+            "image_url": "https://www.tasteofhome.com/wp-content/uploads/2018/01/exps10360_QC10044C45-2.jpg",
+            "expert": "\"I often make this moist banana cake for birthday days,\" remarks Dawn Fagerstrom from Warren, Minnesota. \"The recipe is good for making cupcakes, too - they taste great even without frosting.\"",
+            "time": "Prep: 25 min. Bake: 25 min. + cooling",
+            "makes": "12 servings",
+            "ingredients": [
+                "1/2 cup shortening",
+                "3/4 cup packed brown sugar",
+                "1/2 cup sugar",
+                "2 large eggs, room temperature",
+                "1 cup mashed ripe bananas (2 to 3 medium)",
+                "1 teaspoon vanilla extract",
+                "2 cups all-purpose or whole wheat flour",
+                "1 teaspoon baking soda",
+                "1 teaspoon salt",
+                "1/2 cup buttermilk",
+                "1/2 cup chopped nuts",
+                "FROSTING:",
+                "1/2 cup packed brown sugar",
+                "1/4 cup butter, softened",
+                "6 tablespoons 2% milk",
+                "2-1/2 to 3 cups confectioners' sugar"
+            ],
+            "directions": [
+                "In a large bowl, cream shortening and sugars until light and fluffy. Add 1 egg at a time, beating well after each addition. Beat in bananas and vanilla. Combine flour, baking soda and salt; add to the creamed mixture alternately with buttermilk, beating well after each addition. Stir in nuts.",
+                "Pour into a greased 13x9-in. baking pan. Bake at 350\u00b0 until a toothpick inserted in the center comes out clean, 25-30 minutes. Cool on a wire rack.",
+                "For frosting, in a large saucepan, combine brown sugar, butter and milk. Bring to a boil over medium heat; boil and stir for 2 minutes. Remove from the heat; cool to lukewarm.",
+                "Gradually beat in confectioners' sugar until frosting reaches spreading consistency. Frost cake."
+            ],
+            "nutrition": "1 piece: 461 calories, 16g fat (5g saturated fat), 47mg cholesterol, 376mg sodium, 76g carbohydrate (58g sugars, 3g fiber), 6g protein."
+        },
+        {
+            "name": "Apple Spice Snack Cake",
+            "image_url": "https://www.tasteofhome.com/wp-content/themes/bumblebee-toh-child/images/recipes/Image-69-2x.png",
+            "expert": "\"Nothing could be simpler or more delicious than this moist apple cake,\" relates Reba Savoie of Roswell, New Mexico. It's easy to create the four-ingredient treat with a spice cake mix...and even easier on your pocketbook at just 18 cents per piece.",
+            "time": "Prep: 10 min. Bake: 30 min.",
+            "makes": "15 servings",
+            "ingredients": [
+                "1 package  spice cake mix (regular size)",
+                "1 can (21 ounces) apple pie filling",
+                "2 eggs",
+                "2 tablespoons canola oil"
+            ],
+            "directions": [
+                "In a large bowl, combine all the ingredients; beat on low speed for 30 seconds. Beat on medium for 2 minutes.",
+                "Pour into a greased 13x9-in. baking dish. Bake at 350\u00b0 for 30-35 minutes or until a toothpick inserted in the center comes out clean. Cool on a wire rack."
+            ],
+            "nutrition": "1 piece: 213 calories, 7g fat (2g saturated fat), 37mg cholesterol, 289mg sodium, 36g carbohydrate (23g sugars, 1g fiber), 3g protein."
+        },
+        {
+            "name": "Brownie Mix Snack Cake",
+            "image_url": "https://www.tasteofhome.com/wp-content/themes/bumblebee-toh-child/images/recipes/Image-69-2x.png",
+            "expert": "Theresa uses a few cups of her homemade mix to create a snack that's ideal for those who prefer their cake with mild chocolate flavor.",
+            "time": "Prep: 10 min. Bake: 25 min.",
+            "makes": "9 servings",
+            "ingredients": [
+                "2 cups Brownie Mix",
+                "3 eggs, separated",
+                "3 tablespoons milk",
+                "1 teaspoon vanilla extract"
+            ],
+            "directions": [
+                "In a large bowl, combine the brownie mix, egg yolks, milk and vanilla. In a small bowl, beat egg whites until stiff peaks form; fold into the batter.",
+                "Pour into a greased 8-in. square baking pan. Bake at 350\u00b0 for 25-30 minutes or until a toothpick inserted in the center comes out clean. Cool on a wire rack."
+            ],
+            "nutrition": ""
+        },
+        {
             "name": "Special Rhubarb Cake",
+            "image_url": "https://www.tasteofhome.com/wp-content/uploads/2018/01/exps14626_TH10170C64-3.jpg",
             "expert": "A rich vanilla sauce is served with this tender cake from Biena Schlabach of Millersburg, Ohio. \"The women at church made it for my 84th birthday,\" she says.",
             "time": "Prep: 20 min. Bake: 40 min. + cooling",
             "makes": "9 servings (1-1/4 cups sauce)",
@@ -613,88 +616,8 @@
             "nutrition": "1 slice: 463 calories, 17g fat (10g saturated fat), 70mg cholesterol, 451mg sodium, 72g carbohydrate (47g sugars, 1g fiber), 6g protein."
         },
         {
-            "name": "Tropical Carrot Cake",
-            "expert": "I look forward to August because our family reunion means fun and great food, like this classic cake with the special flair it gets from pineapple. My great-aunt gave me this recipe, and I always make it for the reunion.\n\u2014Victoria Casey, Enterprise, Oregon",
-            "time": "Prep: 15 min. Bake: 45 min. + cooling",
-            "makes": "16 servings",
-            "ingredients": [
-                "3 large eggs",
-                "3/4 cup canola oil",
-                "3/4 cup buttermilk",
-                "2 cups all-purpose flour",
-                "2 cups sugar",
-                "2 teaspoons baking soda",
-                "2 teaspoons ground cinnamon",
-                "1/2 teaspoon salt",
-                "2 teaspoons vanilla extract",
-                "2 cups finely shredded carrots",
-                "1 cup raisins",
-                "1 can (8 ounces) crushed pineapple, undrained",
-                "1 cup chopped walnuts",
-                "1 cup sweetened shredded coconut",
-                "FROSTING:",
-                "1 package (8 ounces) cream cheese, softened",
-                "4 to 4-1/2 cups confectioners' sugar",
-                "1 to 2 tablespoons heavy whipping cream",
-                "1 teaspoon vanilla extract"
-            ],
-            "directions": [
-                "In a large bowl, beat eggs, oil and buttermilk. Combine flour, sugar, baking soda, cinnamon and salt; add to egg mixture and mix well. Stir in vanilla, carrots, raisins, pineapple, walnuts and coconut; mix well. Pour into a greased 13-in. x 9-in. baking pan. Bake at 350\u00b0 for 45-50 minutes or until cake tests done. Cool.",
-                "For frosting, beat all ingredients in a bowl until smooth. Frost cake."
-            ],
-            "nutrition": ""
-        },
-        {
-            "name": "Dinette Cake",
-            "expert": "IT ONLY TAKES MINUTES to get this cake into the oven. It's one of my favorite desserts.\r\n   I love serving this treat to guests, and it's also one of my grandchildren frequently request I make for them.\r\n-Margaret Sanders, Indianapolis, Indiana",
-            "time": "Prep: 10 min. Bake: 30 min. + cooling",
-            "makes": "9 servings",
-            "ingredients": [
-                "1 cup sugar",
-                "2/3 cup milk",
-                "1/3 cup canola oil",
-                "1 large egg, room temperature",
-                "1 teaspoon vanilla extract",
-                "1-1/2 cups all-purpose flour",
-                "2 teaspoons baking powder",
-                "1/2 teaspoon salt",
-                "Fresh fruit or ice cream, optional"
-            ],
-            "directions": [
-                "In a large bowl, beat the sugar, milk, oil, egg and vanilla until well blended. Combine the flour, baking powder and salt; gradually add to sugar mixture until blended.",
-                "Pour into a greased 9-in. square baking pan. Bake at 350\u00b0 for 30-35 minutes or until a toothpick inserted in the center comes out clean. Cool on a wire rack. Serve with fruit or ice cream if desired."
-            ],
-            "nutrition": "1 piece: 253 calories, 9g fat (2g saturated fat), 26mg cholesterol, 237mg sodium, 39g carbohydrate (23g sugars, 1g fiber), 3g protein."
-        },
-        {
-            "name": "Mrs. Thompson\u2019s Carrot Cake",
-            "expert": "I received this recipe from the mother of a patient I cared for back in 1972 in St. Paul, Minnesota. It was, and is, the best carrot cake I have ever tasted. It\u2019s requested for many family gatherings and celebrations. \u2014Becky Wachob, Kelly, Wyoming",
-            "time": "Prep: 30 min. Bake: 35 min.",
-            "makes": "15 servings",
-            "ingredients": [
-                "3 cups shredded carrots",
-                "1 can (20 ounces) crushed pineapple, well drained",
-                "2 cups sugar",
-                "1 cup canola oil",
-                "4 large eggs",
-                "2 cups all-purpose flour",
-                "2 teaspoons baking soda",
-                "2 teaspoons ground cinnamon",
-                "FROSTING:",
-                "1 package (8 ounces) cream cheese, softened",
-                "1/4 cup butter, softened",
-                "2 teaspoons vanilla extract",
-                "3-3/4 cups confectioners' sugar"
-            ],
-            "directions": [
-                "In a large bowl, beat the first five ingredients until well blended. In another bowl, mix the flour, baking soda and cinnamon; gradually beat into carrot mixture.",
-                "Transfer to a greased 13x9-in. baking pan. Bake at 350\u00b0 for 35-40 minutes or until a toothpick inserted in center comes out clean. Cool completely in pan on a wire rack.",
-                "For frosting, in a large bowl, beat the cream cheese, butter and vanilla until blended. Gradually beat in confectioners' sugar until smooth. Spread over cake. Store in refrigerator."
-            ],
-            "nutrition": "1 piece: 552 calories, 25g fat (7g saturated fat), 81mg cholesterol, 269mg sodium, 80g carbohydrate (63g sugars, 2g fiber), 5g protein."
-        },
-        {
             "name": "Classic Carrot Cake",
+            "image_url": "https://www.tasteofhome.com/wp-content/uploads/2018/01/Classic-Carrot-Cake_EXPS_13X9BZ19_36294_C10_04_8b-4.jpg?fit=700,1024",
             "expert": "I entered this yummy, moist cake in a Colorado Outfitters Association dessert contest. My carrot cake with pineapple earned first place! \u2014Cheri Eby, Gunnison, Colorado",
             "time": "Prep: 30 min. Bake: 35 min. + cooling",
             "makes": "15 servings",
@@ -725,26 +648,131 @@
             "nutrition": "1 piece: 555 calories, 34g fat (10g saturated fat), 88mg cholesterol, 361mg sodium, 59g carbohydrate (44g sugars, 2g fiber), 6g protein."
         },
         {
-            "name": "Gingerbread",
-            "expert": "My grandmother first used this recipe for gingerbread more than 100 years ago. I remember that the kitchen smelled like heaven when Grandmother baked her gingerbread. The only thing better was when she took it out of the oven and served it with a generous topping of fresh whipped cream! \u2014Ellouise Halstead, Union Grove, Wisconsin",
-            "time": "Prep: 15 min. Bake: 20 min.",
-            "makes": "9 servings",
+            "name": "Root Beer Float Cake",
+            "image_url": "https://www.tasteofhome.com/wp-content/uploads/2018/01/exps12135_H13x9153733D03_25_7b_WEB-4.jpg?fit=700,1024",
+            "expert": "I add root beer to both the cake batter and fluffy frosting of this summery dessert to get that great root beer float taste. Serve this moist cake to a bunch of hungry kids and watch it disappear! \u2014Kat Thompson, Prineville, Oregon",
+            "time": "Prep: 15 min. Bake: 30 min. + cooling",
+            "makes": "15 servings",
             "ingredients": [
-                "1 large egg, room temperature, beaten",
-                "1/2 cup sugar",
-                "1/2 cup molasses",
-                "5 tablespoons butter, melted",
-                "2/3 cup cold water",
-                "1-1/2 cups all-purpose flour",
-                "1 teaspoon baking soda",
-                "1 teaspoon ground ginger",
-                "1/2 teaspoon salt",
-                "Whipped cream"
+                "1 package  white cake mix (regular size)",
+                "1-3/4 cups cold root beer, divided",
+                "1/4 cup canola oil",
+                "2 large eggs",
+                "1 envelope whipped topping mix (Dream Whip)"
             ],
             "directions": [
-                "Combine egg, sugar, molasses, butter and water; mix well. In a large bowl, stir together flour, baking soda, ginger and salt; add molasses mixture. Beat until well mixed. Pour into a greased 8-in. square baking pan. Bake at 350\u00b0 until cake tests done, 20-25 minutes. Cut into squares; serve warm with whipped cream."
+                "In a large bowl, combine cake mix, 1-1/4 cups root beer, oil and eggs. Beat on low speed for 2 minutes or stir by hand for 3 minutes.",
+                "Pour into a greased 13x9-in. baking pan. Bake at 350\u00b0 for 30-35 minutes or until a toothpick inserted in the center comes out clean. Cool completely on a wire rack.",
+                "In a small bowl, combine the whipped topping mix and remaining root beer. Beat until soft peaks form. Frost cake. Store in the refrigerator."
             ],
-            "nutrition": "1 piece: 232 calories, 7g fat (4g saturated fat), 41mg cholesterol, 350mg sodium, 40g carbohydrate (22g sugars, 1g fiber), 3g protein."
+            "nutrition": "1 piece: 203 calories, 8g fat (2g saturated fat), 27mg cholesterol, 216mg sodium, 31g carbohydrate (19g sugars, 0 fiber), 2g protein."
+        },
+        {
+            "name": "Quick Chocolate Snack Cake",
+            "image_url": "https://www.tasteofhome.com/wp-content/uploads/2018/01/exps41642_THHC1444460D16-5.jpg",
+            "expert": "\u201cI recently learned I\u2019m diabetic. I never thought I\u2019d be able to curb my sweet tooth\u2014until I made this!\u201d Angela Oelschlaeger - Tonganoxie, KS",
+            "time": "Prep: 25 min. Bake: 20 min. + cooling",
+            "makes": "18 servings",
+            "ingredients": [
+                "1/3 cup prune baby food or unsweetened applesauce",
+                "1 cup sugar",
+                "1/2 cup sugar blend",
+                "1/2 cup egg substitute",
+                "1/2 cup water",
+                "1/3 cup canola oil",
+                "1 teaspoon vanilla extract",
+                "3/4 cup baking cocoa",
+                "2/3 cup all-purpose flour",
+                "2/3 cup whole wheat pastry flour",
+                "1/2 teaspoon baking soda",
+                "1/4 teaspoon salt",
+                "1/2 cup semisweet chocolate chips"
+            ],
+            "directions": [
+                "In a large bowl, beat the baby food, sugar, sugar blend, egg substitute, water, oil and vanilla until well blended. Combine the cocoa, flours, baking soda and salt; gradually beat into prune mixture until blended. Transfer to a 13x9-in. baking dish coated with cooking spray.",
+                "Bake at 350\u00b0 for 20-25 minutes or until a toothpick inserted in the center comes out clean. Sprinkle with chips. Cool on a wire rack."
+            ],
+            "nutrition": "1 piece: 170 calories, 6g fat (1g saturated fat), 0 cholesterol, 82mg sodium, 29g carbohydrate (20g sugars, 1g fiber), 2g protein. Diabetic Exchanges: 2 starch, 1 fat."
+        },
+        {
+            "name": "Zucchini Walnut Cake",
+            "image_url": "https://www.tasteofhome.com/wp-content/uploads/2018/01/Zucchini-Walnut-Cake_EXPS_FT21_7189_F_0610_1.jpg?fit=700,1024",
+            "expert": "What gardener doesn't have extra zucchini? When it is abundant, I shred and freeze plenty so I have it on hand to bake this moist zucchini cake with walnuts all year long. The cream cheese frosting is yummy, and the big panful always goes fast at a picnic or potluck. \u2014Marie Hoyer, Hodgenville, Kentucky",
+            "time": "Prep: 20 min. Bake: 35 min. + cooling",
+            "makes": "24 servings",
+            "ingredients": [
+                "2 cups shredded zucchini",
+                "2 cups sugar",
+                "1 cup canola oil",
+                "4 large eggs",
+                "2-1/2 cups all-purpose flour",
+                "1-1/2 teaspoons ground cinnamon",
+                "1 teaspoon salt",
+                "1/2 teaspoon baking powder",
+                "1/2 teaspoon baking soda",
+                "1/2 cup chopped toasted walnuts, optional",
+                "FROSTING:",
+                "3 ounces cream cheese, softened",
+                "1/4 cup butter, softened",
+                "1 tablespoon 2% milk",
+                "1 teaspoon vanilla extract",
+                "2 cups confectioners' sugar",
+                "Chopped toasted walnuts, optional"
+            ],
+            "directions": [
+                "Preheat oven to 350\u00b0. Grease a 13x9-in. baking pan; set aside.",
+                "In a large bowl, beat the zucchini, sugar, oil and eggs until well blended. Combine the flour, cinnamon, salt, baking powder and baking soda; gradually beat into zucchini mixture until blended. Fold in walnuts if desired.",
+                "Pour into prepared pan. Bake until a toothpick inserted in the center comes out clean, 35-40 minutes. Cool completely on a wire rack.",
+                "For frosting, in a small bowl, beat the cream cheese, butter, milk and vanilla until smooth. Add confectioners' sugar and mix well. Frost cake. Sprinkle with nuts if desired. Store in the refrigerator."
+            ],
+            "nutrition": "1 piece: 275 calories, 13g fat (3g saturated fat), 45mg cholesterol, 174mg sodium, 37g carbohydrate (26g sugars, 1g fiber), 3g protein."
+        },
+        {
+            "name": "Classic Chocolate Cake",
+            "image_url": "",
+            "expert": "If you need to learn how to make chocolate cake from scratch, this easy homemade chocolate cake recipe is a perfect place to start. It appeared on a can of Hershey's cocoa way back in 1943. I tried it, my boys liked it, and I've been making it ever since. \u2014Betty Follas, Morgan Hill, California",
+            "time": "Prep: 15 min. Bake: 35 min. + cooling",
+            "makes": "15 servings",
+            "ingredients": [
+                "2/3 cup butter, softened",
+                "1-2/3 cups sugar",
+                "3 large eggs, room temperature",
+                "2 cups all-purpose flour",
+                "2/3 cup baking cocoa",
+                "1-1/4 teaspoons baking soda",
+                "1 teaspoon salt",
+                "1-1/3 cups 2% milk",
+                "Confectioners' sugar or favorite frosting"
+            ],
+            "directions": [
+                "In a bowl, cream butter and sugar until light and fluffy, 5-7 minutes. Add eggs, 1 at a time, beating well after each addition. Combine flour, cocoa, baking soda and salt; add to creamed mixture alternately with milk, beating until smooth after each addition. Pour batter into a greased and floured 13x9-in. baking pan.",
+                "Bake at 350\u00b0 until a toothpick inserted in center comes out clean, 35-40 minutes. Cool completely on a wire rack. When cake is cool, dust with confectioners' sugar or top with your favorite frosting."
+            ],
+            "nutrition": "1 piece: 257 calories, 10g fat (6g saturated fat), 67mg cholesterol, 368mg sodium, 38g carbohydrate (23g sugars, 1g fiber), 4g protein."
+        },
+        {
+            "name": "Cocoa Cake",
+            "image_url": "",
+            "expert": "THIS CAKE is so moist it doesn't need frosting. I simply sprinkle powdered sugar over the top. It's my favorite dessert to bring for potlucks, and there's never a piece left to take home!\r\n-Beulah Sak, Fairport, New York",
+            "time": "Prep: 10 min. Bake: 30 min. + cooling",
+            "makes": "9 servings",
+            "ingredients": [
+                "1-1/2 cups all-purpose flour",
+                "1 cup sugar",
+                "3 tablespoons baking cocoa",
+                "1 teaspoon baking soda",
+                "1/2 teaspoon salt",
+                "1/3 cup canola oil",
+                "1 tablespoon white vinegar",
+                "1 teaspoon vanilla extract",
+                "1 cup cold water",
+                "Confectioners' sugar"
+            ],
+            "directions": [
+                "Preheat oven to 350\u00b0. In a large bowl, whisk flour, sugar, cocoa, baking soda and salt. Using a spoon, make 3 wells in the dry ingredients. Pour oil into the first, vinegar into another and vanilla into the third. Slowly pour water over all. Beat on low speed until thoroughly combined (batter will be thin).",
+                "Pour into a greased 8-in. square baking dish. Bake until a toothpick inserted in the center comes out clean, 30-35 minutes. Cool in pan on a wire rack. Dust with confectioners' sugar."
+            ],
+            "nutrition": "1 piece: 242 calories, 9g fat (1g saturated fat), 0 cholesterol, 272mg sodium, 39g carbohydrate (22g sugars, 1g fiber), 2g protein."
         }
     ]
 }

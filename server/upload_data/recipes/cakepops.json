@@ -2,7 +2,87 @@
     "category": "Cake Pops",
     "recipes": [
         {
+            "name": "Football Cake Pops",
+            "image_url": "",
+            "expert": "My son loves football! For his eighth birthday, I made cake pops with a rich chocolate cake center and a yummy peanut butter coating. These are sure to be winners at parties, bake sales and sports-watching events.\r\n\u2014Jenny Dubinsky, Inwood, WV",
+            "time": "Prep: 2 hours + chilling. Bake: 35 min. + cooling",
+            "makes": "4 dozen cake pops",
+            "ingredients": [
+                "1 chocolate cake mix (regular size)",
+                "1 cup cream cheese frosting",
+                "1 cup dark chocolate chips",
+                "1 cup peanut butter chips",
+                "1 tablespoon shortening",
+                "48 4-inch lollipop sticks",
+                "1/4 cup white decorating icing"
+            ],
+            "directions": [
+                "Bake cake according to package directions; cool completely. In a large bowl, break cake into fine crumbles. Add frosting and stir until fully incorporated, adding more frosting if needed, until mixture maintains its shape when squeezed together with palm of hand. Shape 1 tablespoon into a ball, then mold into the shape of a football. Repeat with remaining mixture. Place on parchment-lined baking sheets; refrigerate until firm, about 30 minutes.",
+                "Meanwhile, place chocolate chips, peanut butter chips and shortening in a microwave-safe bowl. Microwave 30 seconds and stir; repeat, stirring every 30 seconds until melted and smooth, adding more shortening if needed. Do not overheat.",
+                "Dip a lollipop stick into chocolate mixture; insert halfway through a football shape, taking care not to break through the other side. Return to baking sheet until set; repeat to form remaining cake pops. Coat each cake pop with the chocolate mixture, allowing excess to drip off; reheat and stir chocolate mixture as needed. Return cake pops to baking sheets, ensuring they do not touch one another. Allow chocolate coating to set until firm to the touch. To decorate, use icing to draw laces onto cake pops."
+            ],
+            "nutrition": "1 cake pop: 132 calories, 7g fat (3g saturated fat), 12mg cholesterol, 96mg sodium, 17g carbohydrate (12g sugars, 1g fiber), 2g protein."
+        },
+        {
+            "name": "Fun & Festive Cake Pops",
+            "image_url": "https://www.tasteofhome.com/wp-content/uploads/2018/01/Fun-Festive-Cake-Pops_EXPS_FT21_148336_F_0603_1.jpg?fit=700,1024",
+            "expert": "This recipe is so easy to adapt with your favorite flavors. Use it as a starts for your most creative cake pop ideas! \u2014Taste of Home Test Kitchen",
+            "time": "Prep: 1 hour Bake: 35 min. + freezing",
+            "makes": "4 dozen",
+            "ingredients": [
+                "1 package  cake mix of your choice (regular size)",
+                "1 cup prepared frosting of your choice",
+                "48 lollipop sticks",
+                "2-1/2 pounds dark chocolate, milk chocolate or white candy coating, coarsely chopped",
+                "Optional toppings: crushed peppermint candies, finely chopped cashews, unsweetened coconut, assorted sprinkles, finely chopped crystallized ginger, crushed gingersnap cookies, melted caramels and coarse sea salt"
+            ],
+            "directions": [
+                "Prepare and bake cake mix according to package directions, using a greased 13-in. x 9-in. baking pan. Cool completely on a wire rack.",
+                "Crumble cake into a large bowl. Add frosting and mix well. Shape into 1-1/2-in. balls. Place on baking sheets; insert sticks. Freeze for at least 2 hours or refrigerate for at least 3 hours or until cake balls are firm.",
+                "In a microwave, melt candy coating. Dip each cake ball in coating; allow excess to drip off. Roll, sprinkle or drizzle with toppings of your choice. Insert cake pops into a styrofoam block to stand. Let stand until set."
+            ],
+            "nutrition": "1 cake pop (calculated without toppings): 213 calories, 11g fat (7g saturated fat), 13mg cholesterol, 97mg sodium, 28g carbohydrate (23g sugars, 1g fiber), 1g protein."
+        },
+        {
+            "name": "Cake Eyeballs",
+            "image_url": "https://www.tasteofhome.com/wp-content/uploads/2018/01/Cake-Eyeballs_EXPS_TOHON19_161701_E06_11_6b-1.jpg?fit=700,1024",
+            "expert": "Customize these cake balls to your liking with the flavors of your choice. \u2014 Taste of Home Test Kitchen",
+            "time": "Prep: 1 hour Bake: 35 min. + freezing",
+            "makes": "2 dozen",
+            "ingredients": [
+                "1 package  cake mix of your choice (regular size)",
+                "1 cup prepared frosting of your choice",
+                "1 package (12 ounces) each orange, pink, blue, purple, vibrant green, black and white Wilton candy melts",
+                "Decorations of your choice: candy coating disks, jumbo sprinkles, candy-coated sunflower kernels, candy eyeballs, Twizzlers Rainbow Twists, Life Savers, colored sugar and assorted sprinkles"
+            ],
+            "directions": [
+                "Prepare and bake cake mix according to package directions, using a greased 13x9-in. baking pan. Cool completely on a wire rack.",
+                "Crumble cake into a large bowl. Add frosting and mix well. Shape into 1-1/2-in. balls. Place on baking sheets. Chill cake balls until firm, at least 2 hours in freezer or at least 3 hours in refrigerator.",
+                "In separate bowls, heat candy melts in the microwave until melted; stir until smooth. Dip each cake ball in coating; allow excess to drip off. Decorate as desired. Let stand until set."
+            ],
+            "nutrition": "1 cake ball: 182 calories, 8g fat (2g saturated fat), 23mg cholesterol, 208mg sodium, 25g carbohydrate (15g sugars, 1g fiber), 2g protein."
+        },
+        {
+            "name": "Red Velvet Cake Bites",
+            "image_url": "https://www.tasteofhome.com/wp-content/uploads/2018/01/Red-Velvet-Cake-Bites_EXPS_CWFM19_134351_C10_12_8b-5.jpg?fit=700,1024",
+            "expert": "Everyone loves red velvet, but any cake mix can work here. I've even rolled chopped macadamia nuts into pineapple cake and dipped them into white chocolate. Whatever you do, have fun! \u2014Anne Powers, Munford, Alabama",
+            "time": "Prep: 45 min. + chilling Bake: 25 min. + cooling",
+            "makes": "5 dozen",
+            "ingredients": [
+                "1 package  red velvet cake mix (regular size)",
+                "1 can (16 ounces) cream cheese frosting",
+                "1 pound each white, milk chocolate  and dark chocolate candy coating"
+            ],
+            "directions": [
+                "Prepare and bake cake mix according to package directions using a 13x9-in. baking pan. Cool completely.",
+                "Crumble cake into a large bowl. Add frosting; beat well. Refrigerate until easy to handle, about 1 hour. Shape into 1-1/2-inch balls; transfer to waxed paper-lined baking sheets. Refrigerate at least 1 hour.",
+                "In a microwave, melt white candy coating; stir until smooth. Dip first 20 cake balls into coating; allow excess to drip off. Return to baking sheets; let stand until set. Repeat with milk chocolate and dark chocolate coatings and remaining cake balls. If desired, drizzle with additional candy coating. Store in airtight containers."
+            ],
+            "nutrition": "1 cake ball: 206 calories, 11g fat (7g saturated fat), 11mg cholesterol, 79mg sodium, 28g carbohydrate (24g sugars, 0 fiber), 1g protein."
+        },
+        {
             "name": "Coconut-Rum Cake Pops",
+            "image_url": "https://www.tasteofhome.com/wp-content/uploads/2018/01/Coconut-Rum-Cake-Pops_EXPS_HC17_162398_D10_19_5b-7.jpg?fit=700,1024",
             "expert": "Plan your own tropical escape with these surprisingly light-tasting pops. Angel food cake is a nice change of pace.",
             "time": "Prep: 1-1/2 hours + chilling",
             "makes": "4 dozen",
@@ -24,74 +104,8 @@
             "nutrition": "1 cake pop: 188 calories, 8g fat (7g saturated fat), 0 cholesterol, 92mg sodium, 29g carbohydrate (25g sugars, 0 fiber), 1g protein."
         },
         {
-            "name": "Cherry Cordial Cake Balls",
-            "expert": "Brandy and coffee add mild flavor to these scrumptious cherry cake balls. \u2014Susan Westerfield, Albuquerque, New Mexico",
-            "time": "Prep: 1 hour Bake: 35 min. + standing",
-            "makes": "6 dozen",
-            "ingredients": [
-                "1 package  fudge marble cake mix (regular size)",
-                "1-1/4 cups plus 3 tablespoons strong brewed coffee, divided",
-                "1/4 cup canola oil",
-                "3 large eggs",
-                "1 jar (10 ounces) maraschino cherries without stems, well drained",
-                "1/3 cup brandy",
-                "1/4 cup cherry preserves",
-                "1 cup canned chocolate frosting",
-                "4 pounds milk chocolate candy coating, chopped",
-                "2 tablespoons shortening"
-            ],
-            "directions": [
-                "In a large bowl, combine the cake mix, 1-1/4 cups coffee, oil and eggs; beat on low speed for 30 seconds. Beat on medium for 2 minutes.",
-                "Pour batter into a greased and floured 13x9-in. baking pan. Bake at 350\u00b0 for 30-35 minutes or until a toothpick inserted in the center comes out clean. Cool completely.",
-                "Place cherries in a food processor; cover and process until coarsely chopped. Transfer to a small bowl; stir in the brandy, preserves and remaining coffee.",
-                "Crumble cake into a large bowl. Add frosting and cherry mixture; beat well. Shape into 1-in. balls.",
-                "In a microwave, melt candy coating and shortening; stir until smooth. Dip balls in chocolate mixture; allow excess to drip off. Place on waxed paper; let stand until set. Store in an airtight container overnight before serving."
-            ],
-            "nutrition": "1 cake ball: 200 calories, 10g fat (7g saturated fat), 9mg cholesterol, 51mg sodium, 27g carbohydrate (24g sugars, 1g fiber), 1g protein."
-        },
-        {
-            "name": "Fun & Festive Cake Pops",
-            "expert": "This recipe is so easy to adapt with your favorite flavors. Use it as a starts for your most creative cake pop ideas! \u2014Taste of Home Test Kitchen",
-            "time": "Prep: 1 hour Bake: 35 min. + freezing",
-            "makes": "4 dozen",
-            "ingredients": [
-                "1 package  cake mix of your choice (regular size)",
-                "1 cup prepared frosting of your choice",
-                "48 lollipop sticks",
-                "2-1/2 pounds dark chocolate, milk chocolate or white candy coating, coarsely chopped",
-                "Optional toppings: crushed peppermint candies, finely chopped cashews, unsweetened coconut, assorted sprinkles, finely chopped crystallized ginger, crushed gingersnap cookies, melted caramels and coarse sea salt"
-            ],
-            "directions": [
-                "Prepare and bake cake mix according to package directions, using a greased 13-in. x 9-in. baking pan. Cool completely on a wire rack.",
-                "Crumble cake into a large bowl. Add frosting and mix well. Shape into 1-1/2-in. balls. Place on baking sheets; insert sticks. Freeze for at least 2 hours or refrigerate for at least 3 hours or until cake balls are firm.",
-                "In a microwave, melt candy coating. Dip each cake ball in coating; allow excess to drip off. Roll, sprinkle or drizzle with toppings of your choice. Insert cake pops into a styrofoam block to stand. Let stand until set."
-            ],
-            "nutrition": "1 cake pop (calculated without toppings): 213 calories, 11g fat (7g saturated fat), 13mg cholesterol, 97mg sodium, 28g carbohydrate (23g sugars, 1g fiber), 1g protein."
-        },
-        {
-            "name": "Football Cake Pops",
-            "expert": "My son loves football! For his eighth birthday, I made cake pops with a rich chocolate cake center and a yummy peanut butter coating. These are sure to be winners at parties, bake sales and sports-watching events.\r\n\u2014Jenny Dubinsky, Inwood, WV",
-            "time": "Prep: 2 hours + chilling. Bake: 35 min. + cooling",
-            "makes": "4 dozen cake pops",
-            "ingredients": [
-                "1 chocolate cake mix (regular size)",
-                "1 cup cream cheese frosting",
-                "1 cup dark chocolate chips",
-                "1 cup peanut butter chips",
-                "1 tablespoon shortening",
-                "48 4-inch lollipop sticks",
-                "1/4 cup white decorating icing"
-            ],
-            "directions": [
-                "Bake cake according to package directions; cool completely. In a large bowl, break cake into fine crumbles. Add frosting and stir until fully incorporated, adding more frosting if needed, until mixture maintains its shape when squeezed together with palm of hand. Shape 1 tablespoon into a ball, then mold into the shape of a football. Repeat with remaining mixture. Place on parchment-lined baking sheets; refrigerate until firm, about 30 minutes.",
-                "Meanwhile, place chocolate chips, peanut butter chips and shortening in a microwave-safe bowl. Microwave 30 seconds and stir; repeat, stirring every 30 seconds until melted and smooth, adding more shortening if needed. Do not overheat.",
-                "Dip a lollipop stick into chocolate mixture; insert halfway through a football shape, taking care not to break through the other side. Return to baking sheet until set; repeat to form remaining cake pops. Coat each cake pop with the chocolate mixture, allowing excess to drip off; reheat and stir chocolate mixture as needed. Return cake pops to baking sheets, ensuring they do not touch one another. Allow chocolate coating to set until firm to the touch. To decorate, use icing to draw laces onto cake pops."
-            ],
-            "nutrition": "1 cake pop: 132 calories, 7g fat (3g saturated fat), 12mg cholesterol, 96mg sodium, 17g carbohydrate (12g sugars, 1g fiber), 2g protein."
-        },
-        {},
-        {
             "name": "Raspberry Truffle Cake Pops",
+            "image_url": "https://www.tasteofhome.com/wp-content/uploads/2018/01/Raspberry-Truffle-Cake-Pops_exps162397_BSF2679079C06_15_6bC_RMS-2.jpg?fit=700,1024",
             "expert": "Rich chocolate with a hint of raspberry liqueur\u2014it doesn't get any better than this! \u2014Taste of Home Food Styling Team",
             "time": "Prep: 1-1/2 hours + freezing",
             "makes": "4 dozen",
@@ -114,7 +128,28 @@
             "nutrition": ""
         },
         {
+            "name": "Caramel Cashew Cake Pops",
+            "image_url": "https://www.tasteofhome.com/wp-content/uploads/2018/01/Caramel-Cashew-Cake-Pops_exps162396_BSF2679079C06_15_9bC_RMS-3.jpg?fit=700,1024",
+            "expert": "Nothing beats the pairing of buttery caramel and rich cashews; add it to a chocolaty cake pop and you have one irresistible little treat. \u2014Taste of Home Test Kitchen",
+            "time": "Prep: 1-1/2 hours + chilling",
+            "makes": "4 dozen",
+            "ingredients": [
+                "1 package  chocolate cake mix (regular size)",
+                "3/4 cup dulce de leche",
+                "48 lollipop sticks",
+                "2-1/2 pounds milk chocolate candy coating, coarsely chopped",
+                "Chopped cashews"
+            ],
+            "directions": [
+                "Prepare and bake cake mix according to package directions, using a greased 13-in. x 9-in. baking pan. Cool completely on a wire rack.",
+                "Crumble cake into a large bowl. Add dulce de leche and mix well. Shape into 1-in. balls. Place on baking sheets; insert sticks. Freeze for at least 2 hours or refrigerate for at least 3 hours or until cake balls are firm.",
+                "In a microwave, melt candy coating. Dip each cake ball in coating; allow excess to drip off. Coat with cashews. Insert cake pops into a styrofoam block to stand. Let stand until set."
+            ],
+            "nutrition": "1 cake pop (calculated without cashews): 210 calories, 11g fat (7g saturated fat), 13mg cholesterol, 104mg sodium, 28g carbohydrate (23g sugars, 1g fiber), 2g protein."
+        },
+        {
             "name": "Caramel Apple Cake Pops",
+            "image_url": "https://www.tasteofhome.com/wp-content/uploads/2018/01/Caramel-Apple-Cake-Pops_exps135008_CW2235111A05_18_1b_RMS-9.jpg?fit=700,1024",
             "expert": "For a perfect fall treat, mix spice cake and apples with frosting to form cake balls. Then dip them in caramel coating, and let the kids go nuts, rolling them in peanuts. \u2014Taste of Home Test Kitchen, Milwaukee, Wisconsin",
             "time": "Prep: 1 hour + freezing Bake: 25 min. + cooling",
             "makes": "39 cake pops",
@@ -140,6 +175,7 @@
         },
         {
             "name": "Christmas Elf Cake Pops",
+            "image_url": "https://www.tasteofhome.com/wp-content/uploads/2018/01/Christmas-Elf-Cake-Pops_EXPS_TOHCAJ19_148337_C03_12_7b_rms-12.jpg?fit=700,1024",
             "expert": "Happy elves that happen to taste like PB&J can easily be part of the party decor\u2014until dessert, when they'll magically disappear! \u2014Taste of Home Test Kitchen",
             "time": "Prep: 1 hour Bake: 35 min. + freezing",
             "makes": "4 dozen",
@@ -160,59 +196,33 @@
             ],
             "nutrition": "1 cake pop: 164 calories, 8g fat (2g saturated fat), 13mg cholesterol, 125mg sodium, 22g carbohydrate (17g sugars, 0 fiber), 1g protein."
         },
+        {},
         {
-            "name": "Caramel Cashew Cake Pops",
-            "expert": "Nothing beats the pairing of buttery caramel and rich cashews; add it to a chocolaty cake pop and you have one irresistible little treat. \u2014Taste of Home Test Kitchen",
-            "time": "Prep: 1-1/2 hours + chilling",
-            "makes": "4 dozen",
+            "name": "Cherry Cordial Cake Balls",
+            "image_url": "https://www.tasteofhome.com/wp-content/uploads/2018/01/Cherry-Cordial-Cake-Balls_exps89994_SD1999447D12_17_3bC_RMS.jpg?fit=700,1024",
+            "expert": "Brandy and coffee add mild flavor to these scrumptious cherry cake balls. \u2014Susan Westerfield, Albuquerque, New Mexico",
+            "time": "Prep: 1 hour Bake: 35 min. + standing",
+            "makes": "6 dozen",
             "ingredients": [
-                "1 package  chocolate cake mix (regular size)",
-                "3/4 cup dulce de leche",
-                "48 lollipop sticks",
-                "2-1/2 pounds milk chocolate candy coating, coarsely chopped",
-                "Chopped cashews"
+                "1 package  fudge marble cake mix (regular size)",
+                "1-1/4 cups plus 3 tablespoons strong brewed coffee, divided",
+                "1/4 cup canola oil",
+                "3 large eggs",
+                "1 jar (10 ounces) maraschino cherries without stems, well drained",
+                "1/3 cup brandy",
+                "1/4 cup cherry preserves",
+                "1 cup canned chocolate frosting",
+                "4 pounds milk chocolate candy coating, chopped",
+                "2 tablespoons shortening"
             ],
             "directions": [
-                "Prepare and bake cake mix according to package directions, using a greased 13-in. x 9-in. baking pan. Cool completely on a wire rack.",
-                "Crumble cake into a large bowl. Add dulce de leche and mix well. Shape into 1-in. balls. Place on baking sheets; insert sticks. Freeze for at least 2 hours or refrigerate for at least 3 hours or until cake balls are firm.",
-                "In a microwave, melt candy coating. Dip each cake ball in coating; allow excess to drip off. Coat with cashews. Insert cake pops into a styrofoam block to stand. Let stand until set."
+                "In a large bowl, combine the cake mix, 1-1/4 cups coffee, oil and eggs; beat on low speed for 30 seconds. Beat on medium for 2 minutes.",
+                "Pour batter into a greased and floured 13x9-in. baking pan. Bake at 350\u00b0 for 30-35 minutes or until a toothpick inserted in the center comes out clean. Cool completely.",
+                "Place cherries in a food processor; cover and process until coarsely chopped. Transfer to a small bowl; stir in the brandy, preserves and remaining coffee.",
+                "Crumble cake into a large bowl. Add frosting and cherry mixture; beat well. Shape into 1-in. balls.",
+                "In a microwave, melt candy coating and shortening; stir until smooth. Dip balls in chocolate mixture; allow excess to drip off. Place on waxed paper; let stand until set. Store in an airtight container overnight before serving."
             ],
-            "nutrition": "1 cake pop (calculated without cashews): 210 calories, 11g fat (7g saturated fat), 13mg cholesterol, 104mg sodium, 28g carbohydrate (23g sugars, 1g fiber), 2g protein."
-        },
-        {
-            "name": "Red Velvet Cake Bites",
-            "expert": "Everyone loves red velvet, but any cake mix can work here. I've even rolled chopped macadamia nuts into pineapple cake and dipped them into white chocolate. Whatever you do, have fun! \u2014Anne Powers, Munford, Alabama",
-            "time": "Prep: 45 min. + chilling Bake: 25 min. + cooling",
-            "makes": "5 dozen",
-            "ingredients": [
-                "1 package  red velvet cake mix (regular size)",
-                "1 can (16 ounces) cream cheese frosting",
-                "1 pound each white, milk chocolate  and dark chocolate candy coating"
-            ],
-            "directions": [
-                "Prepare and bake cake mix according to package directions using a 13x9-in. baking pan. Cool completely.",
-                "Crumble cake into a large bowl. Add frosting; beat well. Refrigerate until easy to handle, about 1 hour. Shape into 1-1/2-inch balls; transfer to waxed paper-lined baking sheets. Refrigerate at least 1 hour.",
-                "In a microwave, melt white candy coating; stir until smooth. Dip first 20 cake balls into coating; allow excess to drip off. Return to baking sheets; let stand until set. Repeat with milk chocolate and dark chocolate coatings and remaining cake balls. If desired, drizzle with additional candy coating. Store in airtight containers."
-            ],
-            "nutrition": "1 cake ball: 206 calories, 11g fat (7g saturated fat), 11mg cholesterol, 79mg sodium, 28g carbohydrate (24g sugars, 0 fiber), 1g protein."
-        },
-        {
-            "name": "Cake Eyeballs",
-            "expert": "Customize these cake balls to your liking with the flavors of your choice. \u2014 Taste of Home Test Kitchen",
-            "time": "Prep: 1 hour Bake: 35 min. + freezing",
-            "makes": "2 dozen",
-            "ingredients": [
-                "1 package  cake mix of your choice (regular size)",
-                "1 cup prepared frosting of your choice",
-                "1 package (12 ounces) each orange, pink, blue, purple, vibrant green, black and white Wilton candy melts",
-                "Decorations of your choice: candy coating disks, jumbo sprinkles, candy-coated sunflower kernels, candy eyeballs, Twizzlers Rainbow Twists, Life Savers, colored sugar and assorted sprinkles"
-            ],
-            "directions": [
-                "Prepare and bake cake mix according to package directions, using a greased 13x9-in. baking pan. Cool completely on a wire rack.",
-                "Crumble cake into a large bowl. Add frosting and mix well. Shape into 1-1/2-in. balls. Place on baking sheets. Chill cake balls until firm, at least 2 hours in freezer or at least 3 hours in refrigerator.",
-                "In separate bowls, heat candy melts in the microwave until melted; stir until smooth. Dip each cake ball in coating; allow excess to drip off. Decorate as desired. Let stand until set."
-            ],
-            "nutrition": "1 cake ball: 182 calories, 8g fat (2g saturated fat), 23mg cholesterol, 208mg sodium, 25g carbohydrate (15g sugars, 1g fiber), 2g protein."
+            "nutrition": "1 cake ball: 200 calories, 10g fat (7g saturated fat), 9mg cholesterol, 51mg sodium, 27g carbohydrate (24g sugars, 1g fiber), 1g protein."
         }
     ]
 }
