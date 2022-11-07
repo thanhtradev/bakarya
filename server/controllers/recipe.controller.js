@@ -252,6 +252,43 @@ exports.findSuggestions = (req, res) => {
         });
 };
 
+// Search recipes by category
+exports.findByCategory = (req, res) => {
+    const category = req.params.category;
+    // Find category similar to category
+    RecipeCategory.find({
+        name: {
+            $regex: category,
+            $options: 'i'
+        }
+    }).exec((err, categories) => {
+        if (err) {
+            res.status(500).send({
+                message: err.message || "Some error occurred while retrieving recipes."
+            });
+            return;
+        }
+        // Get category ids
+        var categoryIds = categories.map(category => category._id);
+        // Find recipes with category ids
+        Recipe.find({
+            categories: {
+                $in: categoryIds
+            }
+        }).populate('user_id').populate('categories').exec((err, recipes) => {
+            if (err) {
+                res.status(500).send({
+                    message: err.message || "Some error occurred while retrieving recipes."
+                });
+                return;
+            }
+            var recipeList = recipes.map(recipe => formatRecipeData(recipe));
+            res.send(recipeList);
+        });
+    })
+
+}
+
 // Format recipe data
 function formatRecipeData(recipe) {
     return {

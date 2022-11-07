@@ -38,4 +38,6 @@ module.exports = function (app) {
     // Retrieve suggestions for a recipe
     app.get("/api/recipes/suggestion", [authJwt.verifyToken], controller.findSuggestions);
 
+    // Search recipe by category
+    app.get("/api/recipes/category/:category", controller.findByCategory);
 }
