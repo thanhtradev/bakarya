@@ -234,3 +234,39 @@ exports.getUserAvatar = (req, res) => {
     res.status(200).send(user.avatar);
   });
 }
+
+// Retrieve user profile
+exports.getUserProfile = (req, res) => {
+  // Find the user by id
+  User.findById(req.userId).exec((err, user) => {
+    if (err) {
+      res.status(500).send({
+        message: err,
+      });
+      return;
+    }
+    if (!user) {
+      res.status(404).send({
+        message: "User not found",
+      });
+      return;
+    }
+    // Check if user has been blocked 
+    if (user.isBlocked) {
+      res.status(401).send({
+        message: "User is blocked",
+      });
+      return;
+    }
+    res.status(200).send({
+      email: user.email,
+      firstname: user.firstName,
+      lastname: user.lastName,
+      birthday: user.birthday,
+      followers: user.followers,
+      following: user.following,
+      isVerified: user.isVerified,
+      birthday: user.birthday.toDateString(),
+    });
+  });
+}

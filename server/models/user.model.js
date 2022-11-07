@@ -49,7 +49,7 @@ const User =
         avatar: {
             data: Buffer,
             contentType: String
-        }
+        },
     }, {
         timestamps: true
     });
