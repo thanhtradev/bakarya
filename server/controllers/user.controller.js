@@ -3,6 +3,7 @@ const {
   update
 } = require("../models/user.model");
 const User = db.user;
+const Recipe = db.recipe;
 const fs = require('fs');
 const path = require("path");
 
@@ -258,15 +259,29 @@ exports.getUserProfile = (req, res) => {
       });
       return;
     }
-    res.status(200).send({
-      email: user.email,
-      firstname: user.firstName,
-      lastname: user.lastName,
-      birthday: user.birthday,
-      followers: user.followers,
-      following: user.following,
-      isVerified: user.isVerified,
-      birthday: user.birthday.toDateString(),
+    let numberOfRecipes = 0;
+    // Count number of recipes created by the user
+    Recipe.countDocuments({
+      user_id: req.userId
+    }).exec((err, count) => {
+      if (err) {
+        numberOfRecipes = 0;
+      } else {
+        numberOfRecipes = count;
+        res.status(200).send({
+          email: user.email,
+          firstname: user.firstName,
+          lastname: user.lastName,
+          birthday: user.birthday,
+          followers: user.followers,
+          following: user.following,
+          isVerified: user.isVerified,
+          //Check if birthday is set
+          birthday: user.birthday ? user.birthday.toDateString() : null,
+          numberOfRecipes: numberOfRecipes,
+        });
+      }
+
     });
   });
 }
