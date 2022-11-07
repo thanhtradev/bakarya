@@ -77,23 +77,7 @@ exports.findAll = (req, res) => {
                 });
                 return;
             }
-            recipeList = recipes.map(recipe => {
-                return {
-                    id: recipe._id,
-                    author: recipe.user_id.username,
-                    name: recipe.name,
-                    expert: recipe.expert,
-                    time: recipe.time,
-                    makes: recipe.makes,
-                    ingredients: recipe.ingredients,
-                    directions: recipe.directions,
-                    nutrition: recipe.nutrition,
-                    number_of_mlems: recipe.number_of_mlems,
-                    number_of_comments: recipe.number_of_comments,
-                    categories: recipe.categories.map(category => category.name),
-                    createdAt: recipe.createdAt,
-                }
-            });
+            recipeList = recipes.map(recipe => formatRecipeData(recipe));
             res.status(200).send(recipeList);
         });
 }
@@ -124,22 +108,7 @@ exports.findOne = (req, res) => {
                 });
                 return;
             }
-            var tmpRecipe = {
-                id: recipe._id,
-                author: recipe.user_id.username,
-                name: recipe.name,
-                expert: recipe.expert,
-                time: recipe.time,
-                makes: recipe.makes,
-                ingredients: recipe.ingredients,
-                directions: recipe.directions,
-                nutrition: recipe.nutrition,
-                number_of_mlems: recipe.number_of_mlems,
-                number_of_comments: recipe.number_of_comments,
-                categories: recipe.categories.map(category => category.name),
-                createdAt: recipe.createdAt,
-            }
-            res.status(200).send(tmpRecipe);
+            res.status(200).send(formatRecipeData(recipe));
         });
 }
 
@@ -158,23 +127,7 @@ exports.findTop10 = (req, res) => {
                 });
                 return;
             }
-            recipeList = recipes.map(recipe => {
-                return {
-                    id: recipe._id,
-                    author: recipe.user_id.username,
-                    name: recipe.name,
-                    expert: recipe.expert,
-                    time: recipe.time,
-                    makes: recipe.makes,
-                    ingredients: recipe.ingredients,
-                    directions: recipe.directions,
-                    nutrition: recipe.nutrition,
-                    number_of_mlems: recipe.number_of_mlems,
-                    number_of_comments: recipe.number_of_comments,
-                    categories: recipe.categories.map(category => category.name),
-                    createdAt: recipe.createdAt,
-                }
-            });
+            recipeList = recipes.map(recipe => formatRecipeData(recipe));
             res.status(200).send(recipeList);
         });
 }
@@ -195,23 +148,7 @@ exports.findLimited = (req, res) => {
                 });
                 return;
             }
-            recipeList = recipes.map(recipe => {
-                return {
-                    id: recipe._id,
-                    author: recipe.user_id.username,
-                    name: recipe.name,
-                    expert: recipe.expert,
-                    time: recipe.time,
-                    makes: recipe.makes,
-                    ingredients: recipe.ingredients,
-                    directions: recipe.directions,
-                    nutrition: recipe.nutrition,
-                    number_of_mlems: recipe.number_of_mlems,
-                    number_of_comments: recipe.number_of_comments,
-                    categories: recipe.categories.map(category => category.name),
-                    createdAt: recipe.createdAt,
-                }
-            });
+            recipeList = recipes.map(recipe => formatRecipeData(recipe));
             res.status(200).send(recipeList);
         });
 }
@@ -235,23 +172,7 @@ exports.findAllByUser = (req, res) => {
                 });
                 return;
             }
-            recipeList = recipes.map(recipe => {
-                return {
-                    id: recipe._id,
-                    author: recipe.user_id.username,
-                    name: recipe.name,
-                    expert: recipe.expert,
-                    time: recipe.time,
-                    makes: recipe.makes,
-                    ingredients: recipe.ingredients,
-                    directions: recipe.directions,
-                    nutrition: recipe.nutrition,
-                    number_of_mlems: recipe.number_of_mlems,
-                    number_of_comments: recipe.number_of_comments,
-                    categories: recipe.categories.map(category => category.name),
-                    createdAt: recipe.createdAt,
-                }
-            });
+            recipeList = recipes.map(recipe => formatRecipeData(recipe));
             res.status(200).send(recipeList);
         });
 }
@@ -324,25 +245,29 @@ exports.findSuggestions = (req, res) => {
                             });
                             return;
                         }
-                        var recipeList = recipes.map(recipe => {
-                            return {
-                                id: recipe._id,
-                                author: recipe.user_id.username,
-                                name: recipe.name,
-                                expert: recipe.expert,
-                                time: recipe.time,
-                                makes: recipe.makes,
-                                ingredients: recipe.ingredients,
-                                directions: recipe.directions,
-                                nutrition: recipe.nutrition,
-                                number_of_mlems: recipe.number_of_mlems,
-                                number_of_comments: recipe.number_of_comments,
-                                categories: recipe.categories.map(category => category.name),
-                                createdAt: recipe.createdAt,
-                            }
-                        });
+                        var recipeList = recipes.map(recipe => formatRecipeData(recipe));
                         res.send(recipeList);
                     });
             });
         });
 };
+
+// Format recipe data
+function formatRecipeData(recipe) {
+    return {
+        id: recipe._id,
+        author: recipe.user_id.username,
+        author_id: recipe.user_id._id,
+        name: recipe.name,
+        expert: recipe.expert,
+        time: recipe.time,
+        makes: recipe.makes,
+        ingredients: recipe.ingredients,
+        directions: recipe.directions,
+        nutrition: recipe.nutrition,
+        number_of_mlems: recipe.number_of_mlems,
+        number_of_comments: recipe.number_of_comments,
+        categories: recipe.categories.map(category => category.name),
+        createdAt: recipe.createdAt,
+    }
+}
