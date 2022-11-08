@@ -296,7 +296,7 @@ exports.findRandom = (req, res) => {
         var random = Math.floor(Math.random() * count)
 
         // Again query all users but only fetch one offset by our random #
-        Recipe.find().skip(random).limit(15).exec((err, recipes) => {
+        Recipe.find().skip(random).limit(15).populate('user_id').populate('categories').exec((err, recipes) => {
             if (err) {
                 res.status(500).send({
                     message: err.message || "Some error occurred while retrieving recipes."
