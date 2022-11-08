@@ -14,7 +14,7 @@ const RECIPECATEGORY = db.recipeCategory;
 const app = express();
 
 var corsOptions = {
-  origin: ["http://localhost:8081", "http://admin.bakarya.com", "http://www.admin.bakarya.com", "http://bakarya.com", "http://www.bakarya.com", "*"],
+  origin: ["http://localhost:8081", "http://admin.bakarya.com", "http://www.admin.bakarya.com", "http://bakarya.com", "http://www.bakarya.com", "http://192.168.1.11:8081", "http://192.168.1.6:8081", "http://192.168.100.159:8081"],
 };
 
 app.use(cors(corsOptions));
