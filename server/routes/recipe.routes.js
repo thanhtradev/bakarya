@@ -40,4 +40,7 @@ module.exports = function (app) {
 
     // Search recipe by category
     app.get("/api/recipes/category/:category", controller.findByCategory);
+
+    // Get random recipe
+    app.get("/api/recipes/random", controller.findRandom);
 }

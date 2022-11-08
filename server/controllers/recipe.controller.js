@@ -205,7 +205,7 @@ exports.findSuggestions = (req, res) => {
             // Get recipe 
             var recipeId = mlems[0].recipe_id._id.toString();
             // Get all recipe
-            Recipe.find().exec((err, recipes) => {
+            Recipe.find().limit(20).exec((err, recipes) => {
                 if (err) {
                     res.status(500).send({
                         message: err.message || "Some error occurred while retrieving recipes."
@@ -227,10 +227,9 @@ exports.findSuggestions = (req, res) => {
                 }
                 // Get suggestions
                 var suggestions = recommender.getSimilarDocuments(recipeId, 0, 15);
-                // Get recipe ids
+                // Get recipe ids   
                 var recipeIds = suggestions.map(suggestion => suggestion.id);
                 // Find recipes
-                console.log(recipeIds);
                 Recipe.find({
                         _id: {
                             $in: recipeIds
@@ -288,6 +287,28 @@ exports.findByCategory = (req, res) => {
     })
 
 }
+//Get random 15 recipe
+exports.findRandom = (req, res) => {
+    // Get the count of all users
+    Recipe.count().exec(function (err, count) {
+
+        // Get a random entry
+        var random = Math.floor(Math.random() * count)
+
+        // Again query all users but only fetch one offset by our random #
+        Recipe.find().skip(random).limit(15).exec((err, recipes) => {
+            if (err) {
+                res.status(500).send({
+                    message: err.message || "Some error occurred while retrieving recipes."
+                });
+                return;
+            }
+            var recipeList = recipes.map(recipe => formatRecipeData(recipe));
+            res.send(recipeList);
+        })
+    })
+}
+
 
 // Format recipe data
 function formatRecipeData(recipe) {
