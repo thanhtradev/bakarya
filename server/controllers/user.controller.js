@@ -178,56 +178,26 @@ exports.updateUserProfile = (req, res) => {
 
 // Update user avatar
 exports.updateUserAvatar = async (req, res) => {
-  const obj = {
-    img: {
-      data: fs.readFileSync(path.join(__dirname, '../uploads/' + req.file.filename)),
-      contentType: 'image/png'
-    }
-  }
-  // // Upload to aws s3
-  // const s3 = new AWS.S3({
-  //   accessKeyId: process.env.AWS_ACCESS_KEY_ID,
-  //   secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY,
-  // });
-  // const files = fs.readFileSync(path.join(__dirname, '../uploads/' + req.file.filename));
-  // const uploadedFile = await s3.upload({
-  //   Bucket: process.env.AWS_BUCKET_NAME,
-  //   Key: 'users/avatars/' + req.file.filename,
-  //   Body: files,
-  // }).promise();
-  // // update the user avatar
-  // User.findByIdAndUpdate(req.userId, {
-  //   avatar_url: uploadedFile.Location,
-  // }, {
-  //   useFindAndModify: false,
-  // }).exec((err, user) => {
-  //   if (err) {
-  //     res.status(500).send({
-  //       message: err,
-  //     });
-  //     return;
+  // const obj = {
+  //   img: {
+  //     data: fs.readFileSync(path.join(__dirname, '../uploads/' + req.file.filename)),
+  //     contentType: 'image/png'
   //   }
-  //   if (!user) {
-  //     res.status(404).send({
-  //       message: "User not found",
-  //     });
-  //     return;
-  //   }
-  //   fs.unlink(path.join(__dirname, '../uploads/' + req.file.filename), (err) => {
-  //     if (err) {
-  //       res.status(500).send({
-  //         message: err,
-  //       });
-  //       return;
-  //     }
-  //   });
-  //   res.status(200).send({
-  //     message: "User avatar updated successfully",
-  //   });
-  // });
-
+  // }
+  // Upload to aws s3
+  const s3 = new AWS.S3({
+    accessKeyId: process.env.AWS_ACCESS_KEY_ID,
+    secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY,
+  });
+  const files = fs.readFileSync(path.join(__dirname, '../uploads/' + req.file.filename));
+  const uploadedFile = await s3.upload({
+    Bucket: process.env.AWS_BUCKET_NAME,
+    Key: 'users/avatars/' + req.file.filename,
+    Body: files,
+  }).promise();
+  // update the user avatar
   User.findByIdAndUpdate(req.userId, {
-    avatar: obj.img
+    avatar_url: uploadedFile.Location,
   }, {
     useFindAndModify: false,
   }).exec((err, user) => {
@@ -243,7 +213,6 @@ exports.updateUserAvatar = async (req, res) => {
       });
       return;
     }
-    // Delete the uploaded file from the uploads folder
     fs.unlink(path.join(__dirname, '../uploads/' + req.file.filename), (err) => {
       if (err) {
         res.status(500).send({
@@ -256,6 +225,37 @@ exports.updateUserAvatar = async (req, res) => {
       message: "User avatar updated successfully",
     });
   });
+
+  // User.findByIdAndUpdate(req.userId, {
+  //   avatar: obj.img
+  // }, {
+  //   useFindAndModify: false,
+  // }).exec((err, user) => {
+  //   if (err) {
+  //     res.status(500).send({
+  //       message: err,
+  //     });
+  //     return;
+  //   }
+  //   if (!user) {
+  //     res.status(404).send({
+  //       message: "User not found",
+  //     });
+  //     return;
+  //   }
+  //   // Delete the uploaded file from the uploads folder
+  //   fs.unlink(path.join(__dirname, '../uploads/' + req.file.filename), (err) => {
+  //     if (err) {
+  //       res.status(500).send({
+  //         message: err,
+  //       });
+  //       return;
+  //     }
+  //   });
+  //   res.status(200).send({
+  //     message: "User avatar updated successfully",
+  //   });
+  // });
 }
 
 // Retrieve user profile picture
