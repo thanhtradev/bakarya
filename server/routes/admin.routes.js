@@ -27,4 +27,12 @@ module.exports = function (app) {
     //Unlock user by id
     app.put("/api/admin/users/:userId/unblock", [authJwt.verifyToken, authJwt.isAdmin], controller.unBlockUser);
 
+    // Retrieve all recipes
+    app.get("/api/admin/recipes", [authJwt.verifyToken, authJwt.isAdmin], controller.findAllRecipes);
+
+    // Block recipe by id
+    app.put("/api/admin/recipes/:recipeId/block", [authJwt.verifyToken, authJwt.isAdmin], controller.blockRecipe);
+
+    // Unlock recipe by id
+    app.put("/api/admin/recipes/:recipeId/unblock", [authJwt.verifyToken, authJwt.isAdmin], controller.unBlockRecipe);
 };

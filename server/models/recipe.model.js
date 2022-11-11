@@ -34,6 +34,10 @@ const Recipe =
       ref: "RecipeCategory",
     }],
     hashtags: [String],
+    is_active: {
+      type: Boolean,
+      default: true
+    },
   }, {
     timestamps: true
   });

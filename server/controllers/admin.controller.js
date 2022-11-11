@@ -129,3 +129,77 @@ exports.unBlockUser = (req, res) => {
             });
         });
 }
+
+// Retrieve all Recipes from the database.
+exports.findAllRecipes = (req, res) => {
+    Recipe.find()
+        .populate('categories')
+        // .populate('author')
+        .exec((err, recipes) => {
+            if (err) {
+                res.status(500).send({
+                    message: err.message || "Some error occurred while retrieving recipes."
+                });
+                return;
+            }
+            var returnRecipes = [];
+            recipes.forEach(recipe => {
+                returnRecipes.push({
+                    id: recipe._id,
+                    name: recipe.name,
+                    categories: recipe.categories.map(category => category.name),
+                    createdTime: recipe.createdAt,
+                    isActive: recipe.is_active,
+                });
+            });
+            res.status(200).send(returnRecipes);
+        });
+};
+
+// Block recipe by id
+exports.blockRecipe = (req, res) => {
+    const id = req.params.recipeId;
+    Recipe.findByIdAndUpdate(id, {
+            is_active: false
+        }, {
+            useFindAndModify: false
+        })
+        .then(data => {
+            if (!data) {
+                res.status(404).send({
+                    message: `Cannot block recipe with id=${id}. Maybe recipe was not found!`
+                });
+            } else res.send({
+                message: "Recipe was blocked successfully."
+            });
+        })
+        .catch(err => {
+            res.status(500).send({
+                message: "Error updating recipe with id=" + id
+            });
+        });
+}
+
+//Unlock recipe by id
+exports.unBlockRecipe = (req, res) => {
+    const id = req.params.recipeId;
+    Recipe.findByIdAndUpdate(id, {
+            is_active: true
+        }, {
+            useFindAndModify: false
+        })
+        .then(data => {
+            if (!data) {
+                res.status(404).send({
+                    message: `Cannot unlock recipe with id=${id}. Maybe recipe was not found!`
+                });
+            } else res.send({
+                message: "Recipe was unlocked successfully."
+            });
+        })
+        .catch(err => {
+            res.status(500).send({
+                message: "Error updating recipe with id=" + id
+            });
+        });
+}
