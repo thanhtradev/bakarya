@@ -8,6 +8,11 @@ const Product = db.product;
 // Retrieve information for overview
 // Return the number of products, users, orders, and categories
 exports.overview = (req, res) => {
+    // Calculate the new users in the last 24 hours
+    const now = new Date();
+    const last24Hours = new Date(now.getTime() - 24 * 60 * 60 * 1000);
+
+
     User.countDocuments({}, (err, totalUsers) => {
         if (err) {
             res.status(500).send({
@@ -15,27 +20,66 @@ exports.overview = (req, res) => {
             });
             return;
         }
-        Recipe.countDocuments({}, (err, totalRecipes) => {
+        User.countDocuments({
+            createdAt: {
+                $gte: last24Hours
+            }
+        }).exec((err, newUsers) => {
             if (err) {
                 res.status(500).send({
-                    message: err.message || "Some error occurred while retrieving recipe."
+                    message: err.message || "Some error occurred while retrieving users."
                 });
-                return;
             }
-            Product.countDocuments({}, (err, totalProducts) => {
+            Recipe.countDocuments({}, (err, totalRecipes) => {
                 if (err) {
                     res.status(500).send({
-                        message: err.message || "Some error occurred while retrieving product."
+                        message: err.message || "Some error occurred while retrieving recipe."
                     });
                     return;
                 }
-                res.send({
-                    totalUsers: totalUsers,
-                    totalRecipes: totalRecipes,
-                    totalProducts: totalProducts
-                });
+                Recipe.countDocuments({
+                    createdAt: {
+                        $gte: last24Hours
+                    }
+                }).exec((err, newRecipes) => {
+                    if (err) {
+                        res.status(500).send({
+                            message: err.message || "Some error occurred while retrieving users."
+                        });
+                    }
+                    Product.countDocuments({}, (err, totalProducts) => {
+                        if (err) {
+                            res.status(500).send({
+                                message: err.message || "Some error occurred while retrieving product."
+                            });
+                            return;
+                        }
+                        Product.countDocuments({
+                            createdAt: {
+                                $gte: last24Hours
+                            }
+                        }).exec((err, newProducts) => {
+                            if (err) {
+                                res.status(500).send({
+                                    message: err.message || "Some error occurred while retrieving users."
+                                });
+                            }
+                            res.send({
+                                totalUsers: totalUsers,
+                                newUsers: newUsers,
+                                totalRecipes: totalRecipes,
+                                newRecipes: newRecipes,
+                                totalProducts: totalProducts,
+                                newProducts: newProducts,
+                            });
+                        })
+
+                    });
+                })
+
             });
         });
+
     });
 
 
