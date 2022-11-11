@@ -50,6 +50,7 @@ const User =
             data: Buffer,
             contentType: String
         },
+        avatar_url: String,
     }, {
         timestamps: true
     });
