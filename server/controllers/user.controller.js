@@ -314,6 +314,7 @@ exports.getUserProfile = (req, res) => {
           email: user.email,
           firstname: user.firstName,
           lastname: user.lastName,
+          avatar_url: user.avatar_url,
           birthday: user.birthday,
           followers: user.followers,
           following: user.following,
