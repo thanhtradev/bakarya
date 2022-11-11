@@ -35,6 +35,6 @@ jobs:
             echo "AWS_BUCKET_NAME=${{ secrets.AWS_BUCKET_NAME }}" >> .env
 
             npm install
-            pm2 kill
-            pm2 start -f server.js
+            pm2 delete bakarya-server 
+            pm2 start server.js --name bakarya-server
             echo "Deployed"
