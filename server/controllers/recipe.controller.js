@@ -2,9 +2,11 @@ const db = require('../models');
 const Recipe = db.recipe;
 const RecipeCategory = db.recipeCategory;
 const Mlem = db.mlem;
-
+const AWS = require('aws-sdk');
+const fs = require('fs');
+const path = require('path');
 // Create a new Recipe
-
+/**
 exports.create = (req, res) => {
 
     // Validate request
@@ -63,6 +65,91 @@ exports.create = (req, res) => {
         }
     });
 }
+*/
+
+exports.create = async (req, res) => {
+    //Handle recipe
+    // Parse json data from request
+    const recipe = JSON.parse(req.body.recipe);
+    // Validate request
+    if (!recipe.name) {
+        res.status(400).send({
+            message: "Content can not be empty!"
+        });
+        return;
+    }
+    // Create a Recipe
+    const newRecipe = new Recipe({
+        user_id: req.userId,
+        name: recipe.name,
+        expert: recipe.expert,
+        time: recipe.time,
+        makes: recipe.makes,
+        ingredients: recipe.ingredients,
+        directions: recipe.directions,
+        nutrition: recipe.nutrition,
+    });
+
+    //Handle file upload
+    // imageUrl list
+    let imageUrlList = [];
+    // Check if there have any files
+    if (req.files) {
+        const s3 = new AWS.S3({
+            accessKeyId: process.env.AWS_ACCESS_KEY_ID,
+            secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY,
+        });
+        // Upload to aws s3
+        for (let i = 0; i < req.files.length; i++) {
+            const file = fs.readFileSync(path.join(__dirname, '../uploads/' + req.files[i].filename));
+            const uploadedFile = await s3.upload({
+                Bucket: process.env.AWS_BUCKET_NAME,
+                Key: 'recipes/' + req.files[i].filename,
+                Body: file,
+            }).promise();
+            imageUrlList.push(uploadedFile.Location);
+        }
+        newRecipe.images = imageUrlList;
+    }
+
+    // Save Recipe in the database
+    newRecipe.save((err, savedRecipe) => {
+        if (err) {
+            res.status(500).send({
+                message: err.message || "Some error occurred while creating the Recipe."
+            });
+            return;
+        }
+        if (recipe.categories) {
+            RecipeCategory.find({
+                name: {
+                    $in: recipe.categories
+                }
+            }, (err, categories) => {
+                if (err) {
+                    res.status(500).send({
+                        message: err.message || "Some error occurred while creating the Recipe."
+                    });
+                    return;
+                }
+                savedRecipe.categories = categories.map(category => category._id);
+                // console.log(categories);
+                savedRecipe.save((err, recipe) => {
+                    if (err) {
+                        res.status(500).send({
+                            message: err.message || "Some error occurred while creating the Recipe."
+                        });
+                        return;
+                    }
+                    res.send({
+                        message: "Recipe was created successfully!",
+                    });
+                });
+            });
+        }
+    });
+
+};
 
 // Retrieve all recipes from the database.
 

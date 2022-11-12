@@ -1,5 +1,6 @@
 const {
-    authJwt
+    authJwt,
+    upload
 } = require("../middlewares");
 const controller = require("../controllers/recipe.controller.js");
 
@@ -13,7 +14,7 @@ module.exports = function (app) {
     });
 
     // Create a new Recipe
-    app.post("/api/recipe", [authJwt.verifyToken], controller.create);
+    app.post("/api/recipe", [authJwt.verifyToken, upload.uploadRecipeImages], controller.create);
 
     // Retrieve all Recipes
     app.get("/api/recipes", controller.findAll);

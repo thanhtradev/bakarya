@@ -1,8 +1,5 @@
 const AWS = require('aws-sdk');
 const db = require("../models");
-const {
-  update
-} = require("../models/user.model");
 const User = db.user;
 const Recipe = db.recipe;
 const fs = require('fs');
