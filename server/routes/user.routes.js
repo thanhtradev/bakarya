@@ -39,7 +39,7 @@ module.exports = function (app) {
   app.post("/api/user/update", [authJwt.verifyToken], controller.updateUserProfile);
 
   // Update user profile picture
-  app.post("/api/user/update/avatar", [authJwt.verifyToken, upload.upload.single("avatar")], controller.updateUserAvatar);
+  app.post("/api/user/update/avatar", [authJwt.verifyToken, upload.uploadAvatar], controller.updateUserAvatar);
 
   // Retrieve user profile picture
   app.get("/api/user/avatar", [authJwt.verifyToken], controller.getUserAvatar);
