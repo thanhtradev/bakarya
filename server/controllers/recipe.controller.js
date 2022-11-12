@@ -403,6 +403,7 @@ function formatRecipeData(recipe) {
         id: recipe._id,
         author: recipe.user_id.username,
         author_id: recipe.user_id._id,
+        author_avatar: recipe.user_id.avatar_url,
         name: recipe.name,
         expert: recipe.expert,
         time: recipe.time,
