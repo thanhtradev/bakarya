@@ -15,6 +15,7 @@ db.cart = require("./cart.model");
 db.productSubCategory = require("./productSubCategory.model");
 db.comment = require("./comment.model");
 db.mlem = require("./mlem.model");
+db.order = require("./order.model");
 
 
 
