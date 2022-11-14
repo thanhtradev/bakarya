@@ -68,6 +68,13 @@ exports.create = (req, res) => {
 */
 
 exports.create = async (req, res) => {
+    // validate request
+    if (!req.body.recipe) {
+        res.status(400).send({
+            message: "Content can not be empty!"
+        });
+        return;
+    }
     //Handle recipe
     // Parse json data from request
     const recipe = JSON.parse(req.body.recipe);

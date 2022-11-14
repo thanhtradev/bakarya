@@ -12,9 +12,9 @@ module.exports = (app) => {
         next();
     });
     app.post("/api/order", [authJwt.verifyToken], controller.create);
-    app.get("/api/orders", controller.findAll);
-    app.get("/api/orders/:orderId", controller.findOne);
-    app.get("/api/orders/user/:userId", controller.findByUser);
-    app.put("/api/orders/:orderId", [authJwt.verifyToken], controller.update);
-    app.delete("/api/orders/:orderId", [authJwt.verifyToken], controller.delete);
+    app.get("/api/order", [authJwt.verifyToken], controller.findOne);
+    // app.get("/api/orders/:orderId", controller.findOne);
+    // app.get("/api/orders/user/:userId", controller.findByUser);
+    // app.put("/api/orders/:orderId", [authJwt.verifyToken], controller.update);
+    // app.delete("/api/orders/:orderId", [authJwt.verifyToken], controller.delete);
 };
