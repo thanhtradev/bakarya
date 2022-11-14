@@ -44,4 +44,11 @@ module.exports = function (app) {
 
     // Get random recipe
     app.get("/api/recipes/random", controller.findRandom);
+
+    // Save recipe
+    app.post("/api/recipe/save", [authJwt.verifyToken], controller.saveRecipe);
+
+    // Unsaved recipe
+    app.post("/api/recipe/unsaved", [authJwt.verifyToken], controller.unsavedRecipe);
+
 }

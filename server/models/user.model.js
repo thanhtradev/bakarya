@@ -33,6 +33,10 @@ const User =
             type: mongoose.Schema.Types.ObjectId,
             ref: "User"
         }],
+        savedRecipes: [{
+            type: mongoose.Schema.Types.ObjectId,
+            ref: "Recipe"
+        }],
         isBlocked: {
             type: Boolean,
             default: false
