@@ -1,6 +1,3 @@
-const {
-  MongoTopologyClosedError
-} = require("mongodb");
 const mongoose = require("mongoose");
 
 const Cart = mongoose.model(

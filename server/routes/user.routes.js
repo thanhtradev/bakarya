@@ -46,4 +46,8 @@ module.exports = function (app) {
 
   // Retrieve user profile
   app.get("/api/user/profile", [authJwt.verifyToken], controller.getUserProfile);
+
+  // Retrieve saved recipe
+  app.get("/api/user/saved", [authJwt.verifyToken], controller.getSavedRecipe);
+
 };

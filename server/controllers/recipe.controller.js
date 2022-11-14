@@ -2,6 +2,7 @@ const db = require('../models');
 const Recipe = db.recipe;
 const RecipeCategory = db.recipeCategory;
 const Mlem = db.mlem;
+const User = db.user;
 const AWS = require('aws-sdk');
 const fs = require('fs');
 const path = require('path');
@@ -68,6 +69,13 @@ exports.create = (req, res) => {
 */
 
 exports.create = async (req, res) => {
+    // validate request
+    if (!req.body.recipe) {
+        res.status(400).send({
+            message: "Content can not be empty!"
+        });
+        return;
+    }
     //Handle recipe
     // Parse json data from request
     const recipe = JSON.parse(req.body.recipe);
@@ -417,4 +425,89 @@ function formatRecipeData(recipe) {
         categories: recipe.categories.map(category => category.name),
         createdAt: recipe.createdAt,
     }
+}
+
+// Save recipe
+exports.saveRecipe = (req, res) => {
+    // Validate request
+    if (!req.body.recipeid) {
+        res.status(400).send({
+            message: "Recipe id can not be empty",
+        });
+        return;
+    }
+    // Check if recipe exists
+    Recipe.findById(req.body.recipeid).exec((err, recipe) => {
+        if (err) {
+            res.status(500).send({
+                message: err,
+            });
+            return;
+        }
+        if (!recipe) {
+            res.status(404).send({
+                message: "Recipe not found",
+            });
+            return;
+        }
+        // Save to user saved recipes
+        User.findByIdAndUpdate(req.userId, {
+            $push: {
+                savedRecipes: req.body.recipeid
+            }
+        }, {
+            useFindAndModify: false,
+        }).exec((err, user) => {
+            if (err) {
+                res.status(500).send({
+                    message: err,
+                });
+                return;
+            }
+            if (!user) {
+                res.status(404).send({
+                    message: "User not found",
+                });
+                return;
+            }
+            res.status(200).send({
+                message: "Recipe saved successfully",
+            });
+        });
+    });
+}
+
+// Unsaved recipe
+exports.unsavedRecipe = (req, res) => {
+    // Validate request
+    if (!req.body.recipeid) {
+        res.status(400).send({
+            message: "Recipe id can not be empty",
+        });
+        return;
+    }
+    // Remove recipe from user saved recipes
+    User.findByIdAndUpdate(req.userId, {
+        $pull: {
+            savedRecipes: req.body.recipeid
+        }
+    }, {
+        useFindAndModify: false,
+    }).exec((err, user) => {
+        if (err) {
+            res.status(500).send({
+                message: err,
+            });
+            return;
+        }
+        if (!user) {
+            res.status(404).send({
+                message: "User not found",
+            });
+            return;
+        }
+        res.status(200).send({
+            message: "Recipe unsaved successfully",
+        });
+    });
 }

@@ -325,3 +325,32 @@ exports.getUserProfile = (req, res) => {
     });
   });
 }
+
+// Retrieve saved recipe  
+exports.getSavedRecipe = (req, res) => {
+  // Find the user by id
+  User.findById(req.userId).exec((err, user) => {
+    if (err) {
+      res.status(500).send({
+        message: err,
+      });
+      return;
+    }
+    if (!user) {
+      res.status(404).send({
+        message: "User not found",
+      });
+      return;
+    }
+    // Check if user has been blocked
+    if (user.isBlocked) {
+      res.status(401).send({
+        message: "User is blocked",
+      });
+      return;
+    }
+    // Get saved recipe
+    savedRecipes = user.savedRecipes;
+    res.status(200).send(savedRecipes);
+  });
+}
