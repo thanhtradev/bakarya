@@ -3,6 +3,7 @@ const User = db.user;
 const Role = db.role;
 const Recipe = db.recipe;
 const Product = db.product;
+const RecipeReport = db.recipeReport;
 
 
 // Retrieve information for overview
@@ -245,5 +246,22 @@ exports.unBlockRecipe = (req, res) => {
             res.status(500).send({
                 message: "Error updating recipe with id=" + id
             });
+        });
+}
+
+// Get all recipe reports
+exports.findAllRecipeReports = (req, res) => {
+    RecipeReport.find()
+        // .populate('recipe')
+        // .populate('user')
+        .exec((err, reports) => {
+            if (err) {
+                res.status(500).send({
+                    message: err.message || "Some error occurred while retrieving reports."
+                });
+                return;
+            }
+
+            res.status(200).send(reports);
         });
 }

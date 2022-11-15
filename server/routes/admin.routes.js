@@ -35,4 +35,7 @@ module.exports = function (app) {
 
     // Unlock recipe by id
     app.put("/api/admin/recipes/:recipeId/unblock", [authJwt.verifyToken, authJwt.isAdmin], controller.unBlockRecipe);
+
+    // Get all recipe reports
+    app.get("/api/admin/recipe-reports", [authJwt.verifyToken, authJwt.isAdmin], controller.findAllRecipeReports);
 };
