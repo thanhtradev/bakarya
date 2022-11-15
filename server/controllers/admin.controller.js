@@ -277,3 +277,22 @@ exports.findAllRecipeReports = (req, res) => {
             res.status(200).send(reports);
         });
 }
+
+//Update recipe report status
+exports.updateRecipeReportStatus = (req, res) => {
+    const id = req.params.recipeReportId;
+    RecipeReport.findByIdAndUpdate(id, {
+            status: req.body.status
+        }, {
+            useFindAndModify: false
+        })
+        .exec((err, report) => {
+            if (err) {
+                res.status(500).send({
+                    message: err.message || "Some error occurred while updating report."
+                });
+                return;
+            }
+            res.status(200).send();
+        });
+}

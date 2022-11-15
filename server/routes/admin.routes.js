@@ -38,4 +38,7 @@ module.exports = function (app) {
 
     // Get all recipe reports
     app.get("/api/admin/recipe-reports", [authJwt.verifyToken, authJwt.isAdmin], controller.findAllRecipeReports);
+
+    // Update recipe report status
+    app.put("/api/admin/recipe-reports/:recipeReportId", [authJwt.verifyToken, authJwt.isAdmin], controller.updateRecipeReportStatus);
 };
