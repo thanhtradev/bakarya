@@ -31,6 +31,9 @@ module.exports = function (app) {
     // Retrieve all Recipes belonging to a user
     app.get("/api/recipes/user", [authJwt.verifyToken], controller.findAllByUser);
 
+    // Retrieve all recipe belong to a user 
+    app.get("/api/recipes/userid/:userId", controller.findAllByUserId);
+
     // // Update a Recipe with recipeId
     // app.put("/recipes/:recipeId", [authJwt.verifyToken], controller.update);
 

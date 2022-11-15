@@ -69,6 +69,7 @@ exports.create = (req, res) => {
 */
 
 exports.create = async (req, res) => {
+    console.log(req.body);
     // validate request
     if (!req.body.recipe) {
         res.status(400).send({
@@ -510,4 +511,20 @@ exports.unsavedRecipe = (req, res) => {
             message: "Recipe unsaved successfully",
         });
     });
+}
+
+// Retrieve all recipe belong to user
+exports.findAllByUserId = (req, res) => {
+    Recipe.find({
+        user_id: req.params.userId
+    }).populate('user_id').populate('categories').exec((err, recipes) => {
+        if (err) {
+            res.status(500).send({
+                message: err.message || "Some error occurred while retrieving recipes."
+            });
+            return;
+        }
+        var recipeList = recipes.map(recipe => formatRecipeData(recipe));
+        res.send(recipeList);
+    })
 }
