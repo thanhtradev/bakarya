@@ -341,6 +341,8 @@ exports.generateRecipeChartData = (req, res) => {
         for (var i = 0; i < 14; i++) {
             dates.push(new Date(date.setDate(date.getDate() - 1)));
         }
+        // Revert the array
+        dates.reverse();
         // Get sum of recipes created each day in the last 14 days
         var recipeCount = [];
         dates.forEach(date => {
