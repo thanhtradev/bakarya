@@ -1,27 +1,28 @@
 const mongoose = require('mongoose');
 
-const Report = mongoose.model(
-    'Report',
+const RecipeReport = mongoose.model(
+    'RecipeReport',
     new mongoose.Schema({
-        report_post: {
+        type: {
             type: String,
             enum: ['Spam', 'Hate speech', 'Harassment', 'False information', 'Something else']
         },
-        report_profile: {
-            type: String,
-            enum: ['Pretending to be someone', 'Fake account', 'Posting inappropriate things', 'Somthing else']
-        },
-        recipe_id: [{
+        // report_profile: {
+        //     type: String,
+        //     enum: ['Pretending to be someone', 'Fake account', 'Posting inappropriate things', 'Something else']
+        // },
+        recipe_id: {
             type: mongoose.Schema.Types.ObjectId,
             ref: "Recipe"
-        }],
-        user_id: [{
+        },
+        user_id: {
             type: mongoose.Schema.Types.ObjectId,
             ref: "User"
-        }]
+        },
+        reason: String,
     }, {
         timestamps: true
     })
 );
 
-    module.exports = Report;
+module.exports = RecipeReport;
