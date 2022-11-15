@@ -1,3 +1,6 @@
+const {
+    user
+} = require("../models");
 const db = require("../models");
 const User = db.user;
 const Role = db.role;
@@ -361,5 +364,93 @@ exports.generateRecipeChartData = (req, res) => {
             dates: dates,
             recipeCount: recipeCount
         });
+    });
+} // Generate user chart data
+exports.generateUserChartData = (req, res) => {
+    User.find().exec((err, users) => {
+        if (err) {
+            res.status(500).send({
+                message: err.message || "Some error occurred while retrieving recipes."
+            });
+            return;
+        }
+        // Get the last 14 days
+        var date = new Date();
+        var dates = [];
+        for (var i = 0; i < 14; i++) {
+            dates.push(new Date(date.setDate(date.getDate() - 1)));
+        }
+        // Revert the array
+        dates.reverse();
+        // Get sum of users created each day in the last 14 days
+        var userCount = [];
+        // Get sum of users register before the last 14 days
+        User.countDocuments({
+            createdAt: {
+                $lt: dates[0]
+            }
+        }).exec((err, beforeCount) => {
+            if (err) {
+                res.status(500).send({
+                    message: err.message || "Some error occurred while retrieving recipes."
+                });
+                return;
+            }
+
+            console.log(beforeCount);
+            for (var i = 0; i < dates.length; i++) {
+                var count = 0;
+                for (var j = 0; j < users.length; j++) {
+                    if (users[j].createdAt) {
+                        if (users[j].createdAt.getDate() == dates[i].getDate() && users[j].createdAt.getMonth() == dates[i].getMonth() && users[j].createdAt.getFullYear() == dates[i].getFullYear()) {
+                            count++;
+                        }
+                    }
+                }
+                if (i == 0) {
+                    userCount.push(count + beforeCount);
+                }
+                if (userCount.length > 0) {
+                    count = count + userCount[userCount.length - 1];
+                }
+                userCount.push(count);
+            }
+
+            // dates.forEach(date => {
+            //     var count = 0;
+            //     users.forEach(user => {
+            //         if (user.createdAt) {
+            //             if (user.createdAt.getDate() == date.getDate() && user.createdAt.getMonth() == date.getMonth() && user.createdAt.getFullYear() == date.getFullYear()) {
+            //                 count++;
+            //             }
+            //         }
+            //     });
+            //     if (userCount.length > 0) {
+            //         count = count + userCount[userCount.length - 1];
+            //     }
+            //     userCount.push(count);
+            // });
+            res.status(200).send({
+                dates: dates,
+                userCount: userCount
+            });
+        });
+        // var userCount = [];
+        // dates.forEach(date => {
+        //     var count = 0;
+        //     users.forEach(user => {
+        //         if (user.createdAt.getDate() == date.getDate() && user.createdAt.getMonth() == date.getMonth() && user.createdAt.getFullYear() == date.getFullYear()) {
+        //             count++;
+        //         }
+        //     });
+        //     if (userCount.length > 0) {
+        //         count = count + userCount[userCount.length - 1];
+        //     }
+        //     userCount.push(count);
+        // });
+        // res.status(200).send({
+        //     dates: dates,
+        //     userCount: userCount
+        // });
     });
 }

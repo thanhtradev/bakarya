@@ -271,7 +271,9 @@ exports.getUserAvatar = (req, res) => {
       });
       return;
     }
-    res.status(200).send(user.avatar);
+    res.status(200).send({
+      avatar_url: user.avatar_url
+    });
   });
 }
 

@@ -44,4 +44,7 @@ module.exports = function (app) {
 
     // Get recipe chart data
     app.get("/api/admin/recipe-chart", [authJwt.verifyToken, authJwt.isAdmin], controller.generateRecipeChartData);
+
+    // Get user chart data
+    app.get("/api/admin/user-chart", [authJwt.verifyToken, authJwt.isAdmin], controller.generateUserChartData);
 };
