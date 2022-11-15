@@ -67,7 +67,7 @@ exports.overview = (req, res) => {
                             }
 
                             RecipeReport.countDocuments({
-                                status: 'pending'
+                                status: 'Pending'
                             }).exec((err, pendingReports) => {
                                 if (err) {
                                     res.status(500).send({
