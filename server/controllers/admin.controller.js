@@ -408,7 +408,7 @@ exports.generateUserChartData = (req, res) => {
                     }
                 }
                 if (i == 0) {
-                    count + beforeCount;
+                    count = count + beforeCount;
                 }
                 if (userCount.length > 0) {
                     count = count + userCount[userCount.length - 1];
