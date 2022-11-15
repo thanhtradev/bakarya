@@ -20,6 +20,11 @@ const RecipeReport = mongoose.model(
             ref: "User"
         },
         reason: String,
+        status: {
+            type: String,
+            enum: ['Pending', 'Resolved'],
+            default: 'Pending'
+        },
     }, {
         timestamps: true
     })
