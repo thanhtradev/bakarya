@@ -36,19 +36,12 @@ function initial() {
         // Find user has no createdAt
         for (let i = 0; i < users.length; i++) {
             let user = users[i];
-            if (!user.createdAt) {
-                // console.log(user.username);
-                USER.findByIdAndUpdate(user._id, {
-                    createdAt: new Date().toISOString()
-                }, {
-                    timestamps: false
-                }, (err, user) => {
-                    if (err) {
-                        console.log(err);
-                        return;
-                    }
-                    console.log("User update successfully");
-                })
+            // Delete avatar image
+            if (user.avatar) {
+                user.avatar = null;
+                user.save().then(() => {
+                    console.log("Deleted avatar image");
+                });
             }
         }
     })

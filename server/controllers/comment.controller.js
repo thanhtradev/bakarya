@@ -80,12 +80,14 @@ exports.findAll = (req, res) => {
                     replies.push({
                         comment: reply.comment,
                         author: reply.user_id,
+                        author_avatar: reply.user_id.avatar_url,
                     });
                 })
                 comments.push({
                     comment: comment.comment,
                     author: {
                         username: comment.user_id.username,
+                        avatar: comment.user_id.avatar_url,
                     },
                     replies: replies,
                 })
