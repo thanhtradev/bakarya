@@ -351,6 +351,45 @@ exports.getSavedRecipe = (req, res) => {
     }
     // Get saved recipe
     savedRecipes = user.savedRecipes;
-    res.status(200).send(savedRecipes);
+    // Get recipe details
+    Recipe.find({
+        _id: {
+          $in: savedRecipes
+        }
+      })
+      .populate('user_id')
+      .populate('categories')
+      .exec((err, recipes) => {
+        if (err) {
+          res.status(500).send({
+            message: err,
+          });
+          return;
+        }
+        // returnRecipes = [];
+        recipeList = recipes.map(recipe => formatRecipeData(recipe));
+        res.status(200).send(recipeList);
+      });
   });
+}
+// Format recipe data
+function formatRecipeData(recipe) {
+  return {
+    id: recipe._id,
+    author: recipe.user_id.username,
+    author_id: recipe.user_id._id,
+    author_avatar: recipe.user_id.avatar_url,
+    name: recipe.name,
+    expert: recipe.expert,
+    time: recipe.time,
+    makes: recipe.makes,
+    images: recipe.images,
+    ingredients: recipe.ingredients,
+    directions: recipe.directions,
+    nutrition: recipe.nutrition,
+    number_of_mlems: recipe.number_of_mlems,
+    number_of_comments: recipe.number_of_comments,
+    categories: recipe.categories.map(category => category.name),
+    createdAt: recipe.createdAt,
+  }
 }
