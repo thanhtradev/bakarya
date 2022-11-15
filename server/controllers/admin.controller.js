@@ -65,14 +65,26 @@ exports.overview = (req, res) => {
                                     message: err.message || "Some error occurred while retrieving users."
                                 });
                             }
-                            res.send({
-                                totalUsers: totalUsers,
-                                newUsers: newUsers,
-                                totalRecipes: totalRecipes,
-                                newRecipes: newRecipes,
-                                totalProducts: totalProducts,
-                                newProducts: newProducts,
+
+                            RecipeReport.countDocuments({
+                                status: 'pending'
+                            }).exec((err, pendingReports) => {
+                                if (err) {
+                                    res.status(500).send({
+                                        message: err.message || "Some error occurred while retrieving users."
+                                    });
+                                }
+                                res.send({
+                                    totalUsers: totalUsers,
+                                    newUsers: newUsers,
+                                    totalRecipes: totalRecipes,
+                                    newRecipes: newRecipes,
+                                    totalProducts: totalProducts,
+                                    newProducts: newProducts,
+                                    pendingReports: pendingReports,
+                                });
                             });
+
                         })
 
                     });
