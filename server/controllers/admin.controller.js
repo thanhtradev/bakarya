@@ -325,3 +325,39 @@ exports.updateRecipeReportStatus = (req, res) => {
     //         res.status(200).send();
     //     });
 }
+
+// Generate recipe chart data
+exports.generateRecipeChartData = (req, res) => {
+    Recipe.find().exec((err, recipes) => {
+        if (err) {
+            res.status(500).send({
+                message: err.message || "Some error occurred while retrieving recipes."
+            });
+            return;
+        }
+        // Get the last 14 days
+        var date = new Date();
+        var dates = [];
+        for (var i = 0; i < 14; i++) {
+            dates.push(new Date(date.setDate(date.getDate() - 1)));
+        }
+        // Get sum of recipes created each day in the last 14 days
+        var recipeCount = [];
+        dates.forEach(date => {
+            var count = 0;
+            recipes.forEach(recipe => {
+                if (recipe.createdAt.getDate() == date.getDate() && recipe.createdAt.getMonth() == date.getMonth() && recipe.createdAt.getFullYear() == date.getFullYear()) {
+                    count++;
+                }
+            });
+            if (recipeCount.length > 0) {
+                count = count + recipeCount[recipeCount.length - 1];
+            }
+            recipeCount.push(count);
+        });
+        res.status(200).send({
+            dates: dates,
+            recipeCount: recipeCount
+        });
+    });
+}
