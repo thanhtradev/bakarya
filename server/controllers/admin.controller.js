@@ -280,19 +280,48 @@ exports.findAllRecipeReports = (req, res) => {
 
 //Update recipe report status
 exports.updateRecipeReportStatus = (req, res) => {
+    console.log(req.body);
     const id = req.params.recipeReportId;
-    RecipeReport.findByIdAndUpdate(id, {
+    // Find all reports with the same recipe id
+    RecipeReport.findById(id).exec((err, report) => {
+        if (err) {
+            res.status(500).send({
+                message: err.message || "Some error occurred while retrieving reports."
+            });
+            return;
+        }
+        RecipeReport.updateMany({
+            recipe_id: report.recipe_id
+        }, {
             status: req.body.status
         }, {
             useFindAndModify: false
-        })
-        .exec((err, report) => {
-            if (err) {
-                res.status(500).send({
-                    message: err.message || "Some error occurred while updating report."
+        }).then(data => {
+            if (!data) {
+                res.status(404).send({
+                    message: `Cannot update report with id=${id}. Maybe report was not found!`
                 });
-                return;
-            }
-            res.status(200).send();
+            } else res.send({
+                message: "Report was updated successfully."
+            });
+        }).catch(err => {
+            res.status(500).send({
+                message: "Error updating report with id=" + id
+            });
         });
+    });
+    // RecipeReport.findByIdAndUpdate(id, {
+    //         status: req.body.status
+    //     }, {
+    //         useFindAndModify: false
+    //     })
+    //     .exec((err, report) => {
+    //         if (err) {
+    //             res.status(500).send({
+    //                 message: err.message || "Some error occurred while updating report."
+    //             });
+    //             return;
+    //         }
+    //         res.status(200).send();
+    //     });
 }
