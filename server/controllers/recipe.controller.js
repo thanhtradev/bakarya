@@ -69,7 +69,7 @@ exports.create = (req, res) => {
 */
 
 exports.create = async (req, res) => {
-    console.log(req.body.recipe);
+    console.log(req.files);
     // validate request
     if (!req.body.recipe) {
         res.status(400).send({
@@ -79,8 +79,8 @@ exports.create = async (req, res) => {
     }
     //Handle recipe
     // Parse json data from request
-    // const recipe = JSON.parse(req.body.recipe);
-    const recipe = req.body.recipe;
+    const recipe = JSON.parse(req.body.recipe);
+    // const recipe = req.body.recipe;
     // Validate request
     if (!recipe.name) {
         res.status(400).send({

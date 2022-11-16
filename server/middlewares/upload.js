@@ -55,10 +55,11 @@ uploadAvatar = (req, res, next) => {
 }
 
 uploadRecipeImages = (req, res, next) => {
+    console.log(req);
     const upload = multer({
         storage: storage,
         fileFilter: fileFilter,
-    }).array('images', 3);
+    }).array('images', 4);
     upload(req, res, function (err) {
         if (err instanceof multer.MulterError) {
             return res.status(500).json(err);
