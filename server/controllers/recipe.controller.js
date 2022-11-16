@@ -516,16 +516,23 @@ exports.unsavedRecipe = (req, res) => {
 
 // Retrieve all recipe belong to user
 exports.findAllByUserId = (req, res) => {
+    const id = req.params.userId;
     Recipe.find({
-        user_id: req.params.userId
-    }).populate('user_id').populate('categories').exec((err, recipes) => {
-        if (err) {
-            res.status(500).send({
-                message: err.message || "Some error occurred while retrieving recipes."
-            });
-            return;
-        }
-        var recipeList = recipes.map(recipe => formatRecipeData(recipe));
-        res.send(recipeList);
-    })
+            user_id: req.params.userId
+        })
+        .populate('user_id')
+        .populate('categories')
+        .sort({
+            createdAt: -1
+        })
+        .exec((err, recipes) => {
+            if (err) {
+                res.status(500).send({
+                    message: err.message || "Some error occurred while retrieving recipes."
+                });
+                return;
+            }
+            var recipeList = recipes.map(recipe => formatRecipeData(recipe));
+            res.send(recipeList);
+        })
 }
