@@ -276,6 +276,27 @@ exports.getUserAvatar = (req, res) => {
     });
   });
 }
+// Get user avatar by user_id
+exports.getUserAvatarById = (req, res) => {
+  // Find the user by id
+  User.findById(req.params.userId).exec((err, user) => {
+    if (err) {
+      res.status(500).send({
+        message: err,
+      });
+      return;
+    }
+    if (!user) {
+      res.status(404).send({
+        message: "User not found",
+      });
+      return;
+    }
+    res.status(200).send({
+      avatar_url: user.avatar_url
+    });
+  });
+}
 
 // Retrieve user profile
 exports.getUserProfile = (req, res) => {
@@ -304,6 +325,58 @@ exports.getUserProfile = (req, res) => {
     // Count number of recipes created by the user
     Recipe.countDocuments({
       user_id: req.userId
+    }).exec((err, count) => {
+      if (err) {
+        numberOfRecipes = 0;
+      } else {
+        numberOfRecipes = count;
+        res.status(200).send({
+          email: user.email,
+          firstname: user.firstName,
+          lastname: user.lastName,
+          avatar_url: user.avatar_url,
+          birthday: user.birthday,
+          followers: user.followers,
+          following: user.following,
+          isVerified: user.isVerified,
+          //Check if birthday is set
+          birthday: user.birthday ? user.birthday.toDateString() : null,
+          numberOfRecipes: numberOfRecipes,
+        });
+      }
+
+    });
+  });
+}
+
+// Retrieve user profile by user_id
+exports.getUserProfileById = (req, res) => {
+  const userId = req.params.userId;
+  // Find the user by id
+  User.findById(userId).exec((err, user) => {
+    if (err) {
+      res.status(500).send({
+        message: err,
+      });
+      return;
+    }
+    if (!user) {
+      res.status(404).send({
+        message: "User not found",
+      });
+      return;
+    }
+    // Check if user has been blocked 
+    if (user.isBlocked) {
+      res.status(401).send({
+        message: "User is blocked",
+      });
+      return;
+    }
+    let numberOfRecipes = 0;
+    // Count number of recipes created by the user
+    Recipe.countDocuments({
+      user_id: userId
     }).exec((err, count) => {
       if (err) {
         numberOfRecipes = 0;

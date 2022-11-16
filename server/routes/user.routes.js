@@ -44,8 +44,14 @@ module.exports = function (app) {
   // Retrieve user profile picture
   app.get("/api/user/avatar", [authJwt.verifyToken], controller.getUserAvatar);
 
+  // Get user avatar by user id
+  app.get("/api/userid/avatar/:userId", controller.getUserAvatarById);
+
   // Retrieve user profile
   app.get("/api/user/profile", [authJwt.verifyToken], controller.getUserProfile);
+
+  // Retrieve user profile by user id
+  app.get("/api/userid/profile/:userId", controller.getUserProfileById);
 
   // Retrieve saved recipe
   app.get("/api/user/saved", [authJwt.verifyToken], controller.getSavedRecipe);
